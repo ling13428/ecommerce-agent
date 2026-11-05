@@ -110,6 +110,28 @@ class Settings(BaseSettings):
     mcp_commerce_url: str = "http://127.0.0.1:9101/mcp"
     mcp_catalog_url: str = "http://127.0.0.1:9102/mcp"
     mcp_knowledge_url: str = "http://127.0.0.1:9103/mcp"
+    tool_timeout: float = Field(default=15.0, gt=0, le=300)
+    tool_max_workers: int = Field(default=16, ge=1, le=256)
+    tool_max_concurrency_per_tool: int = Field(default=8, ge=1, le=256)
+    tool_retry_attempts: int = Field(default=2, ge=1, le=5)
+    tool_retry_backoff: float = Field(default=0.2, ge=0, le=10)
+    tool_circuit_failures: int = Field(default=5, ge=1, le=100)
+    tool_circuit_cooldown: float = Field(default=30.0, ge=1, le=3600)
+    tool_result_max_chars: int = Field(default=24000, ge=1000, le=200000)
+    tool_result_string_max_chars: int = Field(
+        default=4000, ge=100, le=50000
+    )
+    tool_result_list_max_items: int = Field(default=50, ge=1, le=1000)
+    tool_idempotency_ttl_seconds: int = Field(
+        default=24 * 60 * 60, ge=60, le=30 * 24 * 3600
+    )
+    tool_idempotency_uncertain_ttl_seconds: int = Field(
+        default=300, ge=10, le=24 * 3600
+    )
+    tool_idempotency_max_entries: int = Field(default=5000, ge=1)
+    tool_idempotency_lock_ttl_seconds: int = Field(
+        default=60, ge=5, le=3600
+    )
 
     log_format: str = "text"
     alert_webhook_url: str = ""

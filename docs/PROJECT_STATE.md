@@ -2,7 +2,7 @@
 
 > 本文件用于跨会话接续。每次新会话开始先读本文件，结束前更新。
 > 只记录长期有用的信息：进度、决策、下一步、坑。不要粘贴大段代码或原始对话。
-> 最后更新：2026-11-04
+> 最后更新：2026-11-05
 
 ## 一、当前进度
 
@@ -90,7 +90,8 @@
   - **首轮结果**：路由 L1 60/60（100%），工具合同 47/47（100%）；压测 50 req / 10 并发，66.4 RPS，p95 103ms（问候路径，不调 LLM）
   - **运营看板**：`GET /api/admin/dashboard` 聚合解决率、转人工率、首响均值/P95、路由分布、转人工原因；商家工作台新增 KPI 面板（15s 刷新）
   - **首响口径**：trace 记录 `first_response_ms`（从收到消息到第一个 `delta`），仅统计有文本回复的轮次
-  - 测试 177 个用例全部通过（新增工具令牌、MCP、Saleor Provider、OTP 登录、审计、灰度、看板）
+  - **工具执行硬化（2026-11-05）**：`tools/registry.py` 新增工具级超时、只读重试、每工具熔断、专用线程池与并发信号量；错误统一为 `error_code/retryable/side_effect_committed`；出站结果做信封校验、可选 `result_model` 校验与大小截断；写操作幂等锁改为 owner token（防误删）、心跳续租、不确定结果短 TTL 缓存，内存兜底条数可配；`core/metrics.py` 新增 per-tool 调用/失败/超时/延迟/错误码指标
+  - 测试 186 个用例全部通过（新增工具运行时硬化测试）
   - Git 已初始化（`main` 分支），`.env`/`.venv`/`.idea` 已忽略；**未配置远程仓库**
 - 进行中：**M7 评测闭环** — Agent 场景集 60 条、路由/工具评测、首轮压测、运营看板已完成；待扩到 200 条、补 LLM 端到端评测
 - 下一步（按价值排序）：
@@ -215,7 +216,7 @@
 - 数据库：`docker compose up -d` 启动 `ecommerce-rag-postgres`（`pgvector/pgvector:pg17`，本机 5433，数据在 `ecommerce-rag_pgdata`）
 - 数据库检查：`docker compose ps`、`docker compose exec postgres psql -U rag -d ecommerce_rag`
 - Docker 镜像源：`docker.m.daocloud.io`（Docker Hub 直连超时）；Docker Desktop 代理已从失效的 `127.0.0.1:7897` 改为 No proxy
-- `.env` 关键项：`LLM_*`、`LLM_FALLBACK_*`、`LLM_CIRCUIT_*`、`AGENT_ENGINE`、`AGENT_CHECKPOINT_BACKEND`、`AGENT_CHECKPOINT_DB_PATH`、`ROUTER_LLM_*`、`CACHE_BACKEND`、`REDIS_URL`、`SESSION_TTL_SECONDS`、`SESSION_STORE_BACKEND`、`SESSION_RETENTION_DAYS`、`LOG_FORMAT`、`ALERT_WEBHOOK_URL`、`SSE_HEARTBEAT_SECONDS`、`EMBEDDING_*`、`OCR_*`、`ADMIN_TOKEN`、`AUTH_SECRET`、`BUYER_TOKEN_TTL_HOURS`、`DATABASE_URL`、`RAG_*`、`RERANK_*`、`RATE_LIMIT_PER_MINUTE`、`MAX_MESSAGE_CHARS`、`FRONTEND_ORIGINS`、`TOOL_BACKEND`、`TOOL_SECRET`、`TOOL_CONTEXT_TTL_SECONDS`、`TOOL_APPROVAL_TTL_SECONDS`、`MCP_TIMEOUT`、`MCP_COMMERCE_URL`、`MCP_CATALOG_URL`、`MCP_KNOWLEDGE_URL`、`PRODUCT_PROVIDER`、`ORDER_PROVIDER`、`SALEOR_ROLLOUT_PERCENT`、`SALEOR_ALLOWLIST`、`SALEOR_API_URL`、`SMS_PROVIDER`、`SMS_DEBUG`、`OTP_TTL_SECONDS`、`OTP_MAX_ATTEMPTS`、`OTP_SEND_COOLDOWN`、`SALEOR_CHANNEL`、`SALEOR_TOKEN`、`SALEOR_EMAIL`、`SALEOR_PASSWORD`、`SALEOR_TIMEOUT`
+- `.env` 关键项：`LLM_*`、`LLM_FALLBACK_*`、`LLM_CIRCUIT_*`、`AGENT_ENGINE`、`AGENT_CHECKPOINT_BACKEND`、`AGENT_CHECKPOINT_DB_PATH`、`ROUTER_LLM_*`、`CACHE_BACKEND`、`REDIS_URL`、`SESSION_TTL_SECONDS`、`SESSION_STORE_BACKEND`、`SESSION_RETENTION_DAYS`、`LOG_FORMAT`、`ALERT_WEBHOOK_URL`、`SSE_HEARTBEAT_SECONDS`、`EMBEDDING_*`、`OCR_*`、`ADMIN_TOKEN`、`AUTH_SECRET`、`BUYER_TOKEN_TTL_HOURS`、`DATABASE_URL`、`RAG_*`、`RERANK_*`、`RATE_LIMIT_PER_MINUTE`、`MAX_MESSAGE_CHARS`、`FRONTEND_ORIGINS`、`TOOL_BACKEND`、`TOOL_SECRET`、`TOOL_CONTEXT_TTL_SECONDS`、`TOOL_APPROVAL_TTL_SECONDS`、`MCP_TIMEOUT`、`MCP_COMMERCE_URL`、`MCP_CATALOG_URL`、`MCP_KNOWLEDGE_URL`、`TOOL_TIMEOUT`、`TOOL_MAX_WORKERS`、`TOOL_MAX_CONCURRENCY_PER_TOOL`、`TOOL_RETRY_*`、`TOOL_CIRCUIT_*`、`TOOL_RESULT_*`、`TOOL_IDEMPOTENCY_*`、`PRODUCT_PROVIDER`、`ORDER_PROVIDER`、`SALEOR_ROLLOUT_PERCENT`、`SALEOR_ALLOWLIST`、`SALEOR_API_URL`、`SMS_PROVIDER`、`SMS_DEBUG`、`OTP_TTL_SECONDS`、`OTP_MAX_ATTEMPTS`、`OTP_SEND_COOLDOWN`、`SALEOR_CHANNEL`、`SALEOR_TOKEN`、`SALEOR_EMAIL`、`SALEOR_PASSWORD`、`SALEOR_TIMEOUT`
 - 真实 `LLM_API_KEY`、`EMBEDDING_API_KEY` 已配置（值不记录）；`/health` 显示 `configured`
 - 已安装 Python 依赖：`openai`、`psycopg[binary] 3.3.6`、`pgvector 0.5.1`、`pillow`、`reportlab`、`openpyxl`、`python-docx`、`pypdf`、`pdfplumber`、`pypdfium2`、`beautifulsoup4`
 - 编排依赖：`langgraph 1.2.18`、`langchain-core 1.7.0`、`langgraph-checkpoint 4.3.1`、`langgraph-checkpoint-sqlite 3.1.2`、`aiosqlite 0.22.1`、`langgraph-prebuilt 1.1.1`（`langchain-openai` 未装，模型仍走原生 SDK）
@@ -280,6 +281,7 @@
 - `tests/test_sse.py`：心跳帧插入、关闭心跳、上游异常结束
 - `tests/test_metrics.py`：指标计数/延迟快照、JSON 日志脱敏
 - `tests/test_tool_auth.py`：工具上下文/审批令牌、篡改/过期、参数摘要绑定
+- `tests/test_tool_runtime.py`：工具超时/重试/熔断、类型化错误、结果截断与 schema 校验、不确定写结果缓存
 - `tests/test_mcp_servers.py`：catalog/commerce/knowledge 工具、令牌校验、写审批、server 侧幂等
 - `tests/test_mcp_client.py`：local/mcp 路由、令牌注入、确认门禁、失败降级、知识拒答转人工
 - `tests/test_llm_breaker.py`：连续失败熔断、备用供应商切换、无备用时保留主模型

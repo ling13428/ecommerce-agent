@@ -186,6 +186,9 @@ def tool_detail(name: str, result: dict[str, Any]) -> dict[str, Any]:
         return {
             "kind": "error",
             "error": result.get("error"),
+            "error_code": result.get("error_code"),
+            "retryable": result.get("retryable"),
+            "side_effect_committed": result.get("side_effect_committed"),
             "details": result.get("details"),
         }
 
