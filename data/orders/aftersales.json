@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-10-31T15:24:00+08:00",
+  "aftersales": [
+    {
+      "aftersale_id": "AS-930-0002",
+      "order_id": "ORD-20260930-0002",
+      "buyer_id": "BUY-0016",
+      "type": "退货退款",
+      "reason": "收到商品后不合适",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-31T05:24:00+08:00",
+      "updated_at": "2026-10-31T05:24:00+08:00",
+      "refund_amount": 3197,
+      "timeline": [
+        {
+          "time": "2026-10-31T05:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-012-0009",
+      "order_id": "ORD-20261012-0009",
+      "buyer_id": "BUY-0010",
+      "type": "仅退款",
+      "reason": "商品与描述不符",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-29T21:24:00+08:00",
+      "updated_at": "2026-10-29T21:24:00+08:00",
+      "refund_amount": 1478,
+      "timeline": [
+        {
+          "time": "2026-10-29T21:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-012-0012",
+      "order_id": "ORD-20261012-0012",
+      "buyer_id": "BUY-0005",
+      "type": "换货",
+      "reason": "颜色或型号需要更换",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-28T15:24:00+08:00",
+      "updated_at": "2026-10-28T15:24:00+08:00",
+      "refund_amount": 0,
+      "timeline": [
+        {
+          "time": "2026-10-28T15:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-009-0013",
+      "order_id": "ORD-20261009-0013",
+      "buyer_id": "BUY-0013",
+      "type": "维修",
+      "reason": "使用中出现故障",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-30T22:24:00+08:00",
+      "updated_at": "2026-10-30T22:24:00+08:00",
+      "refund_amount": 1238,
+      "timeline": [
+        {
+          "time": "2026-10-30T22:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-026-0016",
+      "order_id": "ORD-20261026-0016",
+      "buyer_id": "BUY-0023",
+      "type": "退货退款",
+      "reason": "收到商品后不合适",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-29T05:24:00+08:00",
+      "updated_at": "2026-10-29T05:24:00+08:00",
+      "refund_amount": 1168,
+      "timeline": [
+        {
+          "time": "2026-10-29T05:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-024-0018",
+      "order_id": "ORD-20261024-0018",
+      "buyer_id": "BUY-0024",
+      "type": "仅退款",
+      "reason": "商品与描述不符",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-28T17:24:00+08:00",
+      "updated_at": "2026-10-28T17:24:00+08:00",
+      "refund_amount": 179,
+      "timeline": [
+        {
+          "time": "2026-10-28T17:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-012-0032",
+      "order_id": "ORD-20261012-0032",
+      "buyer_id": "BUY-0005",
+      "type": "换货",
+      "reason": "颜色或型号需要更换",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-30T11:24:00+08:00",
+      "updated_at": "2026-10-30T11:24:00+08:00",
+      "refund_amount": 0,
+      "timeline": [
+        {
+          "time": "2026-10-30T11:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-002-0037",
+      "order_id": "ORD-20261002-0037",
+      "buyer_id": "BUY-0007",
+      "type": "维修",
+      "reason": "使用中出现故障",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-29T14:24:00+08:00",
+      "updated_at": "2026-10-29T14:24:00+08:00",
+      "refund_amount": 1827,
+      "timeline": [
+        {
+          "time": "2026-10-29T14:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-026-0038",
+      "order_id": "ORD-20261026-0038",
+      "buyer_id": "BUY-0023",
+      "type": "退货退款",
+      "reason": "收到商品后不合适",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-29T20:24:00+08:00",
+      "updated_at": "2026-10-29T20:24:00+08:00",
+      "refund_amount": 3016,
+      "timeline": [
+        {
+          "time": "2026-10-29T20:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-013-0043",
+      "order_id": "ORD-20261013-0043",
+      "buyer_id": "BUY-0016",
+      "type": "仅退款",
+      "reason": "商品与描述不符",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-31T01:24:00+08:00",
+      "updated_at": "2026-10-31T01:24:00+08:00",
+      "refund_amount": 319,
+      "timeline": [
+        {
+          "time": "2026-10-31T01:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-025-0049",
+      "order_id": "ORD-20261025-0049",
+      "buyer_id": "BUY-0016",
+      "type": "换货",
+      "reason": "颜色或型号需要更换",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-30T03:24:00+08:00",
+      "updated_at": "2026-10-30T03:24:00+08:00",
+      "refund_amount": 0,
+      "timeline": [
+        {
+          "time": "2026-10-30T03:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-024-0053",
+      "order_id": "ORD-20261024-0053",
+      "buyer_id": "BUY-0018",
+      "type": "维修",
+      "reason": "使用中出现故障",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-29T13:24:00+08:00",
+      "updated_at": "2026-10-29T13:24:00+08:00",
+      "refund_amount": 940,
+      "timeline": [
+        {
+          "time": "2026-10-29T13:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    },
+    {
+      "aftersale_id": "AS-014-0057",
+      "order_id": "ORD-20261014-0057",
+      "buyer_id": "BUY-0018",
+      "type": "退货退款",
+      "reason": "收到商品后不合适",
+      "status": "pending",
+      "status_label": "待商家处理",
+      "created_at": "2026-10-29T11:24:00+08:00",
+      "updated_at": "2026-10-29T11:24:00+08:00",
+      "refund_amount": 1727,
+      "timeline": [
+        {
+          "time": "2026-10-29T11:24:00+08:00",
+          "status": "已提交",
+          "description": "售后申请已提交，等待商家处理"
+        }
+      ]
+    }
+  ]
+}

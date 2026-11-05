@@ -1,0 +1,7214 @@
+{
+  "generated_at": "2026-10-25T13:05:19+00:00",
+  "input_dirs": [
+    "D:\\workspace\\电商客服\\data\\products\\docs",
+    "D:\\workspace\\电商客服\\data\\policies\\docs",
+    "D:\\workspace\\电商客服\\data\\policies\\selected"
+  ],
+  "output_dir": "D:\\workspace\\电商客服\\data\\processed",
+  "thresholds": {
+    "child_min": 100,
+    "child_target_max": 400,
+    "child_hard_max": 500,
+    "parent_target_max": 1200
+  },
+  "totals": {
+    "documents": 342,
+    "parents": 342,
+    "chunks": 1504,
+    "errors": 0,
+    "warnings": 0
+  },
+  "lengths": {
+    "parent": {
+      "min": 232,
+      "avg": 634.4,
+      "max": 851
+    },
+    "child": {
+      "min": 59,
+      "avg": 175.1,
+      "max": 490
+    }
+  },
+  "documents": [
+    {
+      "doc_id": "P2001-01",
+      "title": "烬狐 VK75 Pro 磁轴键盘",
+      "product_id": "P2001",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        582
+      ],
+      "child_chars": [
+        369,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2001-02",
+      "title": "烬狐 VK75 Pro 磁轴键盘 规格参数",
+      "product_id": "P2001",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        775
+      ],
+      "child_chars": [
+        365,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2001-03",
+      "title": "烬狐 VK75 Pro 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2001",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        847
+      ],
+      "child_chars": [
+        317,
+        118,
+        115,
+        88,
+        110,
+        117,
+        103,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2002-01",
+      "title": "烬狐 VK75 磁轴键盘",
+      "product_id": "P2002",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        570
+      ],
+      "child_chars": [
+        357,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2002-02",
+      "title": "烬狐 VK75 磁轴键盘 规格参数",
+      "product_id": "P2002",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        649
+      ],
+      "child_chars": [
+        346,
+        257,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2002-03",
+      "title": "烬狐 VK75 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2002",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 8,
+      "parent_chars": [
+        728
+      ],
+      "child_chars": [
+        306,
+        88,
+        111,
+        88,
+        78,
+        113,
+        99,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2003-01",
+      "title": "烬狐 VK75 Ultra 磁轴键盘",
+      "product_id": "P2003",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        579
+      ],
+      "child_chars": [
+        366,
+        273
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2003-02",
+      "title": "烬狐 VK75 Ultra 磁轴键盘 规格参数",
+      "product_id": "P2003",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        777
+      ],
+      "child_chars": [
+        367,
+        370,
+        113
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2003-03",
+      "title": "烬狐 VK75 Ultra 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2003",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        851
+      ],
+      "child_chars": [
+        319,
+        122,
+        117,
+        90,
+        112,
+        119,
+        105,
+        104,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2004-01",
+      "title": "烬狐 VK75 SE 磁轴键盘",
+      "product_id": "P2004",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        573
+      ],
+      "child_chars": [
+        360,
+        270
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2004-02",
+      "title": "烬狐 VK75 SE 磁轴键盘 规格参数",
+      "product_id": "P2004",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        653
+      ],
+      "child_chars": [
+        350,
+        260,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2004-03",
+      "title": "烬狐 VK75 SE 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2004",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 8,
+      "parent_chars": [
+        734
+      ],
+      "child_chars": [
+        309,
+        94,
+        114,
+        91,
+        81,
+        116,
+        102,
+        109
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2005-01",
+      "title": "烬狐 VK65 磁轴键盘",
+      "product_id": "P2005",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        567
+      ],
+      "child_chars": [
+        354,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2005-02",
+      "title": "烬狐 VK65 磁轴键盘 规格参数",
+      "product_id": "P2005",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        649
+      ],
+      "child_chars": [
+        346,
+        257,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2005-03",
+      "title": "烬狐 VK65 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2005",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 8,
+      "parent_chars": [
+        728
+      ],
+      "child_chars": [
+        306,
+        88,
+        111,
+        88,
+        78,
+        113,
+        99,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2006-01",
+      "title": "烬狐 VK65 Pro 磁轴键盘",
+      "product_id": "P2006",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        579
+      ],
+      "child_chars": [
+        366,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2006-02",
+      "title": "烬狐 VK65 Pro 磁轴键盘 规格参数",
+      "product_id": "P2006",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        775
+      ],
+      "child_chars": [
+        365,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2006-03",
+      "title": "烬狐 VK65 Pro 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2006",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        847
+      ],
+      "child_chars": [
+        317,
+        118,
+        115,
+        88,
+        110,
+        117,
+        103,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2007-01",
+      "title": "烬狐 VK65 Ultra 磁轴键盘",
+      "product_id": "P2007",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        576
+      ],
+      "child_chars": [
+        363,
+        273
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2007-02",
+      "title": "烬狐 VK65 Ultra 磁轴键盘 规格参数",
+      "product_id": "P2007",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        777
+      ],
+      "child_chars": [
+        367,
+        370,
+        113
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2007-03",
+      "title": "烬狐 VK65 Ultra 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2007",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        851
+      ],
+      "child_chars": [
+        319,
+        122,
+        117,
+        90,
+        112,
+        119,
+        105,
+        104,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2008-01",
+      "title": "烬狐 VK68 磁轴键盘",
+      "product_id": "P2008",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        588
+      ],
+      "child_chars": [
+        375,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2008-02",
+      "title": "烬狐 VK68 磁轴键盘 规格参数",
+      "product_id": "P2008",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        649
+      ],
+      "child_chars": [
+        346,
+        257,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2008-03",
+      "title": "烬狐 VK68 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2008",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 8,
+      "parent_chars": [
+        728
+      ],
+      "child_chars": [
+        306,
+        88,
+        111,
+        88,
+        78,
+        113,
+        99,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2009-01",
+      "title": "烬狐 VK68 Pro 磁轴键盘",
+      "product_id": "P2009",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        600
+      ],
+      "child_chars": [
+        387,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2009-02",
+      "title": "烬狐 VK68 Pro 磁轴键盘 规格参数",
+      "product_id": "P2009",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        775
+      ],
+      "child_chars": [
+        365,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2009-03",
+      "title": "烬狐 VK68 Pro 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2009",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        847
+      ],
+      "child_chars": [
+        317,
+        118,
+        115,
+        88,
+        110,
+        117,
+        103,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2010-01",
+      "title": "烬狐 VK68 Ultra 磁轴键盘",
+      "product_id": "P2010",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        597
+      ],
+      "child_chars": [
+        384,
+        273
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2010-02",
+      "title": "烬狐 VK68 Ultra 磁轴键盘 规格参数",
+      "product_id": "P2010",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        777
+      ],
+      "child_chars": [
+        367,
+        370,
+        113
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2010-03",
+      "title": "烬狐 VK68 Ultra 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2010",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        851
+      ],
+      "child_chars": [
+        319,
+        122,
+        117,
+        90,
+        112,
+        119,
+        105,
+        104,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2011-01",
+      "title": "烬狐 VK60 磁轴键盘",
+      "product_id": "P2011",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        577
+      ],
+      "child_chars": [
+        364,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2011-02",
+      "title": "烬狐 VK60 磁轴键盘 规格参数",
+      "product_id": "P2011",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        649
+      ],
+      "child_chars": [
+        346,
+        257,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2011-03",
+      "title": "烬狐 VK60 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2011",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 8,
+      "parent_chars": [
+        728
+      ],
+      "child_chars": [
+        306,
+        88,
+        111,
+        88,
+        78,
+        113,
+        99,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2012-01",
+      "title": "烬狐 VK87 磁轴键盘",
+      "product_id": "P2012",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        574
+      ],
+      "child_chars": [
+        361,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2012-02",
+      "title": "烬狐 VK87 磁轴键盘 规格参数",
+      "product_id": "P2012",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        649
+      ],
+      "child_chars": [
+        346,
+        257,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2012-03",
+      "title": "烬狐 VK87 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2012",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 8,
+      "parent_chars": [
+        728
+      ],
+      "child_chars": [
+        306,
+        88,
+        111,
+        88,
+        78,
+        113,
+        99,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2013-01",
+      "title": "烬狐 VK87 Pro 磁轴键盘",
+      "product_id": "P2013",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        586
+      ],
+      "child_chars": [
+        373,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2013-02",
+      "title": "烬狐 VK87 Pro 磁轴键盘 规格参数",
+      "product_id": "P2013",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        775
+      ],
+      "child_chars": [
+        365,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2013-03",
+      "title": "烬狐 VK87 Pro 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2013",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        847
+      ],
+      "child_chars": [
+        317,
+        118,
+        115,
+        88,
+        110,
+        117,
+        103,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2014-01",
+      "title": "烬狐 VK87 Ultra 磁轴键盘",
+      "product_id": "P2014",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        583
+      ],
+      "child_chars": [
+        370,
+        273
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2014-02",
+      "title": "烬狐 VK87 Ultra 磁轴键盘 规格参数",
+      "product_id": "P2014",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        777
+      ],
+      "child_chars": [
+        367,
+        370,
+        113
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2014-03",
+      "title": "烬狐 VK87 Ultra 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2014",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        851
+      ],
+      "child_chars": [
+        319,
+        122,
+        117,
+        90,
+        112,
+        119,
+        105,
+        104,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2015-01",
+      "title": "烬狐 VK98 磁轴键盘",
+      "product_id": "P2015",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        567
+      ],
+      "child_chars": [
+        354,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2015-02",
+      "title": "烬狐 VK98 磁轴键盘 规格参数",
+      "product_id": "P2015",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        764
+      ],
+      "child_chars": [
+        354,
+        364,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2015-03",
+      "title": "烬狐 VK98 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2015",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        843
+      ],
+      "child_chars": [
+        313,
+        110,
+        111,
+        88,
+        106,
+        113,
+        99,
+        98,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2016-01",
+      "title": "烬狐 VK98 Pro 磁轴键盘",
+      "product_id": "P2016",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        579
+      ],
+      "child_chars": [
+        366,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2016-02",
+      "title": "烬狐 VK98 Pro 磁轴键盘 规格参数",
+      "product_id": "P2016",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        776
+      ],
+      "child_chars": [
+        366,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2016-03",
+      "title": "烬狐 VK98 Pro 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2016",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        847
+      ],
+      "child_chars": [
+        317,
+        118,
+        115,
+        88,
+        110,
+        117,
+        103,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2017-01",
+      "title": "烬狐 VK98 Ultra 磁轴键盘",
+      "product_id": "P2017",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        576
+      ],
+      "child_chars": [
+        363,
+        273
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2017-02",
+      "title": "烬狐 VK98 Ultra 磁轴键盘 规格参数",
+      "product_id": "P2017",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        778
+      ],
+      "child_chars": [
+        368,
+        370,
+        113
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2017-03",
+      "title": "烬狐 VK98 Ultra 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2017",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        851
+      ],
+      "child_chars": [
+        319,
+        122,
+        117,
+        90,
+        112,
+        119,
+        105,
+        104,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2018-01",
+      "title": "烬狐 VK104 磁轴键盘",
+      "product_id": "P2018",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        579
+      ],
+      "child_chars": [
+        366,
+        268
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2018-02",
+      "title": "烬狐 VK104 磁轴键盘 规格参数",
+      "product_id": "P2018",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        767
+      ],
+      "child_chars": [
+        357,
+        365,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2018-03",
+      "title": "烬狐 VK104 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2018",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        845
+      ],
+      "child_chars": [
+        314,
+        112,
+        112,
+        89,
+        107,
+        114,
+        100,
+        99,
+        103
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2019-01",
+      "title": "烬狐 VK104 Pro 磁轴键盘",
+      "product_id": "P2019",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        591
+      ],
+      "child_chars": [
+        378,
+        272
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2019-02",
+      "title": "烬狐 VK104 Pro 磁轴键盘 规格参数",
+      "product_id": "P2019",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        779
+      ],
+      "child_chars": [
+        369,
+        369,
+        112
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2019-03",
+      "title": "烬狐 VK104 Pro 磁轴键盘 使用、保养与常见问题",
+      "product_id": "P2019",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        849
+      ],
+      "child_chars": [
+        318,
+        120,
+        116,
+        89,
+        111,
+        118,
+        104,
+        103,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2020-01",
+      "title": "烬狐 MK75 Pro 机械键盘",
+      "product_id": "P2020",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        578
+      ],
+      "child_chars": [
+        365,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2020-02",
+      "title": "烬狐 MK75 Pro 机械键盘 规格参数",
+      "product_id": "P2020",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        778
+      ],
+      "child_chars": [
+        368,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2020-03",
+      "title": "烬狐 MK75 Pro 机械键盘 使用、保养与常见问题",
+      "product_id": "P2020",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        834
+      ],
+      "child_chars": [
+        317,
+        118,
+        108,
+        82,
+        110,
+        117,
+        103,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2021-01",
+      "title": "烬狐 MK75 机械键盘",
+      "product_id": "P2021",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        566
+      ],
+      "child_chars": [
+        353,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2021-02",
+      "title": "烬狐 MK75 机械键盘 规格参数",
+      "product_id": "P2021",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        768
+      ],
+      "child_chars": [
+        358,
+        364,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2021-03",
+      "title": "烬狐 MK75 机械键盘 使用、保养与常见问题",
+      "product_id": "P2021",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        827
+      ],
+      "child_chars": [
+        313,
+        110,
+        105,
+        78,
+        106,
+        113,
+        99,
+        98,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2022-01",
+      "title": "烬狐 MK75 Plus 机械键盘",
+      "product_id": "P2022",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        580
+      ],
+      "child_chars": [
+        367,
+        272
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2022-02",
+      "title": "烬狐 MK75 Plus 机械键盘 规格参数",
+      "product_id": "P2022",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        780
+      ],
+      "child_chars": [
+        370,
+        369,
+        112
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2022-03",
+      "title": "烬狐 MK75 Plus 机械键盘 使用、保养与常见问题",
+      "product_id": "P2022",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        836
+      ],
+      "child_chars": [
+        318,
+        120,
+        109,
+        83,
+        111,
+        118,
+        104,
+        103,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2023-01",
+      "title": "烬狐 MK65 机械键盘",
+      "product_id": "P2023",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        563
+      ],
+      "child_chars": [
+        350,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2023-02",
+      "title": "烬狐 MK65 机械键盘 规格参数",
+      "product_id": "P2023",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        768
+      ],
+      "child_chars": [
+        358,
+        364,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2023-03",
+      "title": "烬狐 MK65 机械键盘 使用、保养与常见问题",
+      "product_id": "P2023",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        827
+      ],
+      "child_chars": [
+        313,
+        110,
+        105,
+        78,
+        106,
+        113,
+        99,
+        98,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2024-01",
+      "title": "烬狐 MK65 Pro 机械键盘",
+      "product_id": "P2024",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        575
+      ],
+      "child_chars": [
+        362,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2024-02",
+      "title": "烬狐 MK65 Pro 机械键盘 规格参数",
+      "product_id": "P2024",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        778
+      ],
+      "child_chars": [
+        368,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2024-03",
+      "title": "烬狐 MK65 Pro 机械键盘 使用、保养与常见问题",
+      "product_id": "P2024",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        834
+      ],
+      "child_chars": [
+        317,
+        118,
+        108,
+        82,
+        110,
+        117,
+        103,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2025-01",
+      "title": "烬狐 MK68 机械键盘",
+      "product_id": "P2025",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        584
+      ],
+      "child_chars": [
+        371,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2025-02",
+      "title": "烬狐 MK68 机械键盘 规格参数",
+      "product_id": "P2025",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        768
+      ],
+      "child_chars": [
+        358,
+        364,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2025-03",
+      "title": "烬狐 MK68 机械键盘 使用、保养与常见问题",
+      "product_id": "P2025",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        827
+      ],
+      "child_chars": [
+        313,
+        110,
+        105,
+        78,
+        106,
+        113,
+        99,
+        98,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2026-01",
+      "title": "烬狐 MK68 Pro 机械键盘",
+      "product_id": "P2026",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        596
+      ],
+      "child_chars": [
+        383,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2026-02",
+      "title": "烬狐 MK68 Pro 机械键盘 规格参数",
+      "product_id": "P2026",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        778
+      ],
+      "child_chars": [
+        368,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2026-03",
+      "title": "烬狐 MK68 Pro 机械键盘 使用、保养与常见问题",
+      "product_id": "P2026",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        834
+      ],
+      "child_chars": [
+        317,
+        118,
+        108,
+        82,
+        110,
+        117,
+        103,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2027-01",
+      "title": "烬狐 MK60 机械键盘",
+      "product_id": "P2027",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        573
+      ],
+      "child_chars": [
+        360,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2027-02",
+      "title": "烬狐 MK60 机械键盘 规格参数",
+      "product_id": "P2027",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        654
+      ],
+      "child_chars": [
+        351,
+        257,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2027-03",
+      "title": "烬狐 MK60 机械键盘 使用、保养与常见问题",
+      "product_id": "P2027",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 8,
+      "parent_chars": [
+        712
+      ],
+      "child_chars": [
+        306,
+        88,
+        105,
+        78,
+        78,
+        113,
+        99,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2028-01",
+      "title": "烬狐 MK87 机械键盘",
+      "product_id": "P2028",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        570
+      ],
+      "child_chars": [
+        357,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2028-02",
+      "title": "烬狐 MK87 机械键盘 规格参数",
+      "product_id": "P2028",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        768
+      ],
+      "child_chars": [
+        358,
+        364,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2028-03",
+      "title": "烬狐 MK87 机械键盘 使用、保养与常见问题",
+      "product_id": "P2028",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        827
+      ],
+      "child_chars": [
+        313,
+        110,
+        105,
+        78,
+        106,
+        113,
+        99,
+        98,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2029-01",
+      "title": "烬狐 MK87 Pro 机械键盘",
+      "product_id": "P2029",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        582
+      ],
+      "child_chars": [
+        369,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2029-02",
+      "title": "烬狐 MK87 Pro 机械键盘 规格参数",
+      "product_id": "P2029",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        778
+      ],
+      "child_chars": [
+        368,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2029-03",
+      "title": "烬狐 MK87 Pro 机械键盘 使用、保养与常见问题",
+      "product_id": "P2029",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        834
+      ],
+      "child_chars": [
+        317,
+        118,
+        108,
+        82,
+        110,
+        117,
+        103,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2030-01",
+      "title": "烬狐 MK98 机械键盘",
+      "product_id": "P2030",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        563
+      ],
+      "child_chars": [
+        350,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2030-02",
+      "title": "烬狐 MK98 机械键盘 规格参数",
+      "product_id": "P2030",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        769
+      ],
+      "child_chars": [
+        359,
+        364,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2030-03",
+      "title": "烬狐 MK98 机械键盘 使用、保养与常见问题",
+      "product_id": "P2030",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        827
+      ],
+      "child_chars": [
+        313,
+        110,
+        105,
+        78,
+        106,
+        113,
+        99,
+        98,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2031-01",
+      "title": "烬狐 MK98 Pro 机械键盘",
+      "product_id": "P2031",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        575
+      ],
+      "child_chars": [
+        362,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2031-02",
+      "title": "烬狐 MK98 Pro 机械键盘 规格参数",
+      "product_id": "P2031",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        779
+      ],
+      "child_chars": [
+        369,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2031-03",
+      "title": "烬狐 MK98 Pro 机械键盘 使用、保养与常见问题",
+      "product_id": "P2031",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        834
+      ],
+      "child_chars": [
+        317,
+        118,
+        108,
+        82,
+        110,
+        117,
+        103,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2032-01",
+      "title": "烬狐 MK104 机械键盘",
+      "product_id": "P2032",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        575
+      ],
+      "child_chars": [
+        362,
+        268
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2032-02",
+      "title": "烬狐 MK104 机械键盘 规格参数",
+      "product_id": "P2032",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        772
+      ],
+      "child_chars": [
+        362,
+        365,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2032-03",
+      "title": "烬狐 MK104 机械键盘 使用、保养与常见问题",
+      "product_id": "P2032",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        829
+      ],
+      "child_chars": [
+        314,
+        112,
+        106,
+        79,
+        107,
+        114,
+        100,
+        99,
+        103
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2033-01",
+      "title": "烬狐 MK104 Pro 机械键盘",
+      "product_id": "P2033",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        587
+      ],
+      "child_chars": [
+        374,
+        272
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2033-02",
+      "title": "烬狐 MK104 Pro 机械键盘 规格参数",
+      "product_id": "P2033",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        782
+      ],
+      "child_chars": [
+        372,
+        369,
+        112
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2033-03",
+      "title": "烬狐 MK104 Pro 机械键盘 使用、保养与常见问题",
+      "product_id": "P2033",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        836
+      ],
+      "child_chars": [
+        318,
+        120,
+        109,
+        83,
+        111,
+        118,
+        104,
+        103,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2034-01",
+      "title": "烬狐 SL75 矮轴键盘",
+      "product_id": "P2034",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        554
+      ],
+      "child_chars": [
+        341,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2034-02",
+      "title": "烬狐 SL75 矮轴键盘 规格参数",
+      "product_id": "P2034",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        759
+      ],
+      "child_chars": [
+        349,
+        364,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2034-03",
+      "title": "烬狐 SL75 矮轴键盘 使用、保养与常见问题",
+      "product_id": "P2034",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        831
+      ],
+      "child_chars": [
+        313,
+        110,
+        100,
+        88,
+        106,
+        113,
+        98,
+        98,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2035-01",
+      "title": "烬狐 SL75 Pro 矮轴键盘",
+      "product_id": "P2035",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        562
+      ],
+      "child_chars": [
+        349,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2035-02",
+      "title": "烬狐 SL75 Pro 矮轴键盘 规格参数",
+      "product_id": "P2035",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        767
+      ],
+      "child_chars": [
+        357,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2035-03",
+      "title": "烬狐 SL75 Pro 矮轴键盘 使用、保养与常见问题",
+      "product_id": "P2035",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        839
+      ],
+      "child_chars": [
+        317,
+        118,
+        104,
+        92,
+        110,
+        117,
+        102,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2036-01",
+      "title": "烬狐 SL87 矮轴键盘",
+      "product_id": "P2036",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        558
+      ],
+      "child_chars": [
+        345,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2036-02",
+      "title": "烬狐 SL87 矮轴键盘 规格参数",
+      "product_id": "P2036",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        759
+      ],
+      "child_chars": [
+        349,
+        364,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2036-03",
+      "title": "烬狐 SL87 矮轴键盘 使用、保养与常见问题",
+      "product_id": "P2036",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        831
+      ],
+      "child_chars": [
+        313,
+        110,
+        100,
+        88,
+        106,
+        113,
+        98,
+        98,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2037-01",
+      "title": "烬狐 SL87 Pro 矮轴键盘",
+      "product_id": "P2037",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        566
+      ],
+      "child_chars": [
+        353,
+        271
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2037-02",
+      "title": "烬狐 SL87 Pro 矮轴键盘 规格参数",
+      "product_id": "P2037",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        767
+      ],
+      "child_chars": [
+        357,
+        368,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2037-03",
+      "title": "烬狐 SL87 Pro 矮轴键盘 使用、保养与常见问题",
+      "product_id": "P2037",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        839
+      ],
+      "child_chars": [
+        317,
+        118,
+        104,
+        92,
+        110,
+        117,
+        102,
+        102,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2038-01",
+      "title": "烬狐 SL98 矮轴键盘",
+      "product_id": "P2038",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        551
+      ],
+      "child_chars": [
+        338,
+        267
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2038-02",
+      "title": "烬狐 SL98 矮轴键盘 规格参数",
+      "product_id": "P2038",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        760
+      ],
+      "child_chars": [
+        350,
+        364,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2038-03",
+      "title": "烬狐 SL98 矮轴键盘 使用、保养与常见问题",
+      "product_id": "P2038",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        831
+      ],
+      "child_chars": [
+        313,
+        110,
+        100,
+        88,
+        106,
+        113,
+        98,
+        98,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2039-01",
+      "title": "烬狐 AL65 铝坨坨键盘",
+      "product_id": "P2039",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        555
+      ],
+      "child_chars": [
+        342,
+        268
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2039-02",
+      "title": "烬狐 AL65 铝坨坨键盘 规格参数",
+      "product_id": "P2039",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        653
+      ],
+      "child_chars": [
+        350,
+        258,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2039-03",
+      "title": "烬狐 AL65 铝坨坨键盘 使用、保养与常见问题",
+      "product_id": "P2039",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 8,
+      "parent_chars": [
+        713
+      ],
+      "child_chars": [
+        307,
+        89,
+        106,
+        79,
+        79,
+        114,
+        100,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2040-01",
+      "title": "烬狐 AL75 铝坨坨键盘",
+      "product_id": "P2040",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        558
+      ],
+      "child_chars": [
+        345,
+        268
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2040-02",
+      "title": "烬狐 AL75 铝坨坨键盘 规格参数",
+      "product_id": "P2040",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        767
+      ],
+      "child_chars": [
+        357,
+        365,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2040-03",
+      "title": "烬狐 AL75 铝坨坨键盘 使用、保养与常见问题",
+      "product_id": "P2040",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        828
+      ],
+      "child_chars": [
+        314,
+        111,
+        106,
+        79,
+        107,
+        114,
+        100,
+        99,
+        103
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2041-01",
+      "title": "烬狐 VM9 Pro 无线游戏鼠标",
+      "product_id": "P2041",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        517
+      ],
+      "child_chars": [
+        329,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2041-02",
+      "title": "烬狐 VM9 Pro 无线游戏鼠标 规格参数",
+      "product_id": "P2041",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        683
+      ],
+      "child_chars": [
+        349,
+        295,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2041-03",
+      "title": "烬狐 VM9 Pro 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2041",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        740
+      ],
+      "child_chars": [
+        286,
+        107,
+        101,
+        91,
+        106,
+        100,
+        94,
+        87,
+        105
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2042-01",
+      "title": "烬狐 VM9 无线游戏鼠标",
+      "product_id": "P2042",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        504
+      ],
+      "child_chars": [
+        316,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2042-02",
+      "title": "烬狐 VM9 无线游戏鼠标 规格参数",
+      "product_id": "P2042",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        739
+      ],
+      "child_chars": [
+        336,
+        360,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2042-03",
+      "title": "烬狐 VM9 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2042",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        738
+      ],
+      "child_chars": [
+        282,
+        105,
+        97,
+        87,
+        102,
+        96,
+        90,
+        83,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2043-01",
+      "title": "烬狐 VM9 Ultra 无线游戏鼠标",
+      "product_id": "P2043",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        527
+      ],
+      "child_chars": [
+        339,
+        249
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2043-02",
+      "title": "烬狐 VM9 Ultra 无线游戏鼠标 规格参数",
+      "product_id": "P2043",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        690
+      ],
+      "child_chars": [
+        356,
+        297,
+        112
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2043-03",
+      "title": "烬狐 VM9 Ultra 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2043",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        742
+      ],
+      "child_chars": [
+        288,
+        109,
+        103,
+        93,
+        108,
+        102,
+        96,
+        89,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2044-01",
+      "title": "烬狐 VM9 Mini 无线游戏鼠标",
+      "product_id": "P2044",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        516
+      ],
+      "child_chars": [
+        328,
+        248
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2044-02",
+      "title": "烬狐 VM9 Mini 无线游戏鼠标 规格参数",
+      "product_id": "P2044",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        751
+      ],
+      "child_chars": [
+        348,
+        365,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2044-03",
+      "title": "烬狐 VM9 Mini 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2044",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        745
+      ],
+      "child_chars": [
+        287,
+        110,
+        102,
+        92,
+        107,
+        101,
+        95,
+        90,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2045-01",
+      "title": "烬狐 VM6 无线游戏鼠标",
+      "product_id": "P2045",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        498
+      ],
+      "child_chars": [
+        310,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2045-02",
+      "title": "烬狐 VM6 无线游戏鼠标 规格参数",
+      "product_id": "P2045",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        739
+      ],
+      "child_chars": [
+        336,
+        360,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2045-03",
+      "title": "烬狐 VM6 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2045",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        738
+      ],
+      "child_chars": [
+        282,
+        105,
+        97,
+        87,
+        102,
+        96,
+        90,
+        83,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2046-01",
+      "title": "烬狐 VM6 Pro 无线游戏鼠标",
+      "product_id": "P2046",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        506
+      ],
+      "child_chars": [
+        318,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2046-02",
+      "title": "烬狐 VM6 Pro 无线游戏鼠标 规格参数",
+      "product_id": "P2046",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        747
+      ],
+      "child_chars": [
+        344,
+        364,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2046-03",
+      "title": "烬狐 VM6 Pro 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2046",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        742
+      ],
+      "child_chars": [
+        286,
+        109,
+        101,
+        91,
+        106,
+        100,
+        94,
+        87,
+        105
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2047-01",
+      "title": "烬狐 VM6 Ultra 无线游戏鼠标",
+      "product_id": "P2047",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        527
+      ],
+      "child_chars": [
+        339,
+        249
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2047-02",
+      "title": "烬狐 VM6 Ultra 无线游戏鼠标 规格参数",
+      "product_id": "P2047",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        690
+      ],
+      "child_chars": [
+        356,
+        297,
+        112
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2047-03",
+      "title": "烬狐 VM6 Ultra 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2047",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        742
+      ],
+      "child_chars": [
+        288,
+        109,
+        103,
+        93,
+        108,
+        102,
+        96,
+        89,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2048-01",
+      "title": "烬狐 VM3 无线游戏鼠标",
+      "product_id": "P2048",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        498
+      ],
+      "child_chars": [
+        310,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2048-02",
+      "title": "烬狐 VM3 无线游戏鼠标 规格参数",
+      "product_id": "P2048",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        739
+      ],
+      "child_chars": [
+        336,
+        360,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2048-03",
+      "title": "烬狐 VM3 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2048",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        738
+      ],
+      "child_chars": [
+        282,
+        105,
+        97,
+        87,
+        102,
+        96,
+        90,
+        83,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2049-01",
+      "title": "烬狐 VM3 Pro 无线游戏鼠标",
+      "product_id": "P2049",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        512
+      ],
+      "child_chars": [
+        324,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2049-02",
+      "title": "烬狐 VM3 Pro 无线游戏鼠标 规格参数",
+      "product_id": "P2049",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        747
+      ],
+      "child_chars": [
+        344,
+        364,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2049-03",
+      "title": "烬狐 VM3 Pro 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2049",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        742
+      ],
+      "child_chars": [
+        286,
+        109,
+        101,
+        91,
+        106,
+        100,
+        94,
+        87,
+        105
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2050-01",
+      "title": "烬狐 VM3 Mini 无线游戏鼠标",
+      "product_id": "P2050",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        516
+      ],
+      "child_chars": [
+        328,
+        248
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2050-02",
+      "title": "烬狐 VM3 Mini 无线游戏鼠标 规格参数",
+      "product_id": "P2050",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        751
+      ],
+      "child_chars": [
+        348,
+        365,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2050-03",
+      "title": "烬狐 VM3 Mini 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2050",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        745
+      ],
+      "child_chars": [
+        287,
+        110,
+        102,
+        92,
+        107,
+        101,
+        95,
+        90,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2051-01",
+      "title": "烬狐 VM5 无线游戏鼠标",
+      "product_id": "P2051",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        502
+      ],
+      "child_chars": [
+        314,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2051-02",
+      "title": "烬狐 VM5 无线游戏鼠标 规格参数",
+      "product_id": "P2051",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        743
+      ],
+      "child_chars": [
+        340,
+        360,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2051-03",
+      "title": "烬狐 VM5 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2051",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        742
+      ],
+      "child_chars": [
+        282,
+        105,
+        97,
+        87,
+        102,
+        96,
+        90,
+        87,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2052-01",
+      "title": "烬狐 VM5 Pro 无线游戏鼠标",
+      "product_id": "P2052",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        510
+      ],
+      "child_chars": [
+        322,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2052-02",
+      "title": "烬狐 VM5 Pro 无线游戏鼠标 规格参数",
+      "product_id": "P2052",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        751
+      ],
+      "child_chars": [
+        348,
+        364,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2052-03",
+      "title": "烬狐 VM5 Pro 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2052",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        746
+      ],
+      "child_chars": [
+        286,
+        109,
+        101,
+        91,
+        106,
+        100,
+        94,
+        91,
+        105
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2053-01",
+      "title": "烬狐 VM8 无线游戏鼠标",
+      "product_id": "P2053",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        509
+      ],
+      "child_chars": [
+        321,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2053-02",
+      "title": "烬狐 VM8 无线游戏鼠标 规格参数",
+      "product_id": "P2053",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        743
+      ],
+      "child_chars": [
+        340,
+        360,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2053-03",
+      "title": "烬狐 VM8 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2053",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        742
+      ],
+      "child_chars": [
+        282,
+        105,
+        97,
+        87,
+        102,
+        96,
+        90,
+        87,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2054-01",
+      "title": "烬狐 VM8 Pro 无线游戏鼠标",
+      "product_id": "P2054",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        517
+      ],
+      "child_chars": [
+        329,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2054-02",
+      "title": "烬狐 VM8 Pro 无线游戏鼠标 规格参数",
+      "product_id": "P2054",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        751
+      ],
+      "child_chars": [
+        348,
+        364,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2054-03",
+      "title": "烬狐 VM8 Pro 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2054",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        746
+      ],
+      "child_chars": [
+        286,
+        109,
+        101,
+        91,
+        106,
+        100,
+        94,
+        91,
+        105
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2055-01",
+      "title": "烬狐 VM8 Ultra 无线游戏鼠标",
+      "product_id": "P2055",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        525
+      ],
+      "child_chars": [
+        337,
+        249
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2055-02",
+      "title": "烬狐 VM8 Ultra 无线游戏鼠标 规格参数",
+      "product_id": "P2055",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        694
+      ],
+      "child_chars": [
+        360,
+        297,
+        112
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2055-03",
+      "title": "烬狐 VM8 Ultra 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2055",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        746
+      ],
+      "child_chars": [
+        288,
+        109,
+        103,
+        93,
+        108,
+        102,
+        96,
+        93,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2056-01",
+      "title": "烬狐 VM10 无线游戏鼠标",
+      "product_id": "P2056",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        504
+      ],
+      "child_chars": [
+        316,
+        244
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2056-02",
+      "title": "烬狐 VM10 无线游戏鼠标 规格参数",
+      "product_id": "P2056",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        745
+      ],
+      "child_chars": [
+        342,
+        361,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2056-03",
+      "title": "烬狐 VM10 无线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2056",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        743
+      ],
+      "child_chars": [
+        283,
+        106,
+        98,
+        88,
+        103,
+        97,
+        91,
+        88,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2057-01",
+      "title": "烬狐 GM3 有线游戏鼠标",
+      "product_id": "P2057",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        501
+      ],
+      "child_chars": [
+        313,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2057-02",
+      "title": "烬狐 GM3 有线游戏鼠标 规格参数",
+      "product_id": "P2057",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        621
+      ],
+      "child_chars": [
+        325,
+        253,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2057-03",
+      "title": "烬狐 GM3 有线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2057",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        700
+      ],
+      "child_chars": [
+        280,
+        83,
+        97,
+        87,
+        88,
+        96,
+        90,
+        83,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2058-01",
+      "title": "烬狐 GM3 Pro 有线游戏鼠标",
+      "product_id": "P2058",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        509
+      ],
+      "child_chars": [
+        321,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2058-02",
+      "title": "烬狐 GM3 Pro 有线游戏鼠标 规格参数",
+      "product_id": "P2058",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        629
+      ],
+      "child_chars": [
+        333,
+        257,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2058-03",
+      "title": "烬狐 GM3 Pro 有线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2058",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        704
+      ],
+      "child_chars": [
+        284,
+        87,
+        101,
+        91,
+        92,
+        100,
+        94,
+        87,
+        105
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2059-01",
+      "title": "烬狐 GM5 有线游戏鼠标",
+      "product_id": "P2059",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        512
+      ],
+      "child_chars": [
+        324,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2059-02",
+      "title": "烬狐 GM5 有线游戏鼠标 规格参数",
+      "product_id": "P2059",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        625
+      ],
+      "child_chars": [
+        329,
+        253,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2059-03",
+      "title": "烬狐 GM5 有线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2059",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        704
+      ],
+      "child_chars": [
+        280,
+        83,
+        97,
+        87,
+        88,
+        96,
+        90,
+        87,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2060-01",
+      "title": "烬狐 GM5 Pro 有线游戏鼠标",
+      "product_id": "P2060",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        513
+      ],
+      "child_chars": [
+        325,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2060-02",
+      "title": "烬狐 GM5 Pro 有线游戏鼠标 规格参数",
+      "product_id": "P2060",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        633
+      ],
+      "child_chars": [
+        337,
+        257,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2060-03",
+      "title": "烬狐 GM5 Pro 有线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2060",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        708
+      ],
+      "child_chars": [
+        284,
+        87,
+        101,
+        91,
+        92,
+        100,
+        94,
+        91,
+        105
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2061-01",
+      "title": "烬狐 GM6 有线游戏鼠标",
+      "product_id": "P2061",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        501
+      ],
+      "child_chars": [
+        313,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2061-02",
+      "title": "烬狐 GM6 有线游戏鼠标 规格参数",
+      "product_id": "P2061",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        621
+      ],
+      "child_chars": [
+        325,
+        253,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2061-03",
+      "title": "烬狐 GM6 有线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2061",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        700
+      ],
+      "child_chars": [
+        280,
+        83,
+        97,
+        87,
+        88,
+        96,
+        90,
+        83,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2062-01",
+      "title": "烬狐 GM6 Pro 有线游戏鼠标",
+      "product_id": "P2062",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        509
+      ],
+      "child_chars": [
+        321,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2062-02",
+      "title": "烬狐 GM6 Pro 有线游戏鼠标 规格参数",
+      "product_id": "P2062",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        629
+      ],
+      "child_chars": [
+        333,
+        257,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2062-03",
+      "title": "烬狐 GM6 Pro 有线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2062",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        704
+      ],
+      "child_chars": [
+        284,
+        87,
+        101,
+        91,
+        92,
+        100,
+        94,
+        87,
+        105
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2063-01",
+      "title": "烬狐 GM8 有线游戏鼠标",
+      "product_id": "P2063",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        512
+      ],
+      "child_chars": [
+        324,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2063-02",
+      "title": "烬狐 GM8 有线游戏鼠标 规格参数",
+      "product_id": "P2063",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        625
+      ],
+      "child_chars": [
+        329,
+        253,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2063-03",
+      "title": "烬狐 GM8 有线游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2063",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        704
+      ],
+      "child_chars": [
+        280,
+        83,
+        97,
+        87,
+        88,
+        96,
+        90,
+        87,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2064-01",
+      "title": "烬狐 TM6 镁合金无线鼠标",
+      "product_id": "P2064",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        513
+      ],
+      "child_chars": [
+        325,
+        244
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2064-02",
+      "title": "烬狐 TM6 镁合金无线鼠标 规格参数",
+      "product_id": "P2064",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        673
+      ],
+      "child_chars": [
+        339,
+        292,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2064-03",
+      "title": "烬狐 TM6 镁合金无线鼠标 使用、保养与常见问题",
+      "product_id": "P2064",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        737
+      ],
+      "child_chars": [
+        283,
+        104,
+        98,
+        88,
+        103,
+        97,
+        91,
+        84,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2065-01",
+      "title": "烬狐 TM6 Pro 镁合金无线鼠标",
+      "product_id": "P2065",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        527
+      ],
+      "child_chars": [
+        339,
+        248
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2065-02",
+      "title": "烬狐 TM6 Pro 镁合金无线鼠标 规格参数",
+      "product_id": "P2065",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        684
+      ],
+      "child_chars": [
+        350,
+        296,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2065-03",
+      "title": "烬狐 TM6 Pro 镁合金无线鼠标 使用、保养与常见问题",
+      "product_id": "P2065",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        741
+      ],
+      "child_chars": [
+        287,
+        108,
+        102,
+        92,
+        107,
+        101,
+        95,
+        88,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2066-01",
+      "title": "烬狐 TM8 镁合金无线鼠标",
+      "product_id": "P2066",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        511
+      ],
+      "child_chars": [
+        323,
+        244
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2066-02",
+      "title": "烬狐 TM8 镁合金无线鼠标 规格参数",
+      "product_id": "P2066",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        677
+      ],
+      "child_chars": [
+        343,
+        292,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2066-03",
+      "title": "烬狐 TM8 镁合金无线鼠标 使用、保养与常见问题",
+      "product_id": "P2066",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        741
+      ],
+      "child_chars": [
+        283,
+        104,
+        98,
+        88,
+        103,
+        97,
+        91,
+        88,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2067-01",
+      "title": "烬狐 TM8 Pro 镁合金无线鼠标",
+      "product_id": "P2067",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        531
+      ],
+      "child_chars": [
+        343,
+        248
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2067-02",
+      "title": "烬狐 TM8 Pro 镁合金无线鼠标 规格参数",
+      "product_id": "P2067",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        688
+      ],
+      "child_chars": [
+        354,
+        296,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2067-03",
+      "title": "烬狐 TM8 Pro 镁合金无线鼠标 使用、保养与常见问题",
+      "product_id": "P2067",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        745
+      ],
+      "child_chars": [
+        287,
+        108,
+        102,
+        92,
+        107,
+        101,
+        95,
+        92,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2068-01",
+      "title": "烬狐 TM9 镁合金无线鼠标",
+      "product_id": "P2068",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        519
+      ],
+      "child_chars": [
+        331,
+        244
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2068-02",
+      "title": "烬狐 TM9 镁合金无线鼠标 规格参数",
+      "product_id": "P2068",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        676
+      ],
+      "child_chars": [
+        342,
+        292,
+        107
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2068-03",
+      "title": "烬狐 TM9 镁合金无线鼠标 使用、保养与常见问题",
+      "product_id": "P2068",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        737
+      ],
+      "child_chars": [
+        283,
+        104,
+        98,
+        88,
+        103,
+        97,
+        91,
+        84,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2069-01",
+      "title": "烬狐 TM9 Pro 镁合金无线鼠标",
+      "product_id": "P2069",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        527
+      ],
+      "child_chars": [
+        339,
+        248
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2069-02",
+      "title": "烬狐 TM9 Pro 镁合金无线鼠标 规格参数",
+      "product_id": "P2069",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        684
+      ],
+      "child_chars": [
+        350,
+        296,
+        111
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2069-03",
+      "title": "烬狐 TM9 Pro 镁合金无线鼠标 使用、保养与常见问题",
+      "product_id": "P2069",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        741
+      ],
+      "child_chars": [
+        287,
+        108,
+        102,
+        92,
+        107,
+        101,
+        95,
+        88,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2070-01",
+      "title": "烬狐 EM2 入门游戏鼠标",
+      "product_id": "P2070",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        503
+      ],
+      "child_chars": [
+        315,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2070-02",
+      "title": "烬狐 EM2 入门游戏鼠标 规格参数",
+      "product_id": "P2070",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        624
+      ],
+      "child_chars": [
+        328,
+        253,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2070-03",
+      "title": "烬狐 EM2 入门游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2070",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        700
+      ],
+      "child_chars": [
+        280,
+        83,
+        97,
+        87,
+        88,
+        96,
+        90,
+        83,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2071-01",
+      "title": "烬狐 EM3 入门游戏鼠标",
+      "product_id": "P2071",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        496
+      ],
+      "child_chars": [
+        308,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2071-02",
+      "title": "烬狐 EM3 入门游戏鼠标 规格参数",
+      "product_id": "P2071",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        624
+      ],
+      "child_chars": [
+        328,
+        253,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2071-03",
+      "title": "烬狐 EM3 入门游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2071",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        700
+      ],
+      "child_chars": [
+        280,
+        83,
+        97,
+        87,
+        88,
+        96,
+        90,
+        83,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2072-01",
+      "title": "烬狐 EM4 入门游戏鼠标",
+      "product_id": "P2072",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        507
+      ],
+      "child_chars": [
+        319,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2072-02",
+      "title": "烬狐 EM4 入门游戏鼠标 规格参数",
+      "product_id": "P2072",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        628
+      ],
+      "child_chars": [
+        332,
+        253,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2072-03",
+      "title": "烬狐 EM4 入门游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2072",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        704
+      ],
+      "child_chars": [
+        280,
+        83,
+        97,
+        87,
+        88,
+        96,
+        90,
+        87,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2073-01",
+      "title": "烬狐 EM5 入门游戏鼠标",
+      "product_id": "P2073",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        508
+      ],
+      "child_chars": [
+        320,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2073-02",
+      "title": "烬狐 EM5 入门游戏鼠标 规格参数",
+      "product_id": "P2073",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        707
+      ],
+      "child_chars": [
+        341,
+        323,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2073-03",
+      "title": "烬狐 EM5 入门游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2073",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        733
+      ],
+      "child_chars": [
+        282,
+        100,
+        97,
+        87,
+        102,
+        96,
+        90,
+        83,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2074-01",
+      "title": "烬狐 EM6 入门游戏鼠标",
+      "product_id": "P2074",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        512
+      ],
+      "child_chars": [
+        324,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2074-02",
+      "title": "烬狐 EM6 入门游戏鼠标 规格参数",
+      "product_id": "P2074",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        711
+      ],
+      "child_chars": [
+        345,
+        323,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2074-03",
+      "title": "烬狐 EM6 入门游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2074",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        737
+      ],
+      "child_chars": [
+        282,
+        100,
+        97,
+        87,
+        102,
+        96,
+        90,
+        87,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2075-01",
+      "title": "烬狐 EM7 入门游戏鼠标",
+      "product_id": "P2075",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        508
+      ],
+      "child_chars": [
+        320,
+        243
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2075-02",
+      "title": "烬狐 EM7 入门游戏鼠标 规格参数",
+      "product_id": "P2075",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        707
+      ],
+      "child_chars": [
+        341,
+        323,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2075-03",
+      "title": "烬狐 EM7 入门游戏鼠标 使用、保养与常见问题",
+      "product_id": "P2075",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        733
+      ],
+      "child_chars": [
+        282,
+        100,
+        97,
+        87,
+        102,
+        96,
+        90,
+        83,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2076-01",
+      "title": "烬狐 AH9 Pro 头戴式游戏耳机",
+      "product_id": "P2076",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        503
+      ],
+      "child_chars": [
+        312,
+        251
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2076-02",
+      "title": "烬狐 AH9 Pro 头戴式游戏耳机 规格参数",
+      "product_id": "P2076",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        762
+      ],
+      "child_chars": [
+        336,
+        363,
+        136
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2076-03",
+      "title": "烬狐 AH9 Pro 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2076",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        773
+      ],
+      "child_chars": [
+        292,
+        107,
+        109,
+        108,
+        101,
+        86,
+        118,
+        100,
+        97
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2077-01",
+      "title": "烬狐 AH9 头戴式游戏耳机",
+      "product_id": "P2077",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        495
+      ],
+      "child_chars": [
+        304,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2077-02",
+      "title": "烬狐 AH9 头戴式游戏耳机 规格参数",
+      "product_id": "P2077",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        754
+      ],
+      "child_chars": [
+        328,
+        359,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2077-03",
+      "title": "烬狐 AH9 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2077",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        769
+      ],
+      "child_chars": [
+        288,
+        103,
+        105,
+        104,
+        97,
+        82,
+        114,
+        96,
+        93
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2078-01",
+      "title": "烬狐 AH9 Wireless 头戴式游戏耳机",
+      "product_id": "P2078",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        517
+      ],
+      "child_chars": [
+        326,
+        256
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2078-02",
+      "title": "烬狐 AH9 Wireless 头戴式游戏耳机 规格参数",
+      "product_id": "P2078",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        668
+      ],
+      "child_chars": [
+        348,
+        262,
+        141
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2078-03",
+      "title": "烬狐 AH9 Wireless 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2078",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        765
+      ],
+      "child_chars": [
+        300,
+        96,
+        114,
+        113,
+        106,
+        91,
+        123,
+        105,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2079-01",
+      "title": "烬狐 AH7 头戴式游戏耳机",
+      "product_id": "P2079",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        493
+      ],
+      "child_chars": [
+        302,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2079-02",
+      "title": "烬狐 AH7 头戴式游戏耳机 规格参数",
+      "product_id": "P2079",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        752
+      ],
+      "child_chars": [
+        326,
+        359,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2079-03",
+      "title": "烬狐 AH7 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2079",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        767
+      ],
+      "child_chars": [
+        288,
+        103,
+        103,
+        104,
+        97,
+        82,
+        114,
+        96,
+        93
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2080-01",
+      "title": "烬狐 AH7 Pro 头戴式游戏耳机",
+      "product_id": "P2080",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        503
+      ],
+      "child_chars": [
+        312,
+        251
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2080-02",
+      "title": "烬狐 AH7 Pro 头戴式游戏耳机 规格参数",
+      "product_id": "P2080",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        762
+      ],
+      "child_chars": [
+        336,
+        363,
+        136
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2080-03",
+      "title": "烬狐 AH7 Pro 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2080",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        773
+      ],
+      "child_chars": [
+        292,
+        107,
+        109,
+        108,
+        101,
+        86,
+        118,
+        100,
+        97
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2081-01",
+      "title": "烬狐 AH7 Wireless 头戴式游戏耳机",
+      "product_id": "P2081",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        515
+      ],
+      "child_chars": [
+        324,
+        256
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2081-02",
+      "title": "烬狐 AH7 Wireless 头戴式游戏耳机 规格参数",
+      "product_id": "P2081",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        666
+      ],
+      "child_chars": [
+        346,
+        262,
+        141
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2081-03",
+      "title": "烬狐 AH7 Wireless 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2081",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        763
+      ],
+      "child_chars": [
+        300,
+        96,
+        112,
+        113,
+        106,
+        91,
+        123,
+        105,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2082-01",
+      "title": "烬狐 AH5 头戴式游戏耳机",
+      "product_id": "P2082",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        493
+      ],
+      "child_chars": [
+        302,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2082-02",
+      "title": "烬狐 AH5 头戴式游戏耳机 规格参数",
+      "product_id": "P2082",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        752
+      ],
+      "child_chars": [
+        326,
+        359,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2082-03",
+      "title": "烬狐 AH5 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2082",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        767
+      ],
+      "child_chars": [
+        288,
+        103,
+        103,
+        104,
+        97,
+        82,
+        114,
+        96,
+        93
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2083-01",
+      "title": "烬狐 AH5 Pro 头戴式游戏耳机",
+      "product_id": "P2083",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        503
+      ],
+      "child_chars": [
+        312,
+        251
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2083-02",
+      "title": "烬狐 AH5 Pro 头戴式游戏耳机 规格参数",
+      "product_id": "P2083",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        762
+      ],
+      "child_chars": [
+        336,
+        363,
+        136
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2083-03",
+      "title": "烬狐 AH5 Pro 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2083",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        773
+      ],
+      "child_chars": [
+        292,
+        107,
+        109,
+        108,
+        101,
+        86,
+        118,
+        100,
+        97
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2084-01",
+      "title": "烬狐 AH5 Wireless 头戴式游戏耳机",
+      "product_id": "P2084",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        515
+      ],
+      "child_chars": [
+        324,
+        256
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2084-02",
+      "title": "烬狐 AH5 Wireless 头戴式游戏耳机 规格参数",
+      "product_id": "P2084",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        666
+      ],
+      "child_chars": [
+        346,
+        262,
+        141
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2084-03",
+      "title": "烬狐 AH5 Wireless 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2084",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        763
+      ],
+      "child_chars": [
+        300,
+        96,
+        112,
+        113,
+        106,
+        91,
+        123,
+        105,
+        102
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2085-01",
+      "title": "烬狐 AH3 头戴式游戏耳机",
+      "product_id": "P2085",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        484
+      ],
+      "child_chars": [
+        293,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2085-02",
+      "title": "烬狐 AH3 头戴式游戏耳机 规格参数",
+      "product_id": "P2085",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        638
+      ],
+      "child_chars": [
+        319,
+        252,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2085-03",
+      "title": "烬狐 AH3 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2085",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        732
+      ],
+      "child_chars": [
+        288,
+        81,
+        103,
+        104,
+        84,
+        82,
+        114,
+        96,
+        93
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2086-01",
+      "title": "烬狐 AH3 Pro 头戴式游戏耳机",
+      "product_id": "P2086",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        494
+      ],
+      "child_chars": [
+        303,
+        251
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2086-02",
+      "title": "烬狐 AH3 Pro 头戴式游戏耳机 规格参数",
+      "product_id": "P2086",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        648
+      ],
+      "child_chars": [
+        329,
+        256,
+        136
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2086-03",
+      "title": "烬狐 AH3 Pro 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2086",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        738
+      ],
+      "child_chars": [
+        292,
+        85,
+        109,
+        108,
+        88,
+        86,
+        118,
+        100,
+        97
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2087-01",
+      "title": "烬狐 AH1 头戴式游戏耳机",
+      "product_id": "P2087",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        484
+      ],
+      "child_chars": [
+        293,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2087-02",
+      "title": "烬狐 AH1 头戴式游戏耳机 规格参数",
+      "product_id": "P2087",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        638
+      ],
+      "child_chars": [
+        319,
+        252,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2087-03",
+      "title": "烬狐 AH1 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2087",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        732
+      ],
+      "child_chars": [
+        288,
+        81,
+        103,
+        104,
+        84,
+        82,
+        114,
+        96,
+        93
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2088-01",
+      "title": "烬狐 AH1 Pro 头戴式游戏耳机",
+      "product_id": "P2088",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        494
+      ],
+      "child_chars": [
+        303,
+        251
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2088-02",
+      "title": "烬狐 AH1 Pro 头戴式游戏耳机 规格参数",
+      "product_id": "P2088",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        648
+      ],
+      "child_chars": [
+        329,
+        256,
+        136
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2088-03",
+      "title": "烬狐 AH1 Pro 头戴式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2088",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        738
+      ],
+      "child_chars": [
+        292,
+        85,
+        109,
+        108,
+        88,
+        86,
+        118,
+        100,
+        97
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2089-01",
+      "title": "烬狐 EH9 入耳式游戏耳机",
+      "product_id": "P2089",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        485
+      ],
+      "child_chars": [
+        294,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2089-02",
+      "title": "烬狐 EH9 入耳式游戏耳机 规格参数",
+      "product_id": "P2089",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        745
+      ],
+      "child_chars": [
+        319,
+        359,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2089-03",
+      "title": "烬狐 EH9 入耳式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2089",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        764
+      ],
+      "child_chars": [
+        288,
+        103,
+        102,
+        104,
+        96,
+        82,
+        114,
+        96,
+        92
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2090-01",
+      "title": "烬狐 EH7 入耳式游戏耳机",
+      "product_id": "P2090",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        486
+      ],
+      "child_chars": [
+        295,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2090-02",
+      "title": "烬狐 EH7 入耳式游戏耳机 规格参数",
+      "product_id": "P2090",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        746
+      ],
+      "child_chars": [
+        320,
+        359,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2090-03",
+      "title": "烬狐 EH7 入耳式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2090",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        765
+      ],
+      "child_chars": [
+        288,
+        103,
+        103,
+        104,
+        96,
+        82,
+        114,
+        96,
+        92
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2091-01",
+      "title": "烬狐 EH7 Pro 入耳式游戏耳机",
+      "product_id": "P2091",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        493
+      ],
+      "child_chars": [
+        302,
+        251
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2091-02",
+      "title": "烬狐 EH7 Pro 入耳式游戏耳机 规格参数",
+      "product_id": "P2091",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        753
+      ],
+      "child_chars": [
+        327,
+        363,
+        136
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2091-03",
+      "title": "烬狐 EH7 Pro 入耳式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2091",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        768
+      ],
+      "child_chars": [
+        292,
+        107,
+        106,
+        108,
+        100,
+        86,
+        118,
+        100,
+        96
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2092-01",
+      "title": "烬狐 EH5 入耳式游戏耳机",
+      "product_id": "P2092",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        486
+      ],
+      "child_chars": [
+        295,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2092-02",
+      "title": "烬狐 EH5 入耳式游戏耳机 规格参数",
+      "product_id": "P2092",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        746
+      ],
+      "child_chars": [
+        320,
+        359,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2092-03",
+      "title": "烬狐 EH5 入耳式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2092",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        765
+      ],
+      "child_chars": [
+        288,
+        103,
+        103,
+        104,
+        96,
+        82,
+        114,
+        96,
+        92
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2093-01",
+      "title": "烬狐 EH5 Pro 入耳式游戏耳机",
+      "product_id": "P2093",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        493
+      ],
+      "child_chars": [
+        302,
+        251
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2093-02",
+      "title": "烬狐 EH5 Pro 入耳式游戏耳机 规格参数",
+      "product_id": "P2093",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        753
+      ],
+      "child_chars": [
+        327,
+        363,
+        136
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2093-03",
+      "title": "烬狐 EH5 Pro 入耳式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2093",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        768
+      ],
+      "child_chars": [
+        292,
+        107,
+        106,
+        108,
+        100,
+        86,
+        118,
+        100,
+        96
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2094-01",
+      "title": "烬狐 EH3 入耳式游戏耳机",
+      "product_id": "P2094",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        477
+      ],
+      "child_chars": [
+        286,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2094-02",
+      "title": "烬狐 EH3 入耳式游戏耳机 规格参数",
+      "product_id": "P2094",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        633
+      ],
+      "child_chars": [
+        314,
+        252,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2094-03",
+      "title": "烬狐 EH3 入耳式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2094",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        731
+      ],
+      "child_chars": [
+        288,
+        81,
+        103,
+        104,
+        84,
+        82,
+        114,
+        96,
+        92
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2095-01",
+      "title": "烬狐 EH3 Pro 入耳式游戏耳机",
+      "product_id": "P2095",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        484
+      ],
+      "child_chars": [
+        293,
+        251
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2095-02",
+      "title": "烬狐 EH3 Pro 入耳式游戏耳机 规格参数",
+      "product_id": "P2095",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        640
+      ],
+      "child_chars": [
+        321,
+        256,
+        136
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2095-03",
+      "title": "烬狐 EH3 Pro 入耳式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2095",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        734
+      ],
+      "child_chars": [
+        292,
+        85,
+        106,
+        108,
+        88,
+        86,
+        118,
+        100,
+        96
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2096-01",
+      "title": "烬狐 EH1 入耳式游戏耳机",
+      "product_id": "P2096",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        478
+      ],
+      "child_chars": [
+        287,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2096-02",
+      "title": "烬狐 EH1 入耳式游戏耳机 规格参数",
+      "product_id": "P2096",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        628
+      ],
+      "child_chars": [
+        309,
+        252,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2096-03",
+      "title": "烬狐 EH1 入耳式游戏耳机 使用、保养与常见问题",
+      "product_id": "P2096",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        717
+      ],
+      "child_chars": [
+        284,
+        81,
+        103,
+        94,
+        84,
+        82,
+        114,
+        96,
+        92
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2097-01",
+      "title": "烬狐 BH5 Pro 头戴式蓝牙耳机",
+      "product_id": "P2097",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        505
+      ],
+      "child_chars": [
+        314,
+        251
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2097-02",
+      "title": "烬狐 BH5 Pro 头戴式蓝牙耳机 规格参数",
+      "product_id": "P2097",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        668
+      ],
+      "child_chars": [
+        317,
+        288,
+        136
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2097-03",
+      "title": "烬狐 BH5 Pro 头戴式蓝牙耳机 使用、保养与常见问题",
+      "product_id": "P2097",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        750
+      ],
+      "child_chars": [
+        292,
+        97,
+        105,
+        98,
+        101,
+        86,
+        118,
+        101,
+        97
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2098-01",
+      "title": "烬狐 BH5 头戴式蓝牙耳机",
+      "product_id": "P2098",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        497
+      ],
+      "child_chars": [
+        306,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2098-02",
+      "title": "烬狐 BH5 头戴式蓝牙耳机 规格参数",
+      "product_id": "P2098",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        660
+      ],
+      "child_chars": [
+        309,
+        284,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2098-03",
+      "title": "烬狐 BH5 头戴式蓝牙耳机 使用、保养与常见问题",
+      "product_id": "P2098",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        746
+      ],
+      "child_chars": [
+        288,
+        93,
+        101,
+        94,
+        97,
+        82,
+        114,
+        97,
+        93
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2099-01",
+      "title": "烬狐 BH3 头戴式蓝牙耳机",
+      "product_id": "P2099",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        496
+      ],
+      "child_chars": [
+        305,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2099-02",
+      "title": "烬狐 BH3 头戴式蓝牙耳机 规格参数",
+      "product_id": "P2099",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        659
+      ],
+      "child_chars": [
+        308,
+        284,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2099-03",
+      "title": "烬狐 BH3 头戴式蓝牙耳机 使用、保养与常见问题",
+      "product_id": "P2099",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        745
+      ],
+      "child_chars": [
+        288,
+        93,
+        101,
+        94,
+        96,
+        82,
+        114,
+        97,
+        93
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2100-01",
+      "title": "烬狐 BH1 头戴式蓝牙耳机",
+      "product_id": "P2100",
+      "doc_type": "product_overview",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        497
+      ],
+      "child_chars": [
+        306,
+        247
+      ],
+      "dropped_sections": [
+        "关于价格与库存"
+      ],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2100-02",
+      "title": "烬狐 BH1 头戴式蓝牙耳机 规格参数",
+      "product_id": "P2100",
+      "doc_type": "product_spec",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        660
+      ],
+      "child_chars": [
+        309,
+        284,
+        132
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "P2100-03",
+      "title": "烬狐 BH1 头戴式蓝牙耳机 使用、保养与常见问题",
+      "product_id": "P2100",
+      "doc_type": "product_faq",
+      "parents": 1,
+      "chunks": 9,
+      "parent_chars": [
+        746
+      ],
+      "child_chars": [
+        288,
+        93,
+        102,
+        94,
+        96,
+        82,
+        114,
+        97,
+        93
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-BND-001",
+      "title": "不能查询他人订单与隐私边界",
+      "product_id": "STORE",
+      "doc_type": "refusal_boundary",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        271
+      ],
+      "child_chars": [
+        194,
+        112
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-BND-002",
+      "title": "不能承诺赔付金额与超政策补偿",
+      "product_id": "STORE",
+      "doc_type": "refusal_boundary",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        254
+      ],
+      "child_chars": [
+        176,
+        115
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-BND-003",
+      "title": "敏感信息索要与禁售品边界",
+      "product_id": "STORE",
+      "doc_type": "refusal_boundary",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        250
+      ],
+      "child_chars": [
+        183,
+        104
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-INV-001",
+      "title": "发票类型与开票范围",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        567
+      ],
+      "child_chars": [
+        127,
+        272,
+        212
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-INV-002",
+      "title": "开票流程与所需信息",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        304
+      ],
+      "child_chars": [
+        178,
+        174
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-INV-003",
+      "title": "电子发票下载、换开与红冲",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        268
+      ],
+      "child_chars": [
+        186,
+        116
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-INV-004",
+      "title": "增值税专用发票（企业客户）",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        271
+      ],
+      "child_chars": [
+        192,
+        115
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-INV-005",
+      "title": "发票常见问题",
+      "product_id": "STORE",
+      "doc_type": "policy_faq",
+      "parents": 1,
+      "chunks": 6,
+      "parent_chars": [
+        364
+      ],
+      "child_chars": [
+        88,
+        72,
+        78,
+        81,
+        65,
+        77
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-LOG-001",
+      "title": "发货时效与仓库分配",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        268
+      ],
+      "child_chars": [
+        197,
+        103
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-LOG-002",
+      "title": "配送范围与时效标准",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        475
+      ],
+      "child_chars": [
+        111,
+        292,
+        100
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-LOG-003",
+      "title": "节假日、偏远地区与不可抗力",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        263
+      ],
+      "child_chars": [
+        189,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-LOG-004",
+      "title": "物流异常、丢件与破损处理",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        254
+      ],
+      "child_chars": [
+        176,
+        112
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-LOG-005",
+      "title": "自提、加急与指定快递",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        232
+      ],
+      "child_chars": [
+        163,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-LOG-006",
+      "title": "物流常见问题",
+      "product_id": "STORE",
+      "doc_type": "policy_faq",
+      "parents": 1,
+      "chunks": 6,
+      "parent_chars": [
+        367
+      ],
+      "child_chars": [
+        81,
+        82,
+        81,
+        75,
+        71,
+        74
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-PLT-001",
+      "title": "星潮商城售后争议处理规则",
+      "product_id": "PLATFORM",
+      "doc_type": "platform_rule",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        270
+      ],
+      "child_chars": [
+        210,
+        100
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-PLT-002",
+      "title": "平台介入与举证期限",
+      "product_id": "PLATFORM",
+      "doc_type": "platform_rule",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        265
+      ],
+      "child_chars": [
+        190,
+        112
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-PLT-003",
+      "title": "平台规则变更公告（2026 年 6 月）",
+      "product_id": "PLATFORM",
+      "doc_type": "policy_notice",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        286
+      ],
+      "child_chars": [
+        224,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-PRI-001",
+      "title": "价格保护规则总则（2026 版）",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        484
+      ],
+      "child_chars": [
+        133,
+        211,
+        199
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-PRI-002",
+      "title": "价格保护规则（2024 版，已失效）",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        264
+      ],
+      "child_chars": [
+        205,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-PRI-003",
+      "title": "价保适用范围与例外",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        291
+      ],
+      "child_chars": [
+        213,
+        110
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-PRI-004",
+      "title": "价保申请流程与补差计算",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        283
+      ],
+      "child_chars": [
+        196,
+        120
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-PRI-005",
+      "title": "价保常见问题",
+      "product_id": "STORE",
+      "doc_type": "policy_faq",
+      "parents": 1,
+      "chunks": 6,
+      "parent_chars": [
+        313
+      ],
+      "child_chars": [
+        67,
+        83,
+        64,
+        59,
+        71,
+        66
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-RET-001",
+      "title": "退换货政策总则（2026 版）",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        585
+      ],
+      "child_chars": [
+        287,
+        270,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-RET-002",
+      "title": "退换货政策总则（2024 版，已失效）",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        300
+      ],
+      "child_chars": [
+        242,
+        101
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-RET-003",
+      "title": "七天无理由退货适用条件与例外",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        353
+      ],
+      "child_chars": [
+        277,
+        119
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-RET-004",
+      "title": "质量问题退换货与检测流程",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        327
+      ],
+      "child_chars": [
+        248,
+        113
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-RET-005",
+      "title": "退货运费、运费险与包装要求",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        461
+      ],
+      "child_chars": [
+        111,
+        208,
+        193
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-RET-006",
+      "title": "退款时效与退款路径",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        307
+      ],
+      "child_chars": [
+        215,
+        123
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-RET-007",
+      "title": "换货、补发与维修规则",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        277
+      ],
+      "child_chars": [
+        203,
+        106
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-RET-008",
+      "title": "退换货常见问题",
+      "product_id": "STORE",
+      "doc_type": "policy_faq",
+      "parents": 1,
+      "chunks": 7,
+      "parent_chars": [
+        481
+      ],
+      "child_chars": [
+        93,
+        81,
+        89,
+        79,
+        92,
+        88,
+        81
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-TRD-001",
+      "title": "以旧换新总则与回收范围",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        279
+      ],
+      "child_chars": [
+        188,
+        124
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-TRD-002",
+      "title": "回收估价与成色标准",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 4,
+      "parent_chars": [
+        760
+      ],
+      "child_chars": [
+        112,
+        490,
+        143,
+        108
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-TRD-003",
+      "title": "回收流程与数据清除",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        280
+      ],
+      "child_chars": [
+        200,
+        112
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-TRD-004",
+      "title": "换新补贴与优惠叠加",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        272
+      ],
+      "child_chars": [
+        198,
+        105
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "POL-TRD-005",
+      "title": "以旧换新常见问题",
+      "product_id": "STORE",
+      "doc_type": "policy_faq",
+      "parents": 1,
+      "chunks": 7,
+      "parent_chars": [
+        404
+      ],
+      "child_chars": [
+        72,
+        79,
+        82,
+        80,
+        75,
+        70,
+        74
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "RAW-TBL-INV-invoice-types-CSV",
+      "title": "发票类型对比表",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        454
+      ],
+      "child_chars": [
+        270,
+        197
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "RAW-TBL-LOG-delivery-sla-CSV",
+      "title": "配送时效标准",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        472
+      ],
+      "child_chars": [
+        289,
+        195
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "RAW-SCAN-PLT-platform-notice-scan-PDF",
+      "title": "星潮商城规则变更公告（扫描件）",
+      "product_id": "PLATFORM",
+      "doc_type": "platform_rule",
+      "parents": 1,
+      "chunks": 1,
+      "parent_chars": [
+        384
+      ],
+      "child_chars": [
+        406
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "RAW-TBL-PRI-price-protection-window-CSV",
+      "title": "价格保护期限表",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        396
+      ],
+      "child_chars": [
+        200,
+        209
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "RAW-TBL-RET-return-shipping-CSV",
+      "title": "退货运费标准",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 2,
+      "parent_chars": [
+        388
+      ],
+      "child_chars": [
+        201,
+        199
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "RAW-SCAN-TRD-recycle-receipt-scan-PDF",
+      "title": "以旧换新回收单（扫描件）",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 1,
+      "parent_chars": [
+        366
+      ],
+      "child_chars": [
+        385
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    },
+    {
+      "doc_id": "RAW-TBL-TRD-trade-in-valuation-CSV",
+      "title": "以旧换新估价表",
+      "product_id": "STORE",
+      "doc_type": "store_policy",
+      "parents": 1,
+      "chunks": 3,
+      "parent_chars": [
+        757
+      ],
+      "child_chars": [
+        488,
+        141,
+        204
+      ],
+      "dropped_sections": [],
+      "dropped_blocks": 0,
+      "warnings": []
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

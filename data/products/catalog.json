@@ -1,0 +1,3670 @@
+{
+  "brand": "烬狐 EMBERFOX",
+  "effective_date": "2026-10-24",
+  "description": "虚构电竞外设品牌商品库，用于电商客服 RAG 与工具调用演示。",
+  "products": [
+    {
+      "id": "P2001",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK75 Pro",
+      "name": "烬狐 VK75 Pro 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 969,
+      "stock": 56,
+      "specs": "75% 配列，烬狐磁轴 Pro，三模，8000Hz 回报率",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "75%",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Pro",
+        "polling": "8000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "4000mAh",
+        "weight": "约 820g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2002",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK75",
+      "name": "烬狐 VK75 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 699,
+      "stock": 71,
+      "specs": "75% 配列，烬狐磁轴，有线，1000Hz 回报率",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "75%",
+        "connection": "有线",
+        "switch": "烬狐磁轴",
+        "polling": "1000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "无电池（有线供电）",
+        "weight": "约 820g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2003",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK75 Ultra",
+      "name": "烬狐 VK75 Ultra 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 1299,
+      "stock": 18,
+      "specs": "75% 配列，烬狐磁轴 Ultra，三模，8000Hz 回报率",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "75%",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Ultra",
+        "polling": "8000Hz",
+        "trigger": "0.005–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "全铝 CNC 机身",
+        "battery": "4000mAh",
+        "weight": "约 820g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2004",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK75 SE",
+      "name": "烬狐 VK75 SE 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 499,
+      "stock": 120,
+      "specs": "75% 配列，烬狐磁轴，有线，1000Hz 回报率",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "75%",
+        "connection": "有线",
+        "switch": "烬狐磁轴",
+        "polling": "1000Hz",
+        "trigger": "0.1–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "ABS 注塑 + 硅胶填充",
+        "battery": "无电池（有线供电）",
+        "weight": "约 820g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2005",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK65",
+      "name": "烬狐 VK65 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 649,
+      "stock": 52,
+      "specs": "65% 配列，烬狐磁轴，有线，1000Hz 回报率",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "65%",
+        "connection": "有线",
+        "switch": "烬狐磁轴",
+        "polling": "1000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "无电池（有线供电）",
+        "weight": "约 690g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2006",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK65 Pro",
+      "name": "烬狐 VK65 Pro 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 899,
+      "stock": 38,
+      "specs": "65% 配列，烬狐磁轴 Pro，三模，8000Hz 回报率",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "65%",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Pro",
+        "polling": "8000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "4000mAh",
+        "weight": "约 690g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2007",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK65 Ultra",
+      "name": "烬狐 VK65 Ultra 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 1099,
+      "stock": 21,
+      "specs": "65% 配列，烬狐磁轴 Ultra，三模，8000Hz 回报率",
+      "activity": "满 800 减 80",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "65%",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Ultra",
+        "polling": "8000Hz",
+        "trigger": "0.005–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "全铝 CNC 机身",
+        "battery": "4000mAh",
+        "weight": "约 690g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2008",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK68",
+      "name": "烬狐 VK68 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 669,
+      "stock": 47,
+      "specs": "68% 配列，烬狐磁轴，有线，1000Hz 回报率",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "68%",
+        "connection": "有线",
+        "switch": "烬狐磁轴",
+        "polling": "1000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "无电池（有线供电）",
+        "weight": "约 730g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2009",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK68 Pro",
+      "name": "烬狐 VK68 Pro 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 929,
+      "stock": 33,
+      "specs": "68% 配列，烬狐磁轴 Pro，三模，8000Hz 回报率",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "68%",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Pro",
+        "polling": "8000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "4000mAh",
+        "weight": "约 730g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2010",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK68 Ultra",
+      "name": "烬狐 VK68 Ultra 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 1199,
+      "stock": 0,
+      "specs": "68% 配列，烬狐磁轴 Ultra，三模，8000Hz 回报率",
+      "activity": "晒单返 20 元券",
+      "shipping": "补货后 7 天内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "68%",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Ultra",
+        "polling": "8000Hz",
+        "trigger": "0.005–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "全铝 CNC 机身",
+        "battery": "4000mAh",
+        "weight": "约 730g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2011",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK60",
+      "name": "烬狐 VK60 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 599,
+      "stock": 64,
+      "specs": "60% 配列，烬狐磁轴，有线，1000Hz 回报率",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "60%",
+        "connection": "有线",
+        "switch": "烬狐磁轴",
+        "polling": "1000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "无电池（有线供电）",
+        "weight": "约 620g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2012",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK87",
+      "name": "烬狐 VK87 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 799,
+      "stock": 44,
+      "specs": "87键 配列，烬狐磁轴，有线，1000Hz 回报率",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "87键",
+        "connection": "有线",
+        "switch": "烬狐磁轴",
+        "polling": "1000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "无电池（有线供电）",
+        "weight": "约 980g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2013",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK87 Pro",
+      "name": "烬狐 VK87 Pro 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 1099,
+      "stock": 27,
+      "specs": "87键 配列，烬狐磁轴 Pro，三模，8000Hz 回报率",
+      "activity": "满 800 减 80",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "87键",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Pro",
+        "polling": "8000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "4000mAh",
+        "weight": "约 980g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2014",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK87 Ultra",
+      "name": "烬狐 VK87 Ultra 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 1399,
+      "stock": 12,
+      "specs": "87键 配列，烬狐磁轴 Ultra，三模，8000Hz 回报率",
+      "activity": "满 500 减 50",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "87键",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Ultra",
+        "polling": "8000Hz",
+        "trigger": "0.005–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "全铝 CNC 机身",
+        "battery": "4000mAh",
+        "weight": "约 980g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2015",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK98",
+      "name": "烬狐 VK98 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 999,
+      "stock": 36,
+      "specs": "98键 配列，烬狐磁轴，三模，1000Hz 回报率",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "98键",
+        "connection": "三模",
+        "switch": "烬狐磁轴",
+        "polling": "1000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "4000mAh",
+        "weight": "约 1120g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2016",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK98 Pro",
+      "name": "烬狐 VK98 Pro 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 1199,
+      "stock": 24,
+      "specs": "98键 配列，烬狐磁轴 Pro，三模，8000Hz 回报率",
+      "activity": "晒单返 20 元券",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "98键",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Pro",
+        "polling": "8000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "4000mAh",
+        "weight": "约 1120g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2017",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK98 Ultra",
+      "name": "烬狐 VK98 Ultra 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 1499,
+      "stock": 0,
+      "specs": "98键 配列，烬狐磁轴 Ultra，三模，8000Hz 回报率",
+      "activity": "会员专享 95 折",
+      "shipping": "补货后 7 天内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "98键",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Ultra",
+        "polling": "8000Hz",
+        "trigger": "0.005–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "全铝 CNC 机身",
+        "battery": "4000mAh",
+        "weight": "约 1120g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2018",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK104",
+      "name": "烬狐 VK104 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 1099,
+      "stock": 19,
+      "specs": "104键 配列，烬狐磁轴，三模，1000Hz 回报率",
+      "activity": "限时 9 折",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "104键",
+        "connection": "三模",
+        "switch": "烬狐磁轴",
+        "polling": "1000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "4000mAh",
+        "weight": "约 1180g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2019",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VK104 Pro",
+      "name": "烬狐 VK104 Pro 磁轴键盘",
+      "category": "键盘",
+      "subcategory": "磁轴键盘",
+      "price": 1299,
+      "stock": 14,
+      "specs": "104键 配列，烬狐磁轴 Pro，三模，8000Hz 回报率",
+      "activity": "满 800 减 80",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "银翼",
+        "暗夜",
+        "赤霞"
+      ],
+      "params": {
+        "layout": "104键",
+        "connection": "三模",
+        "switch": "烬狐磁轴 Pro",
+        "polling": "8000Hz",
+        "trigger": "0.01–3.4mm",
+        "keycap": "PBT 双色注塑",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "4000mAh",
+        "weight": "约 1180g",
+        "colors": [
+          "银翼",
+          "暗夜",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持（磁轴轴座）"
+      }
+    },
+    {
+      "id": "P2020",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK75 Pro",
+      "name": "烬狐 MK75 Pro 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 629,
+      "stock": 54,
+      "specs": "75% 配列，烬狐机械轴 Pro（预润），三模，1000Hz 回报率",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "75%",
+        "connection": "三模",
+        "switch": "烬狐机械轴 Pro（预润）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "Gasket 结构 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 820g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2021",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK75",
+      "name": "烬狐 MK75 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 469,
+      "stock": 88,
+      "specs": "75% 配列，烬狐机械轴（红/茶/青可选），三模，1000Hz 回报率",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "75%",
+        "connection": "三模",
+        "switch": "烬狐机械轴（红/茶/青可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "ABS 注塑 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 820g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2022",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK75 Plus",
+      "name": "烬狐 MK75 Plus 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 699,
+      "stock": 30,
+      "specs": "75% 配列，烬狐机械轴 Pro（预润），三模，1000Hz 回报率",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "75%",
+        "connection": "三模",
+        "switch": "烬狐机械轴 Pro（预润）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "Gasket 结构 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 820g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2023",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK65",
+      "name": "烬狐 MK65 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 399,
+      "stock": 98,
+      "specs": "65% 配列，烬狐机械轴（红/茶/青可选），三模，1000Hz 回报率",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "65%",
+        "connection": "三模",
+        "switch": "烬狐机械轴（红/茶/青可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "ABS 注塑 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 690g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2024",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK65 Pro",
+      "name": "烬狐 MK65 Pro 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 559,
+      "stock": 62,
+      "specs": "65% 配列，烬狐机械轴 Pro（预润），三模，1000Hz 回报率",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "65%",
+        "connection": "三模",
+        "switch": "烬狐机械轴 Pro（预润）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "Gasket 结构 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 690g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2025",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK68",
+      "name": "烬狐 MK68 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 429,
+      "stock": 77,
+      "specs": "68% 配列，烬狐机械轴（红/茶/青可选），三模，1000Hz 回报率",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "68%",
+        "connection": "三模",
+        "switch": "烬狐机械轴（红/茶/青可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "ABS 注塑 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 730g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2026",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK68 Pro",
+      "name": "烬狐 MK68 Pro 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 589,
+      "stock": 41,
+      "specs": "68% 配列，烬狐机械轴 Pro（预润），三模，1000Hz 回报率",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "68%",
+        "connection": "三模",
+        "switch": "烬狐机械轴 Pro（预润）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "Gasket 结构 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 730g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2027",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK60",
+      "name": "烬狐 MK60 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 299,
+      "stock": 150,
+      "specs": "60% 配列，烬狐机械轴（红/茶/青可选），有线，1000Hz 回报率",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "60%",
+        "connection": "有线",
+        "switch": "烬狐机械轴（红/茶/青可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "ABS 注塑 + 硅胶填充",
+        "battery": "无电池（有线供电）",
+        "weight": "约 620g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2028",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK87",
+      "name": "烬狐 MK87 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 499,
+      "stock": 66,
+      "specs": "87键 配列，烬狐机械轴（红/茶/青可选），三模，1000Hz 回报率",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "87键",
+        "connection": "三模",
+        "switch": "烬狐机械轴（红/茶/青可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "ABS 注塑 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 980g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2029",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK87 Pro",
+      "name": "烬狐 MK87 Pro 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 659,
+      "stock": 39,
+      "specs": "87键 配列，烬狐机械轴 Pro（预润），三模，1000Hz 回报率",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "87键",
+        "connection": "三模",
+        "switch": "烬狐机械轴 Pro（预润）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "Gasket 结构 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 980g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2030",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK98",
+      "name": "烬狐 MK98 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 549,
+      "stock": 58,
+      "specs": "98键 配列，烬狐机械轴（红/茶/青可选），三模，1000Hz 回报率",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "98键",
+        "connection": "三模",
+        "switch": "烬狐机械轴（红/茶/青可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "ABS 注塑 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 1120g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2031",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK98 Pro",
+      "name": "烬狐 MK98 Pro 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 719,
+      "stock": 35,
+      "specs": "98键 配列，烬狐机械轴 Pro（预润），三模，1000Hz 回报率",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "98键",
+        "connection": "三模",
+        "switch": "烬狐机械轴 Pro（预润）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "Gasket 结构 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 1120g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2032",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK104",
+      "name": "烬狐 MK104 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 599,
+      "stock": 43,
+      "specs": "104键 配列，烬狐机械轴（红/茶/青可选），三模，1000Hz 回报率",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "104键",
+        "connection": "三模",
+        "switch": "烬狐机械轴（红/茶/青可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "ABS 注塑 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 1180g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2033",
+      "brand": "烬狐 EMBERFOX",
+      "model": "MK104 Pro",
+      "name": "烬狐 MK104 Pro 机械键盘",
+      "category": "键盘",
+      "subcategory": "机械键盘",
+      "price": 769,
+      "stock": 26,
+      "specs": "104键 配列，烬狐机械轴 Pro（预润），三模，1000Hz 回报率",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾灰"
+      ],
+      "params": {
+        "layout": "104键",
+        "connection": "三模",
+        "switch": "烬狐机械轴 Pro（预润）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "Gasket 结构 + 硅胶填充",
+        "battery": "4000mAh",
+        "weight": "约 1180g",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾灰"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2034",
+      "brand": "烬狐 EMBERFOX",
+      "model": "SL75",
+      "name": "烬狐 SL75 矮轴键盘",
+      "category": "键盘",
+      "subcategory": "矮轴键盘",
+      "price": 459,
+      "stock": 57,
+      "specs": "75% 配列，矮轴（红/茶可选），三模，1000Hz 回报率",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "月岩灰",
+        "霜白"
+      ],
+      "params": {
+        "layout": "75%",
+        "connection": "三模",
+        "switch": "矮轴（红/茶可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "矮球帽 PBT",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "3000mAh",
+        "weight": "约 820g",
+        "colors": [
+          "月岩灰",
+          "霜白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2035",
+      "brand": "烬狐 EMBERFOX",
+      "model": "SL75 Pro",
+      "name": "烬狐 SL75 Pro 矮轴键盘",
+      "category": "键盘",
+      "subcategory": "矮轴键盘",
+      "price": 599,
+      "stock": 32,
+      "specs": "75% 配列，矮轴（红/茶可选），三模，1000Hz 回报率",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "月岩灰",
+        "霜白"
+      ],
+      "params": {
+        "layout": "75%",
+        "connection": "三模",
+        "switch": "矮轴（红/茶可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "矮球帽 PBT",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "3000mAh",
+        "weight": "约 820g",
+        "colors": [
+          "月岩灰",
+          "霜白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2036",
+      "brand": "烬狐 EMBERFOX",
+      "model": "SL87",
+      "name": "烬狐 SL87 矮轴键盘",
+      "category": "键盘",
+      "subcategory": "矮轴键盘",
+      "price": 499,
+      "stock": 45,
+      "specs": "87键 配列，矮轴（红/茶可选），三模，1000Hz 回报率",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "月岩灰",
+        "霜白"
+      ],
+      "params": {
+        "layout": "87键",
+        "connection": "三模",
+        "switch": "矮轴（红/茶可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "矮球帽 PBT",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "3000mAh",
+        "weight": "约 980g",
+        "colors": [
+          "月岩灰",
+          "霜白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2037",
+      "brand": "烬狐 EMBERFOX",
+      "model": "SL87 Pro",
+      "name": "烬狐 SL87 Pro 矮轴键盘",
+      "category": "键盘",
+      "subcategory": "矮轴键盘",
+      "price": 639,
+      "stock": 23,
+      "specs": "87键 配列，矮轴（红/茶可选），三模，1000Hz 回报率",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "月岩灰",
+        "霜白"
+      ],
+      "params": {
+        "layout": "87键",
+        "connection": "三模",
+        "switch": "矮轴（红/茶可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "矮球帽 PBT",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "3000mAh",
+        "weight": "约 980g",
+        "colors": [
+          "月岩灰",
+          "霜白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2038",
+      "brand": "烬狐 EMBERFOX",
+      "model": "SL98",
+      "name": "烬狐 SL98 矮轴键盘",
+      "category": "键盘",
+      "subcategory": "矮轴键盘",
+      "price": 549,
+      "stock": 0,
+      "specs": "98键 配列，矮轴（红/茶可选），三模，1000Hz 回报率",
+      "activity": "满 500 减 50",
+      "shipping": "补货后 7 天内发货",
+      "colors": [
+        "月岩灰",
+        "霜白"
+      ],
+      "params": {
+        "layout": "98键",
+        "connection": "三模",
+        "switch": "矮轴（红/茶可选）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "矮球帽 PBT",
+        "case": "铝合金上盖 + ABS 底壳",
+        "battery": "3000mAh",
+        "weight": "约 1120g",
+        "colors": [
+          "月岩灰",
+          "霜白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "不支持"
+      }
+    },
+    {
+      "id": "P2039",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AL65",
+      "name": "烬狐 AL65 铝坨坨键盘",
+      "category": "键盘",
+      "subcategory": "铝坨坨键盘",
+      "price": 1299,
+      "stock": 9,
+      "specs": "65% 配列，客制化轴座（兼容三脚/五脚），有线，1000Hz 回报率",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "阳极银",
+        "深空灰",
+        "赤铜"
+      ],
+      "params": {
+        "layout": "65%",
+        "connection": "有线",
+        "switch": "客制化轴座（兼容三脚/五脚）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "全铝 CNC 机身",
+        "battery": "无电池（有线供电）",
+        "weight": "约 1.6kg",
+        "colors": [
+          "阳极银",
+          "深空灰",
+          "赤铜"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2040",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AL75",
+      "name": "烬狐 AL75 铝坨坨键盘",
+      "category": "键盘",
+      "subcategory": "铝坨坨键盘",
+      "price": 1599,
+      "stock": 7,
+      "specs": "75% 配列，客制化轴座（兼容三脚/五脚），三模，1000Hz 回报率",
+      "activity": "晒单返 20 元券",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "阳极银",
+        "深空灰",
+        "赤铜"
+      ],
+      "params": {
+        "layout": "75%",
+        "connection": "三模",
+        "switch": "客制化轴座（兼容三脚/五脚）",
+        "polling": "1000Hz",
+        "trigger": "固定触发",
+        "keycap": "PBT 双色注塑",
+        "case": "全铝 CNC 机身",
+        "battery": "5000mAh",
+        "weight": "约 2.1kg",
+        "colors": [
+          "阳极银",
+          "深空灰",
+          "赤铜"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+、Linux",
+        "software": "烬狐 Hub",
+        "package": "键盘、USB-C 数据线、2.4G 接收器、拔键器、说明书",
+        "hotswap": "支持"
+      }
+    },
+    {
+      "id": "P2041",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM9 Pro",
+      "name": "烬狐 VM9 Pro 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 749,
+      "stock": 22,
+      "specs": "对称，PAW3950 32000 DPI，约 50g，2.4G/有线",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "2.4G/有线",
+        "sensor": "PAW3950",
+        "dpi": 32000,
+        "polling": "4000Hz",
+        "weight": "约 50g",
+        "buttons": 6,
+        "battery": "700mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2042",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM9",
+      "name": "烬狐 VM9 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 549,
+      "stock": 38,
+      "specs": "对称，PAW3395 32000 DPI，约 55g，三模",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 32000,
+        "polling": "1000Hz",
+        "weight": "约 55g",
+        "buttons": 6,
+        "battery": "600mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2043",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM9 Ultra",
+      "name": "烬狐 VM9 Ultra 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 999,
+      "stock": 11,
+      "specs": "对称，PAW3950 HS 36000 DPI，约 47g，2.4G/有线",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "2.4G/有线",
+        "sensor": "PAW3950 HS",
+        "dpi": 36000,
+        "polling": "8000Hz",
+        "weight": "约 47g",
+        "buttons": 6,
+        "battery": "650mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2044",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM9 Mini",
+      "name": "烬狐 VM9 Mini 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 599,
+      "stock": 29,
+      "specs": "小号对称，PAW3395 30000 DPI，约 44g，三模",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "小号对称",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 30000,
+        "polling": "1000Hz",
+        "weight": "约 44g",
+        "buttons": 6,
+        "battery": "500mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2045",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM6",
+      "name": "烬狐 VM6 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 329,
+      "stock": 95,
+      "specs": "对称，PAW3395 30000 DPI，约 63g，三模",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 30000,
+        "polling": "1000Hz",
+        "weight": "约 63g",
+        "buttons": 6,
+        "battery": "600mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2046",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM6 Pro",
+      "name": "烬狐 VM6 Pro 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 499,
+      "stock": 42,
+      "specs": "对称，PAW3950 32000 DPI，约 58g，三模",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "三模",
+        "sensor": "PAW3950",
+        "dpi": 32000,
+        "polling": "4000Hz",
+        "weight": "约 58g",
+        "buttons": 6,
+        "battery": "650mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2047",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM6 Ultra",
+      "name": "烬狐 VM6 Ultra 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 699,
+      "stock": 17,
+      "specs": "对称，PAW3950 HS 32000 DPI，约 52g，2.4G/有线",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "2.4G/有线",
+        "sensor": "PAW3950 HS",
+        "dpi": 32000,
+        "polling": "8000Hz",
+        "weight": "约 52g",
+        "buttons": 6,
+        "battery": "600mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2048",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM3",
+      "name": "烬狐 VM3 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 199,
+      "stock": 210,
+      "specs": "对称，PAW3395 26000 DPI，约 58g，三模",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 26000,
+        "polling": "1000Hz",
+        "weight": "约 58g",
+        "buttons": 5,
+        "battery": "500mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2049",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM3 Pro",
+      "name": "烬狐 VM3 Pro 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 349,
+      "stock": 87,
+      "specs": "对称，PAW3395 30000 DPI，约 54g，三模",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 30000,
+        "polling": "4000Hz",
+        "weight": "约 54g",
+        "buttons": 5,
+        "battery": "550mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2050",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM3 Mini",
+      "name": "烬狐 VM3 Mini 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 299,
+      "stock": 64,
+      "specs": "小号对称，PAW3395 26000 DPI，约 49g，三模",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "小号对称",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 26000,
+        "polling": "1000Hz",
+        "weight": "约 49g",
+        "buttons": 5,
+        "battery": "450mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2051",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM5",
+      "name": "烬狐 VM5 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 249,
+      "stock": 133,
+      "specs": "右手人体工学，PAW3395 26000 DPI，约 72g，三模",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 26000,
+        "polling": "1000Hz",
+        "weight": "约 72g",
+        "buttons": 6,
+        "battery": "600mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2052",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM5 Pro",
+      "name": "烬狐 VM5 Pro 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 399,
+      "stock": 51,
+      "specs": "右手人体工学，PAW3395 30000 DPI，约 65g，三模",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 30000,
+        "polling": "4000Hz",
+        "weight": "约 65g",
+        "buttons": 6,
+        "battery": "650mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2053",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM8",
+      "name": "烬狐 VM8 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 279,
+      "stock": 108,
+      "specs": "右手人体工学，PAW3395 26000 DPI，约 88g，三模",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 26000,
+        "polling": "1000Hz",
+        "weight": "约 88g",
+        "buttons": 7,
+        "battery": "700mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2054",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM8 Pro",
+      "name": "烬狐 VM8 Pro 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 429,
+      "stock": 46,
+      "specs": "右手人体工学，PAW3395 30000 DPI，约 78g，三模",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 30000,
+        "polling": "4000Hz",
+        "weight": "约 78g",
+        "buttons": 7,
+        "battery": "700mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2055",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM8 Ultra",
+      "name": "烬狐 VM8 Ultra 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 629,
+      "stock": 0,
+      "specs": "右手人体工学，PAW3950 HS 32000 DPI，约 69g，2.4G/有线",
+      "activity": "满 800 减 80",
+      "shipping": "补货后 7 天内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "2.4G/有线",
+        "sensor": "PAW3950 HS",
+        "dpi": 32000,
+        "polling": "8000Hz",
+        "weight": "约 69g",
+        "buttons": 7,
+        "battery": "650mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2056",
+      "brand": "烬狐 EMBERFOX",
+      "model": "VM10",
+      "name": "烬狐 VM10 无线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "无线游戏鼠标",
+      "price": 459,
+      "stock": 0,
+      "specs": "右手人体工学，PAW3395 30000 DPI，约 74g，三模",
+      "activity": "满 500 减 50",
+      "shipping": "补货后 7 天内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "三模",
+        "sensor": "PAW3395",
+        "dpi": 30000,
+        "polling": "4000Hz",
+        "weight": "约 74g",
+        "buttons": 7,
+        "battery": "700mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2057",
+      "brand": "烬狐 EMBERFOX",
+      "model": "GM3",
+      "name": "烬狐 GM3 有线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "有线游戏鼠标",
+      "price": 99,
+      "stock": 260,
+      "specs": "对称，PAW3311 16000 DPI，约 68g，有线",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "有线",
+        "sensor": "PAW3311",
+        "dpi": 16000,
+        "polling": "1000Hz",
+        "weight": "约 68g",
+        "buttons": 5,
+        "battery": "无电池（有线供电）",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB 数据线、说明书"
+      }
+    },
+    {
+      "id": "P2058",
+      "brand": "烬狐 EMBERFOX",
+      "model": "GM3 Pro",
+      "name": "烬狐 GM3 Pro 有线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "有线游戏鼠标",
+      "price": 159,
+      "stock": 140,
+      "specs": "对称，PAW3395 26000 DPI，约 61g，有线",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "有线",
+        "sensor": "PAW3395",
+        "dpi": 26000,
+        "polling": "1000Hz",
+        "weight": "约 61g",
+        "buttons": 5,
+        "battery": "无电池（有线供电）",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB 数据线、说明书"
+      }
+    },
+    {
+      "id": "P2059",
+      "brand": "烬狐 EMBERFOX",
+      "model": "GM5",
+      "name": "烬狐 GM5 有线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "有线游戏鼠标",
+      "price": 119,
+      "stock": 175,
+      "specs": "右手人体工学，PAW3311 16000 DPI，约 82g，有线",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "有线",
+        "sensor": "PAW3311",
+        "dpi": 16000,
+        "polling": "1000Hz",
+        "weight": "约 82g",
+        "buttons": 6,
+        "battery": "无电池（有线供电）",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB 数据线、说明书"
+      }
+    },
+    {
+      "id": "P2060",
+      "brand": "烬狐 EMBERFOX",
+      "model": "GM5 Pro",
+      "name": "烬狐 GM5 Pro 有线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "有线游戏鼠标",
+      "price": 189,
+      "stock": 96,
+      "specs": "右手人体工学，PAW3395 26000 DPI，约 74g，有线",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "有线",
+        "sensor": "PAW3395",
+        "dpi": 26000,
+        "polling": "1000Hz",
+        "weight": "约 74g",
+        "buttons": 6,
+        "battery": "无电池（有线供电）",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB 数据线、说明书"
+      }
+    },
+    {
+      "id": "P2061",
+      "brand": "烬狐 EMBERFOX",
+      "model": "GM6",
+      "name": "烬狐 GM6 有线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "有线游戏鼠标",
+      "price": 149,
+      "stock": 120,
+      "specs": "对称，PAW3395 26000 DPI，约 66g，有线",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "有线",
+        "sensor": "PAW3395",
+        "dpi": 26000,
+        "polling": "1000Hz",
+        "weight": "约 66g",
+        "buttons": 6,
+        "battery": "无电池（有线供电）",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB 数据线、说明书"
+      }
+    },
+    {
+      "id": "P2062",
+      "brand": "烬狐 EMBERFOX",
+      "model": "GM6 Pro",
+      "name": "烬狐 GM6 Pro 有线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "有线游戏鼠标",
+      "price": 229,
+      "stock": 74,
+      "specs": "对称，PAW3395 30000 DPI，约 59g，有线",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "有线",
+        "sensor": "PAW3395",
+        "dpi": 30000,
+        "polling": "1000Hz",
+        "weight": "约 59g",
+        "buttons": 6,
+        "battery": "无电池（有线供电）",
+        "switch": "烬狐光微动",
+        "colors": [
+          "曜石黑",
+          "冰川白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB 数据线、说明书"
+      }
+    },
+    {
+      "id": "P2063",
+      "brand": "烬狐 EMBERFOX",
+      "model": "GM8",
+      "name": "烬狐 GM8 有线游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "有线游戏鼠标",
+      "price": 169,
+      "stock": 88,
+      "specs": "右手人体工学，PAW3395 26000 DPI，约 91g，有线",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "有线",
+        "sensor": "PAW3395",
+        "dpi": 26000,
+        "polling": "1000Hz",
+        "weight": "约 91g",
+        "buttons": 7,
+        "battery": "无电池（有线供电）",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB 数据线、说明书"
+      }
+    },
+    {
+      "id": "P2064",
+      "brand": "烬狐 EMBERFOX",
+      "model": "TM6",
+      "name": "烬狐 TM6 镁合金无线鼠标",
+      "category": "鼠标",
+      "subcategory": "镁合金无线鼠标",
+      "price": 799,
+      "stock": 26,
+      "specs": "对称，PAW3395 32000 DPI，约 49g，2.4G/有线",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "钛灰",
+        "曜石黑"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "2.4G/有线",
+        "sensor": "PAW3395",
+        "dpi": 32000,
+        "polling": "4000Hz",
+        "weight": "约 49g",
+        "buttons": 6,
+        "battery": "600mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "钛灰",
+          "曜石黑"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2065",
+      "brand": "烬狐 EMBERFOX",
+      "model": "TM6 Pro",
+      "name": "烬狐 TM6 Pro 镁合金无线鼠标",
+      "category": "鼠标",
+      "subcategory": "镁合金无线鼠标",
+      "price": 1099,
+      "stock": 15,
+      "specs": "对称，PAW3950 HS 36000 DPI，约 45g，2.4G/有线",
+      "activity": "会员专享 95 折",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "钛灰",
+        "曜石黑"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "2.4G/有线",
+        "sensor": "PAW3950 HS",
+        "dpi": 36000,
+        "polling": "8000Hz",
+        "weight": "约 45g",
+        "buttons": 6,
+        "battery": "600mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "钛灰",
+          "曜石黑"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2066",
+      "brand": "烬狐 EMBERFOX",
+      "model": "TM8",
+      "name": "烬狐 TM8 镁合金无线鼠标",
+      "category": "鼠标",
+      "subcategory": "镁合金无线鼠标",
+      "price": 899,
+      "stock": 20,
+      "specs": "右手人体工学，PAW3395 32000 DPI，约 56g，2.4G/有线",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "钛灰",
+        "曜石黑"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "2.4G/有线",
+        "sensor": "PAW3395",
+        "dpi": 32000,
+        "polling": "4000Hz",
+        "weight": "约 56g",
+        "buttons": 7,
+        "battery": "650mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "钛灰",
+          "曜石黑"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2067",
+      "brand": "烬狐 EMBERFOX",
+      "model": "TM8 Pro",
+      "name": "烬狐 TM8 Pro 镁合金无线鼠标",
+      "category": "鼠标",
+      "subcategory": "镁合金无线鼠标",
+      "price": 1199,
+      "stock": 9,
+      "specs": "右手人体工学，PAW3950 HS 36000 DPI，约 51g，2.4G/有线",
+      "activity": "满 800 减 80",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "钛灰",
+        "曜石黑"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "2.4G/有线",
+        "sensor": "PAW3950 HS",
+        "dpi": 36000,
+        "polling": "8000Hz",
+        "weight": "约 51g",
+        "buttons": 7,
+        "battery": "650mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "钛灰",
+          "曜石黑"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2068",
+      "brand": "烬狐 EMBERFOX",
+      "model": "TM9",
+      "name": "烬狐 TM9 镁合金无线鼠标",
+      "category": "鼠标",
+      "subcategory": "镁合金无线鼠标",
+      "price": 1299,
+      "stock": 0,
+      "specs": "对称，PAW3950 HS 36000 DPI，约 48g，2.4G/有线",
+      "activity": "满 500 减 50",
+      "shipping": "补货后 7 天内发货",
+      "colors": [
+        "钛灰",
+        "曜石黑"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "2.4G/有线",
+        "sensor": "PAW3950 HS",
+        "dpi": 36000,
+        "polling": "8000Hz",
+        "weight": "约 48g",
+        "buttons": 6,
+        "battery": "600mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "钛灰",
+          "曜石黑"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2069",
+      "brand": "烬狐 EMBERFOX",
+      "model": "TM9 Pro",
+      "name": "烬狐 TM9 Pro 镁合金无线鼠标",
+      "category": "鼠标",
+      "subcategory": "镁合金无线鼠标",
+      "price": 1599,
+      "stock": 6,
+      "specs": "对称，PAW3950 HS 42000 DPI，约 43g，2.4G/有线",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "钛灰",
+        "曜石黑"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "2.4G/有线",
+        "sensor": "PAW3950 HS",
+        "dpi": 42000,
+        "polling": "8000Hz",
+        "weight": "约 43g",
+        "buttons": 6,
+        "battery": "600mAh",
+        "switch": "烬狐光微动",
+        "colors": [
+          "钛灰",
+          "曜石黑"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2070",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EM2",
+      "name": "烬狐 EM2 入门游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "入门游戏鼠标",
+      "price": 69,
+      "stock": 320,
+      "specs": "对称，PAW3104 12000 DPI，约 76g，有线",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾蓝"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "有线",
+        "sensor": "PAW3104",
+        "dpi": 12000,
+        "polling": "1000Hz",
+        "weight": "约 76g",
+        "buttons": 5,
+        "battery": "无电池（有线供电）",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾蓝"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB 数据线、说明书"
+      }
+    },
+    {
+      "id": "P2071",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EM3",
+      "name": "烬狐 EM3 入门游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "入门游戏鼠标",
+      "price": 89,
+      "stock": 210,
+      "specs": "对称，PAW3311 16000 DPI，约 72g，有线",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾蓝"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "有线",
+        "sensor": "PAW3311",
+        "dpi": 16000,
+        "polling": "1000Hz",
+        "weight": "约 72g",
+        "buttons": 6,
+        "battery": "无电池（有线供电）",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾蓝"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB 数据线、说明书"
+      }
+    },
+    {
+      "id": "P2072",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EM4",
+      "name": "烬狐 EM4 入门游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "入门游戏鼠标",
+      "price": 79,
+      "stock": 180,
+      "specs": "右手人体工学，PAW3311 16000 DPI，约 85g，有线",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾蓝"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "有线",
+        "sensor": "PAW3311",
+        "dpi": 16000,
+        "polling": "1000Hz",
+        "weight": "约 85g",
+        "buttons": 6,
+        "battery": "无电池（有线供电）",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾蓝"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB 数据线、说明书"
+      }
+    },
+    {
+      "id": "P2073",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EM5",
+      "name": "烬狐 EM5 入门游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "入门游戏鼠标",
+      "price": 129,
+      "stock": 150,
+      "specs": "对称，PAW3311 16000 DPI，约 84g，2.4G/蓝牙",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾蓝"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "2.4G/蓝牙",
+        "sensor": "PAW3311",
+        "dpi": 16000,
+        "polling": "1000Hz",
+        "weight": "约 84g",
+        "buttons": 6,
+        "battery": "600mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾蓝"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2074",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EM6",
+      "name": "烬狐 EM6 入门游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "入门游戏鼠标",
+      "price": 149,
+      "stock": 130,
+      "specs": "右手人体工学，PAW3311 16000 DPI，约 92g，2.4G/蓝牙",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾蓝"
+      ],
+      "params": {
+        "shape": "右手人体工学",
+        "connection": "2.4G/蓝牙",
+        "sensor": "PAW3311",
+        "dpi": 16000,
+        "polling": "1000Hz",
+        "weight": "约 92g",
+        "buttons": 7,
+        "battery": "700mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾蓝"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2075",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EM7",
+      "name": "烬狐 EM7 入门游戏鼠标",
+      "category": "鼠标",
+      "subcategory": "入门游戏鼠标",
+      "price": 179,
+      "stock": 0,
+      "specs": "对称，PAW3311 20000 DPI，约 78g，2.4G/蓝牙",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "补货后 7 天内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "雾蓝"
+      ],
+      "params": {
+        "shape": "对称",
+        "connection": "2.4G/蓝牙",
+        "sensor": "PAW3311",
+        "dpi": 20000,
+        "polling": "1000Hz",
+        "weight": "约 78g",
+        "buttons": 6,
+        "battery": "600mAh",
+        "switch": "欧姆龙微动",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "雾蓝"
+        ],
+        "compatibility": "Windows 10/11、macOS 12+",
+        "software": "烬狐 Hub",
+        "package": "鼠标、USB-C 数据线、2.4G 接收器、说明书"
+      }
+    },
+    {
+      "id": "P2076",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH9 Pro",
+      "name": "烬狐 AH9 Pro 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 1599,
+      "stock": 4,
+      "specs": "头戴式，53mm 动圈单元，三模，可拆卸降噪麦克风",
+      "activity": "晒单返 20 元券",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "三模",
+        "driver": "53mm",
+        "mic": "可拆卸降噪麦克风",
+        "battery": "1500mAh",
+        "weight": "约 320g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2077",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH9",
+      "name": "烬狐 AH9 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 1299,
+      "stock": 9,
+      "specs": "头戴式，53mm 动圈单元，三模，可拆卸降噪麦克风",
+      "activity": "会员专享 95 折",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "三模",
+        "driver": "53mm",
+        "mic": "可拆卸降噪麦克风",
+        "battery": "1500mAh",
+        "weight": "约 330g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2078",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH9 Wireless",
+      "name": "烬狐 AH9 Wireless 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 1399,
+      "stock": 7,
+      "specs": "头戴式，53mm 动圈单元，2.4G，可拆卸降噪麦克风",
+      "activity": "限时 9 折",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "2.4G",
+        "driver": "53mm",
+        "mic": "可拆卸降噪麦克风",
+        "battery": "1500mAh",
+        "weight": "约 325g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2079",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH7",
+      "name": "烬狐 AH7 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 899,
+      "stock": 24,
+      "specs": "头戴式，53mm 动圈单元，三模，可拆卸麦克风",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "三模",
+        "driver": "53mm",
+        "mic": "可拆卸麦克风",
+        "battery": "1200mAh",
+        "weight": "约 300g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2080",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH7 Pro",
+      "name": "烬狐 AH7 Pro 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 1099,
+      "stock": 16,
+      "specs": "头戴式，53mm 动圈单元，三模，可拆卸降噪麦克风",
+      "activity": "满 500 减 50",
+      "shipping": "48 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "三模",
+        "driver": "53mm",
+        "mic": "可拆卸降噪麦克风",
+        "battery": "1200mAh",
+        "weight": "约 305g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2081",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH7 Wireless",
+      "name": "烬狐 AH7 Wireless 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 999,
+      "stock": 12,
+      "specs": "头戴式，53mm 动圈单元，2.4G，可拆卸麦克风",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "2.4G",
+        "driver": "53mm",
+        "mic": "可拆卸麦克风",
+        "battery": "1200mAh",
+        "weight": "约 298g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2082",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH5",
+      "name": "烬狐 AH5 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 599,
+      "stock": 42,
+      "specs": "头戴式，50mm 动圈单元，三模，可拆卸麦克风",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "三模",
+        "driver": "50mm",
+        "mic": "可拆卸麦克风",
+        "battery": "1000mAh",
+        "weight": "约 280g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2083",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH5 Pro",
+      "name": "烬狐 AH5 Pro 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 799,
+      "stock": 28,
+      "specs": "头戴式，50mm 动圈单元，三模，可拆卸降噪麦克风",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "三模",
+        "driver": "50mm",
+        "mic": "可拆卸降噪麦克风",
+        "battery": "1000mAh",
+        "weight": "约 285g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2084",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH5 Wireless",
+      "name": "烬狐 AH5 Wireless 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 699,
+      "stock": 0,
+      "specs": "头戴式，50mm 动圈单元，2.4G，可拆卸麦克风",
+      "activity": "限时 9 折",
+      "shipping": "补货后 7 天内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "2.4G",
+        "driver": "50mm",
+        "mic": "可拆卸麦克风",
+        "battery": "1000mAh",
+        "weight": "约 278g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2085",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH3",
+      "name": "烬狐 AH3 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 349,
+      "stock": 48,
+      "specs": "头戴式，53mm 动圈单元，有线，可拆卸麦克风",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "有线",
+        "driver": "53mm",
+        "mic": "可拆卸麦克风",
+        "battery": "无电池（有线供电）",
+        "weight": "约 290g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2086",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH3 Pro",
+      "name": "烬狐 AH3 Pro 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 499,
+      "stock": 35,
+      "specs": "头戴式，53mm 动圈单元，有线，可拆卸降噪麦克风",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "有线",
+        "driver": "53mm",
+        "mic": "可拆卸降噪麦克风",
+        "battery": "无电池（有线供电）",
+        "weight": "约 295g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2087",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH1",
+      "name": "烬狐 AH1 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 199,
+      "stock": 90,
+      "specs": "头戴式，50mm 动圈单元，有线，可拆卸麦克风",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "有线",
+        "driver": "50mm",
+        "mic": "可拆卸麦克风",
+        "battery": "无电池（有线供电）",
+        "weight": "约 260g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2088",
+      "brand": "烬狐 EMBERFOX",
+      "model": "AH1 Pro",
+      "name": "烬狐 AH1 Pro 头戴式游戏耳机",
+      "category": "耳机",
+      "subcategory": "头戴式游戏耳机",
+      "price": 299,
+      "stock": 62,
+      "specs": "头戴式，50mm 动圈单元，有线，可拆卸降噪麦克风",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "冰川白",
+        "赤霞"
+      ],
+      "params": {
+        "form": "头戴式",
+        "connection": "有线",
+        "driver": "50mm",
+        "mic": "可拆卸降噪麦克风",
+        "battery": "无电池（有线供电）",
+        "weight": "约 265g",
+        "surround": "虚拟 7.1",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "冰川白",
+          "赤霞"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2089",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EH9",
+      "name": "烬狐 EH9 入耳式游戏耳机",
+      "category": "耳机",
+      "subcategory": "入耳式游戏耳机",
+      "price": 699,
+      "stock": 21,
+      "specs": "入耳式，10mm 动圈单元，三模，可拆卸双麦",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "银白"
+      ],
+      "params": {
+        "form": "入耳式",
+        "connection": "三模",
+        "driver": "10mm",
+        "mic": "可拆卸双麦",
+        "battery": "500mAh",
+        "weight": "约 28g",
+        "surround": "虚拟 7.1",
+        "impedance": "16Ω",
+        "colors": [
+          "曜石黑",
+          "银白"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2090",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EH7",
+      "name": "烬狐 EH7 入耳式游戏耳机",
+      "category": "耳机",
+      "subcategory": "入耳式游戏耳机",
+      "price": 399,
+      "stock": 0,
+      "specs": "入耳式，10mm 动圈单元，三模，可拆卸麦克风",
+      "activity": "限时 9 折",
+      "shipping": "补货后 7 天内发货",
+      "colors": [
+        "曜石黑",
+        "银白"
+      ],
+      "params": {
+        "form": "入耳式",
+        "connection": "三模",
+        "driver": "10mm",
+        "mic": "可拆卸麦克风",
+        "battery": "400mAh",
+        "weight": "约 25g",
+        "surround": "虚拟 7.1",
+        "impedance": "16Ω",
+        "colors": [
+          "曜石黑",
+          "银白"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2091",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EH7 Pro",
+      "name": "烬狐 EH7 Pro 入耳式游戏耳机",
+      "category": "耳机",
+      "subcategory": "入耳式游戏耳机",
+      "price": 549,
+      "stock": 33,
+      "specs": "入耳式，10mm 动圈单元，三模，可拆卸双麦",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "银白"
+      ],
+      "params": {
+        "form": "入耳式",
+        "connection": "三模",
+        "driver": "10mm",
+        "mic": "可拆卸双麦",
+        "battery": "450mAh",
+        "weight": "约 26g",
+        "surround": "虚拟 7.1",
+        "impedance": "16Ω",
+        "colors": [
+          "曜石黑",
+          "银白"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2092",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EH5",
+      "name": "烬狐 EH5 入耳式游戏耳机",
+      "category": "耳机",
+      "subcategory": "入耳式游戏耳机",
+      "price": 299,
+      "stock": 76,
+      "specs": "入耳式，10mm 动圈单元，三模，可拆卸麦克风",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "银白"
+      ],
+      "params": {
+        "form": "入耳式",
+        "connection": "三模",
+        "driver": "10mm",
+        "mic": "可拆卸麦克风",
+        "battery": "400mAh",
+        "weight": "约 24g",
+        "surround": "虚拟 7.1",
+        "impedance": "16Ω",
+        "colors": [
+          "曜石黑",
+          "银白"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2093",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EH5 Pro",
+      "name": "烬狐 EH5 Pro 入耳式游戏耳机",
+      "category": "耳机",
+      "subcategory": "入耳式游戏耳机",
+      "price": 429,
+      "stock": 54,
+      "specs": "入耳式，10mm 动圈单元，三模，可拆卸双麦",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "银白"
+      ],
+      "params": {
+        "form": "入耳式",
+        "connection": "三模",
+        "driver": "10mm",
+        "mic": "可拆卸双麦",
+        "battery": "450mAh",
+        "weight": "约 25g",
+        "surround": "虚拟 7.1",
+        "impedance": "16Ω",
+        "colors": [
+          "曜石黑",
+          "银白"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、2.4G 接收器、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2094",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EH3",
+      "name": "烬狐 EH3 入耳式游戏耳机",
+      "category": "耳机",
+      "subcategory": "入耳式游戏耳机",
+      "price": 149,
+      "stock": 140,
+      "specs": "入耳式，10mm 动圈单元，有线，可拆卸麦克风",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "银白"
+      ],
+      "params": {
+        "form": "入耳式",
+        "connection": "有线",
+        "driver": "10mm",
+        "mic": "可拆卸麦克风",
+        "battery": "无电池（有线供电）",
+        "weight": "约 22g",
+        "surround": "虚拟 7.1",
+        "impedance": "16Ω",
+        "colors": [
+          "曜石黑",
+          "银白"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2095",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EH3 Pro",
+      "name": "烬狐 EH3 Pro 入耳式游戏耳机",
+      "category": "耳机",
+      "subcategory": "入耳式游戏耳机",
+      "price": 229,
+      "stock": 88,
+      "specs": "入耳式，10mm 动圈单元，有线，可拆卸双麦",
+      "activity": "会员专享 95 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "银白"
+      ],
+      "params": {
+        "form": "入耳式",
+        "connection": "有线",
+        "driver": "10mm",
+        "mic": "可拆卸双麦",
+        "battery": "无电池（有线供电）",
+        "weight": "约 23g",
+        "surround": "虚拟 7.1",
+        "impedance": "16Ω",
+        "colors": [
+          "曜石黑",
+          "银白"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2096",
+      "brand": "烬狐 EMBERFOX",
+      "model": "EH1",
+      "name": "烬狐 EH1 入耳式游戏耳机",
+      "category": "耳机",
+      "subcategory": "入耳式游戏耳机",
+      "price": 99,
+      "stock": 180,
+      "specs": "入耳式，10mm 动圈单元，有线，可拆卸麦克风",
+      "activity": "限时 9 折",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "银白"
+      ],
+      "params": {
+        "form": "入耳式",
+        "connection": "有线",
+        "driver": "10mm",
+        "mic": "可拆卸麦克风",
+        "battery": "无电池（有线供电）",
+        "weight": "约 20g",
+        "surround": "无",
+        "impedance": "16Ω",
+        "colors": [
+          "曜石黑",
+          "银白"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 数据线、可拆卸麦克风、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2097",
+      "brand": "烬狐 EMBERFOX",
+      "model": "BH5 Pro",
+      "name": "烬狐 BH5 Pro 头戴式蓝牙耳机",
+      "category": "耳机",
+      "subcategory": "头戴式蓝牙耳机",
+      "price": 899,
+      "stock": 6,
+      "specs": "头戴式蓝牙，40mm 动圈单元，蓝牙 5.3，内置双麦",
+      "activity": "满 800 减 80",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "云雾白",
+        "雾蓝"
+      ],
+      "params": {
+        "form": "头戴式蓝牙",
+        "connection": "蓝牙 5.3",
+        "driver": "40mm",
+        "mic": "内置双麦",
+        "battery": "1200mAh",
+        "weight": "约 280g",
+        "surround": "无",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "云雾白",
+          "雾蓝"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 充电线、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2098",
+      "brand": "烬狐 EMBERFOX",
+      "model": "BH5",
+      "name": "烬狐 BH5 头戴式蓝牙耳机",
+      "category": "耳机",
+      "subcategory": "头戴式蓝牙耳机",
+      "price": 699,
+      "stock": 39,
+      "specs": "头戴式蓝牙，40mm 动圈单元，蓝牙 5.3，内置双麦",
+      "activity": "满 500 减 50",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "云雾白",
+        "雾蓝"
+      ],
+      "params": {
+        "form": "头戴式蓝牙",
+        "connection": "蓝牙 5.3",
+        "driver": "40mm",
+        "mic": "内置双麦",
+        "battery": "1000mAh",
+        "weight": "约 270g",
+        "surround": "无",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "云雾白",
+          "雾蓝"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 充电线、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2099",
+      "brand": "烬狐 EMBERFOX",
+      "model": "BH3",
+      "name": "烬狐 BH3 头戴式蓝牙耳机",
+      "category": "耳机",
+      "subcategory": "头戴式蓝牙耳机",
+      "price": 499,
+      "stock": 57,
+      "specs": "头戴式蓝牙，40mm 动圈单元，蓝牙 5.3，内置双麦",
+      "activity": "赠品牌鼠标垫",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "云雾白",
+        "雾蓝"
+      ],
+      "params": {
+        "form": "头戴式蓝牙",
+        "connection": "蓝牙 5.3",
+        "driver": "40mm",
+        "mic": "内置双麦",
+        "battery": "900mAh",
+        "weight": "约 260g",
+        "surround": "无",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "云雾白",
+          "雾蓝"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 充电线、说明书",
+        "software": "烬狐 Hub"
+      }
+    },
+    {
+      "id": "P2100",
+      "brand": "烬狐 EMBERFOX",
+      "model": "BH1",
+      "name": "烬狐 BH1 头戴式蓝牙耳机",
+      "category": "耳机",
+      "subcategory": "头戴式蓝牙耳机",
+      "price": 299,
+      "stock": 85,
+      "specs": "头戴式蓝牙，40mm 动圈单元，蓝牙 5.3，内置麦克风",
+      "activity": "晒单返 20 元券",
+      "shipping": "24 小时内发货",
+      "colors": [
+        "曜石黑",
+        "云雾白",
+        "雾蓝"
+      ],
+      "params": {
+        "form": "头戴式蓝牙",
+        "connection": "蓝牙 5.3",
+        "driver": "40mm",
+        "mic": "内置麦克风",
+        "battery": "800mAh",
+        "weight": "约 250g",
+        "surround": "无",
+        "impedance": "32Ω",
+        "colors": [
+          "曜石黑",
+          "云雾白",
+          "雾蓝"
+        ],
+        "compatibility": "PC、PS5、Switch、手机（视接口而定）",
+        "package": "耳机、USB-C 充电线、说明书",
+        "software": "烬狐 Hub"
+      }
+    }
+  ]
+}

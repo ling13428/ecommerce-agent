@@ -4,12 +4,12 @@ BASE_URL = "http://127.0.0.1:8000"
 
 
 def test_product_tool():
-    response = httpx.get(f"{BASE_URL}/api/tools/products/P1001")
+    response = httpx.get(f"{BASE_URL}/api/tools/products/P2001")
     response.raise_for_status()
     data = response.json()
 
     assert data["found"] is True
-    assert data["product"]["name"] == "无线蓝牙耳机"
+    assert data["product"]["name"] == "烬狐 VK75 Pro 磁轴键盘"
     print("工具直连测试通过：", data["product"]["name"])
 
 
@@ -17,7 +17,7 @@ def test_chat_stream():
     with httpx.stream(
         "POST",
         f"{BASE_URL}/api/chat/stream",
-        json={"message": "P1001 多少钱，还有货吗？"},
+        json={"message": "VK75 Pro 多少钱，还有货吗？"},
     ) as response:
         response.raise_for_status()
         events = []

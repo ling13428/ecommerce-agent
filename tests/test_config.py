@@ -22,3 +22,30 @@ def test_invalid_base_url_fails_startup_validation():
     )
     with pytest.raises(ValueError):
         settings.validate_startup()
+
+
+def test_empty_embedding_key_means_not_configured():
+    settings = Settings(_env_file=None, embedding_api_key="")
+    assert settings.embedding_configured is False
+
+
+def test_embedding_secret_is_masked_in_repr():
+    settings = Settings(_env_file=None, embedding_api_key="sk-embedding-secret")
+    assert settings.embedding_configured is True
+    assert "sk-embedding-secret" not in repr(settings)
+
+
+def test_invalid_embedding_base_url_fails_startup_validation():
+    settings = Settings(
+        _env_file=None,
+        embedding_api_key="sk-test",
+        embedding_base_url="ftp://example.com",
+    )
+    with pytest.raises(ValueError):
+        settings.validate_startup()
+
+
+def test_database_url_must_be_postgresql():
+    settings = Settings(_env_file=None, database_url="mysql://localhost/rag")
+    with pytest.raises(ValueError):
+        settings.validate_startup()

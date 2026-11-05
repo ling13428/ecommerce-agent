@@ -1,0 +1,81 @@
+﻿id,query,expected_doc_ids,expected_parent_ids,should_abstain,include_deprecated,category,difficulty,note
+g001,VK75 Pro 的触发键程是多少,P2001-02,,False,False,product_spec,easy,参数表直接给出触发调节范围
+g002,VK75 Ultra 的回报率是多少,P2003-02|P2003-03,,False,False,product_spec,easy,同系列 Ultra 型号，需避免串到 VK75 Pro
+g003,VK75 SE 和 VK75 Pro 的回报率有什么区别,P2004-02|P2004-03|P2001-02|P2001-03,,False,False,product_compare,hard,同系列两型号对比，需要多文档覆盖
+g004,VK65 Pro 支持哪些连接方式,P2006-02|P2006-03,,False,False,product_spec,easy,参数表连接方式
+g005,VK68 Ultra 的电池容量是多少,P2010-02|P2010-03,,False,False,product_spec,easy,缺货商品的参数仍应可查
+g006,VK87 Ultra 的重量,P2014-02,,False,False,product_spec,easy,87 键 Ultra 型号重量
+g007,VK98 Pro 是什么配列,P2016-02,,False,False,product_spec,easy,98 键配列
+g008,VK104 Pro 用的什么轴体,P2019-02,,False,False,product_spec,easy,104 键 Pro 轴体
+g009,MK75 Pro 是什么结构,P2020-02,,False,False,product_spec,easy,Gasket 结构
+g010,MK60 的键帽是什么材质,P2027-02,,False,False,product_spec,easy,PBT 双色注塑
+g011,SL75 用的是什么轴,P2034-02|P2034-03,,False,False,product_spec,easy,矮轴
+g012,AL75 的外壳是什么材质,P2040-02,,False,False,product_spec,easy,全铝 CNC
+g013,VM9 Pro 用的什么传感器,P2041-02,,False,False,product_spec,easy,PAW3950
+g014,VM9 Ultra 的重量和回报率,P2043-02|P2043-01,,False,False,product_spec,medium,同系列 Ultra，需区分 VM9 Pro
+g015,VM3 Mini 有多重,P2050-02,,False,False,product_spec,easy,小号鼠标重量
+g016,GM6 Pro 用的什么微动,P2062-02,,False,False,product_spec,easy,有线鼠标微动
+g017,TM9 Pro 的传感器和重量,P2069-02|P2069-01,,False,False,product_spec,medium,镁合金轻量化鼠标
+g018,AH9 Pro 的发声单元和麦克风,P2076-02,,False,False,product_spec,easy,53mm 单元、可拆卸降噪麦
+g019,VK75 Pro 适合什么场景,P2001-01,,False,False,product_overview,easy,产品定位与场景
+g020,VK75 SE 和 VK75 Pro 的定位有什么区别,P2004-01|P2001-01,,False,False,product_compare,hard,SE 与 Pro 的定位差异
+g021,MK75 Pro 适合办公吗,P2020-01,,False,False,product_overview,easy,办公场景
+g022,SL75 为什么适合便携,P2034-01,,False,False,product_overview,easy,矮轴轻薄定位
+g023,AL75 是全铝客制化键盘吗,P2040-01,,False,False,product_overview,easy,全铝客制化定位
+g024,VM9 Pro 适合什么握姿,P2041-01|P2041-03,,False,False,product_overview,easy,对称鼠标握姿
+g025,VM3 Mini 适合小手吗,P2050-01,,False,False,product_overview,easy,小号对称鼠标
+g026,TM9 Pro 为什么轻,P2069-01,,False,False,product_overview,easy,镁合金轻量化
+g027,AH9 Pro 适合长时间佩戴吗,P2076-01,,False,False,product_overview,easy,头戴式佩戴舒适度
+g028,VK75 Pro 支持热插拔吗,P2001-03,,False,False,product_faq,easy,直接问热插拔
+g029,VK75 无线模式怎么切换,P2002-03,,False,False,product_faq,medium,VK75 是有线版，FAQ 应说明连接方式
+g030,MK75 Pro 轴体手感怎么选,P2020-03,,False,False,product_faq,easy,红/茶/青轴选择
+g031,AL75 怎么换轴,P2040-03,,False,False,product_faq,medium,客制化轴座与换轴
+g032,VM9 Pro 怎么配对,P2041-03,,False,False,product_faq,easy,2.4G/有线连接
+g033,VM3 出现双击怎么办,P2048-03,,False,False,product_faq,medium,微动去抖与售后
+g034,AH9 Pro 麦克风没声音怎么办,P2076-03,,False,False,product_faq,easy,麦克风排查
+g035,EH7 Pro 支持 PS5 吗,P2091-03,,False,False,product_faq,easy,入耳式耳机平台兼容
+g036,VK75 和 VK75 Pro 有什么区别,P2002-01|P2001-01,,False,False,product_compare,hard,同系列两型号，需覆盖两个商品
+g037,VM9、VM9 Pro、VM9 Ultra 怎么选,P2042-01|P2041-01|P2043-01,,False,False,product_compare,hard,三型号对比
+g038,MK75 和 MK75 Pro 哪个更适合游戏,P2021-01|P2020-01,,False,False,product_compare,hard,同系列两型号
+g039,VK68 和 VK68 Pro 的回报率区别,P2008-02|P2008-03|P2009-02|P2009-03,,False,False,product_compare,hard,同系列参数对比
+g040,七天无理由退货的条件,POL-RET-003,,False,False,policy_return,easy,无理由条件与例外
+g041,退货运费谁出,POL-RET-005,,False,False,policy_return,easy,运费承担与运费险
+g042,退款多久到账,POL-RET-006,,False,False,policy_return,easy,退款路径与时效
+g043,拆封的入耳式耳机能无理由退吗,POL-RET-003,,False,False,policy_return,medium,个人卫生类例外
+g044,质量问题怎么换货,POL-RET-004,,False,False,policy_return,easy,15 天质量问题换货
+g045,发票怎么开,POL-INV-002,,False,False,policy_invoice,easy,开票流程与信息
+g046,能开增值税专用发票吗,POL-INV-004,,False,False,policy_invoice,medium,企业专票
+g047,退货后发票怎么处理,POL-INV-003,,False,False,policy_invoice,medium,红冲与换开
+g048,多久发货,POL-LOG-001,,False,False,policy_logistics,easy,现货/预售/定制时效
+g049,偏远地区多久能到,POL-LOG-002|POL-LOG-003,,False,False,policy_logistics,medium,区域时效与偏远地区
+g050,丢件或破损怎么办,POL-LOG-004,,False,False,policy_logistics,easy,物流异常处理
+g051,价保几天,POL-PRI-001,,False,False,policy_price,easy,7 天/会员 15 天
+g052,秒杀降价能价保吗,POL-PRI-003,,False,False,policy_price,medium,价保例外
+g053,以旧换新怎么估价,POL-TRD-002,,False,False,policy_tradein,easy,成色分级与估价
+g054,以旧换新补贴能和优惠券叠加吗,POL-TRD-004,,False,False,policy_tradein,medium,补贴叠加规则
+g055,2024 年退货政策是几天,POL-RET-002,,False,True,policy_version,hard,旧版退货政策，测试历史版本检索
+g056,2024 年价保是几天,POL-PRI-002,,False,True,policy_version,hard,旧版价保政策，测试历史版本检索
+g057,平台介入多久,POL-PLT-002,,False,False,policy_platform,easy,平台举证与处理时限
+g058,能查别人的订单吗,POL-BND-001,,False,False,safety_boundary,easy,隐私边界
+g059,能承诺赔付金额吗,POL-BND-002,,False,False,safety_boundary,easy,赔付承诺边界
+g060,可以索要身份证和银行卡吗,POL-BND-003,,False,False,safety_boundary,medium,敏感信息边界
+g061,平台规则变更了什么,POL-PLT-003|RAW-SCAN-PLT-platform-notice-scan-PDF,,False,False,policy_platform,hard,Markdown 公告 + 扫描件双来源
+g062,平台售后争议怎么处理,POL-PLT-001,,False,False,policy_platform,easy,平台争议处理规则
+g063,退货运费标准表,RAW-TBL-RET-return-shipping-CSV,,False,False,table,medium,已入库 CSV 表格
+g064,各区域配送时效标准,RAW-TBL-LOG-delivery-sla-CSV,,False,False,table,medium,已入库 CSV 表格
+g065,价保期限表,RAW-TBL-PRI-price-protection-window-CSV,,False,False,table,medium,已入库 CSV 表格
+g066,以旧换新 A/B/C/D 成色估价表,RAW-TBL-TRD-trade-in-valuation-CSV,,False,False,table,medium,已入库 CSV 表格
+g067,发票类型对比表,RAW-TBL-INV-invoice-types-CSV,,False,False,table,medium,已入库 CSV 表格
+g068,回收单号 TRD-20260601-0018 的信息,RAW-SCAN-TRD-recycle-receipt-scan-PDF,,False,False,scan,hard,OCR 扫描件
+g069,BH5 Pro 蓝牙版本,P2097-02,,False,False,product_spec,easy,蓝牙 5.3
+g070,VK75 Pro 的包装清单,P2001-02,,False,False,product_spec,easy,规格参数里的包装清单
+g071,今天天气怎么样,,,True,False,abstain,easy,完全无关
+g072,帮我写一首诗,,,True,False,abstain,easy,完全无关
+g073,你们老板是谁,,,True,False,abstain,easy,超出客服知识范围
+g074,你们支持花呗分期吗,,,True,False,abstain,medium,支付方式未覆盖，应转人工
+g075,支持货到付款吗,,,True,False,abstain,medium,支付方式未覆盖
+g076,有优惠券吗,,,True,False,abstain,medium,活动数据在工具，不在 RAG
+g077,能便宜点吗,,,True,False,abstain,medium,议价应转人工，不应编造优惠
+g078,帮我查订单 12345 的物流,,,True,False,abstain,hard,实时订单，应走订单工具或转人工
+g079,我的快递到哪了,,,True,False,abstain,hard,实时物流，应走订单/物流工具
+g080,推荐一款 500 元以内的键盘,,,True,False,abstain,hard,价格过滤应走商品工具，不应由 RAG 编造

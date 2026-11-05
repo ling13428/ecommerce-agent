@@ -1,0 +1,76 @@
+[project]
+name = "ecommerce-agent"
+version = "0.1.0"
+description = "电商智能客服 Agent：多轮对话 + 工具调用 + 知识库 RAG"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi==0.143.3",
+    "uvicorn[standard]==0.54.0",
+    "pydantic==2.14.1",
+    "pydantic-settings==2.16.0",
+    "openai==3.35.1",
+    "httpx==0.28.1",
+    "psycopg[binary]==3.3.6",
+    "psycopg-pool>=3.2,<4",
+    "pgvector==0.5.1",
+    "langgraph==1.2.18",
+    "langchain-core==1.7.0",
+    "langgraph-checkpoint-sqlite==3.1.2",
+    "langgraph-checkpoint-postgres>=3.0,<4",
+    "aiosqlite==0.22.1",
+    "redis>=5.0,<7",
+    "PyYAML==6.0.3",
+    "jieba==0.42.1",
+    "beautifulsoup4==4.15.0",
+    "lxml==6.1.3",
+    "openpyxl==3.1.5",
+    "python-docx==1.2.0",
+    "pypdf==6.21.2",
+    "pdfplumber==0.11.10",
+    "pypdfium2==5.14.0",
+    "pillow==13.0.0",
+    "reportlab==5.1.0",
+    "mcp>=1.2,<2",
+]
+
+[project.optional-dependencies]
+# 可选：CrossEncoder rerank（默认关闭），安装体积较大
+rerank = [
+    "sentence-transformers==6.2.0",
+    "torch==2.14.1",
+    "numpy==2.5.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+    "pytest-asyncio>=0.24,<2",
+    "respx>=0.21,<1",
+    "ruff>=0.9,<1",
+    "mypy>=1.13,<2",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+exclude = [".venv", "data", "reports", "docs"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+files = ["main.py", "agent", "core", "tools", "rag", "services", "mcp_servers"]
+ignore_missing_imports = true
+follow_imports = "silent"
+check_untyped_defs = false
+disallow_untyped_defs = false
+no_implicit_optional = true
+warn_unused_ignores = false
+exclude = ["^data/", "^reports/", "^docs/"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

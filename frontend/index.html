@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>云裳客服 · 智能客服 Agent</title>
+  <link rel="stylesheet" href="styles.css?v=20261025-persist" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">云</div>
+        <div class="brand-text">
+          <strong>云裳客服</strong>
+          <span>智能客服 Agent 演示</span>
+        </div>
+      </div>
+
+      <nav class="role-switch" aria-label="端切换">
+        <button id="roleBuyer" class="role-btn active" data-role="buyer">买家端</button>
+        <button id="roleMerchant" class="role-btn" data-role="merchant">商家工作台</button>
+      </nav>
+
+      <div class="conn">
+        <span id="connDot" class="conn-dot"></span>
+        <span id="connText">连接中…</span>
+      </div>
+    </header>
+
+    <main class="content">
+      <section id="buyerView" class="view buyer-view">
+        <div class="chat-card">
+          <div class="chat-head">
+            <div class="agent-avatar">AI</div>
+            <div class="chat-title">
+              <strong>云裳智能客服</strong>
+              <span id="buyerSubtitle">售前咨询 · 订单物流 · 售后处理</span>
+            </div>
+            <button id="restartBtn" class="ghost-btn" type="button">新会话</button>
+          </div>
+
+          <div class="buyer-bar">
+            <label for="buyerPhoneInput">手机号登录</label>
+            <input
+              id="buyerPhoneInput"
+              list="buyerOptions"
+              maxlength="11"
+              placeholder="11 位手机号"
+              autocomplete="off"
+            />
+            <datalist id="buyerOptions"></datalist>
+            <input
+              id="buyerOtpInput"
+              maxlength="6"
+              placeholder="验证码"
+              autocomplete="one-time-code"
+            />
+            <button id="buyerSendCodeBtn" class="ghost-btn" type="button">发送验证码</button>
+            <button id="buyerLoginBtn" class="ghost-btn" type="button">登录</button>
+            <span id="buyerNameHint" class="buyer-hint">未登录</span>
+          </div>
+
+          <div id="buyerMessages" class="messages" aria-live="polite"></div>
+
+          <div id="quickPrompts" class="quick-prompts">
+            <button type="button" data-prompt="我的订单">我的订单</button>
+            <button type="button" data-prompt="VK75 Pro 现在多少钱？">查商品价格</button>
+            <button type="button" data-prompt="VK75 Pro 的触发键程是多少？">问商品参数</button>
+            <button type="button" data-prompt="我想转人工客服">转人工</button>
+          </div>
+
+          <div id="humanBanner" class="human-banner" hidden>
+            <span class="human-banner-dot"></span>
+            <span id="humanBannerText">人工客服已接管会话，请耐心等待回复。</span>
+          </div>
+
+          <form id="buyerForm" class="composer">
+            <textarea
+              id="buyerInput"
+              rows="1"
+              maxlength="2000"
+              placeholder="输入你的问题，例如：P1001 现在多少钱？"
+            ></textarea>
+            <button type="submit" id="buyerSend" class="send-btn">发送</button>
+          </form>
+
+          <div class="composer-hint">
+            <span>Enter 发送 · Shift + Enter 换行</span>
+            <span id="sessionLabel" class="session-label"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="merchantView" class="view merchant-view" hidden>
+        <aside class="session-list">
+          <div class="admin-auth">
+            <input
+              id="adminTokenInput"
+              type="password"
+              maxlength="128"
+              placeholder="管理 Token"
+              autocomplete="off"
+            />
+            <button id="adminLoginBtn" class="ghost-btn" type="button">登录</button>
+          </div>
+          <div class="side-head">
+            <div>
+              <strong>会话列表</strong>
+              <span id="sessionCount">0 个会话</span>
+            </div>
+            <button id="refreshSessions" class="ghost-btn" type="button">刷新</button>
+          </div>
+          <div id="sessionItems" class="session-items"></div>
+        </aside>
+
+        <div class="workspace">
+          <section id="kpiPanel" class="kpi-panel" hidden>
+            <div class="kpi-head">
+              <div>
+                <strong>数据看板</strong>
+                <span id="kpiMeta">最近 7 天</span>
+              </div>
+              <button id="refreshKpi" class="ghost-btn" type="button">刷新</button>
+            </div>
+            <div class="kpi-cards">
+              <div class="kpi-card">
+                <span>会话</span>
+                <strong id="kpiSessions">0</strong>
+              </div>
+              <div class="kpi-card">
+                <span>解决率</span>
+                <strong id="kpiResolution">-</strong>
+              </div>
+              <div class="kpi-card">
+                <span>转人工率</span>
+                <strong id="kpiHandoff">-</strong>
+              </div>
+              <div class="kpi-card">
+                <span>首响均值</span>
+                <strong id="kpiFirstResponse">-</strong>
+              </div>
+              <div class="kpi-card">
+                <span>首响 P95</span>
+                <strong id="kpiFirstResponseP95">-</strong>
+              </div>
+            </div>
+            <div class="kpi-breakdown">
+              <div>
+                <span class="kpi-label">路由分布</span>
+                <div id="kpiRoutes" class="kpi-bars"></div>
+              </div>
+              <div>
+                <span class="kpi-label">转人工原因</span>
+                <div id="kpiReasons" class="kpi-bars"></div>
+              </div>
+            </div>
+          </section>
+
+          <div id="merchantEmpty" class="empty-state">
+            <div class="empty-mark">CS</div>
+            <strong>暂无会话</strong>
+            <p>买家在左侧「买家端」发起咨询后，会话会实时出现在这里，可人工接管并回复。</p>
+          </div>
+
+          <div id="merchantPanel" class="merchant-panel" hidden>
+            <div class="merchant-head">
+              <div class="merchant-title">
+                <span class="merchant-avatar">买</span>
+                <div>
+                  <strong id="merchantSessionLabel">会话</strong>
+                  <span id="merchantSessionMeta">机器人服务中</span>
+                </div>
+              </div>
+              <div class="merchant-actions">
+                <span id="merchantModeBadge" class="mode-badge bot">机器人</span>
+                <button id="traceToggleBtn" class="primary-ghost-btn" type="button">运行轨迹</button>
+                <button id="takeoverBtn" class="primary-ghost-btn" type="button">人工接管</button>
+              </div>
+            </div>
+
+            <div
+              id="merchantMessages"
+              class="messages merchant-messages"
+              aria-live="polite"
+            ></div>
+
+            <form id="merchantForm" class="composer merchant-composer">
+              <textarea
+                id="merchantInput"
+                rows="1"
+                maxlength="2000"
+                placeholder="以人工客服身份回复买家…"
+              ></textarea>
+              <button type="submit" class="send-btn">回复</button>
+            </form>
+            <div class="composer-hint">
+              <span>人工回复会实时出现在买家端</span>
+              <span id="merchantHint" class="session-label"></span>
+            </div>
+          </div>
+        </div>
+
+        <aside id="tracePanel" class="trace-panel" hidden>
+          <div class="trace-head">
+            <div class="trace-head-text">
+              <strong>Agent 运行轨迹</strong>
+              <span id="traceSubtitle">选择一条机器人回复查看</span>
+            </div>
+            <button id="traceCloseBtn" class="ghost-btn" type="button">收起</button>
+          </div>
+          <div id="traceBody" class="trace-body"></div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js?v=20261025-persist"></script>
+</body>
+</html>

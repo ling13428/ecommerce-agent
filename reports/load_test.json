@@ -1,0 +1,18 @@
+{
+  "mode": "chat",
+  "requests": 50,
+  "concurrency": 10,
+  "total_seconds": 0.753,
+  "rps": 66.41,
+  "statuses": {
+    "200": 50
+  },
+  "errors": [],
+  "latency_ms": {
+    "mean": 80.78,
+    "p50": 77.73,
+    "p95": 102.94,
+    "p99": 114.85,
+    "max": 114.85
+  }
+}

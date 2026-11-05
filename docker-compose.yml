@@ -1,0 +1,207 @@
+name: ecommerce-rag
+
+x-app-build: &app-build
+  context: .
+  args:
+    UV_DEFAULT_INDEX: ${UV_DEFAULT_INDEX:-https://pypi.org/simple}
+    PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim}
+
+x-mcp-common: &mcp-common
+  image: ecommerce-agent:local
+  build: *app-build
+  restart: unless-stopped
+  env_file:
+    - .env
+  environment:
+    DATABASE_URL: postgresql://rag:rag@postgres:5432/ecommerce_rag
+    ORDERS_BACKEND: postgres
+    CACHE_BACKEND: redis
+    REDIS_URL: redis://redis:6379/0
+    LOG_FORMAT: json
+    SALEOR_API_URL: ${SALEOR_API_URL_DOCKER:-http://host.docker.internal:8001/graphql/}
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+
+services:
+  api:
+    image: ecommerce-agent:local
+    build: *app-build
+    container_name: ecommerce-agent-api
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql://rag:rag@postgres:5432/ecommerce_rag
+      ORDERS_BACKEND: postgres
+      SESSION_STORE_BACKEND: postgres
+      AGENT_CHECKPOINT_BACKEND: postgres
+      LOG_FORMAT: json
+      CACHE_BACKEND: redis
+      REDIS_URL: redis://redis:6379/0
+      SESSION_DB_PATH: data/sessions/sessions.db
+      AGENT_CHECKPOINT_DB_PATH: data/sessions/checkpoints.db
+      TOOL_BACKEND: mcp
+      MCP_COMMERCE_URL: http://mcp-commerce:9101/mcp
+      MCP_CATALOG_URL: http://mcp-catalog:9102/mcp
+      MCP_KNOWLEDGE_URL: http://mcp-knowledge:9103/mcp
+      SALEOR_API_URL: ${SALEOR_API_URL_DOCKER:-http://host.docker.internal:8001/graphql/}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/sessions:/app/data/sessions
+      - ./data/orders:/app/data/orders
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      mcp-commerce:
+        condition: service_healthy
+      mcp-catalog:
+        condition: service_healthy
+      mcp-knowledge:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')\"",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  mcp-commerce:
+    <<: *mcp-common
+    container_name: ecommerce-mcp-commerce
+    command:
+      [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "-m",
+        "mcp_servers.run",
+        "commerce",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "9101",
+      ]
+    ports:
+      - "9101:9101"
+    volumes:
+      - ./data/orders:/app/data/orders
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:9101/health')\"",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  mcp-catalog:
+    <<: *mcp-common
+    container_name: ecommerce-mcp-catalog
+    command:
+      [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "-m",
+        "mcp_servers.run",
+        "catalog",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "9102",
+      ]
+    ports:
+      - "9102:9102"
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:9102/health')\"",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  mcp-knowledge:
+    <<: *mcp-common
+    container_name: ecommerce-mcp-knowledge
+    command:
+      [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "-m",
+        "mcp_servers.run",
+        "knowledge",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "9103",
+      ]
+    ports:
+      - "9103:9103"
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:9103/health')\"",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  postgres:
+    # 国内网络直连 Docker Hub 常超时，使用可访问的镜像源
+    image: docker.m.daocloud.io/pgvector/pgvector:pg17
+    container_name: ecommerce-rag-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: rag
+      POSTGRES_PASSWORD: rag
+      POSTGRES_DB: ecommerce_rag
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/initdb:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rag -d ecommerce_rag"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: docker.m.daocloud.io/library/redis:7-alpine
+    container_name: ecommerce-agent-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:
+  redisdata:

@@ -1,0 +1,413 @@
+{
+  "generated_at": "2026-10-31T15:24:00+08:00",
+  "buyers": [
+    {
+      "buyer_id": "BUY-0001",
+      "nickname": "数码玩家阿凯",
+      "name": "李可欣",
+      "login_code": "609660",
+      "phone": "186****9879",
+      "member_level": "普通会员",
+      "city": "上海市浦东新区",
+      "registered_at": "2024-06-12T15:24:00+08:00",
+      "default_address": {
+        "province": "上海市",
+        "city": "上海市",
+        "district": "浦东新区",
+        "detail": "张江路206号12栋***"
+      },
+      "order_count": 5
+    },
+    {
+      "buyer_id": "BUY-0002",
+      "nickname": "林间小鹿",
+      "name": "徐浩然",
+      "login_code": "738554",
+      "phone": "150****9161",
+      "member_level": "钻石会员",
+      "city": "深圳市南山区",
+      "registered_at": "2024-12-08T15:24:00+08:00",
+      "default_address": {
+        "province": "广东省",
+        "city": "深圳市",
+        "district": "南山区",
+        "detail": "科技园191号2栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0003",
+      "nickname": "深夜装机",
+      "name": "黄语嫣",
+      "login_code": "316908",
+      "phone": "188****3114",
+      "member_level": "金牌会员",
+      "city": "天津市南开区",
+      "registered_at": "2025-01-05T15:24:00+08:00",
+      "default_address": {
+        "province": "天津市",
+        "city": "天津市",
+        "district": "南开区",
+        "detail": "鞍山西道210号10栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0004",
+      "nickname": "键盘收藏家",
+      "name": "黄天佑",
+      "login_code": "438245",
+      "phone": "150****2147",
+      "member_level": "普通会员",
+      "city": "厦门市思明区",
+      "registered_at": "2025-07-16T15:24:00+08:00",
+      "default_address": {
+        "province": "福建省",
+        "city": "厦门市",
+        "district": "思明区",
+        "detail": "软件园二期192号5栋***"
+      },
+      "order_count": 3
+    },
+    {
+      "buyer_id": "BUY-0005",
+      "nickname": "阿泽的桌面",
+      "name": "朱浩然",
+      "login_code": "993609",
+      "phone": "188****7037",
+      "member_level": "银牌会员",
+      "city": "武汉市洪山区",
+      "registered_at": "2025-02-10T15:24:00+08:00",
+      "default_address": {
+        "province": "湖北省",
+        "city": "武汉市",
+        "district": "洪山区",
+        "detail": "光谷大道102号2栋***"
+      },
+      "order_count": 3
+    },
+    {
+      "buyer_id": "BUY-0006",
+      "nickname": "小满同学",
+      "name": "张欣怡",
+      "login_code": "263251",
+      "phone": "136****8799",
+      "member_level": "银牌会员",
+      "city": "深圳市南山区",
+      "registered_at": "2025-03-03T15:24:00+08:00",
+      "default_address": {
+        "province": "广东省",
+        "city": "深圳市",
+        "district": "南山区",
+        "detail": "科技园32号14栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0007",
+      "nickname": "北岛咖啡",
+      "name": "马思远",
+      "login_code": "759019",
+      "phone": "138****9292",
+      "member_level": "金牌会员",
+      "city": "厦门市思明区",
+      "registered_at": "2025-11-18T15:24:00+08:00",
+      "default_address": {
+        "province": "福建省",
+        "city": "厦门市",
+        "district": "思明区",
+        "detail": "软件园二期115号3栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0008",
+      "nickname": "一只柚子",
+      "name": "胡梓萱",
+      "login_code": "272302",
+      "phone": "138****5575",
+      "member_level": "钻石会员",
+      "city": "上海市浦东新区",
+      "registered_at": "2025-08-27T15:24:00+08:00",
+      "default_address": {
+        "province": "上海市",
+        "city": "上海市",
+        "district": "浦东新区",
+        "detail": "张江路141号4栋***"
+      },
+      "order_count": 3
+    },
+    {
+      "buyer_id": "BUY-0009",
+      "nickname": "耳机重度用户",
+      "name": "孙静怡",
+      "login_code": "844449",
+      "phone": "150****5822",
+      "member_level": "银牌会员",
+      "city": "苏州市工业园区",
+      "registered_at": "2025-02-01T15:24:00+08:00",
+      "default_address": {
+        "province": "江苏省",
+        "city": "苏州市",
+        "district": "工业园区",
+        "detail": "星湖街237号3栋***"
+      },
+      "order_count": 1
+    },
+    {
+      "buyer_id": "BUY-0010",
+      "nickname": "周末宅家",
+      "name": "朱雨桐",
+      "login_code": "416122",
+      "phone": "158****2327",
+      "member_level": "银牌会员",
+      "city": "武汉市洪山区",
+      "registered_at": "2026-09-21T15:24:00+08:00",
+      "default_address": {
+        "province": "湖北省",
+        "city": "武汉市",
+        "district": "洪山区",
+        "detail": "光谷大道295号2栋***"
+      },
+      "order_count": 1
+    },
+    {
+      "buyer_id": "BUY-0011",
+      "nickname": "橘子汽水",
+      "name": "林天佑",
+      "login_code": "469311",
+      "phone": "135****8332",
+      "member_level": "普通会员",
+      "city": "宁波市鄞州区",
+      "registered_at": "2026-06-11T15:24:00+08:00",
+      "default_address": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "district": "鄞州区",
+        "detail": "中山东路253号2栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0012",
+      "nickname": "桌面美学研究所",
+      "name": "黄雨桐",
+      "login_code": "678742",
+      "phone": "158****9036",
+      "member_level": "金牌会员",
+      "city": "重庆市渝北区",
+      "registered_at": "2025-12-13T15:24:00+08:00",
+      "default_address": {
+        "province": "重庆市",
+        "city": "重庆市",
+        "district": "渝北区",
+        "detail": "金开大道89号12栋***"
+      },
+      "order_count": 1
+    },
+    {
+      "buyer_id": "BUY-0013",
+      "nickname": "晚风与猫",
+      "name": "吴泽宇",
+      "login_code": "545795",
+      "phone": "188****2287",
+      "member_level": "金牌会员",
+      "city": "重庆市渝北区",
+      "registered_at": "2025-07-19T15:24:00+08:00",
+      "default_address": {
+        "province": "重庆市",
+        "city": "重庆市",
+        "district": "渝北区",
+        "detail": "金开大道163号11栋***"
+      },
+      "order_count": 4
+    },
+    {
+      "buyer_id": "BUY-0014",
+      "nickname": "新手外设党",
+      "name": "王梓萱",
+      "login_code": "903001",
+      "phone": "158****6868",
+      "member_level": "普通会员",
+      "city": "宁波市鄞州区",
+      "registered_at": "2025-05-30T15:24:00+08:00",
+      "default_address": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "district": "鄞州区",
+        "detail": "中山东路157号10栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0015",
+      "nickname": "清风徐来",
+      "name": "高明轩",
+      "login_code": "472121",
+      "phone": "158****7417",
+      "member_level": "钻石会员",
+      "city": "武汉市洪山区",
+      "registered_at": "2026-04-22T15:24:00+08:00",
+      "default_address": {
+        "province": "湖北省",
+        "city": "武汉市",
+        "district": "洪山区",
+        "detail": "光谷大道211号15栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0016",
+      "nickname": "不加班的一天",
+      "name": "孙梦琪",
+      "login_code": "252941",
+      "phone": "150****8494",
+      "member_level": "钻石会员",
+      "city": "西安市雁塔区",
+      "registered_at": "2024-09-09T15:24:00+08:00",
+      "default_address": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "雁塔区",
+        "detail": "科技路110号13栋***"
+      },
+      "order_count": 3
+    },
+    {
+      "buyer_id": "BUY-0017",
+      "nickname": "电竞小队长",
+      "name": "罗语嫣",
+      "login_code": "988927",
+      "phone": "188****5155",
+      "member_level": "钻石会员",
+      "city": "长沙市岳麓区",
+      "registered_at": "2026-05-10T15:24:00+08:00",
+      "default_address": {
+        "province": "湖南省",
+        "city": "长沙市",
+        "district": "岳麓区",
+        "detail": "麓谷大道231号12栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0018",
+      "nickname": "慢热型选手",
+      "name": "黄梓萱",
+      "login_code": "303802",
+      "phone": "135****5549",
+      "member_level": "银牌会员",
+      "city": "长沙市岳麓区",
+      "registered_at": "2026-02-19T15:24:00+08:00",
+      "default_address": {
+        "province": "湖南省",
+        "city": "长沙市",
+        "district": "岳麓区",
+        "detail": "麓谷大道183号5栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0019",
+      "nickname": "极简主义者",
+      "name": "张静怡",
+      "login_code": "752933",
+      "phone": "188****9661",
+      "member_level": "金牌会员",
+      "city": "西安市雁塔区",
+      "registered_at": "2025-08-11T15:24:00+08:00",
+      "default_address": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "雁塔区",
+        "detail": "科技路152号14栋***"
+      },
+      "order_count": 5
+    },
+    {
+      "buyer_id": "BUY-0020",
+      "nickname": "爱折腾的鱼",
+      "name": "李博文",
+      "login_code": "650307",
+      "phone": "150****2829",
+      "member_level": "银牌会员",
+      "city": "南京市鼓楼区",
+      "registered_at": "2025-03-28T15:24:00+08:00",
+      "default_address": {
+        "province": "江苏省",
+        "city": "南京市",
+        "district": "鼓楼区",
+        "detail": "中山北路231号18栋***"
+      },
+      "order_count": 1
+    },
+    {
+      "buyer_id": "BUY-0021",
+      "nickname": "云端漫步",
+      "name": "张若初",
+      "login_code": "923956",
+      "phone": "138****2860",
+      "member_level": "普通会员",
+      "city": "长沙市岳麓区",
+      "registered_at": "2025-01-21T15:24:00+08:00",
+      "default_address": {
+        "province": "湖南省",
+        "city": "长沙市",
+        "district": "岳麓区",
+        "detail": "麓谷大道240号8栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0022",
+      "nickname": "摸鱼研究所",
+      "name": "徐静怡",
+      "login_code": "322035",
+      "phone": "158****5721",
+      "member_level": "普通会员",
+      "city": "杭州市西湖区",
+      "registered_at": "2024-07-29T15:24:00+08:00",
+      "default_address": {
+        "province": "浙江省",
+        "city": "杭州市",
+        "district": "西湖区",
+        "detail": "文三路286号2栋***"
+      },
+      "order_count": 2
+    },
+    {
+      "buyer_id": "BUY-0023",
+      "nickname": "半糖主义",
+      "name": "罗博文",
+      "login_code": "985216",
+      "phone": "136****1712",
+      "member_level": "普通会员",
+      "city": "广州市天河区",
+      "registered_at": "2025-02-24T15:24:00+08:00",
+      "default_address": {
+        "province": "广东省",
+        "city": "广州市",
+        "district": "天河区",
+        "detail": "体育西路289号15栋***"
+      },
+      "order_count": 7
+    },
+    {
+      "buyer_id": "BUY-0024",
+      "nickname": "冬日暖阳",
+      "name": "张雨桐",
+      "login_code": "538431",
+      "phone": "158****8923",
+      "member_level": "银牌会员",
+      "city": "南京市鼓楼区",
+      "registered_at": "2025-07-21T15:24:00+08:00",
+      "default_address": {
+        "province": "江苏省",
+        "city": "南京市",
+        "district": "鼓楼区",
+        "detail": "中山北路37号11栋***"
+      },
+      "order_count": 1
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+.git
+.gitignore
+.venv
+.idea
+.pytest_cache
+__pycache__
+*.pyc
+.env
+data/models
+data/sessions
+data/orders/orders.db
+data/orders/orders.db-wal
+data/orders/orders.db-shm
+reports
+docs/transcripts
+test_stream.py
+test_tool.py

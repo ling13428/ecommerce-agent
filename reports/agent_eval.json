@@ -1,0 +1,480 @@
+{
+  "total": 47,
+  "passed": 47,
+  "accuracy": 1.0,
+  "by_category": {
+    "aftersale": {
+      "total": 5,
+      "passed": 5,
+      "accuracy": 1.0
+    },
+    "coupon": {
+      "total": 1,
+      "passed": 1,
+      "accuracy": 1.0
+    },
+    "knowledge": {
+      "total": 10,
+      "passed": 10,
+      "accuracy": 1.0
+    },
+    "logistics": {
+      "total": 5,
+      "passed": 5,
+      "accuracy": 1.0
+    },
+    "order": {
+      "total": 10,
+      "passed": 10,
+      "accuracy": 1.0
+    },
+    "payment": {
+      "total": 2,
+      "passed": 2,
+      "accuracy": 1.0
+    },
+    "product": {
+      "total": 10,
+      "passed": 10,
+      "accuracy": 1.0
+    },
+    "recommend": {
+      "total": 2,
+      "passed": 2,
+      "accuracy": 1.0
+    },
+    "security": {
+      "total": 2,
+      "passed": 2,
+      "accuracy": 1.0
+    }
+  },
+  "failures": [],
+  "results": [
+    {
+      "id": "ag001",
+      "category": "product",
+      "tool": "get_product",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 5.12
+    },
+    {
+      "id": "ag002",
+      "category": "product",
+      "tool": "get_product",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.03
+    },
+    {
+      "id": "ag003",
+      "category": "product",
+      "tool": "get_product",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.01
+    },
+    {
+      "id": "ag004",
+      "category": "product",
+      "tool": "get_product",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.01
+    },
+    {
+      "id": "ag005",
+      "category": "product",
+      "tool": "get_product",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.01
+    },
+    {
+      "id": "ag006",
+      "category": "product",
+      "tool": "get_product",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.01
+    },
+    {
+      "id": "ag007",
+      "category": "product",
+      "tool": "get_product",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.01
+    },
+    {
+      "id": "ag008",
+      "category": "product",
+      "tool": "get_product",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.0
+    },
+    {
+      "id": "ag009",
+      "category": "product",
+      "tool": "get_product",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.0
+    },
+    {
+      "id": "ag010",
+      "category": "product",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 2256.15
+    },
+    {
+      "id": "ag011",
+      "category": "knowledge",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 236.92
+    },
+    {
+      "id": "ag012",
+      "category": "knowledge",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 306.21
+    },
+    {
+      "id": "ag013",
+      "category": "knowledge",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 239.22
+    },
+    {
+      "id": "ag014",
+      "category": "knowledge",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 241.47
+    },
+    {
+      "id": "ag015",
+      "category": "knowledge",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 229.77
+    },
+    {
+      "id": "ag016",
+      "category": "knowledge",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 203.17
+    },
+    {
+      "id": "ag017",
+      "category": "knowledge",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 250.37
+    },
+    {
+      "id": "ag018",
+      "category": "knowledge",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 220.18
+    },
+    {
+      "id": "ag019",
+      "category": "knowledge",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 230.46
+    },
+    {
+      "id": "ag020",
+      "category": "knowledge",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 357.82
+    },
+    {
+      "id": "ag021",
+      "category": "order",
+      "tool": "get_order",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 25.41
+    },
+    {
+      "id": "ag022",
+      "category": "order",
+      "tool": "get_order",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 3.06
+    },
+    {
+      "id": "ag023",
+      "category": "order",
+      "tool": "get_logistics",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 3.1
+    },
+    {
+      "id": "ag024",
+      "category": "order",
+      "tool": "cancel_order",
+      "ok": true,
+      "reason": "",
+      "status": "confirm_required",
+      "elapsed_ms": 1.32
+    },
+    {
+      "id": "ag025",
+      "category": "order",
+      "tool": "update_address",
+      "ok": true,
+      "reason": "",
+      "status": "confirm_required",
+      "elapsed_ms": 1.36
+    },
+    {
+      "id": "ag026",
+      "category": "order",
+      "tool": "intercept_parcel",
+      "ok": true,
+      "reason": "",
+      "status": "confirm_required",
+      "elapsed_ms": 1.13
+    },
+    {
+      "id": "ag027",
+      "category": "order",
+      "tool": "get_order",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 3.5
+    },
+    {
+      "id": "ag028",
+      "category": "order",
+      "tool": "get_order",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 2.78
+    },
+    {
+      "id": "ag029",
+      "category": "order",
+      "tool": "get_payment_methods",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.03
+    },
+    {
+      "id": "ag030",
+      "category": "order",
+      "tool": "get_order",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 2.57
+    },
+    {
+      "id": "ag031",
+      "category": "logistics",
+      "tool": "get_logistics",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 3.2
+    },
+    {
+      "id": "ag032",
+      "category": "logistics",
+      "tool": "get_logistics",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 2.9
+    },
+    {
+      "id": "ag033",
+      "category": "logistics",
+      "tool": "get_logistics",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 3.39
+    },
+    {
+      "id": "ag034",
+      "category": "logistics",
+      "tool": "get_logistics",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 2.97
+    },
+    {
+      "id": "ag035",
+      "category": "logistics",
+      "tool": "get_logistics",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 2.67
+    },
+    {
+      "id": "ag036",
+      "category": "aftersale",
+      "tool": "get_aftersale",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 2.57
+    },
+    {
+      "id": "ag037",
+      "category": "aftersale",
+      "tool": "get_aftersale",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 2.62
+    },
+    {
+      "id": "ag038",
+      "category": "aftersale",
+      "tool": "create_aftersale",
+      "ok": true,
+      "reason": "",
+      "status": "confirm_required",
+      "elapsed_ms": 1.37
+    },
+    {
+      "id": "ag039",
+      "category": "aftersale",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 254.05
+    },
+    {
+      "id": "ag040",
+      "category": "aftersale",
+      "tool": "get_aftersale",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 2.99
+    },
+    {
+      "id": "ag041",
+      "category": "payment",
+      "tool": "get_payment_methods",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.03
+    },
+    {
+      "id": "ag042",
+      "category": "coupon",
+      "tool": "get_coupons",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 1.78
+    },
+    {
+      "id": "ag043",
+      "category": "recommend",
+      "tool": "recommend_products",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 1.49
+    },
+    {
+      "id": "ag044",
+      "category": "recommend",
+      "tool": "recommend_products",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.42
+    },
+    {
+      "id": "ag045",
+      "category": "payment",
+      "tool": "get_payment_methods",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 0.02
+    },
+    {
+      "id": "ag057",
+      "category": "security",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 237.15
+    },
+    {
+      "id": "ag060",
+      "category": "security",
+      "tool": "search_knowledge",
+      "ok": true,
+      "reason": "",
+      "status": null,
+      "elapsed_ms": 219.75
+    }
+  ],
+  "mode": "tools",
+  "l2": false
+}

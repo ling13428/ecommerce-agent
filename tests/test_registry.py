@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
 
+from tools.products import PRODUCTS
 from tools.registry import (
     ToolSpec,
     execute_tool,
@@ -14,9 +15,9 @@ class WriteArgs(BaseModel):
 
 
 def test_get_product_tool_validates_and_returns_data():
-    result = execute_tool("get_product", {"product_id": "P1001"})
+    result = execute_tool("get_product", {"product_id": "P2001"})
     assert result["ok"] is True
-    assert result["result"]["product"]["price"] == 299
+    assert result["result"]["product"]["price"] == PRODUCTS["P2001"]["price"]
 
 
 def test_get_product_requires_a_lookup_key():
@@ -76,4 +77,18 @@ def test_write_tool_requires_confirmation():
 
 def test_openai_tools_only_expose_registered_tools():
     names = {tool["function"]["name"] for tool in openai_tools()}
-    assert names == {"get_product", "transfer_to_human"}
+    assert names == {
+        "get_product",
+        "search_knowledge",
+        "get_order",
+        "get_logistics",
+        "get_aftersale",
+        "cancel_order",
+        "update_address",
+        "intercept_parcel",
+        "create_aftersale",
+        "get_payment_methods",
+        "get_coupons",
+        "recommend_products",
+        "transfer_to_human",
+    }

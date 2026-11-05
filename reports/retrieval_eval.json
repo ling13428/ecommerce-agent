@@ -1,0 +1,3468 @@
+{
+  "gold": "D:\\workspace\\电商客服\\data\\eval\\retrieval_gold.jsonl",
+  "top_k": 5,
+  "min_score": 0.55,
+  "counts": {
+    "total": 80,
+    "answerable": 70,
+    "no_answer": 10
+  },
+  "metrics": {
+    "recall": {
+      "1": 0.41904761904761906,
+      "3": 0.85,
+      "5": 0.9214285714285714
+    },
+    "hit_rate": {
+      "1": 0.5285714285714286,
+      "3": 0.9285714285714286,
+      "5": 0.9857142857142858
+    },
+    "mrr": 0.7247619047619048,
+    "abstain_accuracy": 0.3,
+    "false_abstain_rate": 0.0,
+    "avg_latency": 0.7737678025001514
+  },
+  "items": [
+    {
+      "id": "g001",
+      "query": "VK75 Pro 的触发键程是多少",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7225173000272068,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 42.68062420000206,
+      "hits": [
+        {
+          "parent_id": "P2001-01_P001",
+          "doc_id": "P2001-01",
+          "score": 0.7225173000272068
+        },
+        {
+          "parent_id": "P2001-02_P001",
+          "doc_id": "P2001-02",
+          "score": 0.709386152588497
+        },
+        {
+          "parent_id": "P2002-01_P001",
+          "doc_id": "P2002-01",
+          "score": 0.7007396995580487
+        },
+        {
+          "parent_id": "P2003-02_P001",
+          "doc_id": "P2003-02",
+          "score": 0.6849771329774291
+        },
+        {
+          "parent_id": "P2004-01_P001",
+          "doc_id": "P2004-01",
+          "score": 0.6842003088236224
+        }
+      ]
+    },
+    {
+      "id": "g002",
+      "query": "VK75 Ultra 的回报率是多少",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7152877493459957,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5
+      },
+      "latency": 0.32182290000491776,
+      "hits": [
+        {
+          "parent_id": "P2003-03_P001",
+          "doc_id": "P2003-03",
+          "score": 0.7152877493459957
+        },
+        {
+          "parent_id": "P2002-03_P001",
+          "doc_id": "P2002-03",
+          "score": 0.7074466943740895
+        },
+        {
+          "parent_id": "P2004-03_P001",
+          "doc_id": "P2004-03",
+          "score": 0.704066276550298
+        },
+        {
+          "parent_id": "P2001-03_P001",
+          "doc_id": "P2001-03",
+          "score": 0.687191050481264
+        },
+        {
+          "parent_id": "P2014-03_P001",
+          "doc_id": "P2014-03",
+          "score": 0.6834894433757168
+        }
+      ]
+    },
+    {
+      "id": "g003",
+      "query": "VK75 SE 和 VK75 Pro 的回报率有什么区别",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6682964958791142,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.25,
+        "3": 0.5,
+        "5": 0.5
+      },
+      "latency": 0.33731319999787956,
+      "hits": [
+        {
+          "parent_id": "P2004-03_P001",
+          "doc_id": "P2004-03",
+          "score": 0.6682964958791142
+        },
+        {
+          "parent_id": "P2001-03_P001",
+          "doc_id": "P2001-03",
+          "score": 0.6297613603018914
+        },
+        {
+          "parent_id": "P2002-03_P001",
+          "doc_id": "P2002-03",
+          "score": 0.6280320730171116
+        },
+        {
+          "parent_id": "P2004-01_P001",
+          "doc_id": "P2004-01",
+          "score": 0.6278727054595992
+        },
+        {
+          "parent_id": "P2003-03_P001",
+          "doc_id": "P2003-03",
+          "score": 0.6067908821466327
+        }
+      ]
+    },
+    {
+      "id": "g004",
+      "query": "VK65 Pro 支持哪些连接方式",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8090782051729101,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5
+      },
+      "latency": 0.2858669999986887,
+      "hits": [
+        {
+          "parent_id": "P2006-03_P001",
+          "doc_id": "P2006-03",
+          "score": 0.8090782051729101
+        },
+        {
+          "parent_id": "P2007-03_P001",
+          "doc_id": "P2007-03",
+          "score": 0.7744815445972874
+        },
+        {
+          "parent_id": "P2009-03_P001",
+          "doc_id": "P2009-03",
+          "score": 0.7607886648648196
+        },
+        {
+          "parent_id": "P2005-03_P001",
+          "doc_id": "P2005-03",
+          "score": 0.7560019493103081
+        },
+        {
+          "parent_id": "P2024-03_P001",
+          "doc_id": "P2024-03",
+          "score": 0.7533153001445889
+        }
+      ]
+    },
+    {
+      "id": "g005",
+      "query": "VK68 Ultra 的电池容量是多少",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6780854655453298,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5
+      },
+      "latency": 0.2237569999997504,
+      "hits": [
+        {
+          "parent_id": "P2010-03_P001",
+          "doc_id": "P2010-03",
+          "score": 0.6780854655453298
+        },
+        {
+          "parent_id": "P2009-03_P001",
+          "doc_id": "P2009-03",
+          "score": 0.6441435813903809
+        },
+        {
+          "parent_id": "P2017-03_P001",
+          "doc_id": "P2017-03",
+          "score": 0.6382175899614352
+        },
+        {
+          "parent_id": "P2014-03_P001",
+          "doc_id": "P2014-03",
+          "score": 0.6223975419998169
+        },
+        {
+          "parent_id": "P2010-01_P001",
+          "doc_id": "P2010-01",
+          "score": 0.6200320720672607
+        }
+      ]
+    },
+    {
+      "id": "g006",
+      "query": "VK87 Ultra 的重量",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.689003866255515,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.2411160000192467,
+      "hits": [
+        {
+          "parent_id": "P2014-02_P001",
+          "doc_id": "P2014-02",
+          "score": 0.689003866255515
+        },
+        {
+          "parent_id": "P2014-01_P001",
+          "doc_id": "P2014-01",
+          "score": 0.6879949383732652
+        },
+        {
+          "parent_id": "P2013-01_P001",
+          "doc_id": "P2013-01",
+          "score": 0.6393498968884321
+        },
+        {
+          "parent_id": "P2013-02_P001",
+          "doc_id": "P2013-02",
+          "score": 0.6361884691602916
+        },
+        {
+          "parent_id": "P2012-01_P001",
+          "doc_id": "P2012-01",
+          "score": 0.6314465999603271
+        }
+      ]
+    },
+    {
+      "id": "g007",
+      "query": "VK98 Pro 是什么配列",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7069716453552246,
+      "first_rank": 5,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "latency": 0.2599943999957759,
+      "hits": [
+        {
+          "parent_id": "P2016-01_P001",
+          "doc_id": "P2016-01",
+          "score": 0.7069716453552246
+        },
+        {
+          "parent_id": "P2016-03_P001",
+          "doc_id": "P2016-03",
+          "score": 0.6987114369101202
+        },
+        {
+          "parent_id": "P2015-01_P001",
+          "doc_id": "P2015-01",
+          "score": 0.6735233068466187
+        },
+        {
+          "parent_id": "P2015-03_P001",
+          "doc_id": "P2015-03",
+          "score": 0.6709790629732062
+        },
+        {
+          "parent_id": "P2016-02_P001",
+          "doc_id": "P2016-02",
+          "score": 0.6668364604364774
+        }
+      ]
+    },
+    {
+      "id": "g008",
+      "query": "VK104 Pro 用的什么轴体",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7282886071033129,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.20278719998896122,
+      "hits": [
+        {
+          "parent_id": "P2019-01_P001",
+          "doc_id": "P2019-01",
+          "score": 0.7282886071033129
+        },
+        {
+          "parent_id": "P2019-02_P001",
+          "doc_id": "P2019-02",
+          "score": 0.7025464950474218
+        },
+        {
+          "parent_id": "P2018-01_P001",
+          "doc_id": "P2018-01",
+          "score": 0.7023332473834508
+        },
+        {
+          "parent_id": "P2019-03_P001",
+          "doc_id": "P2019-03",
+          "score": 0.6802990448742278
+        },
+        {
+          "parent_id": "P2018-02_P001",
+          "doc_id": "P2018-02",
+          "score": 0.6780014442206302
+        }
+      ]
+    },
+    {
+      "id": "g009",
+      "query": "MK75 Pro 是什么结构",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6950089880808029,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.3001726999937091,
+      "hits": [
+        {
+          "parent_id": "P2020-01_P001",
+          "doc_id": "P2020-01",
+          "score": 0.6950089880808029
+        },
+        {
+          "parent_id": "P2020-02_P001",
+          "doc_id": "P2020-02",
+          "score": 0.6663207809233459
+        },
+        {
+          "parent_id": "P2022-01_P001",
+          "doc_id": "P2022-01",
+          "score": 0.6537296978396369
+        },
+        {
+          "parent_id": "P2021-01_P001",
+          "doc_id": "P2021-01",
+          "score": 0.6452507203518486
+        },
+        {
+          "parent_id": "P2001-01_P001",
+          "doc_id": "P2001-01",
+          "score": 0.6432194901472249
+        }
+      ]
+    },
+    {
+      "id": "g010",
+      "query": "MK60 的键帽是什么材质",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7314367890357971,
+      "first_rank": 3,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.23582940001506358,
+      "hits": [
+        {
+          "parent_id": "P2027-01_P001",
+          "doc_id": "P2027-01",
+          "score": 0.7314367890357971
+        },
+        {
+          "parent_id": "P2027-03_P001",
+          "doc_id": "P2027-03",
+          "score": 0.7066185299526782
+        },
+        {
+          "parent_id": "P2027-02_P001",
+          "doc_id": "P2027-02",
+          "score": 0.6988487839698792
+        },
+        {
+          "parent_id": "P2011-01_P001",
+          "doc_id": "P2011-01",
+          "score": 0.6732284627326868
+        },
+        {
+          "parent_id": "P2023-01_P001",
+          "doc_id": "P2023-01",
+          "score": 0.6571524730759116
+        }
+      ]
+    },
+    {
+      "id": "g011",
+      "query": "SL75 用的是什么轴",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6989143103037572,
+      "first_rank": 3,
+      "recall": {
+        "1": 0.0,
+        "3": 0.5,
+        "5": 0.5
+      },
+      "latency": 0.2123194999876432,
+      "hits": [
+        {
+          "parent_id": "P2034-01_P001",
+          "doc_id": "P2034-01",
+          "score": 0.6989143103037572
+        },
+        {
+          "parent_id": "P2035-01_P001",
+          "doc_id": "P2035-01",
+          "score": 0.6899791750318085
+        },
+        {
+          "parent_id": "P2034-03_P001",
+          "doc_id": "P2034-03",
+          "score": 0.6568514508947324
+        },
+        {
+          "parent_id": "P2035-03_P001",
+          "doc_id": "P2035-03",
+          "score": 0.6502248838610916
+        },
+        {
+          "parent_id": "P2035-02_P001",
+          "doc_id": "P2035-02",
+          "score": 0.6425942374048903
+        }
+      ]
+    },
+    {
+      "id": "g012",
+      "query": "AL75 的外壳是什么材质",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6665547092722273,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.25176109999301843,
+      "hits": [
+        {
+          "parent_id": "P2040-01_P001",
+          "doc_id": "P2040-01",
+          "score": 0.6665547092722273
+        },
+        {
+          "parent_id": "P2040-02_P001",
+          "doc_id": "P2040-02",
+          "score": 0.6107099602261152
+        },
+        {
+          "parent_id": "P2040-03_P001",
+          "doc_id": "P2040-03",
+          "score": 0.5980693163213812
+        },
+        {
+          "parent_id": "P2035-01_P001",
+          "doc_id": "P2035-01",
+          "score": 0.5947148622657423
+        },
+        {
+          "parent_id": "P2020-01_P001",
+          "doc_id": "P2020-01",
+          "score": 0.5906957455847557
+        }
+      ]
+    },
+    {
+      "id": "g013",
+      "query": "VM9 Pro 用的什么传感器",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6899668389539136,
+      "first_rank": 4,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "latency": 0.24813110000104643,
+      "hits": [
+        {
+          "parent_id": "P2041-01_P001",
+          "doc_id": "P2041-01",
+          "score": 0.6899668389539136
+        },
+        {
+          "parent_id": "P2042-01_P001",
+          "doc_id": "P2042-01",
+          "score": 0.6620531485017361
+        },
+        {
+          "parent_id": "P2044-01_P001",
+          "doc_id": "P2044-01",
+          "score": 0.6394214249002096
+        },
+        {
+          "parent_id": "P2041-02_P001",
+          "doc_id": "P2041-02",
+          "score": 0.6285472733648267
+        },
+        {
+          "parent_id": "P2069-01_P001",
+          "doc_id": "P2069-01",
+          "score": 0.6274863107510631
+        }
+      ]
+    },
+    {
+      "id": "g014",
+      "query": "VM9 Ultra 的重量和回报率",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.718879222869873,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5
+      },
+      "latency": 0.21773580001899973,
+      "hits": [
+        {
+          "parent_id": "P2043-01_P001",
+          "doc_id": "P2043-01",
+          "score": 0.718879222869873
+        },
+        {
+          "parent_id": "P2042-01_P001",
+          "doc_id": "P2042-01",
+          "score": 0.6787391496456189
+        },
+        {
+          "parent_id": "P2055-01_P001",
+          "doc_id": "P2055-01",
+          "score": 0.6659661730548052
+        },
+        {
+          "parent_id": "P2041-01_P001",
+          "doc_id": "P2041-01",
+          "score": 0.6646978455421788
+        },
+        {
+          "parent_id": "P2047-01_P001",
+          "doc_id": "P2047-01",
+          "score": 0.6520169571643164
+        }
+      ]
+    },
+    {
+      "id": "g015",
+      "query": "VM3 Mini 有多重",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7369717642035255,
+      "first_rank": 5,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "latency": 0.18994059998658486,
+      "hits": [
+        {
+          "parent_id": "P2050-01_P001",
+          "doc_id": "P2050-01",
+          "score": 0.7369717642035255
+        },
+        {
+          "parent_id": "P2048-01_P001",
+          "doc_id": "P2048-01",
+          "score": 0.679462672423962
+        },
+        {
+          "parent_id": "P2049-01_P001",
+          "doc_id": "P2049-01",
+          "score": 0.6603658997794462
+        },
+        {
+          "parent_id": "P2044-01_P001",
+          "doc_id": "P2044-01",
+          "score": 0.6569012403488159
+        },
+        {
+          "parent_id": "P2050-02_P001",
+          "doc_id": "P2050-02",
+          "score": 0.6518732101841705
+        }
+      ]
+    },
+    {
+      "id": "g016",
+      "query": "GM6 Pro 用的什么微动",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.645384409748589,
+      "first_rank": 3,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.2614785999758169,
+      "hits": [
+        {
+          "parent_id": "P2062-01_P001",
+          "doc_id": "P2062-01",
+          "score": 0.645384409748589
+        },
+        {
+          "parent_id": "P2061-01_P001",
+          "doc_id": "P2061-01",
+          "score": 0.6151937246322675
+        },
+        {
+          "parent_id": "P2062-02_P001",
+          "doc_id": "P2062-02",
+          "score": 0.6151647201082289
+        },
+        {
+          "parent_id": "P2046-01_P001",
+          "doc_id": "P2046-01",
+          "score": 0.6048777879738215
+        },
+        {
+          "parent_id": "P2060-01_P001",
+          "doc_id": "P2060-01",
+          "score": 0.6007591248011164
+        }
+      ]
+    },
+    {
+      "id": "g017",
+      "query": "TM9 Pro 的传感器和重量",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7112879157066345,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5
+      },
+      "latency": 0.28258550001191907,
+      "hits": [
+        {
+          "parent_id": "P2069-01_P001",
+          "doc_id": "P2069-01",
+          "score": 0.7112879157066345
+        },
+        {
+          "parent_id": "P2041-01_P001",
+          "doc_id": "P2041-01",
+          "score": 0.6831395248341042
+        },
+        {
+          "parent_id": "P2068-01_P001",
+          "doc_id": "P2068-01",
+          "score": 0.6580408027123494
+        },
+        {
+          "parent_id": "P2067-01_P001",
+          "doc_id": "P2067-01",
+          "score": 0.6456071138381958
+        },
+        {
+          "parent_id": "P2042-01_P001",
+          "doc_id": "P2042-01",
+          "score": 0.6440001342296532
+        }
+      ]
+    },
+    {
+      "id": "g018",
+      "query": "AH9 Pro 的发声单元和麦克风",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7115759849548391,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.26790170001913793,
+      "hits": [
+        {
+          "parent_id": "P2076-01_P001",
+          "doc_id": "P2076-01",
+          "score": 0.7115759849548391
+        },
+        {
+          "parent_id": "P2076-02_P001",
+          "doc_id": "P2076-02",
+          "score": 0.6786551283988446
+        },
+        {
+          "parent_id": "P2076-03_P001",
+          "doc_id": "P2076-03",
+          "score": 0.6700104877368346
+        },
+        {
+          "parent_id": "P2077-01_P001",
+          "doc_id": "P2077-01",
+          "score": 0.6655226746513065
+        },
+        {
+          "parent_id": "P2077-02_P001",
+          "doc_id": "P2077-02",
+          "score": 0.650256215058823
+        }
+      ]
+    },
+    {
+      "id": "g019",
+      "query": "VK75 Pro 适合什么场景",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6899209803390028,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.20375019998755306,
+      "hits": [
+        {
+          "parent_id": "P2001-01_P001",
+          "doc_id": "P2001-01",
+          "score": 0.6899209803390028
+        },
+        {
+          "parent_id": "P2002-01_P001",
+          "doc_id": "P2002-01",
+          "score": 0.6689061522483873
+        },
+        {
+          "parent_id": "P2003-01_P001",
+          "doc_id": "P2003-01",
+          "score": 0.6632459163665818
+        },
+        {
+          "parent_id": "P2020-01_P001",
+          "doc_id": "P2020-01",
+          "score": 0.6607243024871274
+        },
+        {
+          "parent_id": "P2004-01_P001",
+          "doc_id": "P2004-01",
+          "score": 0.6593273078994351
+        }
+      ]
+    },
+    {
+      "id": "g020",
+      "query": "VK75 SE 和 VK75 Pro 的定位有什么区别",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6524883897595649,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.3597462000034284,
+      "hits": [
+        {
+          "parent_id": "P2004-01_P001",
+          "doc_id": "P2004-01",
+          "score": 0.6524883897595649
+        },
+        {
+          "parent_id": "P2001-01_P001",
+          "doc_id": "P2001-01",
+          "score": 0.62653380273585
+        },
+        {
+          "parent_id": "P2004-02_P001",
+          "doc_id": "P2004-02",
+          "score": 0.5954005058467864
+        },
+        {
+          "parent_id": "P2020-01_P001",
+          "doc_id": "P2020-01",
+          "score": 0.5904407989453359
+        },
+        {
+          "parent_id": "P2002-01_P001",
+          "doc_id": "P2002-01",
+          "score": 0.5853132503851395
+        }
+      ]
+    },
+    {
+      "id": "g021",
+      "query": "MK75 Pro 适合办公吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6883200964355308,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.32180419997894205,
+      "hits": [
+        {
+          "parent_id": "P2020-01_P001",
+          "doc_id": "P2020-01",
+          "score": 0.6883200964355308
+        },
+        {
+          "parent_id": "P2020-03_P001",
+          "doc_id": "P2020-03",
+          "score": 0.6630326515973846
+        },
+        {
+          "parent_id": "P2022-01_P001",
+          "doc_id": "P2022-01",
+          "score": 0.6619685300644892
+        },
+        {
+          "parent_id": "P2021-01_P001",
+          "doc_id": "P2021-01",
+          "score": 0.6584922278826113
+        },
+        {
+          "parent_id": "P2020-02_P001",
+          "doc_id": "P2020-02",
+          "score": 0.6477879688802993
+        }
+      ]
+    },
+    {
+      "id": "g022",
+      "query": "SL75 为什么适合便携",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6704147254926294,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.2503536999865901,
+      "hits": [
+        {
+          "parent_id": "P2035-01_P001",
+          "doc_id": "P2035-01",
+          "score": 0.6704147254926294
+        },
+        {
+          "parent_id": "P2034-01_P001",
+          "doc_id": "P2034-01",
+          "score": 0.6617047392305899
+        },
+        {
+          "parent_id": "P2034-03_P001",
+          "doc_id": "P2034-03",
+          "score": 0.6094847190994359
+        },
+        {
+          "parent_id": "P2035-03_P001",
+          "doc_id": "P2035-03",
+          "score": 0.6094052609978563
+        },
+        {
+          "parent_id": "P2035-02_P001",
+          "doc_id": "P2035-02",
+          "score": 0.5821939359787751
+        }
+      ]
+    },
+    {
+      "id": "g023",
+      "query": "AL75 是全铝客制化键盘吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7882510549872499,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.23709000000962988,
+      "hits": [
+        {
+          "parent_id": "P2040-01_P001",
+          "doc_id": "P2040-01",
+          "score": 0.7882510549872499
+        },
+        {
+          "parent_id": "P2039-01_P001",
+          "doc_id": "P2039-01",
+          "score": 0.7104655676802667
+        },
+        {
+          "parent_id": "P2040-02_P001",
+          "doc_id": "P2040-02",
+          "score": 0.7063385248184254
+        },
+        {
+          "parent_id": "P2035-01_P001",
+          "doc_id": "P2035-01",
+          "score": 0.6951183444120473
+        },
+        {
+          "parent_id": "P2020-01_P001",
+          "doc_id": "P2020-01",
+          "score": 0.6940486382159058
+        }
+      ]
+    },
+    {
+      "id": "g024",
+      "query": "VM9 Pro 适合什么握姿",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8033905029296875,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5
+      },
+      "latency": 0.2678184999967925,
+      "hits": [
+        {
+          "parent_id": "P2041-03_P001",
+          "doc_id": "P2041-03",
+          "score": 0.8033905029296875
+        },
+        {
+          "parent_id": "P2042-03_P001",
+          "doc_id": "P2042-03",
+          "score": 0.7778834104537964
+        },
+        {
+          "parent_id": "P2043-03_P001",
+          "doc_id": "P2043-03",
+          "score": 0.7776807049823469
+        },
+        {
+          "parent_id": "P2069-03_P001",
+          "doc_id": "P2069-03",
+          "score": 0.7712165347104235
+        },
+        {
+          "parent_id": "P2044-03_P001",
+          "doc_id": "P2044-03",
+          "score": 0.7679153223088205
+        }
+      ]
+    },
+    {
+      "id": "g025",
+      "query": "VM3 Mini 适合小手吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7097865131561162,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.1914313999877777,
+      "hits": [
+        {
+          "parent_id": "P2050-03_P001",
+          "doc_id": "P2050-03",
+          "score": 0.7097865131561162
+        },
+        {
+          "parent_id": "P2050-01_P001",
+          "doc_id": "P2050-01",
+          "score": 0.6967535280369135
+        },
+        {
+          "parent_id": "P2044-03_P001",
+          "doc_id": "P2044-03",
+          "score": 0.6697165569578649
+        },
+        {
+          "parent_id": "P2050-02_P001",
+          "doc_id": "P2050-02",
+          "score": 0.6396808385373414
+        },
+        {
+          "parent_id": "P2049-03_P001",
+          "doc_id": "P2049-03",
+          "score": 0.6384392786491271
+        }
+      ]
+    },
+    {
+      "id": "g026",
+      "query": "TM9 Pro 为什么轻",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7160744284413588,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.18441569997230545,
+      "hits": [
+        {
+          "parent_id": "P2069-01_P001",
+          "doc_id": "P2069-01",
+          "score": 0.7160744284413588
+        },
+        {
+          "parent_id": "P2041-01_P001",
+          "doc_id": "P2041-01",
+          "score": 0.679223698261934
+        },
+        {
+          "parent_id": "P2068-01_P001",
+          "doc_id": "P2068-01",
+          "score": 0.6722056860739944
+        },
+        {
+          "parent_id": "P2067-01_P001",
+          "doc_id": "P2067-01",
+          "score": 0.6513050988705489
+        },
+        {
+          "parent_id": "P2042-01_P001",
+          "doc_id": "P2042-01",
+          "score": 0.6420845794056507
+        }
+      ]
+    },
+    {
+      "id": "g027",
+      "query": "AH9 Pro 适合长时间佩戴吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7056175470352223,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.19544340000720695,
+      "hits": [
+        {
+          "parent_id": "P2076-03_P001",
+          "doc_id": "P2076-03",
+          "score": 0.7056175470352223
+        },
+        {
+          "parent_id": "P2076-01_P001",
+          "doc_id": "P2076-01",
+          "score": 0.6833879947662402
+        },
+        {
+          "parent_id": "P2077-03_P001",
+          "doc_id": "P2077-03",
+          "score": 0.6602934593224641
+        },
+        {
+          "parent_id": "P2076-02_P001",
+          "doc_id": "P2076-02",
+          "score": 0.6564340982695889
+        },
+        {
+          "parent_id": "P2077-01_P001",
+          "doc_id": "P2077-01",
+          "score": 0.6468981504440353
+        }
+      ]
+    },
+    {
+      "id": "g028",
+      "query": "VK75 Pro 支持热插拔吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.769033001007618,
+      "first_rank": 4,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "latency": 0.23717149998992682,
+      "hits": [
+        {
+          "parent_id": "P2002-03_P001",
+          "doc_id": "P2002-03",
+          "score": 0.769033001007618
+        },
+        {
+          "parent_id": "P2004-03_P001",
+          "doc_id": "P2004-03",
+          "score": 0.7664507577494919
+        },
+        {
+          "parent_id": "P2020-03_P001",
+          "doc_id": "P2020-03",
+          "score": 0.7557181053933661
+        },
+        {
+          "parent_id": "P2001-03_P001",
+          "doc_id": "P2001-03",
+          "score": 0.7536631079711396
+        },
+        {
+          "parent_id": "P2005-03_P001",
+          "doc_id": "P2005-03",
+          "score": 0.7374477826027753
+        }
+      ]
+    },
+    {
+      "id": "g029",
+      "query": "VK75 无线模式怎么切换",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6865869965132179,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.2506454999966081,
+      "hits": [
+        {
+          "parent_id": "P2001-03_P001",
+          "doc_id": "P2001-03",
+          "score": 0.6865869965132179
+        },
+        {
+          "parent_id": "P2003-03_P001",
+          "doc_id": "P2003-03",
+          "score": 0.6721929512081433
+        },
+        {
+          "parent_id": "P2020-03_P001",
+          "doc_id": "P2020-03",
+          "score": 0.649800181388855
+        },
+        {
+          "parent_id": "P2021-03_P001",
+          "doc_id": "P2021-03",
+          "score": 0.6437686681747437
+        },
+        {
+          "parent_id": "P2001-02_P001",
+          "doc_id": "P2001-02",
+          "score": 0.6372084185133524
+        }
+      ]
+    },
+    {
+      "id": "g030",
+      "query": "MK75 Pro 轴体手感怎么选",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8035069459366313,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.21626579997246154,
+      "hits": [
+        {
+          "parent_id": "P2020-03_P001",
+          "doc_id": "P2020-03",
+          "score": 0.8035069459366313
+        },
+        {
+          "parent_id": "P2022-03_P001",
+          "doc_id": "P2022-03",
+          "score": 0.7911834605470274
+        },
+        {
+          "parent_id": "P2021-03_P001",
+          "doc_id": "P2021-03",
+          "score": 0.7739488155902899
+        },
+        {
+          "parent_id": "P2029-03_P001",
+          "doc_id": "P2029-03",
+          "score": 0.7720530168978685
+        },
+        {
+          "parent_id": "P2026-03_P001",
+          "doc_id": "P2026-03",
+          "score": 0.7711408683917836
+        }
+      ]
+    },
+    {
+      "id": "g031",
+      "query": "AL75 怎么换轴",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6198293709551582,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.2244868999987375,
+      "hits": [
+        {
+          "parent_id": "P2040-03_P001",
+          "doc_id": "P2040-03",
+          "score": 0.6198293709551582
+        },
+        {
+          "parent_id": "P2035-03_P001",
+          "doc_id": "P2035-03",
+          "score": 0.6175311347879376
+        },
+        {
+          "parent_id": "P2021-03_P001",
+          "doc_id": "P2021-03",
+          "score": 0.6154136795298715
+        },
+        {
+          "parent_id": "P2001-03_P001",
+          "doc_id": "P2001-03",
+          "score": 0.6140251891643078
+        },
+        {
+          "parent_id": "P2020-03_P001",
+          "doc_id": "P2020-03",
+          "score": 0.6121403343761265
+        }
+      ]
+    },
+    {
+      "id": "g032",
+      "query": "VM9 Pro 怎么配对",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6934974606929708,
+      "first_rank": 3,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.21514380001462996,
+      "hits": [
+        {
+          "parent_id": "P2044-03_P001",
+          "doc_id": "P2044-03",
+          "score": 0.6934974606929708
+        },
+        {
+          "parent_id": "P2042-03_P001",
+          "doc_id": "P2042-03",
+          "score": 0.691633540890603
+        },
+        {
+          "parent_id": "P2041-03_P001",
+          "doc_id": "P2041-03",
+          "score": 0.6916256546974182
+        },
+        {
+          "parent_id": "P2049-03_P001",
+          "doc_id": "P2049-03",
+          "score": 0.654699444770813
+        },
+        {
+          "parent_id": "P2069-03_P001",
+          "doc_id": "P2069-03",
+          "score": 0.6530890854054155
+        }
+      ]
+    },
+    {
+      "id": "g033",
+      "query": "VM3 出现双击怎么办",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7784861526166529,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.21609040000475943,
+      "hits": [
+        {
+          "parent_id": "P2049-03_P001",
+          "doc_id": "P2049-03",
+          "score": 0.7784861526166529
+        },
+        {
+          "parent_id": "P2048-03_P001",
+          "doc_id": "P2048-03",
+          "score": 0.777511692717326
+        },
+        {
+          "parent_id": "P2050-03_P001",
+          "doc_id": "P2050-03",
+          "score": 0.7729047767193552
+        },
+        {
+          "parent_id": "P2051-03_P001",
+          "doc_id": "P2051-03",
+          "score": 0.7551113592121413
+        },
+        {
+          "parent_id": "P2053-03_P001",
+          "doc_id": "P2053-03",
+          "score": 0.7536885816176461
+        }
+      ]
+    },
+    {
+      "id": "g034",
+      "query": "AH9 Pro 麦克风没声音怎么办",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8338385472845691,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.20453440002165735,
+      "hits": [
+        {
+          "parent_id": "P2076-03_P001",
+          "doc_id": "P2076-03",
+          "score": 0.8338385472845691
+        },
+        {
+          "parent_id": "P2077-03_P001",
+          "doc_id": "P2077-03",
+          "score": 0.804844712344759
+        },
+        {
+          "parent_id": "P2078-03_P001",
+          "doc_id": "P2078-03",
+          "score": 0.7983491182819303
+        },
+        {
+          "parent_id": "P2083-03_P001",
+          "doc_id": "P2083-03",
+          "score": 0.7886002315759383
+        },
+        {
+          "parent_id": "P2086-03_P001",
+          "doc_id": "P2086-03",
+          "score": 0.7764164805412348
+        }
+      ]
+    },
+    {
+      "id": "g035",
+      "query": "EH7 Pro 支持 PS5 吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7440047111514052,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.33558409998659045,
+      "hits": [
+        {
+          "parent_id": "P2091-03_P001",
+          "doc_id": "P2091-03",
+          "score": 0.7440047111514052
+        },
+        {
+          "parent_id": "P2093-03_P001",
+          "doc_id": "P2093-03",
+          "score": 0.7244143486022949
+        },
+        {
+          "parent_id": "P2097-03_P001",
+          "doc_id": "P2097-03",
+          "score": 0.7044319686632188
+        },
+        {
+          "parent_id": "P2095-03_P001",
+          "doc_id": "P2095-03",
+          "score": 0.6982846676280909
+        },
+        {
+          "parent_id": "P2080-03_P001",
+          "doc_id": "P2080-03",
+          "score": 0.6886133756820376
+        }
+      ]
+    },
+    {
+      "id": "g036",
+      "query": "VK75 和 VK75 Pro 有什么区别",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6531502592399975,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 1.0
+      },
+      "latency": 0.2759352000139188,
+      "hits": [
+        {
+          "parent_id": "P2001-01_P001",
+          "doc_id": "P2001-01",
+          "score": 0.6531502592399975
+        },
+        {
+          "parent_id": "P2001-03_P001",
+          "doc_id": "P2001-03",
+          "score": 0.613636869598534
+        },
+        {
+          "parent_id": "P2001-02_P001",
+          "doc_id": "P2001-02",
+          "score": 0.6080079674720764
+        },
+        {
+          "parent_id": "P2020-01_P001",
+          "doc_id": "P2020-01",
+          "score": 0.6015635011716527
+        },
+        {
+          "parent_id": "P2002-01_P001",
+          "doc_id": "P2002-01",
+          "score": 0.6008221386883136
+        }
+      ]
+    },
+    {
+      "id": "g037",
+      "query": "VM9、VM9 Pro、VM9 Ultra 怎么选",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6607208448863284,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.3333333333333333,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.27283150001312606,
+      "hits": [
+        {
+          "parent_id": "P2043-01_P001",
+          "doc_id": "P2043-01",
+          "score": 0.6607208448863284
+        },
+        {
+          "parent_id": "P2041-01_P001",
+          "doc_id": "P2041-01",
+          "score": 0.6538890978528731
+        },
+        {
+          "parent_id": "P2042-01_P001",
+          "doc_id": "P2042-01",
+          "score": 0.6248950772018732
+        },
+        {
+          "parent_id": "P2043-02_P001",
+          "doc_id": "P2043-02",
+          "score": 0.6080655040760491
+        },
+        {
+          "parent_id": "P2043-03_P001",
+          "doc_id": "P2043-03",
+          "score": 0.6003223478698054
+        }
+      ]
+    },
+    {
+      "id": "g038",
+      "query": "MK75 和 MK75 Pro 哪个更适合游戏",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6740851194757128,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 1.0
+      },
+      "latency": 0.2549111999978777,
+      "hits": [
+        {
+          "parent_id": "P2020-01_P001",
+          "doc_id": "P2020-01",
+          "score": 0.6740851194757128
+        },
+        {
+          "parent_id": "P2022-01_P001",
+          "doc_id": "P2022-01",
+          "score": 0.6375397443771362
+        },
+        {
+          "parent_id": "P2020-02_P001",
+          "doc_id": "P2020-02",
+          "score": 0.627806026572169
+        },
+        {
+          "parent_id": "P2020-03_P001",
+          "doc_id": "P2020-03",
+          "score": 0.6233452558517456
+        },
+        {
+          "parent_id": "P2021-01_P001",
+          "doc_id": "P2021-01",
+          "score": 0.6229514108329182
+        }
+      ]
+    },
+    {
+      "id": "g039",
+      "query": "VK68 和 VK68 Pro 的回报率区别",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.674396713805101,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.25,
+        "3": 0.5,
+        "5": 0.5
+      },
+      "latency": 0.264360500004841,
+      "hits": [
+        {
+          "parent_id": "P2008-03_P001",
+          "doc_id": "P2008-03",
+          "score": 0.674396713805101
+        },
+        {
+          "parent_id": "P2009-03_P001",
+          "doc_id": "P2009-03",
+          "score": 0.6665254831314087
+        },
+        {
+          "parent_id": "P2009-01_P001",
+          "doc_id": "P2009-01",
+          "score": 0.6532734219161821
+        },
+        {
+          "parent_id": "P2010-03_P001",
+          "doc_id": "P2010-03",
+          "score": 0.6435719728469849
+        },
+        {
+          "parent_id": "P2016-03_P001",
+          "doc_id": "P2016-03",
+          "score": 0.638131661637828
+        }
+      ]
+    },
+    {
+      "id": "g040",
+      "query": "七天无理由退货的条件",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8197630370086976,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.22772950000944547,
+      "hits": [
+        {
+          "parent_id": "POL-RET-003_P001",
+          "doc_id": "POL-RET-003",
+          "score": 0.8197630370086976
+        },
+        {
+          "parent_id": "POL-RET-008_P001",
+          "doc_id": "POL-RET-008",
+          "score": 0.7810731195124301
+        },
+        {
+          "parent_id": "POL-RET-001_P001",
+          "doc_id": "POL-RET-001",
+          "score": 0.7728214074096561
+        },
+        {
+          "parent_id": "POL-RET-004_P001",
+          "doc_id": "POL-RET-004",
+          "score": 0.6917066757853931
+        },
+        {
+          "parent_id": "POL-RET-005_P001",
+          "doc_id": "POL-RET-005",
+          "score": 0.6794371987060119
+        }
+      ]
+    },
+    {
+      "id": "g041",
+      "query": "退货运费谁出",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8462503025308706,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.19165620001149364,
+      "hits": [
+        {
+          "parent_id": "POL-RET-008_P001",
+          "doc_id": "POL-RET-008",
+          "score": 0.8462503025308706
+        },
+        {
+          "parent_id": "POL-RET-005_P001",
+          "doc_id": "POL-RET-005",
+          "score": 0.8158414497233766
+        },
+        {
+          "parent_id": "POL-TRD-005_P001",
+          "doc_id": "POL-TRD-005",
+          "score": 0.7456717561785987
+        },
+        {
+          "parent_id": "RAW-TBL-RET-return-shipping-CSV_P001",
+          "doc_id": "RAW-TBL-RET-return-shipping-CSV",
+          "score": 0.6902810952318722
+        },
+        {
+          "parent_id": "POL-RET-006_P001",
+          "doc_id": "POL-RET-006",
+          "score": 0.659927328226792
+        }
+      ]
+    },
+    {
+      "id": "g042",
+      "query": "退款多久到账",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8666915734638906,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.30034310001065023,
+      "hits": [
+        {
+          "parent_id": "POL-RET-008_P001",
+          "doc_id": "POL-RET-008",
+          "score": 0.8666915734638906
+        },
+        {
+          "parent_id": "POL-RET-006_P001",
+          "doc_id": "POL-RET-006",
+          "score": 0.8124846257223578
+        },
+        {
+          "parent_id": "POL-PRI-004_P001",
+          "doc_id": "POL-PRI-004",
+          "score": 0.7585259984166836
+        },
+        {
+          "parent_id": "POL-RET-001_P001",
+          "doc_id": "POL-RET-001",
+          "score": 0.7528191439918398
+        },
+        {
+          "parent_id": "POL-RET-003_P001",
+          "doc_id": "POL-RET-003",
+          "score": 0.7214826013425318
+        }
+      ]
+    },
+    {
+      "id": "g043",
+      "query": "拆封的入耳式耳机能无理由退吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8668604413783829,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.25170880000223406,
+      "hits": [
+        {
+          "parent_id": "POL-RET-008_P001",
+          "doc_id": "POL-RET-008",
+          "score": 0.8668604413783829
+        },
+        {
+          "parent_id": "POL-RET-003_P001",
+          "doc_id": "POL-RET-003",
+          "score": 0.7787832881470631
+        },
+        {
+          "parent_id": "POL-RET-001_P001",
+          "doc_id": "POL-RET-001",
+          "score": 0.6905581539536635
+        },
+        {
+          "parent_id": "POL-TRD-003_P001",
+          "doc_id": "POL-TRD-003",
+          "score": 0.6495246291160583
+        },
+        {
+          "parent_id": "P2091-03_P001",
+          "doc_id": "P2091-03",
+          "score": 0.631354175129285
+        }
+      ]
+    },
+    {
+      "id": "g044",
+      "query": "质量问题怎么换货",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7688718117628321,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.22433830000227317,
+      "hits": [
+        {
+          "parent_id": "POL-RET-004_P001",
+          "doc_id": "POL-RET-004",
+          "score": 0.7688718117628321
+        },
+        {
+          "parent_id": "POL-RET-007_P001",
+          "doc_id": "POL-RET-007",
+          "score": 0.7494885474748298
+        },
+        {
+          "parent_id": "POL-RET-008_P001",
+          "doc_id": "POL-RET-008",
+          "score": 0.7478873879976651
+        },
+        {
+          "parent_id": "POL-RET-001_P001",
+          "doc_id": "POL-RET-001",
+          "score": 0.7388918620017808
+        },
+        {
+          "parent_id": "POL-TRD-005_P001",
+          "doc_id": "POL-TRD-005",
+          "score": 0.6944764438583598
+        }
+      ]
+    },
+    {
+      "id": "g045",
+      "query": "发票怎么开",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7746829390525818,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.18478619999950752,
+      "hits": [
+        {
+          "parent_id": "POL-INV-002_P001",
+          "doc_id": "POL-INV-002",
+          "score": 0.7746829390525818
+        },
+        {
+          "parent_id": "POL-INV-001_P001",
+          "doc_id": "POL-INV-001",
+          "score": 0.7474514547048319
+        },
+        {
+          "parent_id": "RAW-TBL-INV-invoice-types-CSV_P001",
+          "doc_id": "RAW-TBL-INV-invoice-types-CSV",
+          "score": 0.7367764930956514
+        },
+        {
+          "parent_id": "POL-INV-003_P001",
+          "doc_id": "POL-INV-003",
+          "score": 0.7356030941009521
+        },
+        {
+          "parent_id": "POL-INV-005_P001",
+          "doc_id": "POL-INV-005",
+          "score": 0.6924792528152466
+        }
+      ]
+    },
+    {
+      "id": "g046",
+      "query": "能开增值税专用发票吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8342050709235499,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.23850360000506043,
+      "hits": [
+        {
+          "parent_id": "POL-INV-004_P001",
+          "doc_id": "POL-INV-004",
+          "score": 0.8342050709235499
+        },
+        {
+          "parent_id": "POL-INV-005_P001",
+          "doc_id": "POL-INV-005",
+          "score": 0.8252597063470295
+        },
+        {
+          "parent_id": "POL-INV-001_P001",
+          "doc_id": "POL-INV-001",
+          "score": 0.731557103209846
+        },
+        {
+          "parent_id": "POL-INV-002_P001",
+          "doc_id": "POL-INV-002",
+          "score": 0.7249814599774579
+        },
+        {
+          "parent_id": "RAW-TBL-INV-invoice-types-CSV_P001",
+          "doc_id": "RAW-TBL-INV-invoice-types-CSV",
+          "score": 0.6864157897458341
+        }
+      ]
+    },
+    {
+      "id": "g047",
+      "query": "退货后发票怎么处理",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8480225873027131,
+      "first_rank": 3,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.2319906000047922,
+      "hits": [
+        {
+          "parent_id": "POL-INV-005_P001",
+          "doc_id": "POL-INV-005",
+          "score": 0.8480225873027131
+        },
+        {
+          "parent_id": "POL-INV-004_P001",
+          "doc_id": "POL-INV-004",
+          "score": 0.7257190236030557
+        },
+        {
+          "parent_id": "POL-INV-003_P001",
+          "doc_id": "POL-INV-003",
+          "score": 0.7059456741165255
+        },
+        {
+          "parent_id": "POL-INV-002_P001",
+          "doc_id": "POL-INV-002",
+          "score": 0.677663188824533
+        },
+        {
+          "parent_id": "POL-TRD-004_P001",
+          "doc_id": "POL-TRD-004",
+          "score": 0.6443789965479073
+        }
+      ]
+    },
+    {
+      "id": "g048",
+      "query": "多久发货",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8514114022254944,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.24457969999639317,
+      "hits": [
+        {
+          "parent_id": "POL-LOG-006_P001",
+          "doc_id": "POL-LOG-006",
+          "score": 0.8514114022254944
+        },
+        {
+          "parent_id": "POL-LOG-001_P001",
+          "doc_id": "POL-LOG-001",
+          "score": 0.8133434542026209
+        },
+        {
+          "parent_id": "POL-LOG-002_P001",
+          "doc_id": "POL-LOG-002",
+          "score": 0.7586332559585571
+        },
+        {
+          "parent_id": "RAW-TBL-LOG-delivery-sla-CSV_P001",
+          "doc_id": "RAW-TBL-LOG-delivery-sla-CSV",
+          "score": 0.7488737852052592
+        },
+        {
+          "parent_id": "POL-RET-008_P001",
+          "doc_id": "POL-RET-008",
+          "score": 0.738851562806872
+        }
+      ]
+    },
+    {
+      "id": "g049",
+      "query": "偏远地区多久能到",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7191218566371117,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.20825009999680333,
+      "hits": [
+        {
+          "parent_id": "POL-LOG-003_P001",
+          "doc_id": "POL-LOG-003",
+          "score": 0.7191218566371117
+        },
+        {
+          "parent_id": "POL-LOG-002_P001",
+          "doc_id": "POL-LOG-002",
+          "score": 0.6843526567325791
+        },
+        {
+          "parent_id": "RAW-TBL-LOG-delivery-sla-CSV_P001",
+          "doc_id": "RAW-TBL-LOG-delivery-sla-CSV",
+          "score": 0.6681557694627142
+        },
+        {
+          "parent_id": "POL-LOG-006_P001",
+          "doc_id": "POL-LOG-006",
+          "score": 0.6460221006280813
+        },
+        {
+          "parent_id": "POL-LOG-001_P001",
+          "doc_id": "POL-LOG-001",
+          "score": 0.608137602341557
+        }
+      ]
+    },
+    {
+      "id": "g050",
+      "query": "丢件或破损怎么办",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7888740410394113,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.20723569998517632,
+      "hits": [
+        {
+          "parent_id": "POL-LOG-006_P001",
+          "doc_id": "POL-LOG-006",
+          "score": 0.7888740410394113
+        },
+        {
+          "parent_id": "POL-LOG-004_P001",
+          "doc_id": "POL-LOG-004",
+          "score": 0.703120982274912
+        },
+        {
+          "parent_id": "POL-RET-004_P001",
+          "doc_id": "POL-RET-004",
+          "score": 0.6086684465408368
+        },
+        {
+          "parent_id": "POL-RET-007_P001",
+          "doc_id": "POL-RET-007",
+          "score": 0.6007349849185349
+        },
+        {
+          "parent_id": "POL-TRD-003_P001",
+          "doc_id": "POL-TRD-003",
+          "score": 0.575871978752136
+        }
+      ]
+    },
+    {
+      "id": "g051",
+      "query": "价保几天",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.818486739306853,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.20066770000266843,
+      "hits": [
+        {
+          "parent_id": "POL-PRI-005_P001",
+          "doc_id": "POL-PRI-005",
+          "score": 0.818486739306853
+        },
+        {
+          "parent_id": "POL-PRI-001_P001",
+          "doc_id": "POL-PRI-001",
+          "score": 0.7913226485252437
+        },
+        {
+          "parent_id": "RAW-TBL-PRI-price-protection-window-CSV_P001",
+          "doc_id": "RAW-TBL-PRI-price-protection-window-CSV",
+          "score": 0.748665973464608
+        },
+        {
+          "parent_id": "POL-PRI-004_P001",
+          "doc_id": "POL-PRI-004",
+          "score": 0.7111677183112762
+        },
+        {
+          "parent_id": "POL-PRI-003_P001",
+          "doc_id": "POL-PRI-003",
+          "score": 0.6835540344449315
+        }
+      ]
+    },
+    {
+      "id": "g052",
+      "query": "秒杀降价能价保吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8781251907348633,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.22757200000341982,
+      "hits": [
+        {
+          "parent_id": "POL-PRI-005_P001",
+          "doc_id": "POL-PRI-005",
+          "score": 0.8781251907348633
+        },
+        {
+          "parent_id": "POL-PRI-003_P001",
+          "doc_id": "POL-PRI-003",
+          "score": 0.7415845394134521
+        },
+        {
+          "parent_id": "POL-PRI-001_P001",
+          "doc_id": "POL-PRI-001",
+          "score": 0.7339206496524436
+        },
+        {
+          "parent_id": "POL-PRI-004_P001",
+          "doc_id": "POL-PRI-004",
+          "score": 0.66637603440142
+        },
+        {
+          "parent_id": "RAW-TBL-PRI-price-protection-window-CSV_P001",
+          "doc_id": "RAW-TBL-PRI-price-protection-window-CSV",
+          "score": 0.6634134650230408
+        }
+      ]
+    },
+    {
+      "id": "g053",
+      "query": "以旧换新怎么估价",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7002434134483337,
+      "first_rank": 3,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.22790349999559112,
+      "hits": [
+        {
+          "parent_id": "POL-TRD-005_P001",
+          "doc_id": "POL-TRD-005",
+          "score": 0.7002434134483337
+        },
+        {
+          "parent_id": "RAW-TBL-TRD-trade-in-valuation-CSV_P001",
+          "doc_id": "RAW-TBL-TRD-trade-in-valuation-CSV",
+          "score": 0.6872972249984741
+        },
+        {
+          "parent_id": "POL-TRD-002_P001",
+          "doc_id": "POL-TRD-002",
+          "score": 0.669549822807312
+        },
+        {
+          "parent_id": "RAW-SCAN-TRD-recycle-receipt-scan-PDF_P001",
+          "doc_id": "RAW-SCAN-TRD-recycle-receipt-scan-PDF",
+          "score": 0.6308870911598206
+        },
+        {
+          "parent_id": "POL-TRD-004_P001",
+          "doc_id": "POL-TRD-004",
+          "score": 0.611663281917572
+        }
+      ]
+    },
+    {
+      "id": "g054",
+      "query": "以旧换新补贴能和优惠券叠加吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8491303414624741,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.25939479999942705,
+      "hits": [
+        {
+          "parent_id": "POL-TRD-005_P001",
+          "doc_id": "POL-TRD-005",
+          "score": 0.8491303414624741
+        },
+        {
+          "parent_id": "POL-TRD-004_P001",
+          "doc_id": "POL-TRD-004",
+          "score": 0.7981953145149177
+        },
+        {
+          "parent_id": "POL-PRI-005_P001",
+          "doc_id": "POL-PRI-005",
+          "score": 0.6453442573547409
+        },
+        {
+          "parent_id": "POL-TRD-001_P001",
+          "doc_id": "POL-TRD-001",
+          "score": 0.6258224062376523
+        },
+        {
+          "parent_id": "POL-RET-006_P001",
+          "doc_id": "POL-RET-006",
+          "score": 0.5920535216267679
+        }
+      ]
+    },
+    {
+      "id": "g055",
+      "query": "2024 年退货政策是几天",
+      "should_abstain": false,
+      "include_deprecated": true,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8226911040912801,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.3342236000171397,
+      "hits": [
+        {
+          "parent_id": "POL-RET-001_P001",
+          "doc_id": "POL-RET-001",
+          "score": 0.8226911040912801
+        },
+        {
+          "parent_id": "POL-RET-002_P001",
+          "doc_id": "POL-RET-002",
+          "score": 0.784440675179839
+        },
+        {
+          "parent_id": "POL-RET-006_P001",
+          "doc_id": "POL-RET-006",
+          "score": 0.6772987246513559
+        },
+        {
+          "parent_id": "POL-PRI-002_P001",
+          "doc_id": "POL-PRI-002",
+          "score": 0.6762928358054681
+        },
+        {
+          "parent_id": "POL-RET-008_P001",
+          "doc_id": "POL-RET-008",
+          "score": 0.6755929573310105
+        }
+      ]
+    },
+    {
+      "id": "g056",
+      "query": "2024 年价保是几天",
+      "should_abstain": false,
+      "include_deprecated": true,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7287508683652203,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.1950217999983579,
+      "hits": [
+        {
+          "parent_id": "POL-PRI-002_P001",
+          "doc_id": "POL-PRI-002",
+          "score": 0.7287508683652203
+        },
+        {
+          "parent_id": "POL-PRI-001_P001",
+          "doc_id": "POL-PRI-001",
+          "score": 0.7054829983269303
+        },
+        {
+          "parent_id": "POL-PRI-005_P001",
+          "doc_id": "POL-PRI-005",
+          "score": 0.6706138453070478
+        },
+        {
+          "parent_id": "RAW-TBL-PRI-price-protection-window-CSV_P001",
+          "doc_id": "RAW-TBL-PRI-price-protection-window-CSV",
+          "score": 0.6342190693086112
+        },
+        {
+          "parent_id": "RAW-SCAN-PLT-platform-notice-scan-PDF_P001",
+          "doc_id": "RAW-SCAN-PLT-platform-notice-scan-PDF",
+          "score": 0.6143996072768817
+        }
+      ]
+    },
+    {
+      "id": "g057",
+      "query": "平台介入多久",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7698979377746582,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.19931900000665337,
+      "hits": [
+        {
+          "parent_id": "POL-PLT-002_P001",
+          "doc_id": "POL-PLT-002",
+          "score": 0.7698979377746582
+        },
+        {
+          "parent_id": "POL-PLT-003_P001",
+          "doc_id": "POL-PLT-003",
+          "score": 0.6067067384719849
+        },
+        {
+          "parent_id": "RAW-SCAN-PLT-platform-notice-scan-PDF_P001",
+          "doc_id": "RAW-SCAN-PLT-platform-notice-scan-PDF",
+          "score": 0.6017955304262369
+        },
+        {
+          "parent_id": "POL-PLT-001_P001",
+          "doc_id": "POL-PLT-001",
+          "score": 0.5830015441177476
+        },
+        {
+          "parent_id": "POL-PRI-004_P001",
+          "doc_id": "POL-PRI-004",
+          "score": 0.5633185766149426
+        }
+      ]
+    },
+    {
+      "id": "g058",
+      "query": "能查别人的订单吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7314064066763887,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.21957339998334646,
+      "hits": [
+        {
+          "parent_id": "POL-BND-001_P001",
+          "doc_id": "POL-BND-001",
+          "score": 0.7314064066763887
+        },
+        {
+          "parent_id": "POL-LOG-004_P001",
+          "doc_id": "POL-LOG-004",
+          "score": 0.5686149515372613
+        },
+        {
+          "parent_id": "POL-LOG-006_P001",
+          "doc_id": "POL-LOG-006",
+          "score": 0.5666030645370483
+        },
+        {
+          "parent_id": "POL-LOG-001_P001",
+          "doc_id": "POL-LOG-001",
+          "score": 0.5620960332212478
+        },
+        {
+          "parent_id": "POL-PRI-001_P001",
+          "doc_id": "POL-PRI-001",
+          "score": 0.550104022026062
+        }
+      ]
+    },
+    {
+      "id": "g059",
+      "query": "能承诺赔付金额吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7480739054768026,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.24866160002420656,
+      "hits": [
+        {
+          "parent_id": "POL-BND-002_P001",
+          "doc_id": "POL-BND-002",
+          "score": 0.7480739054768026
+        },
+        {
+          "parent_id": "POL-PRI-003_P001",
+          "doc_id": "POL-PRI-003",
+          "score": 0.5811703897917777
+        },
+        {
+          "parent_id": "POL-PRI-004_P001",
+          "doc_id": "POL-PRI-004",
+          "score": 0.5628559403757952
+        },
+        {
+          "parent_id": "POL-RET-005_P001",
+          "doc_id": "POL-RET-005",
+          "score": 0.5622927881653869
+        },
+        {
+          "parent_id": "POL-TRD-005_P001",
+          "doc_id": "POL-TRD-005",
+          "score": 0.5579144427674384
+        }
+      ]
+    },
+    {
+      "id": "g060",
+      "query": "可以索要身份证和银行卡吗",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7079207264255907,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.21141099999658763,
+      "hits": [
+        {
+          "parent_id": "POL-BND-001_P001",
+          "doc_id": "POL-BND-001",
+          "score": 0.7079207264255907
+        },
+        {
+          "parent_id": "POL-BND-003_P001",
+          "doc_id": "POL-BND-003",
+          "score": 0.6085318689663332
+        },
+        {
+          "parent_id": "POL-INV-004_P001",
+          "doc_id": "POL-INV-004",
+          "score": 0.5560134152162064
+        },
+        {
+          "parent_id": "POL-INV-002_P001",
+          "doc_id": "POL-INV-002",
+          "score": 0.5533758566789587
+        },
+        {
+          "parent_id": "POL-PRI-003_P001",
+          "doc_id": "POL-PRI-003",
+          "score": 0.5481050177843877
+        }
+      ]
+    },
+    {
+      "id": "g061",
+      "query": "平台规则变更了什么",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7033433141316972,
+      "first_rank": 1,
+      "recall": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.28016090000164695,
+      "hits": [
+        {
+          "parent_id": "POL-PLT-003_P001",
+          "doc_id": "POL-PLT-003",
+          "score": 0.7033433141316972
+        },
+        {
+          "parent_id": "RAW-SCAN-PLT-platform-notice-scan-PDF_P001",
+          "doc_id": "RAW-SCAN-PLT-platform-notice-scan-PDF",
+          "score": 0.6991617320968785
+        },
+        {
+          "parent_id": "POL-PRI-001_P001",
+          "doc_id": "POL-PRI-001",
+          "score": 0.5534974666534355
+        },
+        {
+          "parent_id": "POL-PLT-002_P001",
+          "doc_id": "POL-PLT-002",
+          "score": 0.5501112073726191
+        },
+        {
+          "parent_id": "POL-PLT-001_P001",
+          "doc_id": "POL-PLT-001",
+          "score": 0.5405513918071242
+        }
+      ]
+    },
+    {
+      "id": "g062",
+      "query": "平台售后争议怎么处理",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7076681357221279,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.27216359999147244,
+      "hits": [
+        {
+          "parent_id": "POL-PLT-001_P001",
+          "doc_id": "POL-PLT-001",
+          "score": 0.7076681357221279
+        },
+        {
+          "parent_id": "POL-PLT-002_P001",
+          "doc_id": "POL-PLT-002",
+          "score": 0.6549202615117762
+        },
+        {
+          "parent_id": "POL-BND-002_P001",
+          "doc_id": "POL-BND-002",
+          "score": 0.6176453092521105
+        },
+        {
+          "parent_id": "POL-LOG-006_P001",
+          "doc_id": "POL-LOG-006",
+          "score": 0.6088380269255086
+        },
+        {
+          "parent_id": "POL-TRD-005_P001",
+          "doc_id": "POL-TRD-005",
+          "score": 0.6065804235243335
+        }
+      ]
+    },
+    {
+      "id": "g063",
+      "query": "退货运费标准表",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7995556831889588,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.20806089998222888,
+      "hits": [
+        {
+          "parent_id": "RAW-TBL-RET-return-shipping-CSV_P001",
+          "doc_id": "RAW-TBL-RET-return-shipping-CSV",
+          "score": 0.7995556831889588
+        },
+        {
+          "parent_id": "POL-RET-005_P001",
+          "doc_id": "POL-RET-005",
+          "score": 0.7727692398108013
+        },
+        {
+          "parent_id": "POL-RET-008_P001",
+          "doc_id": "POL-RET-008",
+          "score": 0.7271005673944728
+        },
+        {
+          "parent_id": "POL-RET-006_P001",
+          "doc_id": "POL-RET-006",
+          "score": 0.6668732165920955
+        },
+        {
+          "parent_id": "POL-RET-001_P001",
+          "doc_id": "POL-RET-001",
+          "score": 0.6645657222102512
+        }
+      ]
+    },
+    {
+      "id": "g064",
+      "query": "各区域配送时效标准",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.8265313506126463,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.2673177999968175,
+      "hits": [
+        {
+          "parent_id": "RAW-TBL-LOG-delivery-sla-CSV_P001",
+          "doc_id": "RAW-TBL-LOG-delivery-sla-CSV",
+          "score": 0.8265313506126463
+        },
+        {
+          "parent_id": "POL-LOG-002_P001",
+          "doc_id": "POL-LOG-002",
+          "score": 0.8053858164182807
+        },
+        {
+          "parent_id": "POL-LOG-003_P001",
+          "doc_id": "POL-LOG-003",
+          "score": 0.6654158233477915
+        },
+        {
+          "parent_id": "POL-LOG-001_P001",
+          "doc_id": "POL-LOG-001",
+          "score": 0.6586571524926605
+        },
+        {
+          "parent_id": "POL-LOG-006_P001",
+          "doc_id": "POL-LOG-006",
+          "score": 0.6016059280399052
+        }
+      ]
+    },
+    {
+      "id": "g065",
+      "query": "价保期限表",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7797621357299184,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.2021594000107143,
+      "hits": [
+        {
+          "parent_id": "RAW-TBL-PRI-price-protection-window-CSV_P001",
+          "doc_id": "RAW-TBL-PRI-price-protection-window-CSV",
+          "score": 0.7797621357299184
+        },
+        {
+          "parent_id": "POL-PRI-001_P001",
+          "doc_id": "POL-PRI-001",
+          "score": 0.7456882070620249
+        },
+        {
+          "parent_id": "POL-PRI-005_P001",
+          "doc_id": "POL-PRI-005",
+          "score": 0.6943147596308458
+        },
+        {
+          "parent_id": "POL-PRI-003_P001",
+          "doc_id": "POL-PRI-003",
+          "score": 0.6555570158694407
+        },
+        {
+          "parent_id": "RAW-SCAN-PLT-platform-notice-scan-PDF_P001",
+          "doc_id": "RAW-SCAN-PLT-platform-notice-scan-PDF",
+          "score": 0.6502642214613225
+        }
+      ]
+    },
+    {
+      "id": "g066",
+      "query": "以旧换新 A/B/C/D 成色估价表",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7304913722883071,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.19387960000312887,
+      "hits": [
+        {
+          "parent_id": "POL-TRD-002_P001",
+          "doc_id": "POL-TRD-002",
+          "score": 0.7304913722883071
+        },
+        {
+          "parent_id": "RAW-TBL-TRD-trade-in-valuation-CSV_P001",
+          "doc_id": "RAW-TBL-TRD-trade-in-valuation-CSV",
+          "score": 0.7147673282443306
+        },
+        {
+          "parent_id": "RAW-SCAN-TRD-recycle-receipt-scan-PDF_P001",
+          "doc_id": "RAW-SCAN-TRD-recycle-receipt-scan-PDF",
+          "score": 0.5997311354004026
+        },
+        {
+          "parent_id": "POL-TRD-005_P001",
+          "doc_id": "POL-TRD-005",
+          "score": 0.593955446010183
+        },
+        {
+          "parent_id": "POL-TRD-004_P001",
+          "doc_id": "POL-TRD-004",
+          "score": 0.5436276741471717
+        }
+      ]
+    },
+    {
+      "id": "g067",
+      "query": "发票类型对比表",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7751661539077759,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.20442829999956302,
+      "hits": [
+        {
+          "parent_id": "RAW-TBL-INV-invoice-types-CSV_P001",
+          "doc_id": "RAW-TBL-INV-invoice-types-CSV",
+          "score": 0.7751661539077759
+        },
+        {
+          "parent_id": "POL-INV-001_P001",
+          "doc_id": "POL-INV-001",
+          "score": 0.7384822680375309
+        },
+        {
+          "parent_id": "POL-INV-004_P001",
+          "doc_id": "POL-INV-004",
+          "score": 0.6243256182282471
+        },
+        {
+          "parent_id": "POL-INV-002_P001",
+          "doc_id": "POL-INV-002",
+          "score": 0.6110837459564209
+        },
+        {
+          "parent_id": "POL-INV-003_P001",
+          "doc_id": "POL-INV-003",
+          "score": 0.5835556983947754
+        }
+      ]
+    },
+    {
+      "id": "g068",
+      "query": "回收单号 TRD-20260601-0018 的信息",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6788003444671631,
+      "first_rank": 1,
+      "recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.3596166000061203,
+      "hits": [
+        {
+          "parent_id": "RAW-SCAN-TRD-recycle-receipt-scan-PDF_P001",
+          "doc_id": "RAW-SCAN-TRD-recycle-receipt-scan-PDF",
+          "score": 0.6788003444671631
+        },
+        {
+          "parent_id": "RAW-TBL-TRD-trade-in-valuation-CSV_P001",
+          "doc_id": "RAW-TBL-TRD-trade-in-valuation-CSV",
+          "score": 0.5708529693396679
+        },
+        {
+          "parent_id": "POL-TRD-001_P001",
+          "doc_id": "POL-TRD-001",
+          "score": 0.5665419618437376
+        },
+        {
+          "parent_id": "POL-TRD-003_P001",
+          "doc_id": "POL-TRD-003",
+          "score": 0.5645219683647156
+        },
+        {
+          "parent_id": "POL-TRD-005_P001",
+          "doc_id": "POL-TRD-005",
+          "score": 0.5495210886001587
+        }
+      ]
+    },
+    {
+      "id": "g069",
+      "query": "BH5 Pro 蓝牙版本",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7867732048034668,
+      "first_rank": 2,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.2709993000025861,
+      "hits": [
+        {
+          "parent_id": "P2097-01_P001",
+          "doc_id": "P2097-01",
+          "score": 0.7867732048034668
+        },
+        {
+          "parent_id": "P2097-02_P001",
+          "doc_id": "P2097-02",
+          "score": 0.7609846591949463
+        },
+        {
+          "parent_id": "P2097-03_P001",
+          "doc_id": "P2097-03",
+          "score": 0.7408063411712646
+        },
+        {
+          "parent_id": "P2098-01_P001",
+          "doc_id": "P2098-01",
+          "score": 0.7234268518177499
+        },
+        {
+          "parent_id": "P2098-02_P001",
+          "doc_id": "P2098-02",
+          "score": 0.6982696236211299
+        }
+      ]
+    },
+    {
+      "id": "g070",
+      "query": "VK75 Pro 的包装清单",
+      "should_abstain": false,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6578538809927643,
+      "first_rank": 3,
+      "recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "latency": 0.28057830000761896,
+      "hits": [
+        {
+          "parent_id": "RAW-SCAN-TRD-recycle-receipt-scan-PDF_P001",
+          "doc_id": "RAW-SCAN-TRD-recycle-receipt-scan-PDF",
+          "score": 0.6578538809927643
+        },
+        {
+          "parent_id": "P2001-03_P001",
+          "doc_id": "P2001-03",
+          "score": 0.6267698371502615
+        },
+        {
+          "parent_id": "P2001-02_P001",
+          "doc_id": "P2001-02",
+          "score": 0.6213370335899027
+        },
+        {
+          "parent_id": "P2001-01_P001",
+          "doc_id": "P2001-01",
+          "score": 0.6208087534917527
+        },
+        {
+          "parent_id": "P2020-02_P001",
+          "doc_id": "P2020-02",
+          "score": 0.5947297747191588
+        }
+      ]
+    },
+    {
+      "id": "g071",
+      "query": "今天天气怎么样",
+      "should_abstain": true,
+      "include_deprecated": false,
+      "abstained": true,
+      "reason": "最高相似度 0.435 低于阈值 0.55",
+      "top_score": 0.43501980021773157,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.23314890000619926,
+      "hits": [
+        {
+          "parent_id": "POL-LOG-002_P001",
+          "doc_id": "POL-LOG-002",
+          "score": 0.43501980021773157
+        },
+        {
+          "parent_id": "POL-LOG-003_P001",
+          "doc_id": "POL-LOG-003",
+          "score": 0.4314834989885694
+        },
+        {
+          "parent_id": "P2086-02_P001",
+          "doc_id": "P2086-02",
+          "score": 0.4274980339405585
+        },
+        {
+          "parent_id": "P2085-02_P001",
+          "doc_id": "P2085-02",
+          "score": 0.4219970484373332
+        },
+        {
+          "parent_id": "P2095-02_P001",
+          "doc_id": "P2095-02",
+          "score": 0.4218199974840926
+        }
+      ]
+    },
+    {
+      "id": "g072",
+      "query": "帮我写一首诗",
+      "should_abstain": true,
+      "include_deprecated": false,
+      "abstained": true,
+      "reason": "最高相似度 0.380 低于阈值 0.55",
+      "top_score": 0.3795680547275505,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.1990661000018008,
+      "hits": [
+        {
+          "parent_id": "POL-BND-002_P001",
+          "doc_id": "POL-BND-002",
+          "score": 0.3795680547275505
+        },
+        {
+          "parent_id": "P2032-03_P001",
+          "doc_id": "P2032-03",
+          "score": 0.3766656665008492
+        },
+        {
+          "parent_id": "P2028-03_P001",
+          "doc_id": "P2028-03",
+          "score": 0.3747414649149263
+        },
+        {
+          "parent_id": "P2030-03_P001",
+          "doc_id": "P2030-03",
+          "score": 0.37394793344164956
+        },
+        {
+          "parent_id": "P2027-03_P001",
+          "doc_id": "P2027-03",
+          "score": 0.3731180878736895
+        }
+      ]
+    },
+    {
+      "id": "g073",
+      "query": "你们老板是谁",
+      "should_abstain": true,
+      "include_deprecated": false,
+      "abstained": true,
+      "reason": "最高相似度 0.441 低于阈值 0.55",
+      "top_score": 0.44110616690553306,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.2558474999968894,
+      "hits": [
+        {
+          "parent_id": "POL-INV-002_P001",
+          "doc_id": "POL-INV-002",
+          "score": 0.44110616690553306
+        },
+        {
+          "parent_id": "P2029-01_P001",
+          "doc_id": "P2029-01",
+          "score": 0.4028844419580033
+        },
+        {
+          "parent_id": "P2013-01_P001",
+          "doc_id": "P2013-01",
+          "score": 0.4006019592823351
+        },
+        {
+          "parent_id": "P2058-03_P001",
+          "doc_id": "P2058-03",
+          "score": 0.3994853435873228
+        },
+        {
+          "parent_id": "P2029-02_P001",
+          "doc_id": "P2029-02",
+          "score": 0.39772962914285903
+        }
+      ]
+    },
+    {
+      "id": "g074",
+      "query": "你们支持花呗分期吗",
+      "should_abstain": true,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.5506878763027274,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.19585580000421032,
+      "hits": [
+        {
+          "parent_id": "POL-LOG-006_P001",
+          "doc_id": "POL-LOG-006",
+          "score": 0.5506878763027274
+        },
+        {
+          "parent_id": "POL-LOG-002_P001",
+          "doc_id": "POL-LOG-002",
+          "score": 0.5005023777784343
+        },
+        {
+          "parent_id": "POL-INV-001_P001",
+          "doc_id": "POL-INV-001",
+          "score": 0.49799656867980957
+        },
+        {
+          "parent_id": "POL-LOG-001_P001",
+          "doc_id": "POL-LOG-001",
+          "score": 0.48547950300452225
+        },
+        {
+          "parent_id": "POL-PRI-004_P001",
+          "doc_id": "POL-PRI-004",
+          "score": 0.47784021628855455
+        }
+      ]
+    },
+    {
+      "id": "g075",
+      "query": "支持货到付款吗",
+      "should_abstain": true,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6850417476942239,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.19101410001167096,
+      "hits": [
+        {
+          "parent_id": "POL-LOG-002_P001",
+          "doc_id": "POL-LOG-002",
+          "score": 0.6850417476942239
+        },
+        {
+          "parent_id": "POL-LOG-006_P001",
+          "doc_id": "POL-LOG-006",
+          "score": 0.6619837284088181
+        },
+        {
+          "parent_id": "POL-LOG-001_P001",
+          "doc_id": "POL-LOG-001",
+          "score": 0.6192584775994393
+        },
+        {
+          "parent_id": "POL-LOG-005_P001",
+          "doc_id": "POL-LOG-005",
+          "score": 0.6142408617878484
+        },
+        {
+          "parent_id": "POL-PRI-004_P001",
+          "doc_id": "POL-PRI-004",
+          "score": 0.6102478504180952
+        }
+      ]
+    },
+    {
+      "id": "g076",
+      "query": "有优惠券吗",
+      "should_abstain": true,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.7091760711388728,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.23821579999639653,
+      "hits": [
+        {
+          "parent_id": "POL-PRI-005_P001",
+          "doc_id": "POL-PRI-005",
+          "score": 0.7091760711388728
+        },
+        {
+          "parent_id": "POL-TRD-005_P001",
+          "doc_id": "POL-TRD-005",
+          "score": 0.6746892541276568
+        },
+        {
+          "parent_id": "POL-RET-006_P001",
+          "doc_id": "POL-RET-006",
+          "score": 0.6540261896864393
+        },
+        {
+          "parent_id": "RAW-TBL-PRI-price-protection-window-CSV_P001",
+          "doc_id": "RAW-TBL-PRI-price-protection-window-CSV",
+          "score": 0.606036139254114
+        },
+        {
+          "parent_id": "POL-PRI-001_P001",
+          "doc_id": "POL-PRI-001",
+          "score": 0.5964885113530559
+        }
+      ]
+    },
+    {
+      "id": "g077",
+      "query": "能便宜点吗",
+      "should_abstain": true,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6010323525090524,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.22700970000005327,
+      "hits": [
+        {
+          "parent_id": "POL-PRI-005_P001",
+          "doc_id": "POL-PRI-005",
+          "score": 0.6010323525090524
+        },
+        {
+          "parent_id": "POL-PRI-003_P001",
+          "doc_id": "POL-PRI-003",
+          "score": 0.5802685714088208
+        },
+        {
+          "parent_id": "POL-TRD-005_P001",
+          "doc_id": "POL-TRD-005",
+          "score": 0.5798807835436842
+        },
+        {
+          "parent_id": "POL-RET-005_P001",
+          "doc_id": "POL-RET-005",
+          "score": 0.5765047760611547
+        },
+        {
+          "parent_id": "POL-PRI-001_P001",
+          "doc_id": "POL-PRI-001",
+          "score": 0.5734392746352809
+        }
+      ]
+    },
+    {
+      "id": "g078",
+      "query": "帮我查订单 12345 的物流",
+      "should_abstain": true,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6259090490910131,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.3601399000035599,
+      "hits": [
+        {
+          "parent_id": "POL-LOG-002_P001",
+          "doc_id": "POL-LOG-002",
+          "score": 0.6259090490910131
+        },
+        {
+          "parent_id": "RAW-TBL-LOG-delivery-sla-CSV_P001",
+          "doc_id": "RAW-TBL-LOG-delivery-sla-CSV",
+          "score": 0.6170625502746562
+        },
+        {
+          "parent_id": "POL-LOG-003_P001",
+          "doc_id": "POL-LOG-003",
+          "score": 0.5811915148014734
+        },
+        {
+          "parent_id": "POL-LOG-006_P001",
+          "doc_id": "POL-LOG-006",
+          "score": 0.5727962426184491
+        },
+        {
+          "parent_id": "POL-LOG-005_P001",
+          "doc_id": "POL-LOG-005",
+          "score": 0.5649086405309632
+        }
+      ]
+    },
+    {
+      "id": "g079",
+      "query": "我的快递到哪了",
+      "should_abstain": true,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6622700691223145,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.21178159999544732,
+      "hits": [
+        {
+          "parent_id": "POL-LOG-002_P001",
+          "doc_id": "POL-LOG-002",
+          "score": 0.6622700691223145
+        },
+        {
+          "parent_id": "RAW-TBL-LOG-delivery-sla-CSV_P001",
+          "doc_id": "RAW-TBL-LOG-delivery-sla-CSV",
+          "score": 0.6487290472549779
+        },
+        {
+          "parent_id": "POL-LOG-004_P001",
+          "doc_id": "POL-LOG-004",
+          "score": 0.6405145358425978
+        },
+        {
+          "parent_id": "POL-LOG-001_P001",
+          "doc_id": "POL-LOG-001",
+          "score": 0.621750928267893
+        },
+        {
+          "parent_id": "POL-LOG-006_P001",
+          "doc_id": "POL-LOG-006",
+          "score": 0.6197519302368164
+        }
+      ]
+    },
+    {
+      "id": "g080",
+      "query": "推荐一款 500 元以内的键盘",
+      "should_abstain": true,
+      "include_deprecated": false,
+      "abstained": false,
+      "reason": null,
+      "top_score": 0.6669613917493002,
+      "first_rank": null,
+      "recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "latency": 0.21415789998718537,
+      "hits": [
+        {
+          "parent_id": "RAW-TBL-TRD-trade-in-valuation-CSV_P001",
+          "doc_id": "RAW-TBL-TRD-trade-in-valuation-CSV",
+          "score": 0.6669613917493002
+        },
+        {
+          "parent_id": "POL-TRD-002_P001",
+          "doc_id": "POL-TRD-002",
+          "score": 0.6555689973959652
+        },
+        {
+          "parent_id": "P2035-01_P001",
+          "doc_id": "P2035-01",
+          "score": 0.645606619643376
+        },
+        {
+          "parent_id": "P2037-01_P001",
+          "doc_id": "P2037-01",
+          "score": 0.6444425390826924
+        },
+        {
+          "parent_id": "P2038-01_P001",
+          "doc_id": "P2038-01",
+          "score": 0.6437145512614468
+        }
+      ]
+    }
+  ]
+}

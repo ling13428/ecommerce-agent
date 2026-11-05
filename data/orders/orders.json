@@ -1,0 +1,2825 @@
+{
+  "generated_at": "2026-10-31T15:24:00+08:00",
+  "orders": [
+    {
+      "order_id": "ORD-20261014-0001",
+      "buyer_id": "BUY-0023",
+      "status": "delivered",
+      "status_label": "已签收",
+      "items": [
+        {
+          "product_id": "P2042",
+          "model": "VM9",
+          "name": "烬狐 VM9 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 549,
+          "subtotal": 549
+        },
+        {
+          "product_id": "P2079",
+          "model": "AH7",
+          "name": "烬狐 AH7 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 899,
+          "subtotal": 899
+        }
+      ],
+      "item_count": 2,
+      "amount": 1448,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 1448,
+      "payment_method": "花呗分期",
+      "created_at": "2026-10-14T03:24:00+08:00",
+      "paid_at": "2026-10-14T03:48:00+08:00",
+      "shipped_at": "2026-10-14T22:24:00+08:00",
+      "delivered_at": "2026-10-16T01:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "ZTO972869222440",
+      "carrier": "中通快递",
+      "expected_delivery": "2026-10-15T22:24:00+08:00",
+      "address": {
+        "province": "广东省",
+        "city": "广州市",
+        "district": "天河区",
+        "detail": "体育西路289号15栋***"
+      },
+      "address_text": "广东省广州市天河区体育西路289号15栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20260930-0002",
+      "buyer_id": "BUY-0016",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2014",
+          "model": "VK87 Ultra",
+          "name": "烬狐 VK87 Ultra 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 1399,
+          "subtotal": 1399
+        },
+        {
+          "product_id": "P2098",
+          "model": "BH5",
+          "name": "烬狐 BH5 头戴式蓝牙耳机",
+          "quantity": 1,
+          "unit_price": 699,
+          "subtotal": 699
+        },
+        {
+          "product_id": "P2080",
+          "model": "AH7 Pro",
+          "name": "烬狐 AH7 Pro 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 1099,
+          "subtotal": 1099
+        }
+      ],
+      "item_count": 3,
+      "amount": 3197,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 3197,
+      "payment_method": "支付宝",
+      "created_at": "2026-09-30T00:24:00+08:00",
+      "paid_at": "2026-09-30T00:53:00+08:00",
+      "shipped_at": "2026-09-30T21:24:00+08:00",
+      "delivered_at": "2026-10-03T00:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YTO143272256982",
+      "carrier": "圆通速递",
+      "expected_delivery": "2026-10-02T16:24:00+08:00",
+      "address": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "雁塔区",
+        "detail": "科技路110号13栋***"
+      },
+      "address_text": "陕西省西安市雁塔区科技路110号13栋***",
+      "aftersale_id": "AS-930-0002",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261002-0003",
+      "buyer_id": "BUY-0019",
+      "status": "in_transit",
+      "status_label": "运输中",
+      "items": [
+        {
+          "product_id": "P2041",
+          "model": "VM9 Pro",
+          "name": "烬狐 VM9 Pro 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 749,
+          "subtotal": 749
+        }
+      ],
+      "item_count": 1,
+      "amount": 749,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 749,
+      "payment_method": "花呗分期",
+      "created_at": "2026-10-02T13:58:00+08:00",
+      "paid_at": "2026-10-02T14:12:00+08:00",
+      "shipped_at": "2026-10-03T08:12:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "JD743961980253",
+      "carrier": "京东物流",
+      "expected_delivery": "2026-10-07T08:12:00+08:00",
+      "address": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "雁塔区",
+        "detail": "科技路152号14栋***"
+      },
+      "address_text": "陕西省西安市雁塔区科技路152号14栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261019-0004",
+      "buyer_id": "BUY-0017",
+      "status": "canceled",
+      "status_label": "已取消",
+      "items": [
+        {
+          "product_id": "P2006",
+          "model": "VK65 Pro",
+          "name": "烬狐 VK65 Pro 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 899,
+          "subtotal": 899
+        },
+        {
+          "product_id": "P2086",
+          "model": "AH3 Pro",
+          "name": "烬狐 AH3 Pro 头戴式游戏耳机",
+          "quantity": 2,
+          "unit_price": 499,
+          "subtotal": 998
+        }
+      ],
+      "item_count": 3,
+      "amount": 1897,
+      "discount": 20,
+      "shipping_fee": 0,
+      "payable": 1877,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-19T15:04:00+08:00",
+      "paid_at": "2026-10-19T15:29:00+08:00",
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": "2026-10-19T16:17:00+08:00",
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "湖南省",
+        "city": "长沙市",
+        "district": "岳麓区",
+        "detail": "麓谷大道231号12栋***"
+      },
+      "address_text": "湖南省长沙市岳麓区麓谷大道231号12栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261031-0005",
+      "buyer_id": "BUY-0002",
+      "status": "paid",
+      "status_label": "已付款待发货",
+      "items": [
+        {
+          "product_id": "P2097",
+          "model": "BH5 Pro",
+          "name": "烬狐 BH5 Pro 头戴式蓝牙耳机",
+          "quantity": 2,
+          "unit_price": 899,
+          "subtotal": 1798
+        },
+        {
+          "product_id": "P2011",
+          "model": "VK60",
+          "name": "烬狐 VK60 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 599,
+          "subtotal": 599
+        },
+        {
+          "product_id": "P2006",
+          "model": "VK65 Pro",
+          "name": "烬狐 VK65 Pro 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 899,
+          "subtotal": 899
+        }
+      ],
+      "item_count": 4,
+      "amount": 3296,
+      "discount": 20,
+      "shipping_fee": 0,
+      "payable": 3276,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-31T12:02:00+08:00",
+      "paid_at": "2026-10-31T12:22:00+08:00",
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "广东省",
+        "city": "深圳市",
+        "district": "南山区",
+        "detail": "科技园191号2栋***"
+      },
+      "address_text": "广东省深圳市南山区科技园191号2栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261018-0006",
+      "buyer_id": "BUY-0001",
+      "status": "delivered",
+      "status_label": "已签收",
+      "items": [
+        {
+          "product_id": "P2030",
+          "model": "MK98",
+          "name": "烬狐 MK98 机械键盘",
+          "quantity": 2,
+          "unit_price": 549,
+          "subtotal": 1098
+        },
+        {
+          "product_id": "P2031",
+          "model": "MK98 Pro",
+          "name": "烬狐 MK98 Pro 机械键盘",
+          "quantity": 1,
+          "unit_price": 719,
+          "subtotal": 719
+        },
+        {
+          "product_id": "P2047",
+          "model": "VM6 Ultra",
+          "name": "烬狐 VM6 Ultra 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 699,
+          "subtotal": 699
+        }
+      ],
+      "item_count": 4,
+      "amount": 2516,
+      "discount": 20,
+      "shipping_fee": 0,
+      "payable": 2496,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-18T06:24:00+08:00",
+      "paid_at": "2026-10-18T06:32:00+08:00",
+      "shipped_at": "2026-10-18T17:24:00+08:00",
+      "delivered_at": "2026-10-22T06:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "ZTO542267561075",
+      "carrier": "中通快递",
+      "expected_delivery": "2026-10-21T22:24:00+08:00",
+      "address": {
+        "province": "上海市",
+        "city": "上海市",
+        "district": "浦东新区",
+        "detail": "张江路206号12栋***"
+      },
+      "address_text": "上海市上海市浦东新区张江路206号12栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261012-0007",
+      "buyer_id": "BUY-0004",
+      "status": "exception",
+      "status_label": "物流异常",
+      "items": [
+        {
+          "product_id": "P2044",
+          "model": "VM9 Mini",
+          "name": "烬狐 VM9 Mini 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 599,
+          "subtotal": 599
+        }
+      ],
+      "item_count": 1,
+      "amount": 599,
+      "discount": 20,
+      "shipping_fee": 8,
+      "payable": 587,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-12T11:36:00+08:00",
+      "paid_at": "2026-10-12T11:44:00+08:00",
+      "shipped_at": "2026-10-13T19:44:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "YD465486931106",
+      "carrier": "韵达快递",
+      "expected_delivery": "2026-10-17T19:44:00+08:00",
+      "address": {
+        "province": "福建省",
+        "city": "厦门市",
+        "district": "思明区",
+        "detail": "软件园二期192号5栋***"
+      },
+      "address_text": "福建省厦门市思明区软件园二期192号5栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261021-0008",
+      "buyer_id": "BUY-0006",
+      "status": "exception",
+      "status_label": "物流异常",
+      "items": [
+        {
+          "product_id": "P2029",
+          "model": "MK87 Pro",
+          "name": "烬狐 MK87 Pro 机械键盘",
+          "quantity": 2,
+          "unit_price": 659,
+          "subtotal": 1318
+        },
+        {
+          "product_id": "P2082",
+          "model": "AH5",
+          "name": "烬狐 AH5 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 599,
+          "subtotal": 599
+        }
+      ],
+      "item_count": 3,
+      "amount": 1917,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 1867,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-21T13:31:00+08:00",
+      "paid_at": "2026-10-21T13:56:00+08:00",
+      "shipped_at": "2026-10-22T10:56:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "ZTO421408959680",
+      "carrier": "中通快递",
+      "expected_delivery": "2026-10-24T10:56:00+08:00",
+      "address": {
+        "province": "广东省",
+        "city": "深圳市",
+        "district": "南山区",
+        "detail": "科技园32号14栋***"
+      },
+      "address_text": "广东省深圳市南山区科技园32号14栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261012-0009",
+      "buyer_id": "BUY-0010",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2099",
+          "model": "BH3",
+          "name": "烬狐 BH3 头戴式蓝牙耳机",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        },
+        {
+          "product_id": "P2043",
+          "model": "VM9 Ultra",
+          "name": "烬狐 VM9 Ultra 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 999,
+          "subtotal": 999
+        }
+      ],
+      "item_count": 2,
+      "amount": 1498,
+      "discount": 20,
+      "shipping_fee": 0,
+      "payable": 1478,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-12T13:24:00+08:00",
+      "paid_at": "2026-10-12T13:32:00+08:00",
+      "shipped_at": "2026-10-13T17:24:00+08:00",
+      "delivered_at": "2026-10-18T06:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YD750689775837",
+      "carrier": "韵达快递",
+      "expected_delivery": "2026-10-18T00:24:00+08:00",
+      "address": {
+        "province": "湖北省",
+        "city": "武汉市",
+        "district": "洪山区",
+        "detail": "光谷大道295号2栋***"
+      },
+      "address_text": "湖北省武汉市洪山区光谷大道295号2栋***",
+      "aftersale_id": "AS-012-0009",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261018-0010",
+      "buyer_id": "BUY-0001",
+      "status": "in_transit",
+      "status_label": "运输中",
+      "items": [
+        {
+          "product_id": "P2043",
+          "model": "VM9 Ultra",
+          "name": "烬狐 VM9 Ultra 无线游戏鼠标",
+          "quantity": 2,
+          "unit_price": 999,
+          "subtotal": 1998
+        },
+        {
+          "product_id": "P2056",
+          "model": "VM10",
+          "name": "烬狐 VM10 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 459,
+          "subtotal": 459
+        }
+      ],
+      "item_count": 3,
+      "amount": 2457,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 2457,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-18T08:49:00+08:00",
+      "paid_at": "2026-10-18T09:10:00+08:00",
+      "shipped_at": "2026-10-19T09:10:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "SF289811888563",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-24T09:10:00+08:00",
+      "address": {
+        "province": "上海市",
+        "city": "上海市",
+        "district": "浦东新区",
+        "detail": "张江路206号12栋***"
+      },
+      "address_text": "上海市上海市浦东新区张江路206号12栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261007-0011",
+      "buyer_id": "BUY-0011",
+      "status": "exception",
+      "status_label": "物流异常",
+      "items": [
+        {
+          "product_id": "P2095",
+          "model": "EH3 Pro",
+          "name": "烬狐 EH3 Pro 入耳式游戏耳机",
+          "quantity": 1,
+          "unit_price": 229,
+          "subtotal": 229
+        },
+        {
+          "product_id": "P2050",
+          "model": "VM3 Mini",
+          "name": "烬狐 VM3 Mini 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 299,
+          "subtotal": 299
+        },
+        {
+          "product_id": "P2003",
+          "model": "VK75 Ultra",
+          "name": "烬狐 VK75 Ultra 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 1299,
+          "subtotal": 1299
+        }
+      ],
+      "item_count": 3,
+      "amount": 1827,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 1827,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-07T20:09:00+08:00",
+      "paid_at": "2026-10-07T20:21:00+08:00",
+      "shipped_at": "2026-10-09T05:21:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "YD346713195533",
+      "carrier": "韵达快递",
+      "expected_delivery": "2026-10-11T05:21:00+08:00",
+      "address": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "district": "鄞州区",
+        "detail": "中山东路253号2栋***"
+      },
+      "address_text": "浙江省宁波市鄞州区中山东路253号2栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261012-0012",
+      "buyer_id": "BUY-0005",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2092",
+          "model": "EH5",
+          "name": "烬狐 EH5 入耳式游戏耳机",
+          "quantity": 1,
+          "unit_price": 299,
+          "subtotal": 299
+        }
+      ],
+      "item_count": 1,
+      "amount": 299,
+      "discount": 0,
+      "shipping_fee": 8,
+      "payable": 307,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-12T22:24:00+08:00",
+      "paid_at": "2026-10-12T22:54:00+08:00",
+      "shipped_at": "2026-10-14T07:24:00+08:00",
+      "delivered_at": "2026-10-18T13:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "JD110075565163",
+      "carrier": "京东物流",
+      "expected_delivery": "2026-10-18T04:24:00+08:00",
+      "address": {
+        "province": "湖北省",
+        "city": "武汉市",
+        "district": "洪山区",
+        "detail": "光谷大道102号2栋***"
+      },
+      "address_text": "湖北省武汉市洪山区光谷大道102号2栋***",
+      "aftersale_id": "AS-012-0012",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261009-0013",
+      "buyer_id": "BUY-0013",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2020",
+          "model": "MK75 Pro",
+          "name": "烬狐 MK75 Pro 机械键盘",
+          "quantity": 2,
+          "unit_price": 629,
+          "subtotal": 1258
+        }
+      ],
+      "item_count": 2,
+      "amount": 1258,
+      "discount": 20,
+      "shipping_fee": 0,
+      "payable": 1238,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-09T20:24:00+08:00",
+      "paid_at": "2026-10-09T20:45:00+08:00",
+      "shipped_at": "2026-10-11T07:24:00+08:00",
+      "delivered_at": "2026-10-12T17:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "SF484026591741",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-12T11:24:00+08:00",
+      "address": {
+        "province": "重庆市",
+        "city": "重庆市",
+        "district": "渝北区",
+        "detail": "金开大道163号11栋***"
+      },
+      "address_text": "重庆市重庆市渝北区金开大道163号11栋***",
+      "aftersale_id": "AS-009-0013",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261021-0014",
+      "buyer_id": "BUY-0017",
+      "status": "exception",
+      "status_label": "物流异常",
+      "items": [
+        {
+          "product_id": "P2015",
+          "model": "VK98",
+          "name": "烬狐 VK98 磁轴键盘",
+          "quantity": 2,
+          "unit_price": 999,
+          "subtotal": 1998
+        },
+        {
+          "product_id": "P2067",
+          "model": "TM8 Pro",
+          "name": "烬狐 TM8 Pro 镁合金无线鼠标",
+          "quantity": 1,
+          "unit_price": 1199,
+          "subtotal": 1199
+        },
+        {
+          "product_id": "P2048",
+          "model": "VM3",
+          "name": "烬狐 VM3 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 199,
+          "subtotal": 199
+        }
+      ],
+      "item_count": 4,
+      "amount": 3396,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 3346,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-21T21:26:00+08:00",
+      "paid_at": "2026-10-21T21:55:00+08:00",
+      "shipped_at": "2026-10-23T03:55:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "YTO968508505709",
+      "carrier": "圆通速递",
+      "expected_delivery": "2026-10-25T03:55:00+08:00",
+      "address": {
+        "province": "湖南省",
+        "city": "长沙市",
+        "district": "岳麓区",
+        "detail": "麓谷大道231号12栋***"
+      },
+      "address_text": "湖南省长沙市岳麓区麓谷大道231号12栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261028-0015",
+      "buyer_id": "BUY-0005",
+      "status": "pending_payment",
+      "status_label": "待付款",
+      "items": [
+        {
+          "product_id": "P2033",
+          "model": "MK104 Pro",
+          "name": "烬狐 MK104 Pro 机械键盘",
+          "quantity": 1,
+          "unit_price": 769,
+          "subtotal": 769
+        },
+        {
+          "product_id": "P2014",
+          "model": "VK87 Ultra",
+          "name": "烬狐 VK87 Ultra 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 1399,
+          "subtotal": 1399
+        }
+      ],
+      "item_count": 2,
+      "amount": 2168,
+      "discount": 20,
+      "shipping_fee": 0,
+      "payable": 2148,
+      "payment_method": null,
+      "created_at": "2026-10-28T02:15:00+08:00",
+      "paid_at": null,
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "湖北省",
+        "city": "武汉市",
+        "district": "洪山区",
+        "detail": "光谷大道102号2栋***"
+      },
+      "address_text": "湖北省武汉市洪山区光谷大道102号2栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261026-0016",
+      "buyer_id": "BUY-0023",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2033",
+          "model": "MK104 Pro",
+          "name": "烬狐 MK104 Pro 机械键盘",
+          "quantity": 1,
+          "unit_price": 769,
+          "subtotal": 769
+        },
+        {
+          "product_id": "P2023",
+          "model": "MK65",
+          "name": "烬狐 MK65 机械键盘",
+          "quantity": 1,
+          "unit_price": 399,
+          "subtotal": 399
+        }
+      ],
+      "item_count": 2,
+      "amount": 1168,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 1168,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-26T16:24:00+08:00",
+      "paid_at": "2026-10-26T16:44:00+08:00",
+      "shipped_at": "2026-10-27T19:24:00+08:00",
+      "delivered_at": "2026-10-29T04:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "SF495094849034",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-29T00:24:00+08:00",
+      "address": {
+        "province": "广东省",
+        "city": "广州市",
+        "district": "天河区",
+        "detail": "体育西路289号15栋***"
+      },
+      "address_text": "广东省广州市天河区体育西路289号15栋***",
+      "aftersale_id": "AS-026-0016",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261011-0017",
+      "buyer_id": "BUY-0023",
+      "status": "in_transit",
+      "status_label": "运输中",
+      "items": [
+        {
+          "product_id": "P2039",
+          "model": "AL65",
+          "name": "烬狐 AL65 铝坨坨键盘",
+          "quantity": 1,
+          "unit_price": 1299,
+          "subtotal": 1299
+        },
+        {
+          "product_id": "P2028",
+          "model": "MK87",
+          "name": "烬狐 MK87 机械键盘",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        }
+      ],
+      "item_count": 2,
+      "amount": 1798,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 1748,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-11T00:42:00+08:00",
+      "paid_at": "2026-10-11T01:05:00+08:00",
+      "shipped_at": "2026-10-12T02:05:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "YTO577526174864",
+      "carrier": "圆通速递",
+      "expected_delivery": "2026-10-14T02:05:00+08:00",
+      "address": {
+        "province": "广东省",
+        "city": "广州市",
+        "district": "天河区",
+        "detail": "体育西路289号15栋***"
+      },
+      "address_text": "广东省广州市天河区体育西路289号15栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261024-0018",
+      "buyer_id": "BUY-0024",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2095",
+          "model": "EH3 Pro",
+          "name": "烬狐 EH3 Pro 入耳式游戏耳机",
+          "quantity": 1,
+          "unit_price": 229,
+          "subtotal": 229
+        }
+      ],
+      "item_count": 1,
+      "amount": 229,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 179,
+      "payment_method": "花呗分期",
+      "created_at": "2026-10-24T07:24:00+08:00",
+      "paid_at": "2026-10-24T07:35:00+08:00",
+      "shipped_at": "2026-10-24T17:24:00+08:00",
+      "delivered_at": "2026-10-28T21:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "ZTO115657811067",
+      "carrier": "中通快递",
+      "expected_delivery": "2026-10-28T17:24:00+08:00",
+      "address": {
+        "province": "江苏省",
+        "city": "南京市",
+        "district": "鼓楼区",
+        "detail": "中山北路37号11栋***"
+      },
+      "address_text": "江苏省南京市鼓楼区中山北路37号11栋***",
+      "aftersale_id": "AS-024-0018",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261028-0019",
+      "buyer_id": "BUY-0023",
+      "status": "paid",
+      "status_label": "已付款待发货",
+      "items": [
+        {
+          "product_id": "P2005",
+          "model": "VK65",
+          "name": "烬狐 VK65 磁轴键盘",
+          "quantity": 2,
+          "unit_price": 649,
+          "subtotal": 1298
+        }
+      ],
+      "item_count": 2,
+      "amount": 1298,
+      "discount": 20,
+      "shipping_fee": 0,
+      "payable": 1278,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-28T04:44:00+08:00",
+      "paid_at": "2026-10-28T05:05:00+08:00",
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "广东省",
+        "city": "广州市",
+        "district": "天河区",
+        "detail": "体育西路289号15栋***"
+      },
+      "address_text": "广东省广州市天河区体育西路289号15栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261030-0020",
+      "buyer_id": "BUY-0008",
+      "status": "paid",
+      "status_label": "已付款待发货",
+      "items": [
+        {
+          "product_id": "P2086",
+          "model": "AH3 Pro",
+          "name": "烬狐 AH3 Pro 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        }
+      ],
+      "item_count": 1,
+      "amount": 499,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 449,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-30T10:51:00+08:00",
+      "paid_at": "2026-10-30T10:55:00+08:00",
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "上海市",
+        "city": "上海市",
+        "district": "浦东新区",
+        "detail": "张江路141号4栋***"
+      },
+      "address_text": "上海市上海市浦东新区张江路141号4栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261018-0021",
+      "buyer_id": "BUY-0014",
+      "status": "in_transit",
+      "status_label": "运输中",
+      "items": [
+        {
+          "product_id": "P2030",
+          "model": "MK98",
+          "name": "烬狐 MK98 机械键盘",
+          "quantity": 1,
+          "unit_price": 549,
+          "subtotal": 549
+        }
+      ],
+      "item_count": 1,
+      "amount": 549,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 549,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-18T07:08:00+08:00",
+      "paid_at": "2026-10-18T07:42:00+08:00",
+      "shipped_at": "2026-10-19T09:42:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "SF922317894494",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-21T09:42:00+08:00",
+      "address": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "district": "鄞州区",
+        "detail": "中山东路157号10栋***"
+      },
+      "address_text": "浙江省宁波市鄞州区中山东路157号10栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261002-0022",
+      "buyer_id": "BUY-0002",
+      "status": "in_transit",
+      "status_label": "运输中",
+      "items": [
+        {
+          "product_id": "P2053",
+          "model": "VM8",
+          "name": "烬狐 VM8 无线游戏鼠标",
+          "quantity": 2,
+          "unit_price": 279,
+          "subtotal": 558
+        },
+        {
+          "product_id": "P2036",
+          "model": "SL87",
+          "name": "烬狐 SL87 矮轴键盘",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        },
+        {
+          "product_id": "P2015",
+          "model": "VK98",
+          "name": "烬狐 VK98 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 999,
+          "subtotal": 999
+        }
+      ],
+      "item_count": 4,
+      "amount": 2056,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 2056,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-02T22:15:00+08:00",
+      "paid_at": "2026-10-02T22:44:00+08:00",
+      "shipped_at": "2026-10-04T03:44:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "SF624680497211",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-06T03:44:00+08:00",
+      "address": {
+        "province": "广东省",
+        "city": "深圳市",
+        "district": "南山区",
+        "detail": "科技园191号2栋***"
+      },
+      "address_text": "广东省深圳市南山区科技园191号2栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261007-0023",
+      "buyer_id": "BUY-0003",
+      "status": "exception",
+      "status_label": "物流异常",
+      "items": [
+        {
+          "product_id": "P2027",
+          "model": "MK60",
+          "name": "烬狐 MK60 机械键盘",
+          "quantity": 1,
+          "unit_price": 299,
+          "subtotal": 299
+        },
+        {
+          "product_id": "P2001",
+          "model": "VK75 Pro",
+          "name": "烬狐 VK75 Pro 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 969,
+          "subtotal": 969
+        },
+        {
+          "product_id": "P2083",
+          "model": "AH5 Pro",
+          "name": "烬狐 AH5 Pro 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 799,
+          "subtotal": 799
+        }
+      ],
+      "item_count": 3,
+      "amount": 2067,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 2067,
+      "payment_method": "花呗分期",
+      "created_at": "2026-10-07T05:58:00+08:00",
+      "paid_at": "2026-10-07T06:02:00+08:00",
+      "shipped_at": "2026-10-08T08:02:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "ZTO620039448251",
+      "carrier": "中通快递",
+      "expected_delivery": "2026-10-13T08:02:00+08:00",
+      "address": {
+        "province": "天津市",
+        "city": "天津市",
+        "district": "南开区",
+        "detail": "鞍山西道210号10栋***"
+      },
+      "address_text": "天津市天津市南开区鞍山西道210号10栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261030-0024",
+      "buyer_id": "BUY-0009",
+      "status": "paid",
+      "status_label": "已付款待发货",
+      "items": [
+        {
+          "product_id": "P2019",
+          "model": "VK104 Pro",
+          "name": "烬狐 VK104 Pro 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 1299,
+          "subtotal": 1299
+        },
+        {
+          "product_id": "P2077",
+          "model": "AH9",
+          "name": "烬狐 AH9 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 1299,
+          "subtotal": 1299
+        }
+      ],
+      "item_count": 2,
+      "amount": 2598,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 2598,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-30T18:53:00+08:00",
+      "paid_at": "2026-10-30T19:05:00+08:00",
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "江苏省",
+        "city": "苏州市",
+        "district": "工业园区",
+        "detail": "星湖街237号3栋***"
+      },
+      "address_text": "江苏省苏州市工业园区星湖街237号3栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20260930-0025",
+      "buyer_id": "BUY-0006",
+      "status": "completed",
+      "status_label": "已完成",
+      "items": [
+        {
+          "product_id": "P2073",
+          "model": "EM5",
+          "name": "烬狐 EM5 入门游戏鼠标",
+          "quantity": 1,
+          "unit_price": 129,
+          "subtotal": 129
+        },
+        {
+          "product_id": "P2099",
+          "model": "BH3",
+          "name": "烬狐 BH3 头戴式蓝牙耳机",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        },
+        {
+          "product_id": "P2075",
+          "model": "EM7",
+          "name": "烬狐 EM7 入门游戏鼠标",
+          "quantity": 2,
+          "unit_price": 179,
+          "subtotal": 358
+        }
+      ],
+      "item_count": 4,
+      "amount": 986,
+      "discount": 20,
+      "shipping_fee": 0,
+      "payable": 966,
+      "payment_method": "微信支付",
+      "created_at": "2026-09-30T11:24:00+08:00",
+      "paid_at": "2026-09-30T11:29:00+08:00",
+      "shipped_at": "2026-10-01T07:24:00+08:00",
+      "delivered_at": "2026-10-03T10:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YD294506745948",
+      "carrier": "韵达快递",
+      "expected_delivery": "2026-10-03T04:24:00+08:00",
+      "address": {
+        "province": "广东省",
+        "city": "深圳市",
+        "district": "南山区",
+        "detail": "科技园32号14栋***"
+      },
+      "address_text": "广东省深圳市南山区科技园32号14栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261009-0026",
+      "buyer_id": "BUY-0020",
+      "status": "completed",
+      "status_label": "已完成",
+      "items": [
+        {
+          "product_id": "P2005",
+          "model": "VK65",
+          "name": "烬狐 VK65 磁轴键盘",
+          "quantity": 2,
+          "unit_price": 649,
+          "subtotal": 1298
+        }
+      ],
+      "item_count": 2,
+      "amount": 1298,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 1298,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-09T17:24:00+08:00",
+      "paid_at": "2026-10-09T17:46:00+08:00",
+      "shipped_at": "2026-10-10T03:24:00+08:00",
+      "delivered_at": "2026-10-12T23:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YTO410823828253",
+      "carrier": "圆通速递",
+      "expected_delivery": "2026-10-12T13:24:00+08:00",
+      "address": {
+        "province": "江苏省",
+        "city": "南京市",
+        "district": "鼓楼区",
+        "detail": "中山北路231号18栋***"
+      },
+      "address_text": "江苏省南京市鼓楼区中山北路231号18栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261010-0027",
+      "buyer_id": "BUY-0008",
+      "status": "completed",
+      "status_label": "已完成",
+      "items": [
+        {
+          "product_id": "P2076",
+          "model": "AH9 Pro",
+          "name": "烬狐 AH9 Pro 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 1599,
+          "subtotal": 1599
+        },
+        {
+          "product_id": "P2079",
+          "model": "AH7",
+          "name": "烬狐 AH7 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 899,
+          "subtotal": 899
+        },
+        {
+          "product_id": "P2041",
+          "model": "VM9 Pro",
+          "name": "烬狐 VM9 Pro 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 749,
+          "subtotal": 749
+        }
+      ],
+      "item_count": 3,
+      "amount": 3247,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 3197,
+      "payment_method": "花呗分期",
+      "created_at": "2026-10-10T18:24:00+08:00",
+      "paid_at": "2026-10-10T18:36:00+08:00",
+      "shipped_at": "2026-10-11T13:24:00+08:00",
+      "delivered_at": "2026-10-12T18:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YD823438264696",
+      "carrier": "韵达快递",
+      "expected_delivery": "2026-10-12T08:24:00+08:00",
+      "address": {
+        "province": "上海市",
+        "city": "上海市",
+        "district": "浦东新区",
+        "detail": "张江路141号4栋***"
+      },
+      "address_text": "上海市上海市浦东新区张江路141号4栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261027-0028",
+      "buyer_id": "BUY-0001",
+      "status": "completed",
+      "status_label": "已完成",
+      "items": [
+        {
+          "product_id": "P2039",
+          "model": "AL65",
+          "name": "烬狐 AL65 铝坨坨键盘",
+          "quantity": 1,
+          "unit_price": 1299,
+          "subtotal": 1299
+        },
+        {
+          "product_id": "P2023",
+          "model": "MK65",
+          "name": "烬狐 MK65 机械键盘",
+          "quantity": 1,
+          "unit_price": 399,
+          "subtotal": 399
+        }
+      ],
+      "item_count": 2,
+      "amount": 1698,
+      "discount": 20,
+      "shipping_fee": 8,
+      "payable": 1686,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-27T12:24:00+08:00",
+      "paid_at": "2026-10-27T12:59:00+08:00",
+      "shipped_at": "2026-10-28T20:24:00+08:00",
+      "delivered_at": "2026-10-30T22:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "JD333914938463",
+      "carrier": "京东物流",
+      "expected_delivery": "2026-10-30T19:24:00+08:00",
+      "address": {
+        "province": "上海市",
+        "city": "上海市",
+        "district": "浦东新区",
+        "detail": "张江路206号12栋***"
+      },
+      "address_text": "上海市上海市浦东新区张江路206号12栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261028-0029",
+      "buyer_id": "BUY-0019",
+      "status": "pending_payment",
+      "status_label": "待付款",
+      "items": [
+        {
+          "product_id": "P2025",
+          "model": "MK68",
+          "name": "烬狐 MK68 机械键盘",
+          "quantity": 1,
+          "unit_price": 429,
+          "subtotal": 429
+        },
+        {
+          "product_id": "P2067",
+          "model": "TM8 Pro",
+          "name": "烬狐 TM8 Pro 镁合金无线鼠标",
+          "quantity": 1,
+          "unit_price": 1199,
+          "subtotal": 1199
+        },
+        {
+          "product_id": "P2088",
+          "model": "AH1 Pro",
+          "name": "烬狐 AH1 Pro 头戴式游戏耳机",
+          "quantity": 2,
+          "unit_price": 299,
+          "subtotal": 598
+        }
+      ],
+      "item_count": 4,
+      "amount": 2226,
+      "discount": 20,
+      "shipping_fee": 0,
+      "payable": 2206,
+      "payment_method": null,
+      "created_at": "2026-10-28T04:48:00+08:00",
+      "paid_at": null,
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "雁塔区",
+        "detail": "科技路152号14栋***"
+      },
+      "address_text": "陕西省西安市雁塔区科技路152号14栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261011-0030",
+      "buyer_id": "BUY-0015",
+      "status": "in_transit",
+      "status_label": "运输中",
+      "items": [
+        {
+          "product_id": "P2086",
+          "model": "AH3 Pro",
+          "name": "烬狐 AH3 Pro 头戴式游戏耳机",
+          "quantity": 2,
+          "unit_price": 499,
+          "subtotal": 998
+        },
+        {
+          "product_id": "P2099",
+          "model": "BH3",
+          "name": "烬狐 BH3 头戴式蓝牙耳机",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        }
+      ],
+      "item_count": 3,
+      "amount": 1497,
+      "discount": 20,
+      "shipping_fee": 0,
+      "payable": 1477,
+      "payment_method": "花呗分期",
+      "created_at": "2026-10-11T20:42:00+08:00",
+      "paid_at": "2026-10-11T20:45:00+08:00",
+      "shipped_at": "2026-10-12T12:45:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "JD236148771135",
+      "carrier": "京东物流",
+      "expected_delivery": "2026-10-15T12:45:00+08:00",
+      "address": {
+        "province": "湖北省",
+        "city": "武汉市",
+        "district": "洪山区",
+        "detail": "光谷大道211号15栋***"
+      },
+      "address_text": "湖北省武汉市洪山区光谷大道211号15栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261021-0031",
+      "buyer_id": "BUY-0022",
+      "status": "exception",
+      "status_label": "物流异常",
+      "items": [
+        {
+          "product_id": "P2058",
+          "model": "GM3 Pro",
+          "name": "烬狐 GM3 Pro 有线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 159,
+          "subtotal": 159
+        }
+      ],
+      "item_count": 1,
+      "amount": 159,
+      "discount": 80,
+      "shipping_fee": 8,
+      "payable": 87,
+      "payment_method": "花呗分期",
+      "created_at": "2026-10-21T20:36:00+08:00",
+      "paid_at": "2026-10-21T20:39:00+08:00",
+      "shipped_at": "2026-10-22T23:39:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "ZTO933001406170",
+      "carrier": "中通快递",
+      "expected_delivery": "2026-10-26T23:39:00+08:00",
+      "address": {
+        "province": "浙江省",
+        "city": "杭州市",
+        "district": "西湖区",
+        "detail": "文三路286号2栋***"
+      },
+      "address_text": "浙江省杭州市西湖区文三路286号2栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261012-0032",
+      "buyer_id": "BUY-0005",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2062",
+          "model": "GM6 Pro",
+          "name": "烬狐 GM6 Pro 有线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 229,
+          "subtotal": 229
+        }
+      ],
+      "item_count": 1,
+      "amount": 229,
+      "discount": 80,
+      "shipping_fee": 0,
+      "payable": 149,
+      "payment_method": "花呗分期",
+      "created_at": "2026-10-12T09:24:00+08:00",
+      "paid_at": "2026-10-12T09:50:00+08:00",
+      "shipped_at": "2026-10-13T17:24:00+08:00",
+      "delivered_at": "2026-10-15T13:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "JD264952787396",
+      "carrier": "京东物流",
+      "expected_delivery": "2026-10-15T11:24:00+08:00",
+      "address": {
+        "province": "湖北省",
+        "city": "武汉市",
+        "district": "洪山区",
+        "detail": "光谷大道102号2栋***"
+      },
+      "address_text": "湖北省武汉市洪山区光谷大道102号2栋***",
+      "aftersale_id": "AS-012-0032",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261011-0033",
+      "buyer_id": "BUY-0015",
+      "status": "exception",
+      "status_label": "物流异常",
+      "items": [
+        {
+          "product_id": "P2078",
+          "model": "AH9 Wireless",
+          "name": "烬狐 AH9 Wireless 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 1399,
+          "subtotal": 1399
+        },
+        {
+          "product_id": "P2018",
+          "model": "VK104",
+          "name": "烬狐 VK104 磁轴键盘",
+          "quantity": 2,
+          "unit_price": 1099,
+          "subtotal": 2198
+        }
+      ],
+      "item_count": 3,
+      "amount": 3597,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 3547,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-11T11:08:00+08:00",
+      "paid_at": "2026-10-11T11:34:00+08:00",
+      "shipped_at": "2026-10-12T07:34:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "JD705221251012",
+      "carrier": "京东物流",
+      "expected_delivery": "2026-10-16T07:34:00+08:00",
+      "address": {
+        "province": "湖北省",
+        "city": "武汉市",
+        "district": "洪山区",
+        "detail": "光谷大道211号15栋***"
+      },
+      "address_text": "湖北省武汉市洪山区光谷大道211号15栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261022-0034",
+      "buyer_id": "BUY-0012",
+      "status": "delivered",
+      "status_label": "已签收",
+      "items": [
+        {
+          "product_id": "P2051",
+          "model": "VM5",
+          "name": "烬狐 VM5 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 249,
+          "subtotal": 249
+        },
+        {
+          "product_id": "P2039",
+          "model": "AL65",
+          "name": "烬狐 AL65 铝坨坨键盘",
+          "quantity": 1,
+          "unit_price": 1299,
+          "subtotal": 1299
+        },
+        {
+          "product_id": "P2018",
+          "model": "VK104",
+          "name": "烬狐 VK104 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 1099,
+          "subtotal": 1099
+        }
+      ],
+      "item_count": 3,
+      "amount": 2647,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 2597,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-22T11:24:00+08:00",
+      "paid_at": "2026-10-22T11:31:00+08:00",
+      "shipped_at": "2026-10-23T02:24:00+08:00",
+      "delivered_at": "2026-10-27T17:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "SF560569070165",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-27T12:24:00+08:00",
+      "address": {
+        "province": "重庆市",
+        "city": "重庆市",
+        "district": "渝北区",
+        "detail": "金开大道89号12栋***"
+      },
+      "address_text": "重庆市重庆市渝北区金开大道89号12栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261030-0035",
+      "buyer_id": "BUY-0013",
+      "status": "pending_payment",
+      "status_label": "待付款",
+      "items": [
+        {
+          "product_id": "P2015",
+          "model": "VK98",
+          "name": "烬狐 VK98 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 999,
+          "subtotal": 999
+        },
+        {
+          "product_id": "P2012",
+          "model": "VK87",
+          "name": "烬狐 VK87 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 799,
+          "subtotal": 799
+        },
+        {
+          "product_id": "P2048",
+          "model": "VM3",
+          "name": "烬狐 VM3 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 199,
+          "subtotal": 199
+        }
+      ],
+      "item_count": 3,
+      "amount": 1997,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 1997,
+      "payment_method": null,
+      "created_at": "2026-10-30T15:17:00+08:00",
+      "paid_at": null,
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "重庆市",
+        "city": "重庆市",
+        "district": "渝北区",
+        "detail": "金开大道163号11栋***"
+      },
+      "address_text": "重庆市重庆市渝北区金开大道163号11栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261016-0036",
+      "buyer_id": "BUY-0023",
+      "status": "in_transit",
+      "status_label": "运输中",
+      "items": [
+        {
+          "product_id": "P2061",
+          "model": "GM6",
+          "name": "烬狐 GM6 有线游戏鼠标",
+          "quantity": 2,
+          "unit_price": 149,
+          "subtotal": 298
+        }
+      ],
+      "item_count": 2,
+      "amount": 298,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 248,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-16T00:36:00+08:00",
+      "paid_at": "2026-10-16T01:09:00+08:00",
+      "shipped_at": "2026-10-17T01:09:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "JD111001313968",
+      "carrier": "京东物流",
+      "expected_delivery": "2026-10-20T01:09:00+08:00",
+      "address": {
+        "province": "广东省",
+        "city": "广州市",
+        "district": "天河区",
+        "detail": "体育西路289号15栋***"
+      },
+      "address_text": "广东省广州市天河区体育西路289号15栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261002-0037",
+      "buyer_id": "BUY-0007",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2067",
+          "model": "TM8 Pro",
+          "name": "烬狐 TM8 Pro 镁合金无线鼠标",
+          "quantity": 1,
+          "unit_price": 1199,
+          "subtotal": 1199
+        },
+        {
+          "product_id": "P2073",
+          "model": "EM5",
+          "name": "烬狐 EM5 入门游戏鼠标",
+          "quantity": 1,
+          "unit_price": 129,
+          "subtotal": 129
+        },
+        {
+          "product_id": "P2036",
+          "model": "SL87",
+          "name": "烬狐 SL87 矮轴键盘",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        }
+      ],
+      "item_count": 3,
+      "amount": 1827,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 1827,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-02T17:24:00+08:00",
+      "paid_at": "2026-10-02T17:33:00+08:00",
+      "shipped_at": "2026-10-03T01:24:00+08:00",
+      "delivered_at": "2026-10-06T10:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "ZTO853896100066",
+      "carrier": "中通快递",
+      "expected_delivery": "2026-10-06T01:24:00+08:00",
+      "address": {
+        "province": "福建省",
+        "city": "厦门市",
+        "district": "思明区",
+        "detail": "软件园二期115号3栋***"
+      },
+      "address_text": "福建省厦门市思明区软件园二期115号3栋***",
+      "aftersale_id": "AS-002-0037",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261026-0038",
+      "buyer_id": "BUY-0023",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2086",
+          "model": "AH3 Pro",
+          "name": "烬狐 AH3 Pro 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        },
+        {
+          "product_id": "P2014",
+          "model": "VK87 Ultra",
+          "name": "烬狐 VK87 Ultra 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 1399,
+          "subtotal": 1399
+        },
+        {
+          "product_id": "P2024",
+          "model": "MK65 Pro",
+          "name": "烬狐 MK65 Pro 机械键盘",
+          "quantity": 2,
+          "unit_price": 559,
+          "subtotal": 1118
+        }
+      ],
+      "item_count": 4,
+      "amount": 3016,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 3016,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-26T14:24:00+08:00",
+      "paid_at": "2026-10-26T14:28:00+08:00",
+      "shipped_at": "2026-10-27T02:24:00+08:00",
+      "delivered_at": "2026-10-28T10:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YTO913068079289",
+      "carrier": "圆通速递",
+      "expected_delivery": "2026-10-28T03:24:00+08:00",
+      "address": {
+        "province": "广东省",
+        "city": "广州市",
+        "district": "天河区",
+        "detail": "体育西路289号15栋***"
+      },
+      "address_text": "广东省广州市天河区体育西路289号15栋***",
+      "aftersale_id": "AS-026-0038",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261019-0039",
+      "buyer_id": "BUY-0011",
+      "status": "in_transit",
+      "status_label": "运输中",
+      "items": [
+        {
+          "product_id": "P2098",
+          "model": "BH5",
+          "name": "烬狐 BH5 头戴式蓝牙耳机",
+          "quantity": 1,
+          "unit_price": 699,
+          "subtotal": 699
+        }
+      ],
+      "item_count": 1,
+      "amount": 699,
+      "discount": 0,
+      "shipping_fee": 12,
+      "payable": 711,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-19T13:02:00+08:00",
+      "paid_at": "2026-10-19T13:27:00+08:00",
+      "shipped_at": "2026-10-20T22:27:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "JD783717476549",
+      "carrier": "京东物流",
+      "expected_delivery": "2026-10-22T22:27:00+08:00",
+      "address": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "district": "鄞州区",
+        "detail": "中山东路253号2栋***"
+      },
+      "address_text": "浙江省宁波市鄞州区中山东路253号2栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20260930-0040",
+      "buyer_id": "BUY-0008",
+      "status": "delivered",
+      "status_label": "已签收",
+      "items": [
+        {
+          "product_id": "P2033",
+          "model": "MK104 Pro",
+          "name": "烬狐 MK104 Pro 机械键盘",
+          "quantity": 1,
+          "unit_price": 769,
+          "subtotal": 769
+        }
+      ],
+      "item_count": 1,
+      "amount": 769,
+      "discount": 50,
+      "shipping_fee": 12,
+      "payable": 731,
+      "payment_method": "花呗分期",
+      "created_at": "2026-09-30T00:24:00+08:00",
+      "paid_at": "2026-09-30T00:32:00+08:00",
+      "shipped_at": "2026-10-01T00:24:00+08:00",
+      "delivered_at": "2026-10-02T19:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "JD373250874929",
+      "carrier": "京东物流",
+      "expected_delivery": "2026-10-02T13:24:00+08:00",
+      "address": {
+        "province": "上海市",
+        "city": "上海市",
+        "district": "浦东新区",
+        "detail": "张江路141号4栋***"
+      },
+      "address_text": "上海市上海市浦东新区张江路141号4栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261020-0041",
+      "buyer_id": "BUY-0022",
+      "status": "delivered",
+      "status_label": "已签收",
+      "items": [
+        {
+          "product_id": "P2099",
+          "model": "BH3",
+          "name": "烬狐 BH3 头戴式蓝牙耳机",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        }
+      ],
+      "item_count": 1,
+      "amount": 499,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 449,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-20T09:24:00+08:00",
+      "paid_at": "2026-10-20T09:54:00+08:00",
+      "shipped_at": "2026-10-20T17:24:00+08:00",
+      "delivered_at": "2026-10-23T12:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "SF881946953458",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-23T04:24:00+08:00",
+      "address": {
+        "province": "浙江省",
+        "city": "杭州市",
+        "district": "西湖区",
+        "detail": "文三路286号2栋***"
+      },
+      "address_text": "浙江省杭州市西湖区文三路286号2栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261029-0042",
+      "buyer_id": "BUY-0013",
+      "status": "pending_payment",
+      "status_label": "待付款",
+      "items": [
+        {
+          "product_id": "P2028",
+          "model": "MK87",
+          "name": "烬狐 MK87 机械键盘",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        },
+        {
+          "product_id": "P2051",
+          "model": "VM5",
+          "name": "烬狐 VM5 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 249,
+          "subtotal": 249
+        }
+      ],
+      "item_count": 2,
+      "amount": 748,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 748,
+      "payment_method": null,
+      "created_at": "2026-10-29T02:36:00+08:00",
+      "paid_at": null,
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "重庆市",
+        "city": "重庆市",
+        "district": "渝北区",
+        "detail": "金开大道163号11栋***"
+      },
+      "address_text": "重庆市重庆市渝北区金开大道163号11栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261013-0043",
+      "buyer_id": "BUY-0016",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2052",
+          "model": "VM5 Pro",
+          "name": "烬狐 VM5 Pro 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 399,
+          "subtotal": 399
+        }
+      ],
+      "item_count": 1,
+      "amount": 399,
+      "discount": 80,
+      "shipping_fee": 0,
+      "payable": 319,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-13T03:24:00+08:00",
+      "paid_at": "2026-10-13T03:48:00+08:00",
+      "shipped_at": "2026-10-14T08:24:00+08:00",
+      "delivered_at": "2026-10-17T09:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YTO521742928827",
+      "carrier": "圆通速递",
+      "expected_delivery": "2026-10-16T23:24:00+08:00",
+      "address": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "雁塔区",
+        "detail": "科技路110号13栋***"
+      },
+      "address_text": "陕西省西安市雁塔区科技路110号13栋***",
+      "aftersale_id": "AS-013-0043",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261021-0044",
+      "buyer_id": "BUY-0021",
+      "status": "shipped",
+      "status_label": "已发货",
+      "items": [
+        {
+          "product_id": "P2069",
+          "model": "TM9 Pro",
+          "name": "烬狐 TM9 Pro 镁合金无线鼠标",
+          "quantity": 1,
+          "unit_price": 1599,
+          "subtotal": 1599
+        },
+        {
+          "product_id": "P2082",
+          "model": "AH5",
+          "name": "烬狐 AH5 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 599,
+          "subtotal": 599
+        },
+        {
+          "product_id": "P2044",
+          "model": "VM9 Mini",
+          "name": "烬狐 VM9 Mini 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 599,
+          "subtotal": 599
+        }
+      ],
+      "item_count": 3,
+      "amount": 2797,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 2797,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-21T13:47:00+08:00",
+      "paid_at": "2026-10-21T14:18:00+08:00",
+      "shipped_at": "2026-10-22T03:18:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "SF180760151439",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-26T03:18:00+08:00",
+      "address": {
+        "province": "湖南省",
+        "city": "长沙市",
+        "district": "岳麓区",
+        "detail": "麓谷大道240号8栋***"
+      },
+      "address_text": "湖南省长沙市岳麓区麓谷大道240号8栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261014-0045",
+      "buyer_id": "BUY-0001",
+      "status": "delivered",
+      "status_label": "已签收",
+      "items": [
+        {
+          "product_id": "P2053",
+          "model": "VM8",
+          "name": "烬狐 VM8 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 279,
+          "subtotal": 279
+        },
+        {
+          "product_id": "P2094",
+          "model": "EH3",
+          "name": "烬狐 EH3 入耳式游戏耳机",
+          "quantity": 2,
+          "unit_price": 149,
+          "subtotal": 298
+        }
+      ],
+      "item_count": 3,
+      "amount": 577,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 577,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-14T19:24:00+08:00",
+      "paid_at": "2026-10-14T19:53:00+08:00",
+      "shipped_at": "2026-10-15T07:24:00+08:00",
+      "delivered_at": "2026-10-18T20:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "SF280916411153",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-18T16:24:00+08:00",
+      "address": {
+        "province": "上海市",
+        "city": "上海市",
+        "district": "浦东新区",
+        "detail": "张江路206号12栋***"
+      },
+      "address_text": "上海市上海市浦东新区张江路206号12栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20260929-0046",
+      "buyer_id": "BUY-0014",
+      "status": "delivered",
+      "status_label": "已签收",
+      "items": [
+        {
+          "product_id": "P2051",
+          "model": "VM5",
+          "name": "烬狐 VM5 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 249,
+          "subtotal": 249
+        },
+        {
+          "product_id": "P2095",
+          "model": "EH3 Pro",
+          "name": "烬狐 EH3 Pro 入耳式游戏耳机",
+          "quantity": 1,
+          "unit_price": 229,
+          "subtotal": 229
+        },
+        {
+          "product_id": "P2045",
+          "model": "VM6",
+          "name": "烬狐 VM6 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 329,
+          "subtotal": 329
+        }
+      ],
+      "item_count": 3,
+      "amount": 807,
+      "discount": 80,
+      "shipping_fee": 0,
+      "payable": 727,
+      "payment_method": "支付宝",
+      "created_at": "2026-09-29T16:24:00+08:00",
+      "paid_at": "2026-09-29T17:00:00+08:00",
+      "shipped_at": "2026-09-30T13:24:00+08:00",
+      "delivered_at": "2026-10-02T01:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "SF274800612498",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-01T16:24:00+08:00",
+      "address": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "district": "鄞州区",
+        "detail": "中山东路157号10栋***"
+      },
+      "address_text": "浙江省宁波市鄞州区中山东路157号10栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261015-0047",
+      "buyer_id": "BUY-0019",
+      "status": "shipped",
+      "status_label": "已发货",
+      "items": [
+        {
+          "product_id": "P2032",
+          "model": "MK104",
+          "name": "烬狐 MK104 机械键盘",
+          "quantity": 2,
+          "unit_price": 599,
+          "subtotal": 1198
+        }
+      ],
+      "item_count": 2,
+      "amount": 1198,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 1198,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-15T13:59:00+08:00",
+      "paid_at": "2026-10-15T14:29:00+08:00",
+      "shipped_at": "2026-10-16T17:29:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "ZTO614513465884",
+      "carrier": "中通快递",
+      "expected_delivery": "2026-10-20T17:29:00+08:00",
+      "address": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "雁塔区",
+        "detail": "科技路152号14栋***"
+      },
+      "address_text": "陕西省西安市雁塔区科技路152号14栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261015-0048",
+      "buyer_id": "BUY-0019",
+      "status": "in_transit",
+      "status_label": "运输中",
+      "items": [
+        {
+          "product_id": "P2028",
+          "model": "MK87",
+          "name": "烬狐 MK87 机械键盘",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        },
+        {
+          "product_id": "P2013",
+          "model": "VK87 Pro",
+          "name": "烬狐 VK87 Pro 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 1099,
+          "subtotal": 1099
+        },
+        {
+          "product_id": "P2063",
+          "model": "GM8",
+          "name": "烬狐 GM8 有线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 169,
+          "subtotal": 169
+        }
+      ],
+      "item_count": 3,
+      "amount": 1767,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 1717,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-15T15:00:00+08:00",
+      "paid_at": "2026-10-15T15:26:00+08:00",
+      "shipped_at": "2026-10-16T22:26:00+08:00",
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": "SF133946968543",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-18T22:26:00+08:00",
+      "address": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "雁塔区",
+        "detail": "科技路152号14栋***"
+      },
+      "address_text": "陕西省西安市雁塔区科技路152号14栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261025-0049",
+      "buyer_id": "BUY-0016",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2018",
+          "model": "VK104",
+          "name": "烬狐 VK104 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 1099,
+          "subtotal": 1099
+        },
+        {
+          "product_id": "P2014",
+          "model": "VK87 Ultra",
+          "name": "烬狐 VK87 Ultra 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 1399,
+          "subtotal": 1399
+        }
+      ],
+      "item_count": 2,
+      "amount": 2498,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 2498,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-25T18:24:00+08:00",
+      "paid_at": "2026-10-25T18:52:00+08:00",
+      "shipped_at": "2026-10-26T05:24:00+08:00",
+      "delivered_at": "2026-10-28T23:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YD265924247496",
+      "carrier": "韵达快递",
+      "expected_delivery": "2026-10-28T21:24:00+08:00",
+      "address": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "雁塔区",
+        "detail": "科技路110号13栋***"
+      },
+      "address_text": "陕西省西安市雁塔区科技路110号13栋***",
+      "aftersale_id": "AS-025-0049",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261029-0050",
+      "buyer_id": "BUY-0021",
+      "status": "paid",
+      "status_label": "已付款待发货",
+      "items": [
+        {
+          "product_id": "P2067",
+          "model": "TM8 Pro",
+          "name": "烬狐 TM8 Pro 镁合金无线鼠标",
+          "quantity": 1,
+          "unit_price": 1199,
+          "subtotal": 1199
+        },
+        {
+          "product_id": "P2045",
+          "model": "VM6",
+          "name": "烬狐 VM6 无线游戏鼠标",
+          "quantity": 2,
+          "unit_price": 329,
+          "subtotal": 658
+        }
+      ],
+      "item_count": 3,
+      "amount": 1857,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 1857,
+      "payment_method": "支付宝",
+      "created_at": "2026-10-29T04:27:00+08:00",
+      "paid_at": "2026-10-29T04:37:00+08:00",
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "湖南省",
+        "city": "长沙市",
+        "district": "岳麓区",
+        "detail": "麓谷大道240号8栋***"
+      },
+      "address_text": "湖南省长沙市岳麓区麓谷大道240号8栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261016-0051",
+      "buyer_id": "BUY-0001",
+      "status": "delivered",
+      "status_label": "已签收",
+      "items": [
+        {
+          "product_id": "P2062",
+          "model": "GM6 Pro",
+          "name": "烬狐 GM6 Pro 有线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 229,
+          "subtotal": 229
+        }
+      ],
+      "item_count": 1,
+      "amount": 229,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 229,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-16T19:24:00+08:00",
+      "paid_at": "2026-10-16T19:55:00+08:00",
+      "shipped_at": "2026-10-17T22:24:00+08:00",
+      "delivered_at": "2026-10-21T17:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "SF666923687329",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-21T13:24:00+08:00",
+      "address": {
+        "province": "上海市",
+        "city": "上海市",
+        "district": "浦东新区",
+        "detail": "张江路206号12栋***"
+      },
+      "address_text": "上海市上海市浦东新区张江路206号12栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261018-0052",
+      "buyer_id": "BUY-0004",
+      "status": "completed",
+      "status_label": "已完成",
+      "items": [
+        {
+          "product_id": "P2055",
+          "model": "VM8 Ultra",
+          "name": "烬狐 VM8 Ultra 无线游戏鼠标",
+          "quantity": 2,
+          "unit_price": 629,
+          "subtotal": 1258
+        },
+        {
+          "product_id": "P2073",
+          "model": "EM5",
+          "name": "烬狐 EM5 入门游戏鼠标",
+          "quantity": 1,
+          "unit_price": 129,
+          "subtotal": 129
+        },
+        {
+          "product_id": "P2054",
+          "model": "VM8 Pro",
+          "name": "烬狐 VM8 Pro 无线游戏鼠标",
+          "quantity": 2,
+          "unit_price": 429,
+          "subtotal": 858
+        }
+      ],
+      "item_count": 5,
+      "amount": 2245,
+      "discount": 50,
+      "shipping_fee": 0,
+      "payable": 2195,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-18T22:24:00+08:00",
+      "paid_at": "2026-10-18T22:39:00+08:00",
+      "shipped_at": "2026-10-20T03:24:00+08:00",
+      "delivered_at": "2026-10-24T20:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "ZTO709436327663",
+      "carrier": "中通快递",
+      "expected_delivery": "2026-10-24T14:24:00+08:00",
+      "address": {
+        "province": "福建省",
+        "city": "厦门市",
+        "district": "思明区",
+        "detail": "软件园二期192号5栋***"
+      },
+      "address_text": "福建省厦门市思明区软件园二期192号5栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261024-0053",
+      "buyer_id": "BUY-0018",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2062",
+          "model": "GM6 Pro",
+          "name": "烬狐 GM6 Pro 有线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 229,
+          "subtotal": 229
+        },
+        {
+          "product_id": "P2022",
+          "model": "MK75 Plus",
+          "name": "烬狐 MK75 Plus 机械键盘",
+          "quantity": 1,
+          "unit_price": 699,
+          "subtotal": 699
+        }
+      ],
+      "item_count": 2,
+      "amount": 928,
+      "discount": 0,
+      "shipping_fee": 12,
+      "payable": 940,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-24T12:24:00+08:00",
+      "paid_at": "2026-10-24T12:52:00+08:00",
+      "shipped_at": "2026-10-25T23:24:00+08:00",
+      "delivered_at": "2026-10-27T15:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YD701237162102",
+      "carrier": "韵达快递",
+      "expected_delivery": "2026-10-27T13:24:00+08:00",
+      "address": {
+        "province": "湖南省",
+        "city": "长沙市",
+        "district": "岳麓区",
+        "detail": "麓谷大道183号5栋***"
+      },
+      "address_text": "湖南省长沙市岳麓区麓谷大道183号5栋***",
+      "aftersale_id": "AS-024-0053",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20260930-0054",
+      "buyer_id": "BUY-0007",
+      "status": "delivered",
+      "status_label": "已签收",
+      "items": [
+        {
+          "product_id": "P2086",
+          "model": "AH3 Pro",
+          "name": "烬狐 AH3 Pro 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        },
+        {
+          "product_id": "P2047",
+          "model": "VM6 Ultra",
+          "name": "烬狐 VM6 Ultra 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 699,
+          "subtotal": 699
+        },
+        {
+          "product_id": "P2087",
+          "model": "AH1",
+          "name": "烬狐 AH1 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 199,
+          "subtotal": 199
+        }
+      ],
+      "item_count": 3,
+      "amount": 1397,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 1397,
+      "payment_method": "支付宝",
+      "created_at": "2026-09-30T17:24:00+08:00",
+      "paid_at": "2026-09-30T17:51:00+08:00",
+      "shipped_at": "2026-10-02T01:24:00+08:00",
+      "delivered_at": "2026-10-04T17:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "ZTO890692833685",
+      "carrier": "中通快递",
+      "expected_delivery": "2026-10-04T07:24:00+08:00",
+      "address": {
+        "province": "福建省",
+        "city": "厦门市",
+        "district": "思明区",
+        "detail": "软件园二期115号3栋***"
+      },
+      "address_text": "福建省厦门市思明区软件园二期115号3栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261008-0055",
+      "buyer_id": "BUY-0013",
+      "status": "delivered",
+      "status_label": "已签收",
+      "items": [
+        {
+          "product_id": "P2021",
+          "model": "MK75",
+          "name": "烬狐 MK75 机械键盘",
+          "quantity": 1,
+          "unit_price": 469,
+          "subtotal": 469
+        },
+        {
+          "product_id": "P2052",
+          "model": "VM5 Pro",
+          "name": "烬狐 VM5 Pro 无线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 399,
+          "subtotal": 399
+        }
+      ],
+      "item_count": 2,
+      "amount": 868,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 868,
+      "payment_method": "花呗分期",
+      "created_at": "2026-10-08T12:24:00+08:00",
+      "paid_at": "2026-10-08T13:00:00+08:00",
+      "shipped_at": "2026-10-10T00:24:00+08:00",
+      "delivered_at": "2026-10-11T07:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "SF690493134268",
+      "carrier": "顺丰速运",
+      "expected_delivery": "2026-10-11T04:24:00+08:00",
+      "address": {
+        "province": "重庆市",
+        "city": "重庆市",
+        "district": "渝北区",
+        "detail": "金开大道163号11栋***"
+      },
+      "address_text": "重庆市重庆市渝北区金开大道163号11栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261028-0056",
+      "buyer_id": "BUY-0003",
+      "status": "paid",
+      "status_label": "已付款待发货",
+      "items": [
+        {
+          "product_id": "P2061",
+          "model": "GM6",
+          "name": "烬狐 GM6 有线游戏鼠标",
+          "quantity": 1,
+          "unit_price": 149,
+          "subtotal": 149
+        }
+      ],
+      "item_count": 1,
+      "amount": 149,
+      "discount": 0,
+      "shipping_fee": 12,
+      "payable": 161,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-28T01:17:00+08:00",
+      "paid_at": "2026-10-28T01:48:00+08:00",
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "天津市",
+        "city": "天津市",
+        "district": "南开区",
+        "detail": "鞍山西道210号10栋***"
+      },
+      "address_text": "天津市天津市南开区鞍山西道210号10栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261014-0057",
+      "buyer_id": "BUY-0018",
+      "status": "refunding",
+      "status_label": "退款中",
+      "items": [
+        {
+          "product_id": "P2093",
+          "model": "EH5 Pro",
+          "name": "烬狐 EH5 Pro 入耳式游戏耳机",
+          "quantity": 1,
+          "unit_price": 429,
+          "subtotal": 429
+        },
+        {
+          "product_id": "P2097",
+          "model": "BH5 Pro",
+          "name": "烬狐 BH5 Pro 头戴式蓝牙耳机",
+          "quantity": 1,
+          "unit_price": 899,
+          "subtotal": 899
+        },
+        {
+          "product_id": "P2023",
+          "model": "MK65",
+          "name": "烬狐 MK65 机械键盘",
+          "quantity": 1,
+          "unit_price": 399,
+          "subtotal": 399
+        }
+      ],
+      "item_count": 3,
+      "amount": 1727,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 1727,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-14T22:24:00+08:00",
+      "paid_at": "2026-10-14T23:02:00+08:00",
+      "shipped_at": "2026-10-15T21:24:00+08:00",
+      "delivered_at": "2026-10-17T03:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YTO302402780988",
+      "carrier": "圆通速递",
+      "expected_delivery": "2026-10-17T00:24:00+08:00",
+      "address": {
+        "province": "湖南省",
+        "city": "长沙市",
+        "district": "岳麓区",
+        "detail": "麓谷大道183号5栋***"
+      },
+      "address_text": "湖南省长沙市岳麓区麓谷大道183号5栋***",
+      "aftersale_id": "AS-014-0057",
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261031-0058",
+      "buyer_id": "BUY-0019",
+      "status": "paid",
+      "status_label": "已付款待发货",
+      "items": [
+        {
+          "product_id": "P2030",
+          "model": "MK98",
+          "name": "烬狐 MK98 机械键盘",
+          "quantity": 2,
+          "unit_price": 549,
+          "subtotal": 1098
+        },
+        {
+          "product_id": "P2012",
+          "model": "VK87",
+          "name": "烬狐 VK87 磁轴键盘",
+          "quantity": 1,
+          "unit_price": 799,
+          "subtotal": 799
+        },
+        {
+          "product_id": "P2084",
+          "model": "AH5 Wireless",
+          "name": "烬狐 AH5 Wireless 头戴式游戏耳机",
+          "quantity": 1,
+          "unit_price": 699,
+          "subtotal": 699
+        }
+      ],
+      "item_count": 4,
+      "amount": 2596,
+      "discount": 50,
+      "shipping_fee": 12,
+      "payable": 2558,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-31T00:11:00+08:00",
+      "paid_at": "2026-10-31T00:44:00+08:00",
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "雁塔区",
+        "detail": "科技路152号14栋***"
+      },
+      "address_text": "陕西省西安市雁塔区科技路152号14栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261029-0059",
+      "buyer_id": "BUY-0023",
+      "status": "paid",
+      "status_label": "已付款待发货",
+      "items": [
+        {
+          "product_id": "P2097",
+          "model": "BH5 Pro",
+          "name": "烬狐 BH5 Pro 头戴式蓝牙耳机",
+          "quantity": 1,
+          "unit_price": 899,
+          "subtotal": 899
+        }
+      ],
+      "item_count": 1,
+      "amount": 899,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 899,
+      "payment_method": "微信支付",
+      "created_at": "2026-10-29T11:05:00+08:00",
+      "paid_at": "2026-10-29T11:26:00+08:00",
+      "shipped_at": null,
+      "delivered_at": null,
+      "canceled_at": null,
+      "tracking_no": null,
+      "carrier": null,
+      "expected_delivery": null,
+      "address": {
+        "province": "广东省",
+        "city": "广州市",
+        "district": "天河区",
+        "detail": "体育西路289号15栋***"
+      },
+      "address_text": "广东省广州市天河区体育西路289号15栋***",
+      "aftersale_id": null,
+      "remark": ""
+    },
+    {
+      "order_id": "ORD-20261023-0060",
+      "buyer_id": "BUY-0004",
+      "status": "completed",
+      "status_label": "已完成",
+      "items": [
+        {
+          "product_id": "P2028",
+          "model": "MK87",
+          "name": "烬狐 MK87 机械键盘",
+          "quantity": 1,
+          "unit_price": 499,
+          "subtotal": 499
+        }
+      ],
+      "item_count": 1,
+      "amount": 499,
+      "discount": 0,
+      "shipping_fee": 0,
+      "payable": 499,
+      "payment_method": "银行卡",
+      "created_at": "2026-10-23T09:24:00+08:00",
+      "paid_at": "2026-10-23T09:58:00+08:00",
+      "shipped_at": "2026-10-24T09:24:00+08:00",
+      "delivered_at": "2026-10-25T23:24:00+08:00",
+      "canceled_at": null,
+      "tracking_no": "YD504407437053",
+      "carrier": "韵达快递",
+      "expected_delivery": "2026-10-25T20:24:00+08:00",
+      "address": {
+        "province": "福建省",
+        "city": "厦门市",
+        "district": "思明区",
+        "detail": "软件园二期192号5栋***"
+      },
+      "address_text": "福建省厦门市思明区软件园二期192号5栋***",
+      "aftersale_id": null,
+      "remark": ""
+    }
+  ]
+}

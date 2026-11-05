@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-10-25",
+  "source_dir": "data/policies/parsed",
+  "selected_dir": "data/policies/selected",
+  "documents": [
+    {
+      "doc_id": "RAW-TBL-RET-return-shipping-CSV",
+      "file": "RET-return-shipping-CSV.md",
+      "source_file": "data/policies/raw/tables/RET-return-shipping.csv",
+      "format": "CSV",
+      "doc_type": "store_policy",
+      "effective_date": "2026-01-01",
+      "valid_until": "2026-12-31",
+      "reason": "退货运费标准，CSV 系列规范版本"
+    },
+    {
+      "doc_id": "RAW-TBL-LOG-delivery-sla-CSV",
+      "file": "LOG-delivery-sla-CSV.md",
+      "source_file": "data/policies/raw/tables/LOG-delivery-sla.csv",
+      "format": "CSV",
+      "doc_type": "store_policy",
+      "effective_date": "2026-01-01",
+      "valid_until": "2026-12-31",
+      "reason": "配送时效标准，CSV 系列规范版本"
+    },
+    {
+      "doc_id": "RAW-TBL-PRI-price-protection-window-CSV",
+      "file": "PRI-price-protection-window-CSV.md",
+      "source_file": "data/policies/raw/tables/PRI-price-protection-window.csv",
+      "format": "CSV",
+      "doc_type": "store_policy",
+      "effective_date": "2026-01-01",
+      "valid_until": "2026-12-31",
+      "reason": "价保期限表，CSV 系列规范版本"
+    },
+    {
+      "doc_id": "RAW-TBL-TRD-trade-in-valuation-CSV",
+      "file": "TRD-trade-in-valuation-CSV.md",
+      "source_file": "data/policies/raw/tables/TRD-trade-in-valuation.csv",
+      "format": "CSV",
+      "doc_type": "store_policy",
+      "effective_date": "2026-01-01",
+      "valid_until": "2026-12-31",
+      "reason": "以旧换新估价表，CSV 系列规范版本"
+    },
+    {
+      "doc_id": "RAW-TBL-INV-invoice-types-CSV",
+      "file": "INV-invoice-types-CSV.md",
+      "source_file": "data/policies/raw/tables/INV-invoice-types.csv",
+      "format": "CSV",
+      "doc_type": "store_policy",
+      "effective_date": "2026-01-01",
+      "valid_until": "2026-12-31",
+      "reason": "发票类型对比表，CSV 系列规范版本"
+    },
+    {
+      "doc_id": "RAW-SCAN-TRD-recycle-receipt-scan-PDF",
+      "file": "TRD-recycle-receipt-scan-PDF.md",
+      "source_file": "data/policies/raw/scans/TRD-recycle-receipt-scan.pdf",
+      "format": "PDF",
+      "doc_type": "store_policy",
+      "effective_date": "2026-01-01",
+      "valid_until": "2026-12-31",
+      "reason": "以旧换新回收单扫描件，PDF 为 JPG 的规范版本"
+    },
+    {
+      "doc_id": "RAW-SCAN-PLT-platform-notice-scan-PDF",
+      "file": "PLT-platform-notice-scan-PDF.md",
+      "source_file": "data/policies/raw/scans/PLT-platform-notice-scan.pdf",
+      "format": "PDF",
+      "doc_type": "platform_rule",
+      "effective_date": "2026-06-01",
+      "valid_until": "2026-12-31",
+      "reason": "平台规则变更公告扫描件，PDF 为 JPG 的规范版本"
+    }
+  ]
+}

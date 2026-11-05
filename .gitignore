@@ -24,3 +24,14 @@ logs/
 
 # 本地导出的大段对话记录
 docs/transcripts/
+
+# 本地会话与运行轨迹数据库
+data/sessions/
+
+# 本地 rerank 模型权重
+data/models/
+
+# Mock 订单的可变状态库（由 data/orders/*.json 首次 seeding）
+data/orders/orders.db
+data/orders/orders.db-wal
+data/orders/orders.db-shm

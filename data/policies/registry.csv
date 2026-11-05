@@ -1,0 +1,63 @@
+﻿file_id,file_name,domain,format,kind,source,authority_level,version,effective_date,valid_until,deprecated,ingest_mode,status,tool,parsed_file,parser,duplicate_of,note
+POL-RET-001,docs/POL-RET-001.md,退换货,MD,store_policy,烬狐官方店铺政策（模拟）,高,v2,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,退换货政策总则（2026 版）
+POL-RET-002,docs/POL-RET-002.md,退换货,MD,store_policy,烬狐官方店铺政策（模拟）,中,v1,2024-01-01,2025-12-31,true,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,退换货政策总则（2024 版，已失效）
+POL-RET-003,docs/POL-RET-003.md,退换货,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,七天无理由退货适用条件与例外
+POL-RET-004,docs/POL-RET-004.md,退换货,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,质量问题退换货与检测流程
+POL-RET-005,docs/POL-RET-005.md,退换货,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,退货运费、运费险与包装要求
+POL-RET-006,docs/POL-RET-006.md,退换货,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,退款时效与退款路径
+POL-RET-007,docs/POL-RET-007.md,退换货,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,换货、补发与维修规则
+POL-RET-008,docs/POL-RET-008.md,退换货,MD,policy_faq,烬狐官方店铺政策（模拟）,中,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,退换货常见问题
+POL-INV-001,docs/POL-INV-001.md,发票,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,发票类型与开票范围
+POL-INV-002,docs/POL-INV-002.md,发票,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,开票流程与所需信息
+POL-INV-003,docs/POL-INV-003.md,发票,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,电子发票下载、换开与红冲
+POL-INV-004,docs/POL-INV-004.md,发票,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,增值税专用发票（企业客户）
+POL-INV-005,docs/POL-INV-005.md,发票,MD,policy_faq,烬狐官方店铺政策（模拟）,中,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,发票常见问题
+POL-LOG-001,docs/POL-LOG-001.md,物流,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,发货时效与仓库分配
+POL-LOG-002,docs/POL-LOG-002.md,物流,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,配送范围与时效标准
+POL-LOG-003,docs/POL-LOG-003.md,物流,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,节假日、偏远地区与不可抗力
+POL-LOG-004,docs/POL-LOG-004.md,物流,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,物流异常、丢件与破损处理
+POL-LOG-005,docs/POL-LOG-005.md,物流,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,自提、加急与指定快递
+POL-LOG-006,docs/POL-LOG-006.md,物流,MD,policy_faq,烬狐官方店铺政策（模拟）,中,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,物流常见问题
+POL-PRI-001,docs/POL-PRI-001.md,价格保护,MD,store_policy,烬狐官方店铺政策（模拟）,高,v2,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,价格保护规则总则（2026 版）
+POL-PRI-002,docs/POL-PRI-002.md,价格保护,MD,store_policy,烬狐官方店铺政策（模拟）,中,v1,2024-01-01,2025-12-31,true,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,价格保护规则（2024 版，已失效）
+POL-PRI-003,docs/POL-PRI-003.md,价格保护,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,价保适用范围与例外
+POL-PRI-004,docs/POL-PRI-004.md,价格保护,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,价保申请流程与补差计算
+POL-PRI-005,docs/POL-PRI-005.md,价格保护,MD,policy_faq,烬狐官方店铺政策（模拟）,中,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,价保常见问题
+POL-TRD-001,docs/POL-TRD-001.md,以旧换新,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,以旧换新总则与回收范围
+POL-TRD-002,docs/POL-TRD-002.md,以旧换新,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,回收估价与成色标准
+POL-TRD-003,docs/POL-TRD-003.md,以旧换新,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,回收流程与数据清除
+POL-TRD-004,docs/POL-TRD-004.md,以旧换新,MD,store_policy,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,换新补贴与优惠叠加
+POL-TRD-005,docs/POL-TRD-005.md,以旧换新,MD,policy_faq,烬狐官方店铺政策（模拟）,中,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,以旧换新常见问题
+POL-BND-001,docs/POL-BND-001.md,安全边界,MD,refusal_boundary,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,不能查询他人订单与隐私边界
+POL-BND-002,docs/POL-BND-002.md,安全边界,MD,refusal_boundary,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,不能承诺赔付金额与超政策补偿
+POL-BND-003,docs/POL-BND-003.md,安全边界,MD,refusal_boundary,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,敏感信息索要与禁售品边界
+POL-PLT-001,docs/POL-PLT-001.md,平台规则,MD,platform_rule,星潮商城平台规则（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,星潮商城售后争议处理规则
+POL-PLT-002,docs/POL-PLT-002.md,平台规则,MD,platform_rule,星潮商城平台规则（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,平台介入与举证期限
+POL-PLT-003,docs/POL-PLT-003.md,平台规则,MD,policy_notice,星潮商城平台规则（模拟）,高,v3,2026-06-01,2026-12-31,false,RAG 直接入库,已纳入 RAG,内置 Markdown 切片,,内置 Markdown 切片,,平台规则变更公告（2026 年 6 月）
+RAW-IMG-RET,raw\images\RET-return-flow.png,退换货,PNG,流程图/信息图,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,图片 OCR / 多模态模型,data/policies/parsed/RET-return-flow-PNG.md,qwen-vl-ocr,,含中文图示，需 OCR 或多模态解析后入库
+RAW-IMG-INV,raw\images\INV-invoice-types.png,发票,PNG,流程图/信息图,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,图片 OCR / 多模态模型,data/policies/parsed/INV-invoice-types-PNG.md,qwen-vl-ocr,,含中文图示，需 OCR 或多模态解析后入库
+RAW-IMG-LOG,raw\images\LOG-delivery-map.png,物流,PNG,流程图/信息图,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,图片 OCR / 多模态模型,data/policies/parsed/LOG-delivery-map-PNG.md,qwen-vl-ocr,,含中文图示，需 OCR 或多模态解析后入库
+RAW-IMG-PRI,raw\images\PRI-price-protection.png,价格保护,PNG,流程图/信息图,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,图片 OCR / 多模态模型,data/policies/parsed/PRI-price-protection-PNG.md,qwen-vl-ocr,,含中文图示，需 OCR 或多模态解析后入库
+RAW-IMG-TRD,raw\images\TRD-trade-in-flow.png,以旧换新,PNG,流程图/信息图,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,图片 OCR / 多模态模型,data/policies/parsed/TRD-trade-in-flow-PNG.md,qwen-vl-ocr,,含中文图示，需 OCR 或多模态解析后入库
+RAW-TBL-RET-return-shipping-CSV,raw\tables\RET-return-shipping.csv,退换货,CSV,数据表,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析结果）,已入库,pandas / openpyxl,data/policies/selected/RET-return-shipping-CSV.md,csv,,表格解析后按行切片，或转 Markdown 表格入库
+RAW-TBL-RET-return-shipping-XLSX,raw\tables\RET-return-shipping.xlsx,退换货,XLSX,数据表,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,不重复入库,已解析（重复，未入库）,pandas / openpyxl,data/policies/parsed/RET-return-shipping-XLSX.md,openpyxl,RAW-TBL-RET-return-shipping-CSV,表格解析后按行切片，或转 Markdown 表格入库
+RAW-TBL-LOG-delivery-sla-CSV,raw\tables\LOG-delivery-sla.csv,物流,CSV,数据表,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析结果）,已入库,pandas / openpyxl,data/policies/selected/LOG-delivery-sla-CSV.md,csv,,表格解析后按行切片，或转 Markdown 表格入库
+RAW-TBL-LOG-delivery-sla-XLSX,raw\tables\LOG-delivery-sla.xlsx,物流,XLSX,数据表,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,不重复入库,已解析（重复，未入库）,pandas / openpyxl,data/policies/parsed/LOG-delivery-sla-XLSX.md,openpyxl,RAW-TBL-LOG-delivery-sla-CSV,表格解析后按行切片，或转 Markdown 表格入库
+RAW-TBL-PRI-price-protection-window-CSV,raw\tables\PRI-price-protection-window.csv,价格保护,CSV,数据表,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析结果）,已入库,pandas / openpyxl,data/policies/selected/PRI-price-protection-window-CSV.md,csv,,表格解析后按行切片，或转 Markdown 表格入库
+RAW-TBL-PRI-price-protection-window-XLSX,raw\tables\PRI-price-protection-window.xlsx,价格保护,XLSX,数据表,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,不重复入库,已解析（重复，未入库）,pandas / openpyxl,data/policies/parsed/PRI-price-protection-window-XLSX.md,openpyxl,RAW-TBL-PRI-price-protection-window-CSV,表格解析后按行切片，或转 Markdown 表格入库
+RAW-TBL-TRD-trade-in-valuation-CSV,raw\tables\TRD-trade-in-valuation.csv,以旧换新,CSV,数据表,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析结果）,已入库,pandas / openpyxl,data/policies/selected/TRD-trade-in-valuation-CSV.md,csv,,表格解析后按行切片，或转 Markdown 表格入库
+RAW-TBL-TRD-trade-in-valuation-XLSX,raw\tables\TRD-trade-in-valuation.xlsx,以旧换新,XLSX,数据表,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,不重复入库,已解析（重复，未入库）,pandas / openpyxl,data/policies/parsed/TRD-trade-in-valuation-XLSX.md,openpyxl,RAW-TBL-TRD-trade-in-valuation-CSV,表格解析后按行切片，或转 Markdown 表格入库
+RAW-TBL-INV-invoice-types-CSV,raw\tables\INV-invoice-types.csv,发票,CSV,数据表,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析结果）,已入库,pandas / openpyxl,data/policies/selected/INV-invoice-types-CSV.md,csv,,表格解析后按行切片，或转 Markdown 表格入库
+RAW-TBL-INV-invoice-types-XLSX,raw\tables\INV-invoice-types.xlsx,发票,XLSX,数据表,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,不重复入库,已解析（重复，未入库）,pandas / openpyxl,data/policies/parsed/INV-invoice-types-XLSX.md,openpyxl,RAW-TBL-INV-invoice-types-CSV,表格解析后按行切片，或转 Markdown 表格入库
+RAW-PDF-RET,raw\pdf\RET-policy-v2.pdf,退换货,PDF,政策全文,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,pypdf / pdfplumber,data/policies/parsed/RET-policy-v2-PDF.md,pdfplumber,,文本型 PDF，提取文本后按标题切片
+RAW-PDF-INV,raw\pdf\INV-invoice-guide.pdf,发票,PDF,政策全文,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,pypdf / pdfplumber,data/policies/parsed/INV-invoice-guide-PDF.md,pdfplumber,,文本型 PDF，提取文本后按标题切片
+RAW-PDF-LOG,raw\pdf\LOG-service-agreement.pdf,物流,PDF,政策全文,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,pypdf / pdfplumber,data/policies/parsed/LOG-service-agreement-PDF.md,pdfplumber,,文本型 PDF，提取文本后按标题切片
+RAW-PDF-PRI,raw\pdf\PRI-price-protection.pdf,价格保护,PDF,政策全文,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,pypdf / pdfplumber,data/policies/parsed/PRI-price-protection-PDF.md,pdfplumber,,文本型 PDF，提取文本后按标题切片
+RAW-PDF-TRD,raw\pdf\TRD-trade-in-agreement.pdf,以旧换新,PDF,政策全文,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,pypdf / pdfplumber,data/policies/parsed/TRD-trade-in-agreement-PDF.md,pdfplumber,,文本型 PDF，提取文本后按标题切片
+RAW-SCAN-TRD-recycle-receipt-scan-JPG,raw\scans\TRD-recycle-receipt-scan.jpg,以旧换新,JPG,扫描件,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,不重复入库,已解析（重复，未入库）,OCR（PaddleOCR / Tesseract）,data/policies/parsed/TRD-recycle-receipt-scan-JPG.md,qwen-vl-ocr,RAW-SCAN-TRD-recycle-receipt-scan-PDF,图片型扫描件，无文本层，需 OCR 后入库
+RAW-SCAN-TRD-recycle-receipt-scan-PDF,raw\scans\TRD-recycle-receipt-scan.pdf,以旧换新,PDF,扫描件,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析结果）,已入库,OCR（PaddleOCR / Tesseract）,data/policies/selected/TRD-recycle-receipt-scan-PDF.md,qwen-vl-ocr,,图片型扫描件，无文本层，需 OCR 后入库
+RAW-SCAN-PLT-platform-notice-scan-JPG,raw\scans\PLT-platform-notice-scan.jpg,平台规则,JPG,扫描件,星潮商城平台规则（模拟）,高,v1,2026-06-01,2026-12-31,false,不重复入库,已解析（重复，未入库）,OCR（PaddleOCR / Tesseract）,data/policies/parsed/PLT-platform-notice-scan-JPG.md,qwen-vl-ocr,RAW-SCAN-PLT-platform-notice-scan-PDF,图片型扫描件，无文本层，需 OCR 后入库
+RAW-SCAN-PLT-platform-notice-scan-PDF,raw\scans\PLT-platform-notice-scan.pdf,平台规则,PDF,扫描件,星潮商城平台规则（模拟）,高,v1,2026-06-01,2026-12-31,false,RAG（解析结果）,已入库,OCR（PaddleOCR / Tesseract）,data/policies/selected/PLT-platform-notice-scan-PDF.md,qwen-vl-ocr,,图片型扫描件，无文本层，需 OCR 后入库
+RAW-DOCX-RET,raw\docx\RET-policy-v2.docx,退换货,DOCX,政策文档,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,python-docx,data/policies/parsed/RET-policy-v2-DOCX.md,python-docx,,可提取段落和表格后入库
+RAW-DOCX-INV,raw\docx\INV-invoice-guide.docx,发票,DOCX,政策文档,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,RAG（解析后待入库）,已解析（待入库）,python-docx,data/policies/parsed/INV-invoice-guide-DOCX.md,python-docx,,可提取段落和表格后入库
+RAW-HTML-LOG-delivery-sla,raw\html\LOG-delivery-sla.html,物流,HTML,网页表格,烬狐官方店铺政策（模拟）,高,v1,2026-01-01,2026-12-31,false,不重复入库,已解析（重复，未入库）,BeautifulSoup / trafilatura,data/policies/parsed/LOG-delivery-sla-HTML.md,BeautifulSoup,RAW-TBL-LOG-delivery-sla-CSV,网页型表格，解析正文后入库

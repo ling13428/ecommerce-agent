@@ -1,4 +1,4 @@
-from core.security import is_affirmative, is_negative, redact
+from core.security import SYSTEM_PROMPT, is_affirmative, is_negative, redact
 
 
 def test_redact_hides_key_phone_and_long_numbers():
@@ -18,3 +18,9 @@ def test_affirmative_and_negative_replies():
     assert is_negative("取消")
     assert is_negative("算了。")
     assert not is_negative("不要退款，改成退货")
+
+
+def test_system_prompt_requires_knowledge_tool_and_direct_write_call():
+    assert "search_knowledge" in SYSTEM_PROMPT
+    assert "直接调用对应写工具" in SYSTEM_PROMPT
+    assert "abstained" in SYSTEM_PROMPT

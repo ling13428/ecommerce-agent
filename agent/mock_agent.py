@@ -29,10 +29,10 @@ def stock_text(stock: int) -> str:
 
 def fallback_reply(message: str) -> str:
     if any(word in message for word in ("你好", "您好", "在吗", "hello", "hi")):
-        return "你好，我是电商客服助手。请告诉我商品名称或编号（例如 P1001），我可以查询价格、库存、规格、活动和发货时效。"
+        return "你好，我是电商客服助手。请告诉我商品名称或型号（例如 P2001、VK75 Pro），我可以查询价格、库存、规格、活动和发货时效。"
     if any(word in message for word in ("订单", "物流", "快递", "退货", "退款", "售后")):
         return "订单、物流和售后查询还在接入中。目前我可以先帮你查询商品信息，请告诉我商品名称或编号。"
-    return "请告诉我商品名称或编号（例如 P1001），我帮你查询价格、库存、规格、活动和发货时效。"
+    return "请告诉我商品名称或型号（例如 P2001、VK75 Pro），我帮你查询价格、库存、规格、活动和发货时效。"
 
 
 def product_reply(message: str, product: dict) -> str:
@@ -71,7 +71,13 @@ def run_mock_agent(message: str) -> dict:
     tool_calls = []
 
     if args is not None:
-        tool_calls.append({"name": "get_product", "args": args})
+        call = {"name": "get_product", "args": args}
+        call["result"] = (
+            {"found": True, "product": product}
+            if product is not None
+            else {"found": False, "message": error}
+        )
+        tool_calls.append(call)
 
     if error:
         return {

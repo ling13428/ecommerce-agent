@@ -1,0 +1,80 @@
+{"id": "g001", "query": "VK75 Pro 的触发键程是多少", "expected_doc_ids": ["P2001-02"], "category": "product_spec", "difficulty": "easy", "note": "参数表直接给出触发调节范围"}
+{"id": "g002", "query": "VK75 Ultra 的回报率是多少", "expected_doc_ids": ["P2003-02", "P2003-03"], "category": "product_spec", "difficulty": "easy", "note": "同系列 Ultra 型号，需避免串到 VK75 Pro"}
+{"id": "g003", "query": "VK75 SE 和 VK75 Pro 的回报率有什么区别", "expected_doc_ids": ["P2004-02", "P2004-03", "P2001-02", "P2001-03"], "category": "product_compare", "difficulty": "hard", "note": "同系列两型号对比，需要多文档覆盖"}
+{"id": "g004", "query": "VK65 Pro 支持哪些连接方式", "expected_doc_ids": ["P2006-02", "P2006-03"], "category": "product_spec", "difficulty": "easy", "note": "参数表连接方式"}
+{"id": "g005", "query": "VK68 Ultra 的电池容量是多少", "expected_doc_ids": ["P2010-02", "P2010-03"], "category": "product_spec", "difficulty": "easy", "note": "缺货商品的参数仍应可查"}
+{"id": "g006", "query": "VK87 Ultra 的重量", "expected_doc_ids": ["P2014-02"], "category": "product_spec", "difficulty": "easy", "note": "87 键 Ultra 型号重量"}
+{"id": "g007", "query": "VK98 Pro 是什么配列", "expected_doc_ids": ["P2016-02"], "category": "product_spec", "difficulty": "easy", "note": "98 键配列"}
+{"id": "g008", "query": "VK104 Pro 用的什么轴体", "expected_doc_ids": ["P2019-02"], "category": "product_spec", "difficulty": "easy", "note": "104 键 Pro 轴体"}
+{"id": "g009", "query": "MK75 Pro 是什么结构", "expected_doc_ids": ["P2020-02"], "category": "product_spec", "difficulty": "easy", "note": "Gasket 结构"}
+{"id": "g010", "query": "MK60 的键帽是什么材质", "expected_doc_ids": ["P2027-02"], "category": "product_spec", "difficulty": "easy", "note": "PBT 双色注塑"}
+{"id": "g011", "query": "SL75 用的是什么轴", "expected_doc_ids": ["P2034-02", "P2034-03"], "category": "product_spec", "difficulty": "easy", "note": "矮轴"}
+{"id": "g012", "query": "AL75 的外壳是什么材质", "expected_doc_ids": ["P2040-02"], "category": "product_spec", "difficulty": "easy", "note": "全铝 CNC"}
+{"id": "g013", "query": "VM9 Pro 用的什么传感器", "expected_doc_ids": ["P2041-02"], "category": "product_spec", "difficulty": "easy", "note": "PAW3950"}
+{"id": "g014", "query": "VM9 Ultra 的重量和回报率", "expected_doc_ids": ["P2043-02", "P2043-01"], "category": "product_spec", "difficulty": "medium", "note": "同系列 Ultra，需区分 VM9 Pro"}
+{"id": "g015", "query": "VM3 Mini 有多重", "expected_doc_ids": ["P2050-02"], "category": "product_spec", "difficulty": "easy", "note": "小号鼠标重量"}
+{"id": "g016", "query": "GM6 Pro 用的什么微动", "expected_doc_ids": ["P2062-02"], "category": "product_spec", "difficulty": "easy", "note": "有线鼠标微动"}
+{"id": "g017", "query": "TM9 Pro 的传感器和重量", "expected_doc_ids": ["P2069-02", "P2069-01"], "category": "product_spec", "difficulty": "medium", "note": "镁合金轻量化鼠标"}
+{"id": "g018", "query": "AH9 Pro 的发声单元和麦克风", "expected_doc_ids": ["P2076-02"], "category": "product_spec", "difficulty": "easy", "note": "53mm 单元、可拆卸降噪麦"}
+{"id": "g019", "query": "VK75 Pro 适合什么场景", "expected_doc_ids": ["P2001-01"], "category": "product_overview", "difficulty": "easy", "note": "产品定位与场景"}
+{"id": "g020", "query": "VK75 SE 和 VK75 Pro 的定位有什么区别", "expected_doc_ids": ["P2004-01", "P2001-01"], "category": "product_compare", "difficulty": "hard", "note": "SE 与 Pro 的定位差异"}
+{"id": "g021", "query": "MK75 Pro 适合办公吗", "expected_doc_ids": ["P2020-01"], "category": "product_overview", "difficulty": "easy", "note": "办公场景"}
+{"id": "g022", "query": "SL75 为什么适合便携", "expected_doc_ids": ["P2034-01"], "category": "product_overview", "difficulty": "easy", "note": "矮轴轻薄定位"}
+{"id": "g023", "query": "AL75 是全铝客制化键盘吗", "expected_doc_ids": ["P2040-01"], "category": "product_overview", "difficulty": "easy", "note": "全铝客制化定位"}
+{"id": "g024", "query": "VM9 Pro 适合什么握姿", "expected_doc_ids": ["P2041-01", "P2041-03"], "category": "product_overview", "difficulty": "easy", "note": "对称鼠标握姿"}
+{"id": "g025", "query": "VM3 Mini 适合小手吗", "expected_doc_ids": ["P2050-01"], "category": "product_overview", "difficulty": "easy", "note": "小号对称鼠标"}
+{"id": "g026", "query": "TM9 Pro 为什么轻", "expected_doc_ids": ["P2069-01"], "category": "product_overview", "difficulty": "easy", "note": "镁合金轻量化"}
+{"id": "g027", "query": "AH9 Pro 适合长时间佩戴吗", "expected_doc_ids": ["P2076-01"], "category": "product_overview", "difficulty": "easy", "note": "头戴式佩戴舒适度"}
+{"id": "g028", "query": "VK75 Pro 支持热插拔吗", "expected_doc_ids": ["P2001-03"], "category": "product_faq", "difficulty": "easy", "note": "直接问热插拔"}
+{"id": "g029", "query": "VK75 无线模式怎么切换", "expected_doc_ids": ["P2002-03"], "category": "product_faq", "difficulty": "medium", "note": "VK75 是有线版，FAQ 应说明连接方式"}
+{"id": "g030", "query": "MK75 Pro 轴体手感怎么选", "expected_doc_ids": ["P2020-03"], "category": "product_faq", "difficulty": "easy", "note": "红/茶/青轴选择"}
+{"id": "g031", "query": "AL75 怎么换轴", "expected_doc_ids": ["P2040-03"], "category": "product_faq", "difficulty": "medium", "note": "客制化轴座与换轴"}
+{"id": "g032", "query": "VM9 Pro 怎么配对", "expected_doc_ids": ["P2041-03"], "category": "product_faq", "difficulty": "easy", "note": "2.4G/有线连接"}
+{"id": "g033", "query": "VM3 出现双击怎么办", "expected_doc_ids": ["P2048-03"], "category": "product_faq", "difficulty": "medium", "note": "微动去抖与售后"}
+{"id": "g034", "query": "AH9 Pro 麦克风没声音怎么办", "expected_doc_ids": ["P2076-03"], "category": "product_faq", "difficulty": "easy", "note": "麦克风排查"}
+{"id": "g035", "query": "EH7 Pro 支持 PS5 吗", "expected_doc_ids": ["P2091-03"], "category": "product_faq", "difficulty": "easy", "note": "入耳式耳机平台兼容"}
+{"id": "g036", "query": "VK75 和 VK75 Pro 有什么区别", "expected_doc_ids": ["P2002-01", "P2001-01"], "category": "product_compare", "difficulty": "hard", "note": "同系列两型号，需覆盖两个商品"}
+{"id": "g037", "query": "VM9、VM9 Pro、VM9 Ultra 怎么选", "expected_doc_ids": ["P2042-01", "P2041-01", "P2043-01"], "category": "product_compare", "difficulty": "hard", "note": "三型号对比"}
+{"id": "g038", "query": "MK75 和 MK75 Pro 哪个更适合游戏", "expected_doc_ids": ["P2021-01", "P2020-01"], "category": "product_compare", "difficulty": "hard", "note": "同系列两型号"}
+{"id": "g039", "query": "VK68 和 VK68 Pro 的回报率区别", "expected_doc_ids": ["P2008-02", "P2008-03", "P2009-02", "P2009-03"], "category": "product_compare", "difficulty": "hard", "note": "同系列参数对比"}
+{"id": "g040", "query": "七天无理由退货的条件", "expected_doc_ids": ["POL-RET-003"], "category": "policy_return", "difficulty": "easy", "note": "无理由条件与例外"}
+{"id": "g041", "query": "退货运费谁出", "expected_doc_ids": ["POL-RET-005"], "category": "policy_return", "difficulty": "easy", "note": "运费承担与运费险"}
+{"id": "g042", "query": "退款多久到账", "expected_doc_ids": ["POL-RET-006"], "category": "policy_return", "difficulty": "easy", "note": "退款路径与时效"}
+{"id": "g043", "query": "拆封的入耳式耳机能无理由退吗", "expected_doc_ids": ["POL-RET-003"], "category": "policy_return", "difficulty": "medium", "note": "个人卫生类例外"}
+{"id": "g044", "query": "质量问题怎么换货", "expected_doc_ids": ["POL-RET-004"], "category": "policy_return", "difficulty": "easy", "note": "15 天质量问题换货"}
+{"id": "g045", "query": "发票怎么开", "expected_doc_ids": ["POL-INV-002"], "category": "policy_invoice", "difficulty": "easy", "note": "开票流程与信息"}
+{"id": "g046", "query": "能开增值税专用发票吗", "expected_doc_ids": ["POL-INV-004"], "category": "policy_invoice", "difficulty": "medium", "note": "企业专票"}
+{"id": "g047", "query": "退货后发票怎么处理", "expected_doc_ids": ["POL-INV-003"], "category": "policy_invoice", "difficulty": "medium", "note": "红冲与换开"}
+{"id": "g048", "query": "多久发货", "expected_doc_ids": ["POL-LOG-001"], "category": "policy_logistics", "difficulty": "easy", "note": "现货/预售/定制时效"}
+{"id": "g049", "query": "偏远地区多久能到", "expected_doc_ids": ["POL-LOG-002", "POL-LOG-003"], "category": "policy_logistics", "difficulty": "medium", "note": "区域时效与偏远地区"}
+{"id": "g050", "query": "丢件或破损怎么办", "expected_doc_ids": ["POL-LOG-004"], "category": "policy_logistics", "difficulty": "easy", "note": "物流异常处理"}
+{"id": "g051", "query": "价保几天", "expected_doc_ids": ["POL-PRI-001"], "category": "policy_price", "difficulty": "easy", "note": "7 天/会员 15 天"}
+{"id": "g052", "query": "秒杀降价能价保吗", "expected_doc_ids": ["POL-PRI-003"], "category": "policy_price", "difficulty": "medium", "note": "价保例外"}
+{"id": "g053", "query": "以旧换新怎么估价", "expected_doc_ids": ["POL-TRD-002"], "category": "policy_tradein", "difficulty": "easy", "note": "成色分级与估价"}
+{"id": "g054", "query": "以旧换新补贴能和优惠券叠加吗", "expected_doc_ids": ["POL-TRD-004"], "category": "policy_tradein", "difficulty": "medium", "note": "补贴叠加规则"}
+{"id": "g055", "query": "2024 年退货政策是几天", "expected_doc_ids": ["POL-RET-002"], "include_deprecated": true, "category": "policy_version", "difficulty": "hard", "note": "旧版退货政策，测试历史版本检索"}
+{"id": "g056", "query": "2024 年价保是几天", "expected_doc_ids": ["POL-PRI-002"], "include_deprecated": true, "category": "policy_version", "difficulty": "hard", "note": "旧版价保政策，测试历史版本检索"}
+{"id": "g057", "query": "平台介入多久", "expected_doc_ids": ["POL-PLT-002"], "category": "policy_platform", "difficulty": "easy", "note": "平台举证与处理时限"}
+{"id": "g058", "query": "能查别人的订单吗", "expected_doc_ids": ["POL-BND-001"], "category": "safety_boundary", "difficulty": "easy", "note": "隐私边界"}
+{"id": "g059", "query": "能承诺赔付金额吗", "expected_doc_ids": ["POL-BND-002"], "category": "safety_boundary", "difficulty": "easy", "note": "赔付承诺边界"}
+{"id": "g060", "query": "可以索要身份证和银行卡吗", "expected_doc_ids": ["POL-BND-003"], "category": "safety_boundary", "difficulty": "medium", "note": "敏感信息边界"}
+{"id": "g061", "query": "平台规则变更了什么", "expected_doc_ids": ["POL-PLT-003", "RAW-SCAN-PLT-platform-notice-scan-PDF"], "category": "policy_platform", "difficulty": "hard", "note": "Markdown 公告 + 扫描件双来源"}
+{"id": "g062", "query": "平台售后争议怎么处理", "expected_doc_ids": ["POL-PLT-001"], "category": "policy_platform", "difficulty": "easy", "note": "平台争议处理规则"}
+{"id": "g063", "query": "退货运费标准表", "expected_doc_ids": ["RAW-TBL-RET-return-shipping-CSV"], "category": "table", "difficulty": "medium", "note": "已入库 CSV 表格"}
+{"id": "g064", "query": "各区域配送时效标准", "expected_doc_ids": ["RAW-TBL-LOG-delivery-sla-CSV"], "category": "table", "difficulty": "medium", "note": "已入库 CSV 表格"}
+{"id": "g065", "query": "价保期限表", "expected_doc_ids": ["RAW-TBL-PRI-price-protection-window-CSV"], "category": "table", "difficulty": "medium", "note": "已入库 CSV 表格"}
+{"id": "g066", "query": "以旧换新 A/B/C/D 成色估价表", "expected_doc_ids": ["RAW-TBL-TRD-trade-in-valuation-CSV"], "category": "table", "difficulty": "medium", "note": "已入库 CSV 表格"}
+{"id": "g067", "query": "发票类型对比表", "expected_doc_ids": ["RAW-TBL-INV-invoice-types-CSV"], "category": "table", "difficulty": "medium", "note": "已入库 CSV 表格"}
+{"id": "g068", "query": "回收单号 TRD-20260601-0018 的信息", "expected_doc_ids": ["RAW-SCAN-TRD-recycle-receipt-scan-PDF"], "category": "scan", "difficulty": "hard", "note": "OCR 扫描件"}
+{"id": "g069", "query": "BH5 Pro 蓝牙版本", "expected_doc_ids": ["P2097-02"], "category": "product_spec", "difficulty": "easy", "note": "蓝牙 5.3"}
+{"id": "g070", "query": "VK75 Pro 的包装清单", "expected_doc_ids": ["P2001-02"], "category": "product_spec", "difficulty": "easy", "note": "规格参数里的包装清单"}
+{"id": "g071", "query": "今天天气怎么样", "should_abstain": true, "category": "abstain", "difficulty": "easy", "note": "完全无关"}
+{"id": "g072", "query": "帮我写一首诗", "should_abstain": true, "category": "abstain", "difficulty": "easy", "note": "完全无关"}
+{"id": "g073", "query": "你们老板是谁", "should_abstain": true, "category": "abstain", "difficulty": "easy", "note": "超出客服知识范围"}
+{"id": "g074", "query": "你们支持花呗分期吗", "should_abstain": true, "category": "abstain", "difficulty": "medium", "note": "支付方式未覆盖，应转人工"}
+{"id": "g075", "query": "支持货到付款吗", "should_abstain": true, "category": "abstain", "difficulty": "medium", "note": "支付方式未覆盖"}
+{"id": "g076", "query": "有优惠券吗", "should_abstain": true, "category": "abstain", "difficulty": "medium", "note": "活动数据在工具，不在 RAG"}
+{"id": "g077", "query": "能便宜点吗", "should_abstain": true, "category": "abstain", "difficulty": "medium", "note": "议价应转人工，不应编造优惠"}
+{"id": "g078", "query": "帮我查订单 12345 的物流", "should_abstain": true, "category": "abstain", "difficulty": "hard", "note": "实时订单，应走订单工具或转人工"}
+{"id": "g079", "query": "我的快递到哪了", "should_abstain": true, "category": "abstain", "difficulty": "hard", "note": "实时物流，应走订单/物流工具"}
+{"id": "g080", "query": "推荐一款 500 元以内的键盘", "should_abstain": true, "category": "abstain", "difficulty": "hard", "note": "价格过滤应走商品工具，不应由 RAG 编造"}

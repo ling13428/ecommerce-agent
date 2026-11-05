@@ -1,0 +1,2 @@
+FROM ecommerce-agent:local
+COPY . /app
