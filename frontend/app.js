@@ -2,6 +2,8 @@
   "use strict";
 
   const STORAGE_KEY = "yunshang.session_id";
+  const STORAGE_ACTIVE = "yunshang.session_active_at";
+  const SESSION_IDLE_MS = 30 * 60 * 1000;
   const STORAGE_BUYER = "yunshang.buyer_id";
   const STORAGE_BUYER_TOKEN = "yunshang.buyer_token";
   const STORAGE_ADMIN_TOKEN = "yunshang.admin_token";
@@ -91,7 +93,15 @@
 
   function loadSessionId() {
     try {
-      return localStorage.getItem(STORAGE_KEY) || "";
+      const value = localStorage.getItem(STORAGE_KEY) || "";
+      if (!value) return "";
+      const activeAt = Number(localStorage.getItem(STORAGE_ACTIVE) || 0);
+      if (activeAt && Date.now() - activeAt > SESSION_IDLE_MS) {
+        localStorage.removeItem(STORAGE_KEY);
+        localStorage.removeItem(STORAGE_ACTIVE);
+        return "";
+      }
+      return value;
     } catch (error) {
       return "";
     }
@@ -101,12 +111,33 @@
     try {
       if (value) {
         localStorage.setItem(STORAGE_KEY, value);
+        localStorage.setItem(STORAGE_ACTIVE, String(Date.now()));
       } else {
         localStorage.removeItem(STORAGE_KEY);
+        localStorage.removeItem(STORAGE_ACTIVE);
       }
     } catch (error) {
       /* ignore */
     }
+  }
+
+  function touchSession() {
+    try {
+      if (state.sessionId) {
+        localStorage.setItem(STORAGE_ACTIVE, String(Date.now()));
+      }
+    } catch (error) {
+      /* ignore */
+    }
+  }
+
+  function newClientId() {
+    if (window.crypto && typeof window.crypto.randomUUID === "function") {
+      return window.crypto.randomUUID();
+    }
+    return `c${Date.now().toString(36)}${Math.random()
+      .toString(36)
+      .slice(2, 10)}`;
   }
 
   function loadBuyerId() {
@@ -595,6 +626,8 @@
     };
     const controller = new AbortController();
     state.abortController = controller;
+    touchSession();
+    const clientMsgId = newClientId();
 
     try {
       const response = await fetch("/api/chat/stream", {
@@ -607,6 +640,7 @@
         body: JSON.stringify({
           message,
           session_id: state.sessionId || null,
+          client_msg_id: clientMsgId,
         }),
         signal: controller.signal,
       });
@@ -682,6 +716,9 @@
     switch (event.type) {
       case "start":
         if (event.session_id) {
+          if (state.sessionId && state.sessionId !== event.session_id) {
+            state.lastHumanId = 0;
+          }
           state.sessionId = event.session_id;
           saveSessionId(state.sessionId);
           updateSessionLabel();
@@ -1466,7 +1503,10 @@
         {
           method: "POST",
           headers: { "Content-Type": "application/json", ...adminHeaders() },
-          body: JSON.stringify({ message }),
+          body: JSON.stringify({
+            message,
+            client_msg_id: newClientId(),
+          }),
         }
       );
       if (!response.ok) {

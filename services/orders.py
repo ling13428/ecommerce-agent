@@ -1,11 +1,14 @@
 ﻿from __future__ import annotations
 
+import asyncio
+import functools
 import hashlib
 import json
 import re
 import secrets
 import sqlite3
 import threading
+from concurrent.futures import ThreadPoolExecutor
 from contextlib import closing
 from datetime import datetime, timedelta, timezone
 from typing import Any
@@ -72,6 +75,34 @@ CREATE INDEX IF NOT EXISTS idx_coupons_buyer
 _lock = threading.Lock()
 _write_lock = threading.Lock()
 _seeded = False
+
+_orders_executor: ThreadPoolExecutor | None = None
+_orders_executor_lock = threading.Lock()
+
+
+def _executor() -> ThreadPoolExecutor:
+    global _orders_executor
+    with _orders_executor_lock:
+        if _orders_executor is None:
+            workers = getattr(get_settings(), "orders_workers", 4)
+            _orders_executor = ThreadPoolExecutor(
+                max_workers=workers, thread_name_prefix="orders-db"
+            )
+        return _orders_executor
+
+
+async def run_async(func: Any, /, *args: Any, **kwargs: Any) -> Any:
+    loop = asyncio.get_running_loop()
+    call = functools.partial(func, *args, **kwargs)
+    return await loop.run_in_executor(_executor(), call)
+
+
+def shutdown_executor() -> None:
+    global _orders_executor
+    with _orders_executor_lock:
+        if _orders_executor is not None:
+            _orders_executor.shutdown(wait=False, cancel_futures=True)
+            _orders_executor = None
 
 
 class OrderDataError(RuntimeError):

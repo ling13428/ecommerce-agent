@@ -39,6 +39,7 @@ class Settings(BaseSettings):
 
     cache_backend: str = "memory"
     redis_url: str = "redis://localhost:6379/0"
+    redis_max_connections: int = Field(default=100, ge=1, le=1000)
     session_ttl_seconds: int = Field(default=7 * 24 * 3600, ge=60)
 
     router_llm_enabled: bool = True
@@ -72,6 +73,11 @@ class Settings(BaseSettings):
     database_url: str = "postgresql://rag:rag@localhost:5433/ecommerce_rag"
     database_pool_max_size: int = Field(default=10, ge=1, le=100)
     database_pool_timeout: float = Field(default=5.0, gt=0, le=60)
+    database_async_pool_min_size: int = Field(default=1, ge=1, le=50)
+    database_async_pool_max_size: int = Field(default=20, ge=1, le=200)
+    database_async_pool_timeout: float = Field(default=5.0, gt=0, le=60)
+    orders_workers: int = Field(default=4, ge=1, le=32)
+    audit_workers: int = Field(default=2, ge=1, le=16)
     orders_backend: str = "sqlite"
 
     product_provider: str = "mock"
@@ -100,7 +106,17 @@ class Settings(BaseSettings):
     session_persistence: bool = True
     session_db_path: str = str(BASE_DIR / "data" / "sessions" / "sessions.db")
     session_store_backend: str = "sqlite"
+    session_storage_mode: str = "normalized"
     session_retention_days: int = Field(default=30, ge=1, le=3650)
+    session_idle_timeout_minutes: int = Field(default=30, ge=1, le=1440)
+    session_lock_timeout_seconds: float = Field(default=5.0, gt=0, le=120)
+    session_lock_ttl_seconds: int = Field(default=60, ge=5, le=600)
+    session_version_strict: bool = True
+    session_db_pool_min_size: int = Field(default=1, ge=1, le=50)
+    session_db_pool_max_size: int = Field(default=20, ge=1, le=200)
+    session_db_pool_timeout: float = Field(default=5.0, gt=0, le=60)
+    session_sqlite_workers: int = Field(default=4, ge=1, le=32)
+    audit_enabled: bool = True
 
     tool_backend: str = "local"
     tool_secret: SecretStr | None = None
@@ -219,6 +235,11 @@ class Settings(BaseSettings):
             "postgres",
         }:
             raise ValueError("SESSION_STORE_BACKEND 必须是 sqlite 或 postgres")
+        if (self.session_storage_mode or "").strip().lower() not in {
+            "normalized",
+            "payload",
+        }:
+            raise ValueError("SESSION_STORAGE_MODE 必须是 normalized 或 payload")
         if (self.cache_backend or "").strip().lower() not in {
             "memory",
             "redis",

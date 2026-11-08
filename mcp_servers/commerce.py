@@ -2,7 +2,11 @@ from __future__ import annotations
 
 from typing import Any
 
-from mcp_servers.common import build_server, context_from_token, run_write
+from mcp_servers.common import (
+    build_server,
+    context_from_token,
+    run_write_async,
+)
 from tools import commerce as commerce_tools
 from tools import orders as order_tools
 
@@ -16,96 +20,104 @@ def _context(context_token: str | None):
     return context_from_token(context_token)
 
 
-def get_order(
+async def get_order(
     order_id: str | None = None,
     context_token: str | None = None,
 ) -> dict[str, Any]:
-    return order_tools.get_order(order_id, context=_context(context_token))
-
-
-def get_logistics(
-    order_id: str | None = None,
-    tracking_no: str | None = None,
-    context_token: str | None = None,
-) -> dict[str, Any]:
-    return order_tools.get_logistics(
-        order_id, tracking_no, context=_context(context_token)
-    )
-
-
-def get_aftersale(
-    order_id: str | None = None,
-    context_token: str | None = None,
-) -> dict[str, Any]:
-    return order_tools.get_aftersale(order_id, context=_context(context_token))
-
-
-def get_payment_methods(
-    order_id: str | None = None,
-    context_token: str | None = None,
-) -> dict[str, Any]:
-    return commerce_tools.get_payment_methods(
+    return await order_tools.get_order_async(
         order_id, context=_context(context_token)
     )
 
 
-def get_coupons(
+async def get_logistics(
+    order_id: str | None = None,
+    tracking_no: str | None = None,
+    context_token: str | None = None,
+) -> dict[str, Any]:
+    return await order_tools.get_logistics_async(
+        order_id, tracking_no, context=_context(context_token)
+    )
+
+
+async def get_aftersale(
+    order_id: str | None = None,
+    context_token: str | None = None,
+) -> dict[str, Any]:
+    return await order_tools.get_aftersale_async(
+        order_id, context=_context(context_token)
+    )
+
+
+async def get_payment_methods(
+    order_id: str | None = None,
+    context_token: str | None = None,
+) -> dict[str, Any]:
+    return await commerce_tools.get_payment_methods_async(
+        order_id, context=_context(context_token)
+    )
+
+
+async def get_coupons(
     active_only: bool = True,
     context_token: str | None = None,
 ) -> dict[str, Any]:
-    return commerce_tools.get_coupons(
+    return await commerce_tools.get_coupons_async(
         active_only, context=_context(context_token)
     )
 
 
-def cancel_order(
+async def cancel_order(
     order_id: str,
     approval_token: str | None = None,
     context_token: str | None = None,
 ) -> dict[str, Any]:
     context = _context(context_token)
-    return run_write(
+    return await run_write_async(
         "cancel_order",
         {"order_id": order_id},
         approval_token,
-        lambda: order_tools.cancel_order(order_id, context=context),
+        lambda: order_tools.cancel_order_async(order_id, context=context),
         context=context,
     )
 
 
-def update_address(
+async def update_address(
     order_id: str,
     address: str,
     approval_token: str | None = None,
     context_token: str | None = None,
 ) -> dict[str, Any]:
     context = _context(context_token)
-    return run_write(
+    return await run_write_async(
         "update_address",
         {"order_id": order_id, "address": address},
         approval_token,
-        lambda: order_tools.update_address(order_id, address, context=context),
+        lambda: order_tools.update_address_async(
+            order_id, address, context=context
+        ),
         context=context,
     )
 
 
-def intercept_parcel(
+async def intercept_parcel(
     order_id: str,
     reason: str = "买家申请拦截",
     approval_token: str | None = None,
     context_token: str | None = None,
 ) -> dict[str, Any]:
     context = _context(context_token)
-    return run_write(
+    return await run_write_async(
         "intercept_parcel",
         {"order_id": order_id, "reason": reason},
         approval_token,
-        lambda: order_tools.intercept_parcel(order_id, reason, context=context),
+        lambda: order_tools.intercept_parcel_async(
+            order_id, reason, context=context
+        ),
         context=context,
     )
 
 
-def create_aftersale(
+async def create_aftersale(
     order_id: str,
     aftersale_type: str,
     reason: str,
@@ -114,7 +126,7 @@ def create_aftersale(
     context_token: str | None = None,
 ) -> dict[str, Any]:
     context = _context(context_token)
-    return run_write(
+    return await run_write_async(
         "create_aftersale",
         {
             "order_id": order_id,
@@ -123,7 +135,7 @@ def create_aftersale(
             "description": description,
         },
         approval_token,
-        lambda: order_tools.create_aftersale(
+        lambda: order_tools.create_aftersale_async(
             order_id,
             aftersale_type,
             reason,

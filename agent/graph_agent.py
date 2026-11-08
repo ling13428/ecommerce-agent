@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import asyncio
+from contextvars import ContextVar
+from dataclasses import dataclass
 from typing import Any, AsyncIterator, TypedDict, cast
 from uuid import uuid4
 
@@ -27,6 +29,7 @@ from agent.checkpoint import get_checkpointer
 from agent.router import RouteResult, prompt_for_route
 from agent.session import SessionState
 from core.config import get_settings
+from core.idempotency import business_idempotency_key
 from core.security import SYSTEM_PROMPT, wrap_tool_result
 from tools.context import ToolContext
 from tools.products import detect_product_id
@@ -52,6 +55,36 @@ class AgentState(TypedDict, total=False):
     last_turn_text: str
 
 
+@dataclass
+class RunContext:
+    session: SessionState
+    client: AsyncOpenAI
+    model: str
+    route: RouteResult | None
+    reply_parts: list[str]
+    tool_specs: list[dict[str, Any]]
+
+
+_RUN_CONTEXT: ContextVar[RunContext | None] = ContextVar(
+    "agent_run_context", default=None
+)
+
+
+def _run_context() -> RunContext:
+    context = _RUN_CONTEXT.get()
+    if context is None:
+        raise RuntimeError("agent run context is not set")
+    return context
+
+
+def _tool_context() -> ToolContext:
+    session = _run_context().session
+    return ToolContext(
+        buyer_id=session.buyer_id,
+        session_id=session.session_id,
+    )
+
+
 def _assistant_tool_calls(
     tool_calls: dict[int, dict[str, str]], step: int
 ) -> list[dict[str, Any]]:
@@ -75,37 +108,25 @@ def _thread_config(session: SessionState) -> dict[str, Any]:
     return {"configurable": {"thread_id": session.session_id}}
 
 
-def _build_graph(
-    session: SessionState,
-    client: AsyncOpenAI,
-    model: str,
-    route: RouteResult | None,
-    reply_parts: list[str],
-    checkpointer: BaseCheckpointSaver,
-):
+def _build_graph(checkpointer: BaseCheckpointSaver):
     settings = get_settings()
-    allowed_tools = route.allowed_tools if route is not None else None
-    tool_specs = openai_tools(allowed=allowed_tools)
-    tool_kwargs = (
-        {"tools": tool_specs, "tool_choice": "auto"} if tool_specs else {}
-    )
-
-    def context() -> ToolContext:
-        return ToolContext(
-            buyer_id=session.buyer_id,
-            session_id=session.session_id,
-        )
 
     async def agent_node(state: AgentState) -> dict[str, Any]:
+        context = _run_context()
         writer = get_stream_writer()
         tool_calls: dict[int, dict[str, str]] = {}
         turn_text_parts: list[str] = []
+        tool_kwargs = (
+            {"tools": context.tool_specs, "tool_choice": "auto"}
+            if context.tool_specs
+            else {}
+        )
 
         try:
             async with asyncio.timeout(settings.llm_timeout):
-                completions = cast(Any, client.chat.completions)
+                completions = cast(Any, context.client.chat.completions)
                 stream = await completions.create(
-                    model=model,
+                    model=context.model,
                     messages=state["messages"],
                     stream=True,
                     temperature=settings.llm_temperature,
@@ -122,7 +143,7 @@ def _build_graph(
                     content = getattr(delta, "content", None)
                     if content:
                         turn_text_parts.append(content)
-                        reply_parts.append(content)
+                        context.reply_parts.append(content)
                         writer({"type": "delta", "content": content})
                     accumulate_tool_calls(
                         tool_calls, getattr(delta, "tool_calls", None)
@@ -168,6 +189,8 @@ def _build_graph(
         }
 
     async def tools_node(state: AgentState) -> dict[str, Any]:
+        context = _run_context()
+        session = context.session
         writer = get_stream_writer()
         last = state["messages"][-1]
         calls = last.get("tool_calls") or []
@@ -199,7 +222,7 @@ def _build_graph(
                 name,
                 arguments,
                 confirmed=False,
-                context=context(),
+                context=_tool_context(),
             )
 
         results = await asyncio.gather(*(run_one(item) for item in prepared))
@@ -231,7 +254,7 @@ def _build_graph(
             if status == "confirm_required":
                 stop = "confirm"
                 pending_name = name
-                pending_args = arguments
+                pending_args = result.get("args") or arguments
                 pending_summary = str(
                     result.get("message", "该操作需要确认")
                 )
@@ -241,21 +264,30 @@ def _build_graph(
                     "如果确认，请直接回复“确认”；如果不需要，请回复“取消”。"
                 )
                 writer({"type": "delta", "content": message})
-                reply_parts.append(message)
+                context.reply_parts.append(message)
                 writer(
                     {
                         "type": "confirm_required",
                         "name": name,
-                        "args": arguments,
+                        "args": pending_args,
                         "summary": pending_summary,
                     }
                 )
-                session.set_pending(name, arguments, pending_summary)
+                await session.set_pending_async(
+                    name,
+                    pending_args,
+                    pending_summary,
+                    idempotency_key=business_idempotency_key(
+                        name, pending_args, session.buyer_id
+                    ),
+                )
                 if session.pending_action is not None:
                     pending_idempotency_key = (
                         session.pending_action.idempotency_key
                     )
-                session.add_assistant("".join(reply_parts))
+                await session.add_assistant_async(
+                    "".join(context.reply_parts)
+                )
                 break
             if status == "handoff":
                 stop = "handoff"
@@ -305,6 +337,8 @@ def _build_graph(
         }
 
     async def write_node(state: AgentState) -> dict[str, Any]:
+        context = _run_context()
+        session = context.session
         writer = get_stream_writer()
         name = str(state.get("pending_name") or "")
         arguments = dict(state.get("pending_args") or {})
@@ -320,7 +354,7 @@ def _build_graph(
             arguments,
             confirmed=True,
             idempotency_key=idempotency_key,
-            context=context(),
+            context=_tool_context(),
         )
 
         writer(
@@ -352,10 +386,12 @@ def _build_graph(
                 ),
             }
         )
-        session.clear_pending()
+        await session.clear_pending_async()
         return {"messages": messages, "stop": None}
 
     async def cancelled_node(state: AgentState) -> dict[str, Any]:
+        context = _run_context()
+        session = context.session
         writer = get_stream_writer()
         name = str(state.get("pending_name") or "")
         call_id = str(state.get("pending_call_id") or "")
@@ -374,53 +410,65 @@ def _build_graph(
                 "content": "用户拒绝执行该操作，未做任何变更。",
             }
         )
-        session.clear_pending()
+        await session.clear_pending_async()
         return {"messages": messages, "stop": None}
 
     async def handoff_node(state: AgentState) -> dict[str, Any]:
+        context = _run_context()
         writer = get_stream_writer()
         reason = str(state.get("reason") or "用户需要人工")
         summary = str(state.get("summary") or "")
         if not mentions_handoff(str(state.get("last_turn_text") or "")):
             message = handoff_message(reason, summary)
             writer({"type": "delta", "content": message})
-            reply_parts.append(message)
+            context.reply_parts.append(message)
         writer({"type": "handoff", "reason": reason, "summary": summary})
-        session.add_assistant("".join(reply_parts))
+        await context.session.add_assistant_async(
+            "".join(context.reply_parts)
+        )
         return {}
 
     async def empty_node(state: AgentState) -> dict[str, Any]:
+        context = _run_context()
         writer = get_stream_writer()
         message = "抱歉，我没能生成有效回复，已为你转接人工客服。"
         writer({"type": "delta", "content": message})
-        reply_parts.append(message)
-        session.add_assistant("".join(reply_parts))
+        context.reply_parts.append(message)
+        await context.session.add_assistant_async(
+            "".join(context.reply_parts)
+        )
         writer(
             {
                 "type": "handoff",
                 "reason": "empty_response",
-                "summary": session_summary(session),
+                "summary": session_summary(context.session),
             }
         )
         return {}
 
     async def max_steps_node(state: AgentState) -> dict[str, Any]:
+        context = _run_context()
         writer = get_stream_writer()
         message = "这个问题需要人工客服进一步处理，正在为你转接，请稍候。"
         writer({"type": "delta", "content": message})
-        reply_parts.append(message)
-        session.add_assistant("".join(reply_parts))
+        context.reply_parts.append(message)
+        await context.session.add_assistant_async(
+            "".join(context.reply_parts)
+        )
         writer(
             {
                 "type": "handoff",
                 "reason": "max_steps_exceeded",
-                "summary": session_summary(session),
+                "summary": session_summary(context.session),
             }
         )
         return {}
 
     async def finish_node(state: AgentState) -> dict[str, Any]:
-        session.add_assistant("".join(reply_parts))
+        context = _run_context()
+        await context.session.add_assistant_async(
+            "".join(context.reply_parts)
+        )
         return {}
 
     def route_after_agent(state: AgentState) -> str:
@@ -482,6 +530,19 @@ def _build_graph(
     return graph.compile(checkpointer=checkpointer)
 
 
+_COMPILED: dict[tuple[int, int], Any] = {}
+
+
+def _compiled_graph(checkpointer: BaseCheckpointSaver) -> Any:
+    loop_id = id(asyncio.get_running_loop())
+    key = (loop_id, id(checkpointer))
+    graph = _COMPILED.get(key)
+    if graph is None:
+        graph = _build_graph(checkpointer)
+        _COMPILED[key] = graph
+    return graph
+
+
 def _initial_state(
     session: SessionState, system_prompt: str
 ) -> AgentState:
@@ -518,23 +579,35 @@ async def run_graph_agent(
     if route is not None:
         system_prompt = f"{SYSTEM_PROMPT}\n\n{prompt_for_route(route)}"
 
+    allowed_tools = route.allowed_tools if route is not None else None
     reply_parts: list[str] = []
     checkpointer = await get_checkpointer()
-    graph = _build_graph(
-        session, client, model, route, reply_parts, checkpointer
-    )
+    graph = _compiled_graph(checkpointer)
     config = _thread_config(session)
 
-    snapshot = await graph.aget_state(config)
-    if snapshot.next:
-        await checkpointer.adelete_thread(session.session_id)
+    token = _RUN_CONTEXT.set(
+        RunContext(
+            session=session,
+            client=client,
+            model=model,
+            route=route,
+            reply_parts=reply_parts,
+            tool_specs=openai_tools(allowed=allowed_tools),
+        )
+    )
+    try:
+        snapshot = await graph.aget_state(config)
+        if snapshot.next:
+            await checkpointer.adelete_thread(session.session_id)
 
-    async for event in graph.astream(
-        _initial_state(session, system_prompt),
-        config=config,
-        stream_mode="custom",
-    ):
-        yield event
+        async for event in graph.astream(
+            _initial_state(session, system_prompt),
+            config=config,
+            stream_mode="custom",
+        ):
+            yield event
+    finally:
+        _RUN_CONTEXT.reset(token)
 
 
 async def run_graph_agent_resume(
@@ -550,24 +623,36 @@ async def run_graph_agent_resume(
         model = get_settings().llm_model
     reply_parts: list[str] = []
     checkpointer = await get_checkpointer()
-    graph = _build_graph(
-        session, client, model, route, reply_parts, checkpointer
-    )
+    graph = _compiled_graph(checkpointer)
     config = _thread_config(session)
 
-    snapshot = await graph.aget_state(config)
-    if not snapshot.next:
-        raise NoPendingInterrupt(
-            f"会话 {session.session_id} 没有可恢复的中断"
+    allowed_tools = route.allowed_tools if route is not None else None
+    token = _RUN_CONTEXT.set(
+        RunContext(
+            session=session,
+            client=client,
+            model=model,
+            route=route,
+            reply_parts=reply_parts,
+            tool_specs=openai_tools(allowed=allowed_tools),
         )
+    )
+    try:
+        snapshot = await graph.aget_state(config)
+        if not snapshot.next:
+            raise NoPendingInterrupt(
+                f"会话 {session.session_id} 没有可恢复的中断"
+            )
 
-    resume_value = {
-        "approved": approved,
-        "idempotency_key": idempotency_key or "",
-    }
-    async for event in graph.astream(
-        Command(resume=resume_value),
-        config=config,
-        stream_mode="custom",
-    ):
-        yield event
+        resume_value = {
+            "approved": approved,
+            "idempotency_key": idempotency_key or "",
+        }
+        async for event in graph.astream(
+            Command(resume=resume_value),
+            config=config,
+            stream_mode="custom",
+        ):
+            yield event
+    finally:
+        _RUN_CONTEXT.reset(token)

@@ -1,8 +1,9 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from typing import Any
 
 from services import orders as order_service
+from services import orders_async
 from tools.context import ToolContext
 
 NO_BUYER_MESSAGE = "当前会话还没有绑定买家，请先在页面上方输入买家 ID，例如 BUY-0001。"
@@ -189,6 +190,220 @@ def create_aftersale(
     if buyer is None:
         return _missing_buyer(context)
     result = order_service.create_aftersale(
+        order_id, buyer_id, aftersale_type, reason, description
+    )
+    return {**result, "buyer": buyer}
+
+async def _buyer_payload_async(
+    buyer_id: str | None,
+) -> dict[str, Any] | None:
+    buyer = await orders_async.get_buyer(buyer_id)
+    if buyer is None:
+        return None
+    return {
+        "buyer_id": buyer["buyer_id"],
+        "nickname": buyer["nickname"],
+        "member_level": buyer["member_level"],
+        "city": buyer["city"],
+    }
+
+
+async def get_order_async(
+    order_id: str | None = None,
+    *,
+    context: ToolContext | None = None,
+) -> dict[str, Any]:
+    if not await orders_async.available():
+        return await order_service.run_async(
+            get_order, order_id, context=context
+        )
+    buyer_id = context.buyer_id if context is not None else None
+    buyer = await _buyer_payload_async(buyer_id)
+    if buyer is None:
+        return _missing_buyer(context)
+
+    if order_id:
+        order = await orders_async.get_order(order_id, buyer_id)
+        if order is None:
+            return {"found": False, "message": NOT_FOUND_MESSAGE, "buyer": buyer}
+        return {"found": True, "buyer": buyer, "order": order}
+
+    orders = await orders_async.list_orders(buyer_id)
+    if not orders:
+        return {
+            "found": False,
+            "message": "当前买家名下没有订单，请确认买家 ID 是否正确。",
+            "buyer": buyer,
+        }
+    return {
+        "found": True,
+        "buyer": buyer,
+        "count": len(orders),
+        "orders": orders,
+        "message": f"找到最近 {len(orders)} 笔订单。",
+    }
+
+
+async def get_logistics_async(
+    order_id: str | None = None,
+    tracking_no: str | None = None,
+    *,
+    context: ToolContext | None = None,
+) -> dict[str, Any]:
+    if not await orders_async.available():
+        return await order_service.run_async(
+            get_logistics, order_id, tracking_no, context=context
+        )
+    buyer_id = context.buyer_id if context is not None else None
+    buyer = await _buyer_payload_async(buyer_id)
+    if buyer is None:
+        return _missing_buyer(context)
+
+    if order_id or tracking_no:
+        shipment = await orders_async.get_shipment(
+            buyer_id, order_id=order_id, tracking_no=tracking_no
+        )
+        if shipment is None:
+            return {
+                "found": False,
+                "message": "没有查到对应的物流信息，请确认订单号或物流单号。",
+                "buyer": buyer,
+            }
+        return {"found": True, "buyer": buyer, "shipment": shipment}
+
+    shipments = await orders_async.list_shipments(buyer_id)
+    if not shipments:
+        return {
+            "found": False,
+            "message": "当前买家没有可查询的物流记录。",
+            "buyer": buyer,
+        }
+    return {
+        "found": True,
+        "buyer": buyer,
+        "count": len(shipments),
+        "shipments": shipments,
+        "message": f"找到最近 {len(shipments)} 条物流记录。",
+    }
+
+
+async def get_aftersale_async(
+    order_id: str | None = None,
+    *,
+    context: ToolContext | None = None,
+) -> dict[str, Any]:
+    if not await orders_async.available():
+        return await order_service.run_async(
+            get_aftersale, order_id, context=context
+        )
+    buyer_id = context.buyer_id if context is not None else None
+    buyer = await _buyer_payload_async(buyer_id)
+    if buyer is None:
+        return _missing_buyer(context)
+
+    if order_id:
+        aftersale = await orders_async.get_aftersale(order_id, buyer_id)
+        if aftersale is None:
+            return {
+                "found": False,
+                "message": "该订单没有售后记录，或订单号不属于当前买家。",
+                "buyer": buyer,
+            }
+        return {"found": True, "buyer": buyer, "aftersale": aftersale}
+
+    aftersales = await orders_async.list_aftersales(buyer_id)
+    if not aftersales:
+        return {
+            "found": False,
+            "message": "当前买家没有售后记录。",
+            "buyer": buyer,
+        }
+    return {
+        "found": True,
+        "buyer": buyer,
+        "count": len(aftersales),
+        "aftersales": aftersales,
+        "message": f"找到最近 {len(aftersales)} 条售后记录。",
+    }
+
+
+async def cancel_order_async(
+    order_id: str,
+    *,
+    context: ToolContext | None = None,
+) -> dict[str, Any]:
+    if not await orders_async.available():
+        return await order_service.run_async(
+            cancel_order, order_id, context=context
+        )
+    buyer_id = context.buyer_id if context is not None else None
+    buyer = await _buyer_payload_async(buyer_id)
+    if buyer is None:
+        return _missing_buyer(context)
+    result = await orders_async.cancel_order(order_id, buyer_id)
+    return {**result, "buyer": buyer}
+
+
+async def update_address_async(
+    order_id: str,
+    address: str,
+    *,
+    context: ToolContext | None = None,
+) -> dict[str, Any]:
+    if not await orders_async.available():
+        return await order_service.run_async(
+            update_address, order_id, address, context=context
+        )
+    buyer_id = context.buyer_id if context is not None else None
+    buyer = await _buyer_payload_async(buyer_id)
+    if buyer is None:
+        return _missing_buyer(context)
+    result = await orders_async.update_address(order_id, buyer_id, address)
+    return {**result, "buyer": buyer}
+
+
+async def intercept_parcel_async(
+    order_id: str,
+    reason: str = "买家申请拦截",
+    *,
+    context: ToolContext | None = None,
+) -> dict[str, Any]:
+    if not await orders_async.available():
+        return await order_service.run_async(
+            intercept_parcel, order_id, reason, context=context
+        )
+    buyer_id = context.buyer_id if context is not None else None
+    buyer = await _buyer_payload_async(buyer_id)
+    if buyer is None:
+        return _missing_buyer(context)
+    result = await orders_async.intercept_parcel(
+        order_id, buyer_id, reason
+    )
+    return {**result, "buyer": buyer}
+
+
+async def create_aftersale_async(
+    order_id: str,
+    aftersale_type: str,
+    reason: str = "买家申请售后",
+    description: str = "",
+    *,
+    context: ToolContext | None = None,
+) -> dict[str, Any]:
+    if not await orders_async.available():
+        return await order_service.run_async(
+            create_aftersale,
+            order_id,
+            aftersale_type,
+            reason,
+            description,
+            context=context,
+        )
+    buyer_id = context.buyer_id if context is not None else None
+    buyer = await _buyer_payload_async(buyer_id)
+    if buyer is None:
+        return _missing_buyer(context)
+    result = await orders_async.create_aftersale(
         order_id, buyer_id, aftersale_type, reason, description
     )
     return {**result, "buyer": buyer}

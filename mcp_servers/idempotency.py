@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import copy
 import json
 import logging
@@ -7,9 +8,9 @@ import threading
 import time
 import uuid
 from collections import OrderedDict
-from typing import Any, Callable
+from typing import Any, Awaitable, Callable
 
-from core.cache import get_redis
+from core.cache import get_async_redis, get_redis
 from core.config import get_settings
 
 logger = logging.getLogger("ecommerce_agent.mcp.idempotency")
@@ -183,5 +184,128 @@ def run_once(
     if cached is not None:
         return cached
     result = func()
+    _memory_set(key, result, ttl_seconds)
+    return result
+
+
+async def _release_async(client: Any, key: str, owner: str) -> None:
+    if not key or not owner:
+        return
+    try:
+        if hasattr(client, "eval"):
+            await client.eval(_RELEASE_LUA, 1, key, owner)
+            return
+        if await client.get(key) == owner:
+            await client.delete(key)
+    except Exception as exc:
+        logger.warning("释放异步幂等锁失败：%s", exc)
+
+
+async def _renew_async(
+    client: Any, key: str, owner: str, ttl: int
+) -> None:
+    if not key or not owner:
+        return
+    ttl_ms = max(1000, int(ttl * 1000))
+    try:
+        if hasattr(client, "eval"):
+            await client.eval(_RENEW_LUA, 1, key, owner, ttl_ms)
+            return
+        pexpire = getattr(client, "pexpire", None)
+        if pexpire is not None and await client.get(key) == owner:
+            await pexpire(key, ttl_ms)
+            return
+        expire = getattr(client, "expire", None)
+        if expire is not None and await client.get(key) == owner:
+            await expire(key, int(ttl))
+    except Exception as exc:
+        logger.warning("续租异步幂等锁失败：%s", exc)
+
+
+async def run_once_async(
+    key: str,
+    func: Callable[[], Awaitable[dict[str, Any]]],
+    *,
+    ttl_seconds: int = _DEFAULT_TTL_SECONDS,
+) -> dict[str, Any]:
+    client = await get_async_redis()
+    lock_ttl = max(
+        1,
+        int(
+            _setting(
+                "tool_idempotency_lock_ttl_seconds",
+                _DEFAULT_LOCK_TTL_SECONDS,
+            )
+        ),
+    )
+    if client is not None:
+        lock_key = f"mcp:idempotency:lock:{key}"
+        result_key = f"mcp:idempotency:result:{key}"
+        owner = ""
+        stop = asyncio.Event()
+        renewal: asyncio.Task[None] | None = None
+        try:
+            cached = await client.get(result_key)
+            if cached:
+                return copy.deepcopy(json.loads(cached))
+            fence = 0
+            try:
+                fence = int(
+                    await client.incr(f"mcp:idempotency:fence:{key}")
+                )
+            except Exception:
+                fence = 0
+            owner = f"{fence}:{uuid.uuid4().hex}"
+            acquired = await client.set(
+                lock_key, owner, nx=True, ex=lock_ttl
+            )
+        except Exception as exc:
+            logger.warning("异步 Redis 幂等不可用，回退进程内存：%s", exc)
+        else:
+            if not acquired:
+                cached = await client.get(result_key)
+                if cached:
+                    return copy.deepcopy(json.loads(cached))
+                return {
+                    "found": False,
+                    "status": "processing",
+                    "message": "该操作正在处理中，请稍后重试",
+                }
+
+            async def _heartbeat() -> None:
+                interval = max(0.5, lock_ttl / 3.0)
+                while not stop.is_set():
+                    try:
+                        await asyncio.wait_for(
+                            stop.wait(), timeout=interval
+                        )
+                        return
+                    except asyncio.TimeoutError:
+                        pass
+                    await _renew_async(client, lock_key, owner, lock_ttl)
+
+            renewal = asyncio.create_task(_heartbeat())
+            try:
+                result = await func()
+                await client.set(
+                    result_key,
+                    json.dumps(result, ensure_ascii=False),
+                    ex=ttl_seconds,
+                )
+                return result
+            finally:
+                stop.set()
+                if renewal is not None:
+                    renewal.cancel()
+                    try:
+                        await renewal
+                    except (asyncio.CancelledError, Exception):
+                        pass
+                await _release_async(client, lock_key, owner)
+
+    cached = _memory_get(key)
+    if cached is not None:
+        return cached
+    result = await func()
     _memory_set(key, result, ttl_seconds)
     return result

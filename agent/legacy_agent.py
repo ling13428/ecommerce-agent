@@ -35,6 +35,7 @@ from agent.agent_utils import (
 from agent.router import RouteResult, prompt_for_route
 from agent.session import SessionState
 from core.config import get_settings
+from core.idempotency import business_idempotency_key
 from core.security import SYSTEM_PROMPT, wrap_tool_result
 from tools.context import ToolContext
 from tools.products import detect_product_id
@@ -119,14 +120,14 @@ async def run_legacy_agent(
                 message = "抱歉，我没能生成有效回复，已为你转接人工客服。"
                 yield {"type": "delta", "content": message}
                 reply_parts.append(message)
-                session.add_assistant("".join(reply_parts))
+                await session.add_assistant_async("".join(reply_parts))
                 yield {
                     "type": "handoff",
                     "reason": "empty_response",
                     "summary": _session_summary(session),
                 }
             else:
-                session.add_assistant("".join(reply_parts))
+                await session.add_assistant_async("".join(reply_parts))
             return
 
         assistant_tool_calls = []
@@ -195,7 +196,15 @@ async def run_legacy_agent(
                     f"这个操作需要你确认：{summary}\n"
                     "如果确认，请直接回复“确认”；如果不需要，请回复“取消”。"
                 )
-                session.set_pending(name, arguments, summary)
+                pending_args = result.get("args") or arguments
+                await session.set_pending_async(
+                    name,
+                    pending_args,
+                    summary,
+                    idempotency_key=business_idempotency_key(
+                        name, pending_args, session.buyer_id
+                    ),
+                )
                 yield {"type": "delta", "content": message}
                 yield {
                     "type": "confirm_required",
@@ -204,7 +213,7 @@ async def run_legacy_agent(
                     "summary": summary,
                 }
                 reply_parts.append(message)
-                session.add_assistant("".join(reply_parts))
+                await session.add_assistant_async("".join(reply_parts))
                 return
 
             if result.get("status") == "handoff":
@@ -219,7 +228,7 @@ async def run_legacy_agent(
                     "reason": reason,
                     "summary": summary,
                 }
-                session.add_assistant("".join(reply_parts))
+                await session.add_assistant_async("".join(reply_parts))
                 return
 
             messages.append(
@@ -233,7 +242,7 @@ async def run_legacy_agent(
     message = "这个问题需要人工客服进一步处理，正在为你转接，请稍候。"
     yield {"type": "delta", "content": message}
     reply_parts.append(message)
-    session.add_assistant("".join(reply_parts))
+    await session.add_assistant_async("".join(reply_parts))
     yield {
         "type": "handoff",
         "reason": "max_steps_exceeded",

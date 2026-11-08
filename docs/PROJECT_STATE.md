@@ -2,7 +2,7 @@
 
 > 本文件用于跨会话接续。每次新会话开始先读本文件，结束前更新。
 > 只记录长期有用的信息：进度、决策、下一步、坑。不要粘贴大段代码或原始对话。
-> 最后更新：2026-11-05
+> 最后更新：2026-11-07
 
 ## 一、当前进度
 
@@ -91,8 +91,29 @@
   - **运营看板**：`GET /api/admin/dashboard` 聚合解决率、转人工率、首响均值/P95、路由分布、转人工原因；商家工作台新增 KPI 面板（15s 刷新）
   - **首响口径**：trace 记录 `first_response_ms`（从收到消息到第一个 `delta`），仅统计有文本回复的轮次
   - **工具执行硬化（2026-11-05）**：`tools/registry.py` 新增工具级超时、只读重试、每工具熔断、专用线程池与并发信号量；错误统一为 `error_code/retryable/side_effect_committed`；出站结果做信封校验、可选 `result_model` 校验与大小截断；写操作幂等锁改为 owner token（防误删）、心跳续租、不确定结果短 TTL 缓存，内存兜底条数可配；`core/metrics.py` 新增 per-tool 调用/失败/超时/延迟/错误码指标
-  - 测试 186 个用例全部通过（新增工具运行时硬化测试）
-  - Git 已初始化（`main` 分支），`.env`/`.venv`/`.idea` 已忽略；**未配置远程仓库**
+- 测试 210 个用例全部通过（新增工具运行时硬化 + 会话并发存储 + 异步仓库/Redis 测试）
+- **会话存储改造（2026-11-07）**：
+  - 会话按空闲超时切分（`SESSION_IDLE_TIMEOUT_MINUTES=30`），服务端为准；前端 localStorage 记录 `session_active_at`，超时自动清空；SSE `start` 返回新会话 id
+  - 新表结构：`chat_sessions`（小状态 + `version`）与 `chat_messages` / `chat_traces`（只追加），消息 id 改由数据库序列发号，不再依赖 `next_message_id`
+  - 每次会话写入走版本号 CAS（`WHERE version=?`），版本不符抛 `VersionConflict` 并拒绝执行
+  - 新增 `core/session_lock.py`：Redis 分布式会话锁（owner token + 心跳续租）+ 进程内 asyncio 锁兜底；买家请求、接管、人工回复均按会话串行
+  - 幂等：入站消息用 `(session_id, client_msg_id)` 唯一约束去重；写工具按业务语义生成幂等键（取消/改地址/拦截/售后），重试不会重复执行
+  - 存储顺序：先写持久库（消息/轨迹/状态增量写入），再写 Redis 缓存；读先 Redis，miss 回持久库并回填；`SESSION_STORAGE_MODE=payload` 可回滚旧整包模式
+  - 旧 `payload` 数据在启动时自动迁移到新表（保留原列）；`scripts/prune_sessions.py` 改为按新表清理
+  - 新增测试：`test_session_repo.py`、`test_session_normalized.py`、`test_session_lock.py`、`test_session_lifecycle.py`、`test_idempotency_keys.py`
+  - **异步与性能优化（2026-11-07）**：
+    - Redis 热路径改用 `redis.asyncio`：`core/cache.get_async_redis()` 按事件循环缓存异步客户端；限流、会话缓存、会话锁直接 `await`，不再占用线程池
+    - **会话仓库改为异步**：Postgres 使用独立的 `AsyncConnectionPool`（`SESSION_DB_POOL_*`）；SQLite 和 Windows Proactor 环境回退到专用线程池（`session-db`），不与默认 `asyncio.to_thread` 竞争
+    - 异步会话仓库提供 `async_load_record` / `async_append_message_record` / `async_update_session_meta` 等；管理端列表/详情/看板/买家轮询也改为异步，避免热路径触发同步仓库
+    - `SessionState` 提供异步方法（`add_user_async`、`add_trace_async`、`set_pending_async` 等），主流程、graph/legacy agent、管理端点均走异步路径；同步方法保留给测试和脚本
+    - **订单/审计链路异步化**：`ToolSpec` 增加 `afunc`，本地工具可原生 `await`；订单 SQL（Postgres）新增 `services/orders_async.py`，走共享 `AsyncConnectionPool`，SQLite/Windows 回退到专用 `orders-db` 线程池；审计新增 `record_tool_audit_async`，Postgres 走共享异步池，回退用 `audit-db` 专用线程池
+    - **仍未异步的 SQL**：RAG/knowledge 的 pgvector 检索和 BM25 加载仍是同步 psycopg，运行在工具执行器或 MCP knowledge 进程；SQLite 驱动本身无真异步
+    - MCP commerce server 改为 async handler，写操作走 `run_write_async` + `run_once_async`（异步 Redis 幂等 + 心跳）
+    - 新增 `DATABASE_ASYNC_POOL_*`（订单/审计异步池）、`ORDERS_WORKERS`、`AUDIT_WORKERS`
+    - MCP 客户端按 `(event loop, server)` 复用 `ClientSession`，调用失败自动重建；应用关闭时统一释放
+    - LangGraph 编译结果按 `(event loop, checkpointer)` 缓存；session/client/route/tool_specs 通过 `ContextVar` 注入，不再每请求 `compile()`
+    - 测试环境 `AUDIT_ENABLED=false`，避免无 Postgres 时审计写入阻塞；新增 `test_redis_async.py` 验证异步 Redis 限流与会话锁
+- Git 已初始化（`main` 分支），`.env`/`.venv`/`.idea` 已忽略；**未配置远程仓库**
 - 进行中：**M7 评测闭环** — Agent 场景集 60 条、路由/工具评测、首轮压测、运营看板已完成；待扩到 200 条、补 LLM 端到端评测
 - 下一步（按价值排序）：
   1. **M7**：检索 gold 80→200、Agent 场景集 60→200、补 LLM 端到端评测（真实模型）、把压测扩到带工具/LLM 的路径

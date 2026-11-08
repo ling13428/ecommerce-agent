@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures import TimeoutError as FutureTimeoutError
 from dataclasses import dataclass
 from enum import Enum
-from typing import Any, Callable, Literal
+from typing import Any, Awaitable, Callable, Literal
 
 from pydantic import (
     BaseModel,
@@ -25,24 +25,36 @@ from pydantic import (
     model_validator,
 )
 
-from core.audit import record_tool_audit
-from core.cache import get_redis
+from core.audit import record_tool_audit, record_tool_audit_async
+from core.cache import get_async_redis, get_redis
 from core.config import get_settings
 from core.logging import log_exception
 from core.metrics import METRICS
 from core.tool_auth import create_approval_token, create_context_token
-from tools.commerce import get_coupons, get_payment_methods
+from tools.commerce import (
+    get_coupons,
+    get_coupons_async,
+    get_payment_methods,
+    get_payment_methods_async,
+)
 from tools.context import ToolContext
 from tools.knowledge import search_knowledge
 from tools.mcp_client import MCPToolError, call_mcp
 from tools.orders import (
     cancel_order,
+    cancel_order_async,
     create_aftersale,
+    create_aftersale_async,
     get_aftersale,
+    get_aftersale_async,
     get_logistics,
+    get_logistics_async,
     get_order,
+    get_order_async,
     intercept_parcel,
+    intercept_parcel_async,
     update_address,
+    update_address_async,
 )
 from tools.products import get_product
 from tools.recommend import recommend_products
@@ -594,6 +606,7 @@ class ToolSpec:
     description: str
     args_model: type[BaseModel]
     func: Callable[..., Any]
+    afunc: Callable[..., Awaitable[Any]] | None = None
     kind: Literal["read", "write", "handoff"] = "read"
     confirm_summary: Callable[[Any], str] | None = None
     uses_context: bool = False
@@ -640,6 +653,7 @@ TOOLS: dict[str, ToolSpec] = {
         ),
         args_model=GetOrderArgs,
         func=get_order,
+        afunc=get_order_async,
         kind="read",
         uses_context=True,
         server="commerce",
@@ -651,6 +665,7 @@ TOOLS: dict[str, ToolSpec] = {
         ),
         args_model=GetLogisticsArgs,
         func=get_logistics,
+        afunc=get_logistics_async,
         kind="read",
         uses_context=True,
         server="commerce",
@@ -662,6 +677,7 @@ TOOLS: dict[str, ToolSpec] = {
         ),
         args_model=GetAftersaleArgs,
         func=get_aftersale,
+        afunc=get_aftersale_async,
         kind="read",
         uses_context=True,
         server="commerce",
@@ -674,6 +690,7 @@ TOOLS: dict[str, ToolSpec] = {
         ),
         args_model=GetPaymentMethodsArgs,
         func=get_payment_methods,
+        afunc=get_payment_methods_async,
         kind="read",
         uses_context=True,
         server="commerce",
@@ -685,6 +702,7 @@ TOOLS: dict[str, ToolSpec] = {
         ),
         args_model=GetCouponsArgs,
         func=get_coupons,
+        afunc=get_coupons_async,
         kind="read",
         uses_context=True,
         server="commerce",
@@ -708,6 +726,7 @@ TOOLS: dict[str, ToolSpec] = {
         ),
         args_model=CancelOrderArgs,
         func=cancel_order,
+        afunc=cancel_order_async,
         kind="write",
         uses_context=True,
         server="commerce",
@@ -722,6 +741,7 @@ TOOLS: dict[str, ToolSpec] = {
         ),
         args_model=UpdateAddressArgs,
         func=update_address,
+        afunc=update_address_async,
         kind="write",
         uses_context=True,
         server="commerce",
@@ -737,6 +757,7 @@ TOOLS: dict[str, ToolSpec] = {
         ),
         args_model=InterceptParcelArgs,
         func=intercept_parcel,
+        afunc=intercept_parcel_async,
         kind="write",
         uses_context=True,
         server="commerce",
@@ -752,6 +773,7 @@ TOOLS: dict[str, ToolSpec] = {
         ),
         args_model=CreateAftersaleArgs,
         func=create_aftersale,
+        afunc=create_aftersale_async,
         kind="write",
         uses_context=True,
         server="commerce",
@@ -1483,6 +1505,143 @@ async def _execute_remote(
     return _limit_result_size(final_result)
 
 
+_ASYNC_RELEASE_LUA = (
+    "if redis.call('get', KEYS[1]) == ARGV[1] then "
+    "return redis.call('del', KEYS[1]) else return 0 end"
+)
+
+
+async def _async_release(client: Any, key: str, owner: str) -> None:
+    if not key or not owner:
+        return
+    try:
+        if hasattr(client, "eval"):
+            await client.eval(_ASYNC_RELEASE_LUA, 1, key, owner)
+            return
+        if await client.get(key) == owner:
+            await client.delete(key)
+    except Exception as exc:
+        logger.warning("释放异步幂等锁失败：%s", exc)
+
+
+async def _execute_local_async(
+    spec: ToolSpec,
+    args: BaseModel,
+    *,
+    idempotency_key: str | None,
+    context: ToolContext | None,
+) -> dict[str, Any]:
+    if spec.afunc is None:
+        return _error_result(
+            ToolErrorCode.UNKNOWN_TOOL,
+            f"工具 {spec.name} 没有异步实现",
+            retryable=False,
+            side_effect_committed=False,
+        )
+
+    cache_key = ""
+    client: Any = None
+    lock_key = ""
+    result_key = ""
+    owner = ""
+    lock_ttl = max(
+        1,
+        int(
+            _setting(
+                "tool_idempotency_lock_ttl_seconds",
+                _DEFAULT_IDEMPOTENCY_LOCK_SECONDS,
+            )
+        ),
+    )
+
+    if spec.kind == "write":
+        if not idempotency_key:
+            return _error_result(
+                ToolErrorCode.IDEMPOTENCY_KEY_MISSING,
+                "写操作缺少幂等键，已拒绝执行",
+                retryable=False,
+                side_effect_committed=False,
+            )
+        cache_key = _idempotency_cache_key(
+            spec, args, idempotency_key, context
+        )
+        client = await get_async_redis()
+        if client is not None:
+            lock_key = f"idempotency:lock:{cache_key}"
+            result_key = f"idempotency:result:{cache_key}"
+            try:
+                cached = await client.get(result_key)
+                if cached:
+                    data = json.loads(cached)
+                    return data.get("result", data)
+                owner = uuid.uuid4().hex
+                acquired = await client.set(
+                    lock_key, owner, nx=True, ex=lock_ttl
+                )
+            except Exception as exc:
+                logger.warning("异步 Redis 幂等不可用，回退进程内存：%s", exc)
+                client = None
+            else:
+                if not acquired:
+                    cached = await client.get(result_key)
+                    if cached:
+                        data = json.loads(cached)
+                        return data.get("result", data)
+                    return _error_result(
+                        ToolErrorCode.IDEMPOTENCY_IN_PROGRESS,
+                        "该写操作正在处理中，请稍后重试",
+                        retryable=True,
+                        side_effect_committed=None,
+                    )
+        if client is None:
+            cached = _get_cached_result(cache_key)
+            if cached is not None:
+                return cached
+
+    try:
+        kwargs = args.model_dump()
+        if spec.uses_context:
+            kwargs["context"] = context or ToolContext()
+        raw_result = await spec.afunc(**kwargs)
+        final_result = _finalize_result(spec.name, raw_result)
+        final_result = _validate_tool_result(spec, final_result)
+        final_result = _limit_result_size(final_result)
+
+        if spec.kind == "write":
+            should_cache, uncertain = _write_cache_policy(final_result)
+            ttl = (
+                _idempotency_uncertain_ttl()
+                if uncertain
+                else _idempotency_ttl()
+            )
+            if should_cache:
+                if client is not None and result_key:
+                    try:
+                        await client.set(
+                            result_key,
+                            json.dumps(
+                                {"result": final_result}, ensure_ascii=False
+                            ),
+                            ex=ttl,
+                        )
+                    except Exception as exc:
+                        logger.warning("写入异步幂等结果失败：%s", exc)
+                else:
+                    _cache_result(cache_key, final_result, ttl)
+        return final_result
+    except Exception as exc:
+        log_exception("tool.execute.async", exc)
+        return _error_result(
+            ToolErrorCode.TOOL_EXECUTION_FAILED,
+            "工具执行失败，请稍后重试",
+            retryable=True,
+            side_effect_committed=None if spec.kind == "write" else False,
+        )
+    finally:
+        if client is not None and lock_key:
+            await _async_release(client, lock_key, owner)
+
+
 async def _run_async_with_policy(
     spec: ToolSpec,
     raw_args: dict[str, Any] | None,
@@ -1514,6 +1673,16 @@ async def _run_async_with_policy(
             if remote:
                 result = await asyncio.wait_for(
                     _execute_remote(
+                        spec,
+                        args,
+                        idempotency_key=idempotency_key,
+                        context=context,
+                    ),
+                    timeout=timeout,
+                )
+            elif spec.afunc is not None:
+                result = await asyncio.wait_for(
+                    _execute_local_async(
                         spec,
                         args,
                         idempotency_key=idempotency_key,
@@ -1603,7 +1772,7 @@ async def execute_tool_async(
         remote=remote,
     )
     _record_tool_metrics(spec.name, started, result)
-    record_tool_audit(
+    await record_tool_audit_async(
         tool=spec.name,
         kind=spec.kind,
         args=raw_args or {},

@@ -23,21 +23,36 @@ from agent.mock_agent import run_mock_agent
 from agent.router import RouteResult, route_message_l2
 from agent.session import (
     SessionState,
-    all_sessions,
-    get_existing_session,
-    get_session,
-    list_sessions,
+    all_sessions_async,
+    get_existing_session_async,
+    get_session_async,
+    invalidate_session_async,
+    is_session_expired,
+    list_sessions_async,
     load_persisted_sessions,
 )
+from agent.session_repo import DuplicateMessage, VersionConflict
+from agent.session_store import (
+    async_ensure_session_schema,
+    close_async_session_repository,
+)
 from core.alerts import send_alert
-from core.audit import list_audit
+from core.audit import (
+    list_audit_async,
+)
+from core.audit import (
+    shutdown_executor as shutdown_audit_executor,
+)
 from core.auth import AuthError, bearer_token, create_token, verify_token
+from core.cache import close_async_redis
 from core.config import get_settings
+from core.db import close_async_pool
 from core.logging import log_exception, logger, setup_logging
 from core.metrics import METRICS
 from core.otp import OtpCooldown, issue_code, verify_code
-from core.ratelimit import allow_request
+from core.ratelimit import allow_request_async
 from core.security import is_affirmative, is_negative, redact, wrap_tool_result
+from core.session_lock import SessionBusy, session_lock
 from core.sms import send_verification_code
 from core.sse import with_heartbeat
 from rag.bm25 import warmup_bm25
@@ -73,6 +88,7 @@ async def lifespan(app: FastAPI):
 
     if settings.session_persistence:
         try:
+            await async_ensure_session_schema()
             loaded = load_persisted_sessions()
             logger.info("会话持久化已启用 | 已加载会话=%d", loaded)
         except Exception as exc:
@@ -89,6 +105,30 @@ async def lifespan(app: FastAPI):
         ).start()
 
     yield
+
+    try:
+        from tools.mcp_client import close_mcp_sessions
+
+        await close_mcp_sessions()
+    except Exception as exc:
+        logger.warning("关闭 MCP 会话失败 | %s", redact(str(exc)))
+    try:
+        await close_async_session_repository()
+    except Exception as exc:
+        logger.warning("关闭异步会话仓库失败 | %s", redact(str(exc)))
+    try:
+        order_service.shutdown_executor()
+        shutdown_audit_executor()
+    except Exception as exc:
+        logger.warning("关闭订单/审计线程池失败 | %s", redact(str(exc)))
+    try:
+        await close_async_pool()
+    except Exception as exc:
+        logger.warning("关闭异步 PostgreSQL 池失败 | %s", redact(str(exc)))
+    try:
+        await close_async_redis()
+    except Exception as exc:
+        logger.warning("关闭异步 Redis 失败 | %s", redact(str(exc)))
 
 
 app = FastAPI(title="电商客服 Agent", docs_url=None, lifespan=lifespan)
@@ -140,6 +180,7 @@ class ChatRequest(BaseModel):
     message: str = Field(min_length=1)
     session_id: str | None = Field(default=None, max_length=64)
     idempotency_key: str | None = Field(default=None, max_length=64)
+    client_msg_id: str | None = Field(default=None, max_length=64)
 
 
 class BuyerLoginRequest(BaseModel):
@@ -242,7 +283,7 @@ async def resolve_pending_confirmation(
         return None
 
     if is_affirmative(message):
-        session.clear_pending()
+        await session.clear_pending_async()
         result = await execute_tool_async(
             pending.name,
             pending.args,
@@ -254,7 +295,7 @@ async def resolve_pending_confirmation(
             ),
         )
         ok = bool(result.get("ok"))
-        session.add_system(
+        await session.add_system_async(
             "用户已明确确认执行写操作 "
             f"{pending.name}。工具结果：{wrap_tool_result(pending.name, result)}。"
             "该操作已处理，不要重复调用该工具。"
@@ -273,8 +314,8 @@ async def resolve_pending_confirmation(
     else:
         reason = "用户未确认，视为取消"
 
-    session.clear_pending()
-    session.add_system(f"待确认操作 {pending.name} 已取消（{reason}）。")
+    await session.clear_pending_async()
+    await session.add_system_async(f"待确认操作 {pending.name} 已取消（{reason}）。")
     return {"type": "confirmation_cancelled", "name": pending.name, "reason": reason}
 
 
@@ -283,7 +324,7 @@ async def router_events(
 ):
     text = route.message or "我正在为你处理这个问题，请稍候。"
     yield {"type": "delta", "content": text}
-    session.add_assistant(text)
+    await session.add_assistant_async(text)
 
     if route.action == "handoff":
         summary = (
@@ -317,19 +358,97 @@ async def mock_events(message: str, session: SessionState):
         yield {"type": "delta", "content": char}
         await asyncio.sleep(0.02)
 
-    session.add_assistant(result["reply"])
+    await session.add_assistant_async(result["reply"])
 
 
 async def agent_stream(
     message: str,
-    session_id: str,
+    client_session_id: str | None,
     idempotency_key: str | None = None,
+    client_msg_id: str | None = None,
     buyer_id: str | None = None,
 ):
-    session = get_session(session_id)
-    if buyer_id:
-        session.set_buyer_id(buyer_id)
-    user_message = session.add_user(message)
+    candidate = client_session_id or uuid4().hex
+    active_session_id = candidate
+    try:
+        async with session_lock(candidate):
+            session = await get_session_async(candidate)
+            idle_seconds = (
+                getattr(settings, "session_idle_timeout_minutes", 30) * 60
+            )
+            if client_session_id and is_session_expired(
+                session.last_active_at,
+                session.status,
+                idle_seconds,
+                time.time(),
+            ):
+                if session.status != "closed":
+                    await session.close_async("idle_timeout")
+                session = await get_session_async(uuid4().hex)
+                active_session_id = session.session_id
+            if buyer_id:
+                if session.buyer_id and session.buyer_id != buyer_id:
+                    yield sse(
+                        {
+                            "type": "error",
+                            "code": "forbidden",
+                            "message": "会话不属于当前买家",
+                        }
+                    )
+                    yield sse(
+                        {
+                            "type": "done",
+                            "session_id": session.session_id,
+                        }
+                    )
+                    return
+                await session.set_buyer_id_async(buyer_id)
+            async for event in _agent_stream_locked(
+                message, session, idempotency_key, client_msg_id
+            ):
+                yield event
+    except SessionBusy:
+        yield sse(
+            {
+                "type": "error",
+                "code": "session_busy",
+                "message": "当前会话正在处理中，请稍后重试",
+            }
+        )
+        yield sse({"type": "done"})
+    except VersionConflict:
+        await invalidate_session_async(active_session_id)
+        yield sse(
+            {
+                "type": "error",
+                "code": "version_conflict",
+                "message": "会话状态已变化，请重试",
+            }
+        )
+        yield sse({"type": "done"})
+
+
+async def _agent_stream_locked(
+    message: str,
+    session: SessionState,
+    idempotency_key: str | None = None,
+    client_msg_id: str | None = None,
+):
+    session_id = session.session_id
+    try:
+        user_message = await session.add_user_async(
+            message, client_msg_id=client_msg_id
+        )
+    except DuplicateMessage:
+        yield sse(
+            {
+                "type": "error",
+                "duplicate": True,
+                "message": "重复请求，已忽略",
+            }
+        )
+        yield sse({"type": "done", "session_id": session_id})
+        return
     started = time.perf_counter()
 
     trace: dict[str, Any] = {
@@ -367,7 +486,7 @@ async def agent_stream(
         step.update(detail)
         trace["steps"].append(step)
 
-    def finish(status: str | None = None) -> None:
+    async def finish(status: str | None = None) -> None:
         nonlocal recorded
         if recorded:
             return
@@ -380,7 +499,7 @@ async def agent_stream(
             trace["status"] = "ok" if trace["reply"] else "empty"
         trace["finished_at"] = time.time()
         trace["duration_ms"] = int((time.perf_counter() - started) * 1000)
-        session.add_trace(trace)
+        await session.add_trace_async(trace)
 
     def record_pending_event(pending_event: dict) -> None:
         detail = pending_event.pop("detail", None)
@@ -416,7 +535,7 @@ async def agent_stream(
 
     if session.human_mode:
         add_step("human_mode", "人工接管中，消息仅入库等待人工回复")
-        finish("human_mode")
+        await finish("human_mode")
         yield sse(
             {
                 "type": "human_mode",
@@ -470,7 +589,7 @@ async def agent_stream(
                     elif detail.get("kind") == "handoff":
                         trace["handoff_reason"] = detail.get("reason")
             elif event_type == "handoff":
-                session.set_human_mode(True)
+                await session.set_human_mode_async(True)
                 METRICS.incr("handoffs_total")
                 trace["status"] = "handoff"
                 trace["handoff_reason"] = event.get("reason")
@@ -561,7 +680,7 @@ async def agent_stream(
                         skip_routing = True
             else:
                 await delete_thread(session.session_id)
-                session.clear_pending()
+                await session.clear_pending_async()
                 add_step(
                     "confirm_required",
                     "用户转向新问题，待确认操作已取消",
@@ -661,7 +780,7 @@ async def agent_stream(
         add_step("error", "服务异常", error=str(exc))
         yield sse({"type": "error", "message": "服务暂时不可用，请稍后重试。"})
     finally:
-        finish()
+        await finish()
 
     yield sse({"type": "done", "session_id": session_id})
 
@@ -774,19 +893,27 @@ async def chat_stream(
         req.idempotency_key
     ):
         raise HTTPException(status_code=400, detail="idempotency_key 格式不合法")
+    if req.client_msg_id is not None and not SESSION_ID_PATTERN.fullmatch(
+        req.client_msg_id
+    ):
+        raise HTTPException(status_code=400, detail="client_msg_id 格式不合法")
 
     buyer_id = _buyer_from_authorization(authorization)
-    session_id = req.session_id or uuid4().hex
-    _check_session_buyer(get_existing_session(session_id), buyer_id)
-    if not allow_request(session_id):
+    if req.session_id is not None:
+        _check_session_buyer(
+        await get_existing_session_async(req.session_id), buyer_id
+    )
+    limit_key = req.session_id or buyer_id or uuid4().hex
+    if not await allow_request_async(limit_key):
         raise HTTPException(status_code=429, detail="请求过于频繁，请稍后再试")
 
     return StreamingResponse(
         with_heartbeat(
             agent_stream(
                 message,
-                session_id,
+                req.session_id,
                 req.idempotency_key,
+                req.client_msg_id,
                 buyer_id,
             ),
             float(getattr(settings, "sse_heartbeat_seconds", 15.0)),
@@ -806,6 +933,7 @@ class TakeoverRequest(BaseModel):
 
 class AdminReplyRequest(BaseModel):
     message: str = Field(min_length=1, max_length=2000)
+    client_msg_id: str | None = Field(default=None, max_length=64)
 
 
 def _validate_session_id(session_id: str) -> None:
@@ -813,9 +941,9 @@ def _validate_session_id(session_id: str) -> None:
         raise HTTPException(status_code=400, detail="session_id 格式不合法")
 
 
-def _require_session(session_id: str) -> SessionState:
+async def _require_session_async(session_id: str) -> SessionState:
     _validate_session_id(session_id)
-    session = get_existing_session(session_id)
+    session = await get_existing_session_async(session_id)
     if session is None:
         raise HTTPException(status_code=404, detail="会话不存在或已过期")
     return session
@@ -827,17 +955,17 @@ def admin_metrics():
 
 
 @app.get("/api/admin/dashboard", dependencies=[Depends(require_admin)])
-def admin_dashboard(days: int = 7):
+async def admin_dashboard(days: int = 7):
     return build_dashboard(
-        all_sessions(),
+        await all_sessions_async(),
         days=min(max(days, 1), 90),
     )
 
 
 @app.get("/api/admin/audit", dependencies=[Depends(require_admin)])
-def admin_audit(limit: int = 50, actor: str | None = None):
+async def admin_audit(limit: int = 50, actor: str | None = None):
     return {
-        "items": list_audit(
+        "items": await list_audit_async(
             limit=min(max(limit, 1), 200),
             actor=actor,
         )
@@ -845,16 +973,16 @@ def admin_audit(limit: int = 50, actor: str | None = None):
 
 
 @app.get("/api/admin/sessions", dependencies=[Depends(require_admin)])
-def admin_sessions():
-    return {"sessions": list_sessions()}
+async def admin_sessions():
+    return {"sessions": await list_sessions_async()}
 
 
 @app.get(
     "/api/admin/sessions/{session_id}",
     dependencies=[Depends(require_admin)],
 )
-def admin_session_detail(session_id: str):
-    session = _require_session(session_id)
+async def admin_session_detail(session_id: str):
+    session = await _require_session_async(session_id)
     return {
         "session_id": session.session_id,
         "buyer_id": session.buyer_id,
@@ -871,46 +999,78 @@ def admin_session_detail(session_id: str):
     "/api/admin/sessions/{session_id}/takeover",
     dependencies=[Depends(require_admin)],
 )
-def admin_takeover(session_id: str, req: TakeoverRequest):
-    session = _require_session(session_id)
-    session.set_human_mode(req.enabled)
-    session.add_system(
-        "人工客服已接管会话。" if req.enabled else "人工客服已结束接管，机器人恢复服务。"
-    )
-    return {
-        "ok": True,
-        "session_id": session.session_id,
-        "human_mode": session.human_mode,
-    }
+async def admin_takeover(session_id: str, req: TakeoverRequest):
+    try:
+        async with session_lock(session_id):
+            session = await _require_session_async(session_id)
+            await session.set_human_mode_async(req.enabled)
+            await session.add_system_async(
+                "人工客服已接管会话。"
+                if req.enabled
+                else "人工客服已结束接管，机器人恢复服务。"
+            )
+            return {
+                "ok": True,
+                "session_id": session.session_id,
+                "human_mode": session.human_mode,
+            }
+    except SessionBusy:
+        raise HTTPException(
+            status_code=409, detail="会话正在处理中，请稍后重试"
+        ) from None
+    except VersionConflict:
+        raise HTTPException(
+            status_code=409, detail="会话状态已变化，请重试"
+        ) from None
 
 
 @app.post(
     "/api/admin/sessions/{session_id}/reply",
     dependencies=[Depends(require_admin)],
 )
-def admin_reply(session_id: str, req: AdminReplyRequest):
-    session = _require_session(session_id)
+async def admin_reply(session_id: str, req: AdminReplyRequest):
     message = req.message.strip()
     if not message:
         raise HTTPException(status_code=400, detail="消息不能为空")
-    session.set_human_mode(True)
-    session.add_assistant(message, source="human")
-    return {
-        "ok": True,
-        "session_id": session.session_id,
-        "human_mode": session.human_mode,
-    }
+    try:
+        async with session_lock(session_id):
+            session = await _require_session_async(session_id)
+            await session.set_human_mode_async(True)
+            await session.add_assistant_async(
+                message,
+                source="human",
+                client_msg_id=req.client_msg_id,
+            )
+            return {
+                "ok": True,
+                "session_id": session.session_id,
+                "human_mode": session.human_mode,
+            }
+    except DuplicateMessage:
+        return {
+            "ok": True,
+            "duplicate": True,
+            "session_id": session_id,
+        }
+    except SessionBusy:
+        raise HTTPException(
+            status_code=409, detail="会话正在处理中，请稍后重试"
+        ) from None
+    except VersionConflict:
+        raise HTTPException(
+            status_code=409, detail="会话状态已变化，请重试"
+        ) from None
 
 
 @app.get("/api/chat/messages")
-def chat_messages(
+async def chat_messages(
     session_id: str,
     after_id: int = 0,
     authorization: str | None = Header(default=None),
 ):
     _validate_session_id(session_id)
     buyer_id = _buyer_from_authorization(authorization)
-    session = get_existing_session(session_id)
+    session = await get_existing_session_async(session_id)
     if session is None:
         return {"human_mode": False, "messages": []}
     _check_session_buyer(session, buyer_id)

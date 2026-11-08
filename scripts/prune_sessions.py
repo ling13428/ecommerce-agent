@@ -11,15 +11,16 @@ if str(ROOT) not in sys.path:
 
 
 def main(argv: list[str] | None = None) -> int:
+    from agent.session_repo import get_repository
     from core.config import get_settings
-    from core.db import get_pool
 
     settings = get_settings()
-    if (settings.session_store_backend or "").strip().lower() != "postgres":
-        print("当前 SESSION_STORE_BACKEND 不是 postgres，无需清理")
+    repository = get_repository()
+    if repository is None:
+        print("当前未启用 normalized 会话存储，无需清理")
         return 1
 
-    parser = argparse.ArgumentParser(description="清理过期的 Postgres 会话")
+    parser = argparse.ArgumentParser(description="清理过期的持久化会话")
     parser.add_argument(
         "--days",
         type=int,
@@ -30,20 +31,16 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     cutoff = time.time() - args.days * 24 * 3600
-    with get_pool().connection() as connection:
-        if args.dry_run:
-            row = connection.execute(
-                "SELECT COUNT(*) AS total FROM chat_sessions "
-                "WHERE updated_at < %s",
-                (cutoff,),
-            ).fetchone()
-            print(f"待清理 {row['total']} 个会话（早于 {args.days} 天）")
-            return 0
-        cursor = connection.execute(
-            "DELETE FROM chat_sessions WHERE updated_at < %s",
-            (cutoff,),
-        )
-        print(f"已清理 {cursor.rowcount} 个会话（早于 {args.days} 天）")
+    if args.dry_run:
+        pending = [
+            meta
+            for meta in repository.list_meta()
+            if float(meta.get("last_active_at") or 0) < cutoff
+        ]
+        print(f"待清理 {len(pending)} 个会话（早于 {args.days} 天）")
+        return 0
+    deleted = repository.delete_older_than(cutoff)
+    print(f"已清理 {deleted} 个会话（早于 {args.days} 天）")
     return 0
 
 

@@ -5,7 +5,7 @@ import threading
 import time
 from collections import defaultdict, deque
 
-from core.cache import get_redis
+from core.cache import get_async_redis, get_redis
 from core.config import get_settings
 
 logger = logging.getLogger("ecommerce_agent.ratelimit")
@@ -61,6 +61,25 @@ def allow_request(session_id: str) -> bool:
             count = int(client.incr(key))
             if count == 1:
                 client.expire(key, 62)
+            return count <= limit
+        except Exception as exc:
+            logger.warning("Redis 限流失败，回退到进程内存：%s", exc)
+
+    return _get_limiter().allow(session_id)
+
+
+async def allow_request_async(session_id: str) -> bool:
+    limit = get_settings().rate_limit_per_minute
+    if limit <= 0:
+        return True
+
+    client = await get_async_redis()
+    if client is not None:
+        key = f"ratelimit:{session_id}:{int(time.time() // 60)}"
+        try:
+            count = int(await client.incr(key))
+            if count == 1:
+                await client.expire(key, 62)
             return count <= limit
         except Exception as exc:
             logger.warning("Redis 限流失败，回退到进程内存：%s", exc)
